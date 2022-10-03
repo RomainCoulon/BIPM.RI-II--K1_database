@@ -24,7 +24,7 @@ The root of the file consists of two sections. The first section gives general i
 
 ### Key comparison data
 
-Each time a report is published, an entry is created such as "Key comparison BIPM.RI(II)-K1.Ag-110m(YYYY)", where YYYY is the year of publication. The key comparison value is expressed as a string with the value followed by the standard uncertainty in brackets, then a space and finally the unit (e.g. "5980.8(64) kBq"). Values of the degrees of equivalence are in number. Please note that while the KCRV is reported for each reporting year, the degrees of equivalence are only available for publications after 2019. 
+Each time a report is published, an entry is created such as "Key comparison BIPM.RI(II)-K1.Ag-110m(YYYY)", where YYYY is the year of publication. The key comparison value (KCRV) is expressed as a string with the value followed by the standard uncertainty in brackets, then a space and finally the unit (e.g. "5980.8(64) kBq"). Values of the degrees of equivalence (DoE) are in number. The quantity $D_i$ is the value of the DoE and $U_i$ is the extended uncertainty ($k$=2). Please note that while the KCRV is reported for each reporting year, the degrees of equivalence are only available for publications after 2019. 
 
 * Key comparison BIPM.RI(II)-K1.Ag-110m(YYYY)
   - Name of the comparison
@@ -36,8 +36,8 @@ Each time a report is published, an entry is created such as "Key comparison BIP
   - Unit
   - Degrees of Equivalence
     - Laboratory name
-      - D_i
-      - U_i
+      - $D_i$
+      - $U_i$
     - ...
 *  ... 
 
