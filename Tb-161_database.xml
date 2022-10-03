@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<all>
+	<General_information type="dict">
+		<Content type="str">This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.</Content>
+		<Release_date type="str">2022-10-03</Release_date>
+		<References type="dict">
+			<key name=" [1] " type="str"> Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 </key>
+		</References>
+		<Contact_persons type="dict">
+			<_Dr_Romain_Coulon type="str"> romain.coulon@bipm.org </_Dr_Romain_Coulon>
+			<_Dr_Carine_Michotte type="str"> cmichott@bipm.org </_Dr_Carine_Michotte>
+			<_Dr_Vincent_Gressier type="str">vincent.gressier@bipm.org </_Dr_Vincent_Gressier>
+		</Contact_persons>
+	</General_information>
+	<Tb-161 type="dict">
+		<key name="Key comparison BIPM.RI(II)-K1.Tb-161(2020)" type="dict">
+			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Tb-161</Name_of_the_comparison>
+			<Year_of_publication type="str">2020</Year_of_publication>
+			<key name="Key Comparison Reference Value (KCRV)" type="str">not evaluated</key>
+			<Reference_of_the_published_comparison_report type="str">draft A in preparation</Reference_of_the_published_comparison_report>
+			<key name="Editorial assistant(s)" type="null"/>
+			<Comments_on_the_publication type="null"/>
+		</key>
+		<Data_from_IRA-2019 type="dict">
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
+			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
+			<Laboratory type="dict">
+				<Acronym type="str">IRA</Acronym>
+				<Full_name type="str">Institut de Radiophysique</Full_name>
+				<Address type="str">Lausanne</Address>
+				<Country type="str">Switzerland</Country>
+				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
+				<Old_acronyms type="str">IER</Old_acronyms>
+			</Laboratory>
+			<key name="Contributor(s) from the BIPM" type="str">C. Michotte, S. Courte, M. Nonis, R. Coulon, S. Judge</key>
+			<key name="Contributor(s) from the laboratory" type="str">F. Juget, Y. Nedjadi, M. T. Dur\'{a}n</key>
+			<Date_of_reference_specified_by_the_laboratory type="str">2019-08-22 12:00 UT</Date_of_reference_specified_by_the_laboratory>
+			<key name="Acronym(s) of the measurement method(s)" type="str">4P-PS-BP-CB-GR-CO &amp; 4P-LS-BP-CB-GR-CO</key>
+			<key name="Description of the measurement method(s)" type="str">4pi beta-gamma coincidence</key>
+			<key name="Comment(s) on the measurement method(s)" type="str">The activity is the mean of 25 efficiency extrapolated activities obtained with two coincidence techniques, 8 sources, from 2 dilutions, and 3 gamma settings. The degrees of freedom of the twenty five efficiency extrapolations range from 40 to 77.</key>
+			<Particularities_of_the_submission_to_the_SIR type="str">1 sample and 1 measurement method</Particularities_of_the_submission_to_the_SIR>
+			<key name="Activity measured by the laboratory / kBq" type="str">61970</key>
+			<Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.16</Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.56</Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.58</Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">29/08/2019</key>
+			<key name="Half-life used by the laboratory / d" type="str">6.955(2)</key>
+			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
+			<Chemical_composition_of_the_solution type="str">Tb+3 in HCl</Chemical_composition_of_the_solution>
+			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">25</key>
+			<key name="Density of the solution / (g.cm-3)" type="str">1.000(6)</key>
+			<Relative_activity_of_impurities_contained_into_the_solution type="str">160Tb: 4.44(22)x10-3 %</Relative_activity_of_impurities_contained_into_the_solution>
+			<Comments_on_impurities_contained_into_the_solution type="null"/>
+			<key name="Mass of the solution /g" type="str">3.64243(21)</key>
+			<Number_of_the_radium_source_used_by_the_SIR type="str">1</Number_of_the_radium_source_used_by_the_SIR>
+			<key name="Equivalent activity measured by the SIR / kBq" type="str">1708000</key>
+			<key name="Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4" type="str">16</key>
+			<Comments_on_the_SIR_measurement type="null"/>
+			<key name="Combined standard uncertainty of the equivalent activity / kBq" type="str">10000</key>
+			<Number_of_the_equivalent_activity_measurement_retained_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_key_comparison_reference_value type="null"/>
+			<Comments_on_the_equivalent_activity type="null"/>
+			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">CM (14/12/2020) method corrected 25/10/21</Initials_of_the_person_who_entered_the_data_plus_the_date>
+			<key name="Initials of the person(s) who verified the data plus the date" type="str">MN (6/1/2021)</key>
+			<Status_of_the_data type="str">Not yet published</Status_of_the_data>
+		</Data_from_IRA-2019>
+	</Tb-161>
+</all>

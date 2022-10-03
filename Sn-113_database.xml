@@ -1,0 +1,536 @@
+<?xml version="1.0" ?>
+<all>
+	<General_information type="dict">
+		<Content type="str">This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.</Content>
+		<Release_date type="str">2022-10-03</Release_date>
+		<References type="dict">
+			<key name=" [1] " type="str"> Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 </key>
+		</References>
+		<Contact_persons type="dict">
+			<_Dr_Romain_Coulon type="str"> romain.coulon@bipm.org </_Dr_Romain_Coulon>
+			<_Dr_Carine_Michotte type="str"> cmichott@bipm.org </_Dr_Carine_Michotte>
+			<_Dr_Vincent_Gressier type="str">vincent.gressier@bipm.org </_Dr_Vincent_Gressier>
+		</Contact_persons>
+	</General_information>
+	<Sn-113 type="dict">
+		<key name="Key comparison BIPM.RI(II)-K1.Sn-113(2004)" type="dict">
+			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Sn-113</Name_of_the_comparison>
+			<Year_of_publication type="str">2004</Year_of_publication>
+			<key name="Key Comparison Reference Value (KCRV)" type="null"/>
+			<Reference_of_the_published_comparison_report type="str">Ratel G., Michotte C., BIPM comparison BIPM.RI(II)-K1.Sn-113 of activity measurements of the radionuclide $^{113}$Sn, \href{https://doi.org/10.1088/0026-1394/41/1A/06004}, {\textit{Metrologia}, 2004, \textbf{41}, Tech. Suppl., 06004}</Reference_of_the_published_comparison_report>
+			<key name="Editorial assistant(s)" type="null"/>
+			<Comments_on_the_publication type="null"/>
+		</key>
+		<key name="Key comparison BIPM.RI(II)-K1.Sn-113(2016)" type="dict">
+			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Sn-113</Name_of_the_comparison>
+			<Year_of_publication type="str">2016</Year_of_publication>
+			<key name="Key Comparison Reference Value (KCRV)" type="str">58810(310) kBq</key>
+			<Reference_of_the_published_comparison_report type="str">Michotte C., Ratel G., Courte S., Kossert K., N\&quot;{a}hle O., Bobin C., L\'{e}py M.-C., Moune M., Garcia-Tora\~{n}o E., Peyres V., Roteta M., Update of the BIPM comparison BIPM.RI(II)-K1.Sn-113 of activity measurements of the radionuclide $^{113}$Sn to include the 2010 results of the PTB (Germany), the LNE-LNHB (France) and the 2011 result of the CIEMAT (Spain), \href{https://doi.org/10.1088/0026-1394/53/1A/06010}, {\textit{Metrologia}, 2016, \textbf{53}, Tech. Suppl., 06010}</Reference_of_the_published_comparison_report>
+			<key name="Editorial assistant(s)" type="null"/>
+			<Comments_on_the_publication type="null"/>
+		</key>
+		<key name="Key comparison BIPM.RI(II)-K1.Sn-113(2022)" type="dict">
+			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Sn-113</Name_of_the_comparison>
+			<Year_of_publication type="str">2022</Year_of_publication>
+			<key name="Key Comparison Reference Value (KCRV)" type="str">58840(310) kBq</key>
+			<Reference_of_the_published_comparison_report type="str">in draft A stage</Reference_of_the_published_comparison_report>
+			<key name="Editorial assistant(s)" type="null"/>
+			<Comments_on_the_publication type="null"/>
+		</key>
+		<Data_from_BKFH-1988 type="dict">
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
+			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
+			<Laboratory type="dict">
+				<Acronym type="str">BKFH</Acronym>
+				<Full_name type="str">Government Office of the Capital City Budapest</Full_name>
+				<Address type="str">Németvölgyi Ùt 37-39 H-1124 Budapest</Address>
+				<Country type="str">Hungary</Country>
+				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
+				<Old_acronyms type="str">OMH, MKEH</Old_acronyms>
+			</Laboratory>
+			<key name="Contributor(s) from the BIPM" type="null"/>
+			<key name="Contributor(s) from the laboratory" type="null"/>
+			<Date_of_reference_specified_by_the_laboratory type="str">1988-10-01 12:00 UT</Date_of_reference_specified_by_the_laboratory>
+			<key name="Acronym(s) of the measurement method(s)" type="str">UA-GL-GR-00-00-00</key>
+			<key name="Description of the measurement method(s)" type="str">Ge(Li) gamma counting</key>
+			<key name="Comment(s) on the measurement method(s)" type="null"/>
+			<Particularities_of_the_submission_to_the_SIR type="str">1 sample and 1 measurement method</Particularities_of_the_submission_to_the_SIR>
+			<key name="Activity measured by the laboratory / kBq" type="str">10350</key>
+			<Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.2</Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">1</Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="null"/>
+			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">19/09/1988</key>
+			<key name="Half-life used by the laboratory / d" type="str">115.08(3)</key>
+			<Reference_for_the_decay_data_used_by_the_laboratory type="str">BNM-CEA, Table de Radionucl\'{e}ides, Version : 1984, BNM-LNHB, Gif-sur-Yvette.</Reference_for_the_decay_data_used_by_the_laboratory>
+			<Chemical_composition_of_the_solution type="str">Sn + In in HCl</Chemical_composition_of_the_solution>
+			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">6</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Sn: 28, In: 17</key>
+			<key name="Density of the solution / (g.cm-3)" type="null"/>
+			<Relative_activity_of_impurities_contained_into_the_solution type="str">114mIn: 0.056(5)%, 124Sb: 0.0010(3)%</Relative_activity_of_impurities_contained_into_the_solution>
+			<Comments_on_impurities_contained_into_the_solution type="null"/>
+			<key name="Mass of the solution /g" type="str">3.6502</key>
+			<Number_of_the_radium_source_used_by_the_SIR type="str">4</Number_of_the_radium_source_used_by_the_SIR>
+			<key name="Equivalent activity measured by the SIR / kBq" type="str">58780</key>
+			<key name="Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4" type="str">7</key>
+			<Comments_on_the_SIR_measurement type="null"/>
+			<key name="Combined standard uncertainty of the equivalent activity / kBq" type="str">620</key>
+			<Number_of_the_equivalent_activity_measurement_retained_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_key_comparison_reference_value type="null"/>
+			<Comments_on_the_equivalent_activity type="null"/>
+			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">SC (2020)</Initials_of_the_person_who_entered_the_data_plus_the_date>
+			<key name="Initials of the person(s) who verified the data plus the date" type="str">CM (15/02/2022) SC(17/02/2022)</key>
+			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
+		</Data_from_BKFH-1988>
+		<Data_from_CIEMAT-2011 type="dict">
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
+			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
+			<Laboratory type="dict">
+				<Acronym type="str">CIEMAT</Acronym>
+				<Full_name type="str">Centro de Investigaciones Energéticas, Medioambientales y Tecnologicas</Full_name>
+				<Address type="str">H-1124 Budapest</Address>
+				<Country type="str">Spain</Country>
+				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
+				<Old_acronyms type="str">-</Old_acronyms>
+			</Laboratory>
+			<key name="Contributor(s) from the BIPM" type="null"/>
+			<key name="Contributor(s) from the laboratory" type="null"/>
+			<Date_of_reference_specified_by_the_laboratory type="str">2011-10-20 10:00 UT</Date_of_reference_specified_by_the_laboratory>
+			<key name="Acronym(s) of the measurement method(s)" type="str">4P-NA-GR-00-00-HE, 4P-PP-CE-NA-XR-CO</key>
+			<key name="Description of the measurement method(s)" type="str">4pi NaI(Tl) counting, 4piec-x coincidence</key>
+			<key name="Comment(s) on the measurement method(s)" type="null"/>
+			<Particularities_of_the_submission_to_the_SIR type="str">1 sample and several measurement methods</Particularities_of_the_submission_to_the_SIR>
+			<key name="Activity measured by the laboratory / kBq" type="str">724.2, 724.8</key>
+			<Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.10, 0.87</Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.61, 0.24</Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="null"/>
+			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">07/12/2011</key>
+			<key name="Half-life used by the laboratory / d" type="str">115.09(3)</key>
+			<Reference_for_the_decay_data_used_by_the_laboratory type="str">Helmer R.G. (INEEL), {\textit{LNE - LNHB/CEA, Table   de   Radionucléides}, Decay Data Evaluation Project, 1998 - 2017}.</Reference_for_the_decay_data_used_by_the_laboratory>
+			<Chemical_composition_of_the_solution type="str">SnCl4 in HCl</Chemical_composition_of_the_solution>
+			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">6</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SnCl4: 10</key>
+			<key name="Density of the solution / (g.cm-3)" type="str">1.09</key>
+			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
+			<Comments_on_impurities_contained_into_the_solution type="null"/>
+			<key name="Mass of the solution /g" type="str">3.6213</key>
+			<Number_of_the_radium_source_used_by_the_SIR type="str">1</Number_of_the_radium_source_used_by_the_SIR>
+			<key name="Equivalent activity measured by the SIR / kBq" type="str">58430, 58430</key>
+			<key name="Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4" type="str">15</key>
+			<Comments_on_the_SIR_measurement type="str">Activity values corresponding to the two methods mentioned in Table 2.</Comments_on_the_SIR_measurement>
+			<key name="Combined standard uncertainty of the equivalent activity / kBq" type="str">310, 310</key>
+			<Number_of_the_equivalent_activity_measurement_retained_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_key_comparison_reference_value type="str">58470(540)</Specified_equivalent_activity_for_the_key_comparison_reference_value>
+			<Comments_on_the_equivalent_activity type="str">SIR result evaluated using the weighted mean activity measurement result as computed by the CIEMAT: 724.4(37) kBq;  Using the coincidence method result only</Comments_on_the_equivalent_activity>
+			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">SC (2020)</Initials_of_the_person_who_entered_the_data_plus_the_date>
+			<key name="Initials of the person(s) who verified the data plus the date" type="str">CM (15/02/2022) </key>
+			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
+		</Data_from_CIEMAT-2011>
+		<Data_from_CMI-1981 type="dict">
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
+			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
+			<Laboratory type="dict">
+				<Acronym type="str">CMI</Acronym>
+				<Full_name type="str">Czech Metrological Institute</Full_name>
+				<Address type="str"/>
+				<Country type="str">Czechia</Country>
+				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
+				<Old_acronyms type="str">UVVVR, CMI-IIR</Old_acronyms>
+			</Laboratory>
+			<key name="Contributor(s) from the BIPM" type="null"/>
+			<key name="Contributor(s) from the laboratory" type="null"/>
+			<Date_of_reference_specified_by_the_laboratory type="str">1981-11-24 11:00 UT</Date_of_reference_specified_by_the_laboratory>
+			<key name="Acronym(s) of the measurement method(s)" type="str">4P-PC-CE-NA-XR-CO, 4P-PC-CE-00-00-00</key>
+			<key name="Description of the measurement method(s)" type="str">4piec-x coincidence, 4piec counting</key>
+			<key name="Comment(s) on the measurement method(s)" type="null"/>
+			<Particularities_of_the_submission_to_the_SIR type="str">1 sample and average of several measurement methods</Particularities_of_the_submission_to_the_SIR>
+			<key name="Activity measured by the laboratory / kBq" type="str">3922</key>
+			<Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.13</Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.7</Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="null"/>
+			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">16/12/1981</key>
+			<key name="Half-life used by the laboratory / d" type="str">115.1</key>
+			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
+			<Chemical_composition_of_the_solution type="str">Hexachloro-stannate in HCl</Chemical_composition_of_the_solution>
+			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">6</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="null"/>
+			<key name="Density of the solution / (g.cm-3)" type="null"/>
+			<Relative_activity_of_impurities_contained_into_the_solution type="str">114mIn: 0.90(5)%, 125Sb: 0.040(5)%</Relative_activity_of_impurities_contained_into_the_solution>
+			<Comments_on_impurities_contained_into_the_solution type="null"/>
+			<key name="Mass of the solution /g" type="str">3.63491</key>
+			<Number_of_the_radium_source_used_by_the_SIR type="str">3</Number_of_the_radium_source_used_by_the_SIR>
+			<key name="Equivalent activity measured by the SIR / kBq" type="str">58970</key>
+			<key name="Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4" type="str">8</key>
+			<Comments_on_the_SIR_measurement type="null"/>
+			<key name="Combined standard uncertainty of the equivalent activity / kBq" type="str">420</key>
+			<Number_of_the_equivalent_activity_measurement_retained_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_key_comparison_reference_value type="null"/>
+			<Comments_on_the_equivalent_activity type="null"/>
+			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">SC (2020)</Initials_of_the_person_who_entered_the_data_plus_the_date>
+			<key name="Initials of the person(s) who verified the data plus the date" type="str">CM (15/02/2022) SC(17/02/2022)</key>
+			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
+		</Data_from_CMI-1981>
+		<Data_from_CNEA-1994 type="dict">
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
+			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
+			<Laboratory type="dict">
+				<Acronym type="str">CNEA</Acronym>
+				<Full_name type="str">Comision Nacional de Energia Atomica </Full_name>
+				<Address type="str">Buenos Aires</Address>
+				<Country type="str">Argentina</Country>
+				<key name="Regional Metrology Organization (RMO)" type="str">SIM</key>
+				<Old_acronyms type="str">-</Old_acronyms>
+			</Laboratory>
+			<key name="Contributor(s) from the BIPM" type="null"/>
+			<key name="Contributor(s) from the laboratory" type="null"/>
+			<Date_of_reference_specified_by_the_laboratory type="str">1994-01-01 12:00 UT</Date_of_reference_specified_by_the_laboratory>
+			<key name="Acronym(s) of the measurement method(s)" type="str">UA-GH-GR-00-00-00</key>
+			<key name="Description of the measurement method(s)" type="str">HP-Ge spectrometry</key>
+			<key name="Comment(s) on the measurement method(s)" type="null"/>
+			<Particularities_of_the_submission_to_the_SIR type="str">1 sample and 1 measurement method</Particularities_of_the_submission_to_the_SIR>
+			<key name="Activity measured by the laboratory / kBq" type="str">914</key>
+			<Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.28</Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.76</Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="null"/>
+			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">28/02/1994</key>
+			<key name="Half-life used by the laboratory / d" type="str">115.09</key>
+			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
+			<Chemical_composition_of_the_solution type="str">SnCl2</Chemical_composition_of_the_solution>
+			<key name="Solvent concentration of the solution / (mol.dm-3)" type="null"/>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Sn: 32.6</key>
+			<key name="Density of the solution / (g.cm-3)" type="str">0.9969</key>
+			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
+			<Comments_on_impurities_contained_into_the_solution type="null"/>
+			<key name="Mass of the solution /g" type="str">3.67232</key>
+			<Number_of_the_radium_source_used_by_the_SIR type="str">1</Number_of_the_radium_source_used_by_the_SIR>
+			<key name="Equivalent activity measured by the SIR / kBq" type="str">58380</key>
+			<key name="Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4" type="str">13</key>
+			<Comments_on_the_SIR_measurement type="null"/>
+			<key name="Combined standard uncertainty of the equivalent activity / kBq" type="str">480</key>
+			<Number_of_the_equivalent_activity_measurement_retained_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_key_comparison_reference_value type="null"/>
+			<Comments_on_the_equivalent_activity type="null"/>
+			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">SC (2020)</Initials_of_the_person_who_entered_the_data_plus_the_date>
+			<key name="Initials of the person(s) who verified the data plus the date" type="str">CM (15/02/2022) SC(17/02/2022)</key>
+			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
+		</Data_from_CNEA-1994>
+		<Data_from_LNE-LNHB-1992 type="dict">
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
+			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
+			<Laboratory type="dict">
+				<Acronym type="str">LNE-LNHB</Acronym>
+				<Full_name type="str">Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel</Full_name>
+				<Address type="str">F-91120 Palaiseau</Address>
+				<Country type="str">France</Country>
+				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
+				<Old_acronyms type="str">LMRI, LPRI, BNM-LNHB</Old_acronyms>
+			</Laboratory>
+			<key name="Contributor(s) from the BIPM" type="null"/>
+			<key name="Contributor(s) from the laboratory" type="null"/>
+			<Date_of_reference_specified_by_the_laboratory type="str">1992-01-28 12:00 UT</Date_of_reference_specified_by_the_laboratory>
+			<key name="Acronym(s) of the measurement method(s)" type="str">UA-GH-GR-00-00-00</key>
+			<key name="Description of the measurement method(s)" type="str">HP-Ge spectrometry</key>
+			<key name="Comment(s) on the measurement method(s)" type="str">Calibrated in 1990 using about 80 energy points not including those of Sn-113 gamma transitions</key>
+			<Particularities_of_the_submission_to_the_SIR type="str">Several samples and 1 measurement method</Particularities_of_the_submission_to_the_SIR>
+			<key name="Activity measured by the laboratory / kBq" type="str">1135.9, 1138.4</key>
+			<Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.03, 0.03</Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.36, 0.36</Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="null"/>
+			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">21/02/1992</key>
+			<key name="Half-life used by the laboratory / d" type="str">115.08(3)</key>
+			<Reference_for_the_decay_data_used_by_the_laboratory type="str">BNM-CEA, Table de Radionucl\'{e}ides, Version : 1984, BNM-LNHB, Gif-sur-Yvette.</Reference_for_the_decay_data_used_by_the_laboratory>
+			<Chemical_composition_of_the_solution type="str">SnCl4 in HCl</Chemical_composition_of_the_solution>
+			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">2</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SnCl4: 740</key>
+			<key name="Density of the solution / (g.cm-3)" type="str">1.035</key>
+			<Relative_activity_of_impurities_contained_into_the_solution type="str">125Sb: 0.06(1)%, 60Co: 0.002(1)%</Relative_activity_of_impurities_contained_into_the_solution>
+			<Comments_on_impurities_contained_into_the_solution type="null"/>
+			<key name="Mass of the solution /g" type="str">3.7035, 3.7116</key>
+			<Number_of_the_radium_source_used_by_the_SIR type="str">2, 2</Number_of_the_radium_source_used_by_the_SIR>
+			<key name="Equivalent activity measured by the SIR / kBq" type="str">58269, 58321</key>
+			<key name="Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4" type="str">11, 10</key>
+			<Comments_on_the_SIR_measurement type="null"/>
+			<key name="Combined standard uncertainty of the equivalent activity / kBq" type="str">220, 220</key>
+			<Number_of_the_equivalent_activity_measurement_retained_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_key_comparison_reference_value type="null"/>
+			<Comments_on_the_equivalent_activity type="null"/>
+			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">SC (2020)</Initials_of_the_person_who_entered_the_data_plus_the_date>
+			<key name="Initials of the person(s) who verified the data plus the date" type="str">CM (15/02/2022) SC(17/02/2022)</key>
+			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
+		</Data_from_LNE-LNHB-1992>
+		<Data_from_LNE-LNHB-2010 type="dict">
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
+			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
+			<Laboratory type="dict">
+				<Acronym type="str">LNE-LNHB</Acronym>
+				<Full_name type="str">Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel</Full_name>
+				<Address type="str">F-91120 Palaiseau</Address>
+				<Country type="str">France</Country>
+				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
+				<Old_acronyms type="str">LMRI, LPRI, BNM-LNHB</Old_acronyms>
+			</Laboratory>
+			<key name="Contributor(s) from the BIPM" type="null"/>
+			<key name="Contributor(s) from the laboratory" type="null"/>
+			<Date_of_reference_specified_by_the_laboratory type="str">2010-07-01 12:00 UT</Date_of_reference_specified_by_the_laboratory>
+			<key name="Acronym(s) of the measurement method(s)" type="str">4P-NA-PH-00-00-HE</key>
+			<key name="Description of the measurement method(s)" type="str">4pi NaI(Tl) counting</key>
+			<key name="Comment(s) on the measurement method(s)" type="null"/>
+			<Particularities_of_the_submission_to_the_SIR type="str">1 sample and 1 measurement method</Particularities_of_the_submission_to_the_SIR>
+			<key name="Activity measured by the laboratory / kBq" type="str">1175.5</key>
+			<Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.41</Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.32</Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="null"/>
+			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">02/08/2010</key>
+			<key name="Half-life used by the laboratory / d" type="str">115.09(3)</key>
+			<Reference_for_the_decay_data_used_by_the_laboratory type="str">Helmer R.G. (INEEL), {\textit{LNE - LNHB/CEA, Table   de   Radionucléides}, Decay Data Evaluation Project, 1998 - 2017}.</Reference_for_the_decay_data_used_by_the_laboratory>
+			<Chemical_composition_of_the_solution type="str">SnCl4 in HCl</Chemical_composition_of_the_solution>
+			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">6</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Sn: 10</key>
+			<key name="Density of the solution / (g.cm-3)" type="str">1.098</key>
+			<Relative_activity_of_impurities_contained_into_the_solution type="str">114mIn: 0.051(8)%, 110mAg: 0.011(1)%</Relative_activity_of_impurities_contained_into_the_solution>
+			<Comments_on_impurities_contained_into_the_solution type="null"/>
+			<key name="Mass of the solution /g" type="str">3.9768(6)</key>
+			<Number_of_the_radium_source_used_by_the_SIR type="str">1</Number_of_the_radium_source_used_by_the_SIR>
+			<key name="Equivalent activity measured by the SIR / kBq" type="str">57130</key>
+			<key name="Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4" type="str">15</key>
+			<Comments_on_the_SIR_measurement type="str">Mass higher than the limit of 3.8 g for SIR ampoules</Comments_on_the_SIR_measurement>
+			<key name="Combined standard uncertainty of the equivalent activity / kBq" type="str">310</key>
+			<Number_of_the_equivalent_activity_measurement_retained_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_key_comparison_reference_value type="null"/>
+			<Comments_on_the_equivalent_activity type="null"/>
+			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">SC (2020)</Initials_of_the_person_who_entered_the_data_plus_the_date>
+			<key name="Initials of the person(s) who verified the data plus the date" type="str">CM (15/02/2022) SC(17/02/2022)</key>
+			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
+		</Data_from_LNE-LNHB-2010>
+		<Data_from_LNE-LNHB-2017 type="dict">
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
+			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
+			<Laboratory type="dict">
+				<Acronym type="str">LNE-LNHB</Acronym>
+				<Full_name type="str">Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel</Full_name>
+				<Address type="str">F-91120 Palaiseau</Address>
+				<Country type="str">France</Country>
+				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
+				<Old_acronyms type="str">LMRI, LPRI, BNM-LNHB</Old_acronyms>
+			</Laboratory>
+			<key name="Contributor(s) from the BIPM" type="str">C.~Michotte, S.~Courte, M.~Nonis, R.~Coulon</key>
+			<key name="Contributor(s) from the laboratory" type="str">C.~Fr\'{e}chou, M.-C.~L\'{e}py</key>
+			<Date_of_reference_specified_by_the_laboratory type="str">2017-10-09 12:00 UT</Date_of_reference_specified_by_the_laboratory>
+			<key name="Acronym(s) of the measurement method(s)" type="str">UA-GH-GR-00-00-00</key>
+			<key name="Description of the measurement method(s)" type="str">Gamma spectrometry</key>
+			<key name="Comment(s) on the measurement method(s)" type="str">Calibrated using LNE-LNHB primary standards on a large energy range (&gt; 20 radionuclides)</key>
+			<Particularities_of_the_submission_to_the_SIR type="str">1 sample and 1 measurement method</Particularities_of_the_submission_to_the_SIR>
+			<key name="Activity measured by the laboratory / kBq" type="str">503.5</key>
+			<Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.59</Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.61</Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="null"/>
+			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">08/09/2017</key>
+			<key name="Half-life used by the laboratory / d" type="str">115.09(3)</key>
+			<Reference_for_the_decay_data_used_by_the_laboratory type="str">Helmer R.G. (INEEL), {\textit{LNE - LNHB/CEA, Table   de   Radionucléides}, Decay Data Evaluation Project, 1998 - 2017}.</Reference_for_the_decay_data_used_by_the_laboratory>
+			<Chemical_composition_of_the_solution type="str">Sn(IV) in HCl</Chemical_composition_of_the_solution>
+			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">6</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Sn: 10</key>
+			<key name="Density of the solution / (g.cm-3)" type="str">1.098</key>
+			<Relative_activity_of_impurities_contained_into_the_solution type="str">110mAg: &lt; 0.012%, 114mIn: &lt; 0.021%</Relative_activity_of_impurities_contained_into_the_solution>
+			<Comments_on_impurities_contained_into_the_solution type="null"/>
+			<key name="Mass of the solution /g" type="str">4.0152</key>
+			<Number_of_the_radium_source_used_by_the_SIR type="str">1</Number_of_the_radium_source_used_by_the_SIR>
+			<key name="Equivalent activity measured by the SIR / kBq" type="str">58790</key>
+			<key name="Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4" type="str">16</key>
+			<Comments_on_the_SIR_measurement type="str">Mass higher than the limit of 3.8 g for SIR ampoules</Comments_on_the_SIR_measurement>
+			<key name="Combined standard uncertainty of the equivalent activity / kBq" type="str">510</key>
+			<Number_of_the_equivalent_activity_measurement_retained_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_key_comparison_reference_value type="null"/>
+			<Comments_on_the_equivalent_activity type="null"/>
+			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">RC (2021)</Initials_of_the_person_who_entered_the_data_plus_the_date>
+			<key name="Initials of the person(s) who verified the data plus the date" type="str">CM (21/02/2022), RC(13/05/2022)</key>
+			<Status_of_the_data type="str">Not yet published</Status_of_the_data>
+		</Data_from_LNE-LNHB-2017>
+		<Data_from_NIST-1975 type="dict">
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
+			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
+			<Laboratory type="dict">
+				<Acronym type="str">NIST</Acronym>
+				<Full_name type="str">National Institute of Standards and Technology</Full_name>
+				<Address type="str">100 Bureau Drive, Mail Stop 8462 MD 20899-8462 Gaithersburg</Address>
+				<Country type="str">United States</Country>
+				<key name="Regional Metrology Organization (RMO)" type="str">SIM</key>
+				<Old_acronyms type="str">NBS</Old_acronyms>
+			</Laboratory>
+			<key name="Contributor(s) from the BIPM" type="null"/>
+			<key name="Contributor(s) from the laboratory" type="null"/>
+			<Date_of_reference_specified_by_the_laboratory type="str">1975-07-01 17:00 UT</Date_of_reference_specified_by_the_laboratory>
+			<key name="Acronym(s) of the measurement method(s)" type="str">4P-IC-GR-00-00-00</key>
+			<key name="Description of the measurement method(s)" type="str">ionization chamber</key>
+			<key name="Comment(s) on the measurement method(s)" type="str">Calibrated for Sn-113 by NaI and Ge(Li) photopeak counting UA-NA-GR-00-00-00 and UA-GL-GR-00-00-00</key>
+			<Particularities_of_the_submission_to_the_SIR type="str">1 sample and 1 measurement method</Particularities_of_the_submission_to_the_SIR>
+			<key name="Activity measured by the laboratory / kBq" type="str">7891</key>
+			<Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0</Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0</Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">2.9</Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">15/09/1975</key>
+			<key name="Half-life used by the laboratory / d" type="null"/>
+			<Reference_for_the_decay_data_used_by_the_laboratory type="str">Murray J.Martin, Nuclear Data Project, ORNL, private communication, 1975</Reference_for_the_decay_data_used_by_the_laboratory>
+			<Chemical_composition_of_the_solution type="str">SnCl4 in HCl</Chemical_composition_of_the_solution>
+			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">4</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="null"/>
+			<key name="Density of the solution / (g.cm-3)" type="str">1.064(2)</key>
+			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
+			<Comments_on_impurities_contained_into_the_solution type="null"/>
+			<key name="Mass of the solution /g" type="str">5.3681</key>
+			<Number_of_the_radium_source_used_by_the_SIR type="str">3</Number_of_the_radium_source_used_by_the_SIR>
+			<key name="Equivalent activity measured by the SIR / kBq" type="str">58980</key>
+			<key name="Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4" type="str">9</key>
+			<Comments_on_the_SIR_measurement type="str">Masses higher than the limit of 3.8 g for SIR ampoules; part of the solution (3.9096 g) was transfered to another ampoule at the BIPM, giving an SIR result of 58 790(1700) kBq.</Comments_on_the_SIR_measurement>
+			<key name="Combined standard uncertainty of the equivalent activity / kBq" type="str">1700</key>
+			<Number_of_the_equivalent_activity_measurement_retained_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_key_comparison_reference_value type="null"/>
+			<Comments_on_the_equivalent_activity type="str">The half-life used for these SIR measurements is 114.9(1) d.</Comments_on_the_equivalent_activity>
+			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">SC (2020)</Initials_of_the_person_who_entered_the_data_plus_the_date>
+			<key name="Initials of the person(s) who verified the data plus the date" type="str">CM (15/02/2022) SC(17/02/2022)</key>
+			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
+		</Data_from_NIST-1975>
+		<Data_from_NIST-1980 type="dict">
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
+			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
+			<Laboratory type="dict">
+				<Acronym type="str">NIST</Acronym>
+				<Full_name type="str">National Institute of Standards and Technology</Full_name>
+				<Address type="str">100 Bureau Drive, Mail Stop 8462 MD 20899-8462 Gaithersburg</Address>
+				<Country type="str">United States</Country>
+				<key name="Regional Metrology Organization (RMO)" type="str">SIM</key>
+				<Old_acronyms type="str">NBS</Old_acronyms>
+			</Laboratory>
+			<key name="Contributor(s) from the BIPM" type="null"/>
+			<key name="Contributor(s) from the laboratory" type="null"/>
+			<Date_of_reference_specified_by_the_laboratory type="str">1980-10-15 19:00 UT</Date_of_reference_specified_by_the_laboratory>
+			<key name="Acronym(s) of the measurement method(s)" type="str">4P-IC-GR-00-00-00</key>
+			<key name="Description of the measurement method(s)" type="str">ionization chamber</key>
+			<key name="Comment(s) on the measurement method(s)" type="str">Calibrated for Sn-113 by NaI and Ge(Li) photopeak counting UA-NA-GR-00-00-00 and UA-GL-GR-00-00-00</key>
+			<Particularities_of_the_submission_to_the_SIR type="str">1 sample and 1 measurement method</Particularities_of_the_submission_to_the_SIR>
+			<key name="Activity measured by the laboratory / kBq" type="str">4738</key>
+			<Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.01</Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">1.07</Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="null"/>
+			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">24/10/1980</key>
+			<key name="Half-life used by the laboratory / d" type="null"/>
+			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
+			<Chemical_composition_of_the_solution type="str">Sn in HCl</Chemical_composition_of_the_solution>
+			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">4</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Sn: 2</key>
+			<key name="Density of the solution / (g.cm-3)" type="str">1.066(2)</key>
+			<Relative_activity_of_impurities_contained_into_the_solution type="str">114mIn: 3.6(7)%, 125Sb: 0.12(2)%</Relative_activity_of_impurities_contained_into_the_solution>
+			<Comments_on_impurities_contained_into_the_solution type="null"/>
+			<key name="Mass of the solution /g" type="str">3.86563</key>
+			<Number_of_the_radium_source_used_by_the_SIR type="str">3</Number_of_the_radium_source_used_by_the_SIR>
+			<key name="Equivalent activity measured by the SIR / kBq" type="str">58870</key>
+			<key name="Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4" type="str">23</key>
+			<Comments_on_the_SIR_measurement type="str">Mainly due to the uncertainty of the impurity activities as given by the NIST</Comments_on_the_SIR_measurement>
+			<key name="Combined standard uncertainty of the equivalent activity / kBq" type="str">640</key>
+			<Number_of_the_equivalent_activity_measurement_retained_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_key_comparison_reference_value type="null"/>
+			<Comments_on_the_equivalent_activity type="null"/>
+			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">SC (2020)</Initials_of_the_person_who_entered_the_data_plus_the_date>
+			<key name="Initials of the person(s) who verified the data plus the date" type="str">CM (15/02/2022) SC(17/02/2022)</key>
+			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
+		</Data_from_NIST-1980>
+		<Data_from_PTB-1989 type="dict">
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
+			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
+			<Laboratory type="dict">
+				<Acronym type="str">PTB</Acronym>
+				<Full_name type="str">Physikalisch-Technische Bundesanstalt</Full_name>
+				<Address type="str">Bundesallee 100, D-38116 Braunschweig</Address>
+				<Country type="str">Germany</Country>
+				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
+				<Old_acronyms type="str">-</Old_acronyms>
+			</Laboratory>
+			<key name="Contributor(s) from the BIPM" type="null"/>
+			<key name="Contributor(s) from the laboratory" type="null"/>
+			<Date_of_reference_specified_by_the_laboratory type="str">1989-02-01 00:00 UT</Date_of_reference_specified_by_the_laboratory>
+			<key name="Acronym(s) of the measurement method(s)" type="str">4P-IC-GR-00-00-00</key>
+			<key name="Description of the measurement method(s)" type="str">ionization chamber</key>
+			<key name="Comment(s) on the measurement method(s)" type="str">Calibrated in 1980 by efficiency calculation and Ge spectrometry UA-GL-GR-00-00-00</key>
+			<Particularities_of_the_submission_to_the_SIR type="str">1 sample and 1 measurement method</Particularities_of_the_submission_to_the_SIR>
+			<key name="Activity measured by the laboratory / kBq" type="str">21620</key>
+			<Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.2</Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">1</Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="null"/>
+			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">12/04/1989</key>
+			<key name="Half-life used by the laboratory / d" type="null"/>
+			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
+			<Chemical_composition_of_the_solution type="str">SnCl2 in HCl</Chemical_composition_of_the_solution>
+			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">3</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SnCl2: 50</key>
+			<key name="Density of the solution / (g.cm-3)" type="str">1.05</key>
+			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
+			<Comments_on_impurities_contained_into_the_solution type="null"/>
+			<key name="Mass of the solution /g" type="str">3.6287</key>
+			<Number_of_the_radium_source_used_by_the_SIR type="str">4</Number_of_the_radium_source_used_by_the_SIR>
+			<key name="Equivalent activity measured by the SIR / kBq" type="str">58250</key>
+			<key name="Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4" type="str">7</key>
+			<Comments_on_the_SIR_measurement type="null"/>
+			<key name="Combined standard uncertainty of the equivalent activity / kBq" type="str">600</key>
+			<Number_of_the_equivalent_activity_measurement_retained_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_key_comparison_reference_value type="null"/>
+			<Comments_on_the_equivalent_activity type="null"/>
+			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">SC (2020)</Initials_of_the_person_who_entered_the_data_plus_the_date>
+			<key name="Initials of the person(s) who verified the data plus the date" type="str">CM (15/02/2022) SC(17/02/2022)</key>
+			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
+		</Data_from_PTB-1989>
+		<Data_from_PTB-2010 type="dict">
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
+			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
+			<Laboratory type="dict">
+				<Acronym type="str">PTB</Acronym>
+				<Full_name type="str">Physikalisch-Technische Bundesanstalt</Full_name>
+				<Address type="str">Bundesallee 100, D-38116 Braunschweig</Address>
+				<Country type="str">Germany</Country>
+				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
+				<Old_acronyms type="str">-</Old_acronyms>
+			</Laboratory>
+			<key name="Contributor(s) from the BIPM" type="null"/>
+			<key name="Contributor(s) from the laboratory" type="null"/>
+			<Date_of_reference_specified_by_the_laboratory type="str">2010-03-01 00:00 UT</Date_of_reference_specified_by_the_laboratory>
+			<key name="Acronym(s) of the measurement method(s)" type="str">4P-LS-MX-00-00-CN, 4P-LS-MX-00-00-TD</key>
+			<key name="Description of the measurement method(s)" type="str">CIEMAT/NIST, TDCR</key>
+			<key name="Comment(s) on the measurement method(s)" type="str">The uncertainty of CIEMAT/NIST method has been attributed to the weighted mean</key>
+			<Particularities_of_the_submission_to_the_SIR type="str">1 sample and average of several measurement methods</Particularities_of_the_submission_to_the_SIR>
+			<key name="Activity measured by the laboratory / kBq" type="str">1258.4</key>
+			<Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.15</Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">1.25</Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
+			<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="null"/>
+			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">31/03/2010</key>
+			<key name="Half-life used by the laboratory / d" type="str">115.09(3)</key>
+			<Reference_for_the_decay_data_used_by_the_laboratory type="str">Helmer R.G. (INEEL), {\textit{LNE - LNHB/CEA, Table   de   Radionucléides}, Decay Data Evaluation Project, 1998 - 2017}.</Reference_for_the_decay_data_used_by_the_laboratory>
+			<Chemical_composition_of_the_solution type="str">SnCl2.2H2O in HCl</Chemical_composition_of_the_solution>
+			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">4</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SnCl2.2H2O: 47.4</key>
+			<key name="Density of the solution / (g.cm-3)" type="str">1.05</key>
+			<Relative_activity_of_impurities_contained_into_the_solution type="str">114mIn: 0.15(5)%, 75Se: 0.022(9)%, 110mAg: 5.7(14)x10-3%</Relative_activity_of_impurities_contained_into_the_solution>
+			<Comments_on_impurities_contained_into_the_solution type="null"/>
+			<key name="Mass of the solution /g" type="str">3.82133</key>
+			<Number_of_the_radium_source_used_by_the_SIR type="str">1</Number_of_the_radium_source_used_by_the_SIR>
+			<key name="Equivalent activity measured by the SIR / kBq" type="str">59110</key>
+			<key name="Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4" type="str">16</key>
+			<Comments_on_the_SIR_measurement type="null"/>
+			<key name="Combined standard uncertainty of the equivalent activity / kBq" type="str">750</key>
+			<Number_of_the_equivalent_activity_measurement_retained_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_degree_of_equivalence type="null"/>
+			<Specified_equivalent_activity_for_the_key_comparison_reference_value type="null"/>
+			<Comments_on_the_equivalent_activity type="null"/>
+			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">SC (2020)</Initials_of_the_person_who_entered_the_data_plus_the_date>
+			<key name="Initials of the person(s) who verified the data plus the date" type="str">CM (15/02/2022) SC(17/02/2022)</key>
+			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
+		</Data_from_PTB-2010>
+	</Sn-113>
+</all>
