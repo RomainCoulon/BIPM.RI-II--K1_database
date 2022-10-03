@@ -25,9 +25,19 @@
 			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Ag-110m</Name_of_the_comparison>
 			<Year_of_publication type="str">2020</Year_of_publication>
 			<key name="Key Comparison Reference Value (KCRV)" type="str">5980.8(64) kBq</key>
-			<Reference_of_the_published_comparison_report type="str">under internal verification</Reference_of_the_published_comparison_report>
+			<Reference_of_the_published_comparison_report type="str">Michotte C., Courte S, Nonis M, Coulon R, Judge S., Ratel G., Kossert K. and N\&quot;ahle O., Update of the BIPM comparison BIPM.RI(II)-K1.Ag-110m of activity measurements of the radionuclide $^{110m}$Ag to include the 2015 result of the PTB (Germany), \href{https://doi.org/10.1088/0026-1394/58/1A/06002}{\textit{Metrologia}, 2020, \textbf{58}, Tech. Suppl., 06002}</Reference_of_the_published_comparison_report>
 			<key name="Editorial assistant(s)" type="null"/>
 			<Comments_on_the_publication type="null"/>
+			<Degrees_of_Equivalence type="dict">
+				<LNE-LNHB type="dict">
+					<D_i type="int">4</D_i>
+					<U_i type="int">12</U_i>
+				</LNE-LNHB>
+				<PTB type="dict">
+					<D_i type="int">-7</D_i>
+					<U_i type="int">35</U_i>
+				</PTB>
+			</Degrees_of_Equivalence>
 		</key>
 		<Data_from_BKFH-2000 type="dict">
 			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
@@ -297,7 +307,7 @@
 			<Comments_on_the_equivalent_activity type="null"/>
 			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">CM (08/07/2020)</Initials_of_the_person_who_entered_the_data_plus_the_date>
 			<key name="Initials of the person(s) who verified the data plus the date" type="str">MN (26/2/2021)</key>
-			<Status_of_the_data type="str">Not yet published</Status_of_the_data>
+			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_PTB-2015>
 	</Ag-110m>
 </all>

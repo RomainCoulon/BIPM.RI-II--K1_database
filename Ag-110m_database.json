@@ -24,9 +24,19 @@
         "Name of the comparison": "BIPM.RI(II)-K1.Ag-110m",
         "Year of publication": "2020",
         "Key Comparison Reference Value (KCRV)": "5980.8(64) kBq",
-        "Reference of the published comparison report": "under internal verification",
+        "Reference of the published comparison report": "Michotte C., Courte S, Nonis M, Coulon R, Judge S., Ratel G., Kossert K. and N\\\"ahle O., Update of the BIPM comparison BIPM.RI(II)-K1.Ag-110m of activity measurements of the radionuclide $^{110m}$Ag to include the 2015 result of the PTB (Germany), \\href{https://doi.org/10.1088/0026-1394/58/1A/06002}{\\textit{Metrologia}, 2020, \\textbf{58}, Tech. Suppl., 06002}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Degrees of Equivalence" : {
+            "LNE-LNHB" : {
+                "D_i" : 4,
+                "U_i" : 12
+            },
+            "PTB" : {
+                "D_i" : -7,
+                "U_i" : 35
+            }
+        }
     },
     "Data from BKFH-2000": {
         "Eligible for the Key Comparison Reference Value (KCRV)": true,
@@ -296,7 +306,7 @@
         "Comments on the equivalent activity": null,
         "Initials of the person who entered the data plus the date": "CM (08/07/2020)",
         "Initials of the person(s) who verified the data plus the date": "MN (26/2/2021)",
-        "Status of the data": "Not yet published"
+        "Status of the data": "Published with the key comparison BIPM.RI(II)-K1"
     }
   }
 }
