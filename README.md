@@ -4,7 +4,9 @@ Romain Coulon, BIPM, 2022-10-03
 
 This repository contains machine-readable versions (XML and JSON formats) of the BIPM/RI(II)-K1 key comparison reports [1].
 These comparisons are made using the BIPM's measurement service, the International Reference System (SIR), which has been in use since 1976 [2].
-The files contain exactly the same information as the reports publicly available in PDF format on the key comparison database platform (KCDB [3]).
+The files contain exactly the same information as the reports publicly available in PDF format on the key comparison database platform (KCDB [3]). This database is continuously updated.
+
+If you have any questions about this database, please contact romain.coulon@bipm.org.
 
 ## Structure of the data
 
@@ -17,24 +19,48 @@ The root of the file consists of two sections. The first section gives general i
   - Date
   - References
 * Name of the radionuclide (eg. Ga-67)
-  - Bibliographical data
+  - Key comparison data
+  - Key comparison metadata
 
-### Metadata
+### Key comparison data
 
-        "Eligible for the Key Comparison Reference Value (KCRV)": false,
-        "Eligible for Degree of Equivalence (DoE)": false,
-        "Laboratory": {
-            "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
-            "Address": "F-91120 Palaiseau",
-            "Country": "France",
-            "Regional Metrology Organization (RMO)": "EURAMET",
-            "Old acronyms": "LMRI, LPRI, BNM-LNHB"
-            },
-        "Contributor(s) from the BIPM": null,
-        "Contributor(s) from the laboratory": null,
-        "Date of reference specified by the laboratory": "1981-11-13 12:00 UT",
-        "Acronym(s) of the measurement method(s)": "4P-PP-MX-NA-GR-AC",
+Each time a report is published, an entry is created such as "Key comparison BIPM.RI(II)-K1.Ag-110m(YYYY)", where YYYY is the year of publication. The key comparison value is expressed as a string with the value followed by the standard uncertainty in brackets, then a space and finally the unit (e.g. "5980.8(64) kBq"). Values of the degrees of equivalence are in number. Please note that while the KCRV is reported for each reporting year, the degrees of equivalence are only available for publications after 2019. 
+
+* Key comparison BIPM.RI(II)-K1.Ag-110m(YYYY)
+  - Name of the comparison
+  - Year of publication
+  - Key Comparison Reference Value (KCRV)
+  - Reference of the published comparison report
+  - Editorial assistant(s)
+  - Comments on the publication
+  - Unit
+  - Degrees of Equivalence
+    - Laboratory name
+      - D_i
+      - U_i
+    - ...
+*  ... 
+
+### Key comparison metadata
+
+
+
+
+
+* Data from ACRONYME-YYYY
+  - Eligible for the Key Comparison Reference Value (KCRV)
+  - Eligible for Degree of Equivalence (DoE)
+  - Laboratory
+    - Acronym
+    - Full name
+    - Address
+    - Country
+    - Regional Metrology Organization (RMO)
+    - Old acronyms": "LMRI, LPRI, BNM-LNHB"
+  - Contributor(s) from the BIPM": null,
+  - Contributor(s) from the laboratory": null,
+  - Date of reference specified by the laboratory": "1981-11-13 12:00 UT",
+  - Acronym(s) of the measurement method(s)": "4P-PP-MX-NA-GR-AC",
         "Description of the measurement method(s)": "4pi(eA,x)-gamma anti-coincidence",
         "Comment(s) on the measurement method(s)": null,
         "Particularities of the submission to the SIR": "Several samples and 1 measurement method",
