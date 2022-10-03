@@ -56,7 +56,7 @@ Each time a report is published, an entry is created such as "Key comparison BIP
     - Address
     - Country
     - Regional Metrology Organization (RMO)
-    - Old acronyms": "LMRI, LPRI, BNM-LNHB"
+    - Old acronyms
   - Contributor(s) from the BIPM": null,
   - Contributor(s) from the laboratory": null,
   - Date of reference specified by the laboratory": "1981-11-13 12:00 UT",
