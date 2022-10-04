@@ -14,6 +14,7 @@ If you have any questions about this database, please contact romain.coulon@bipm
 
 The root of the file consists of two sections. The first section gives general information on the data. The second section gives all available details on a given radionuclide.
 
+#### Representation of the tree structure of the root
 * General information
   - Content
   - Date
@@ -24,8 +25,9 @@ The root of the file consists of two sections. The first section gives general i
 
 ### Key comparison data
 
-Each time a report is published, an entry is created such as "Key comparison BIPM.RI(II)-K1.Xx-ZZZ(YYYY)", where Xx-ZZZ is the radionuclide (eg. Am-241) and YYYY is the year of publication. The key comparison value (KCRV) is expressed as a string with the value followed by the standard uncertainty in brackets, then a space and finally the unit (e.g. "5980.8(64) kBq"). Values of the degrees of equivalence (DoE) are in number. The quantity $D_i$ is the value of the DoE and $U_i$ is the extended uncertainty ($k$=2). Please note that while the KCRV is reported for each reporting year, the degrees of equivalence are only available for publications after 2019. 
+Each time a report is published, an entry is created such as "Key comparison BIPM.RI(II)-K1.Xx-ZZZ(YYYY)", where Xx-ZZZ is the radionuclide (eg. Am-241) and YYYY is the year of publication. The key comparison value (KCRV) is expressed as a string with the value followed by the standard uncertainty in brackets, then a space and finally the unit (e.g. "5980.8(64) kBq"). Values of the degrees of equivalence (DoE) are in number. The quantity $D_i$ is the value of the DoE and $U_i$ is the extended uncertainty ($k$=2). Please note that while the KCRV is reported for each reporting year, the degrees of equivalence are only available for publications after 2019.
 
+#### Representation of the tree structure of the "Key comparison data" entry 
 * Key comparison BIPM.RI(II)-K1.Ag-110m(YYYY)
   - Name of the comparison
   - Year of publication
@@ -61,6 +63,7 @@ f) "Several samples and 1 measurement method"
 
 In configurations a) and c), only one value is given in the following entries. In configurations b), e) d) and f), several values - seprated by "," - are given in the following entries. In entries 11, 12, 13, 14, are respectively given, the activity(ies), the relative type A standard uncertainty(ies), the relative type B standard uncertainty(ies), the relative combined standard uncertainty(ies). 
 
+#### Representation of the tree structure of the "Key comparison metadata" entry 
 * Data from Lab-Acronym-YYYY
   - Eligible for the Key Comparison Reference Value (KCRV)
   - Eligible for Degree of Equivalence (DoE)
