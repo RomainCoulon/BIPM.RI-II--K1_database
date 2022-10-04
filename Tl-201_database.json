@@ -1,7 +1,7 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2022-10-03",
+    "Release date": "2022-10-04",
     "References":{
         " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
         },
@@ -32,9 +32,28 @@
         "Name of the comparison": "BIPM.RI(II)-K1.Tl-201",
         "Year of publication": "2020",
         "Key Comparison Reference Value (KCRV)": "311.16(94) MBq",
-        "Reference of the published comparison report": "Final Report to be published",
+        "Reference of the published comparison report": "Michotte C., Courte S., Nonis M., Coulon R., Judge S., Ratel G., Fitzgerald R. and Pibida L., Update of the BIPM comparison BIPM.RI(II)-K1.Tl-201 of activity measurements of the radionuclide $^{201}$Tl to include the 2011 result of the NIST (United States), \\href{https://doi.org/10.1088/0026-1394/59/1A/06008}{\\textit{Metrologia}, 2022, \\textbf{59}, Tech. Suppl., 06008}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "LNE-LNHB" : {
+                "D_i" : -3.2,
+                "U_i" : 2.6
+            },
+            "PTB" : {
+                "D_i" : 1.3,
+                "U_i" : 4.5
+            },
+            "NPL" : {
+                "D_i" : 0.1,
+                "U_i" : 2.7
+            },
+            "NIST" : {
+                "D_i" : 1.9,
+                "U_i" : 7.3
+            }
+        }
     },
     "Data from ANSTO-1994": {
         "Eligible for the Key Comparison Reference Value (KCRV)": false,
@@ -529,7 +548,7 @@
         "Comments on the equivalent activity": null,
         "Initials of the person who entered the data plus the date": "CM (07/07/2020), SC (21/07/2020)",
         "Initials of the person(s) who verified the data plus the date": null,
-        "Status of the data": "Not yet published"
+        "Status of the data": "Published with the key comparison BIPM.RI(II)-K1"
     },
     "Data from NMISA-1991": {
         "Eligible for the Key Comparison Reference Value (KCRV)": true,

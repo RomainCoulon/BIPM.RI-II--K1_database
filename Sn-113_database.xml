@@ -2,7 +2,7 @@
 <all>
 	<General_information type="dict">
 		<Content type="str">This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.</Content>
-		<Release_date type="str">2022-10-03</Release_date>
+		<Release_date type="str">2022-10-04</Release_date>
 		<References type="dict">
 			<key name=" [1] " type="str"> Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 </key>
 		</References>
@@ -33,9 +33,24 @@
 			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Sn-113</Name_of_the_comparison>
 			<Year_of_publication type="str">2022</Year_of_publication>
 			<key name="Key Comparison Reference Value (KCRV)" type="str">58840(310) kBq</key>
-			<Reference_of_the_published_comparison_report type="str">in draft A stage</Reference_of_the_published_comparison_report>
+			<Reference_of_the_published_comparison_report type="str">Michotte C., Courte S., Nonis M., Coulon R., Fr\'echou C. and L\'{e}py M.-C., Update of the BIPM comparison BIPM.RI(II)-K1.Sn-113 of activity measurements of the radionuclide $^{113}$Sn to include the 2017 result of the LNE-LNHB (France), \href{https://doi.org/10.1088/0026-1394/59/1A/06016}, {\textit{Metrologia}, 2022, \textbf{59}, Tech. Suppl., 06016}</Reference_of_the_published_comparison_report>
 			<key name="Editorial assistant(s)" type="null"/>
 			<Comments_on_the_publication type="null"/>
+			<Unit type="str">kBq</Unit>
+			<Degrees_of_Equivalence type="dict">
+				<PTB type="dict">
+					<D_i type="int">300</D_i>
+					<U_i type="int">1300</U_i>
+				</PTB>
+				<CIEMAT type="dict">
+					<D_i type="int">-410</D_i>
+					<U_i type="int">870</U_i>
+				</CIEMAT>
+				<LNE-LNHB type="dict">
+					<D_i type="int">-100</D_i>
+					<U_i type="int">1200</U_i>
+				</LNE-LNHB>
+			</Degrees_of_Equivalence>
 		</key>
 		<Data_from_BKFH-1988 type="dict">
 			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
@@ -350,7 +365,7 @@
 			<Comments_on_the_equivalent_activity type="null"/>
 			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">RC (2021)</Initials_of_the_person_who_entered_the_data_plus_the_date>
 			<key name="Initials of the person(s) who verified the data plus the date" type="str">CM (21/02/2022), RC(13/05/2022)</key>
-			<Status_of_the_data type="str">Not yet published</Status_of_the_data>
+			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_LNE-LNHB-2017>
 		<Data_from_NIST-1975 type="dict">
 			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>

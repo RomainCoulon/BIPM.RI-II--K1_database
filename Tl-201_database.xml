@@ -2,7 +2,7 @@
 <all>
 	<General_information type="dict">
 		<Content type="str">This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.</Content>
-		<Release_date type="str">2022-10-03</Release_date>
+		<Release_date type="str">2022-10-04</Release_date>
 		<References type="dict">
 			<key name=" [1] " type="str"> Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 </key>
 		</References>
@@ -33,9 +33,28 @@
 			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Tl-201</Name_of_the_comparison>
 			<Year_of_publication type="str">2020</Year_of_publication>
 			<key name="Key Comparison Reference Value (KCRV)" type="str">311.16(94) MBq</key>
-			<Reference_of_the_published_comparison_report type="str">Final Report to be published</Reference_of_the_published_comparison_report>
+			<Reference_of_the_published_comparison_report type="str">Michotte C., Courte S., Nonis M., Coulon R., Judge S., Ratel G., Fitzgerald R. and Pibida L., Update of the BIPM comparison BIPM.RI(II)-K1.Tl-201 of activity measurements of the radionuclide $^{201}$Tl to include the 2011 result of the NIST (United States), \href{https://doi.org/10.1088/0026-1394/59/1A/06008}{\textit{Metrologia}, 2022, \textbf{59}, Tech. Suppl., 06008}</Reference_of_the_published_comparison_report>
 			<key name="Editorial assistant(s)" type="null"/>
 			<Comments_on_the_publication type="null"/>
+			<Unit type="str">MBq</Unit>
+			<Degrees_of_Equivalence type="dict">
+				<LNE-LNHB type="dict">
+					<D_i type="float">-3.2</D_i>
+					<U_i type="float">2.6</U_i>
+				</LNE-LNHB>
+				<PTB type="dict">
+					<D_i type="float">1.3</D_i>
+					<U_i type="float">4.5</U_i>
+				</PTB>
+				<NPL type="dict">
+					<D_i type="float">0.1</D_i>
+					<U_i type="float">2.7</U_i>
+				</NPL>
+				<NIST type="dict">
+					<D_i type="float">1.9</D_i>
+					<U_i type="float">7.3</U_i>
+				</NIST>
+			</Degrees_of_Equivalence>
 		</key>
 		<Data_from_ANSTO-1994 type="dict">
 			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
@@ -530,7 +549,7 @@
 			<Comments_on_the_equivalent_activity type="null"/>
 			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">CM (07/07/2020), SC (21/07/2020)</Initials_of_the_person_who_entered_the_data_plus_the_date>
 			<key name="Initials of the person(s) who verified the data plus the date" type="null"/>
-			<Status_of_the_data type="str">Not yet published</Status_of_the_data>
+			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NIST-2011>
 		<Data_from_NMISA-1991 type="dict">
 			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>

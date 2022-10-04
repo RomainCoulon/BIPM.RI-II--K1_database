@@ -1,7 +1,7 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2022-10-03",
+    "Release date": "2022-10-04",
     "References":{
         " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
         },
@@ -42,15 +42,30 @@
         "Key Comparison Reference Value (KCRV)": "116030(550) kBq",
         "Reference of the published comparison report": "C. Michotte, S. Courte, M. Nonis, R. Coulon, S. Judge, G. Ratel, R. Fitzgerald, K. Kossert, O. N\\\"ahle, Update of the BIPM comparison BIPM.RI(II)-K1.Ga-67 of activity measurements of the radionuclide $^{67}$Ga to include the 2010 result of the PTB (Germany) and the 2010 result of the NIST (United States), \\href{https://doi.org/10.1088/0026-1394/58/1A/06017}{\\textit{Metrologia}, 2021, \\textbf{58}, Tech. Suppl., 06017}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
-    },
-    "Key comparison BIPM.RI(II)-K1.Ga-67(2022)": {
-        "Name of the comparison": "BIPM.RI(II)-K1.Ga-67",
-        "Year of publication": "2022",
-        "Key Comparison Reference Value (KCRV)": null,
-        "Reference of the published comparison report": null,
-        "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "NMIJ" : {
+                "D_i" : -0.8,
+                "U_i" : 1.3
+            },
+            "CIEMAT" : {
+                "D_i" : 1.9,
+                "U_i" : 2.1
+            },
+            "LNE-LNHB" : {
+                "D_i" : -2.2,
+                "U_i" : 1.2
+            },
+            "PTB" : {
+                "D_i" : -0.5,
+                "U_i" : 1.6
+            },
+            "NIST" : {
+                "D_i" : -0.9,
+                "U_i" : 1.5
+            }
+        }
     },
     "Data from BKFH-1995": {
         "Eligible for the Key Comparison Reference Value (KCRV)": true,

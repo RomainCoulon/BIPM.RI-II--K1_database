@@ -1,7 +1,7 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2022-10-03",
+    "Release date": "2022-10-04",
     "References":{
         " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
         },
@@ -32,9 +32,28 @@
         "Name of the comparison": "BIPM.RI(II)-K1.Cd-109",
         "Year of publication": "2020",
         "Key Comparison Reference Value (KCRV)": "8138(26) MBq",
-        "Reference of the published comparison report": "Final stage",
+        "Reference of the published comparison report": "Michotte C., Courte S., Nonis M., Coulon R., Judge S., Ratel G., Fr\\'echou C. and Thiam C., Update of the BIPM comparison BIPM.RI(II)-K1.Cd-109 of activity measurements of the radionuclide $^{109}$Cd to include the 2012 result of the LNE-LNHB (France), \\href{https://doi.org/10.1088/0026-1394/58/1A/06026}{\\textit{Metrologia}, 2021, \\textbf{58}, Tech. Suppl., 06026}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "IRA" : {
+                "D_i" : -73,
+                "U_i" : 90
+            },
+            "PTB" : {
+                "D_i" : 32,
+                "U_i" : 58
+            },
+            "NIST" : {
+                "D_i" : 30,
+                "U_i" : 100
+            },
+            "LNE-LNHB" : {
+                "D_i" : -100,
+                "U_i" : 160
+            }
+        }
     },
     "Data from AECL-1982": {
         "Eligible for the Key Comparison Reference Value (KCRV)": true,
@@ -380,7 +399,7 @@
         "Comments on the equivalent activity": "Activity in the ampoule significantly lower than the minimum required for the SIR (45 MBq) and therefore not included in the calculation of the KCRV",
         "Initials of the person who entered the data plus the date": "CM (17/07/2020); SC(10/09/2020)",
         "Initials of the person(s) who verified the data plus the date": null,
-        "Status of the data": "Not yet published"
+        "Status of the data": "Published with the key comparison BIPM.RI(II)-K1"
     },
     "Data from NIST-2004": {
         "Eligible for the Key Comparison Reference Value (KCRV)": false,

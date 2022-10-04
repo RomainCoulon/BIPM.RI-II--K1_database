@@ -1,7 +1,7 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2022-10-03",
+    "Release date": "2022-10-04",
     "References":{
         " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
         },
@@ -16,9 +16,16 @@
         "Name of the comparison": "BIPM.RI(II)-K1.Tb-161",
         "Year of publication": "2020",
         "Key Comparison Reference Value (KCRV)": "not evaluated",
-        "Reference of the published comparison report": "draft A in preparation",
+        "Reference of the published comparison report": "C. Michotte, S. Courte, M. Nonis, R. Coulon, S. Judge, Juget F., Nedjadi Y. and Dur\\'an M.T., Final report of the new BIPM comparison BIPM.RI(II)-K1.Tb-161 of activity measurements of the radionuclide $^{161}$Tb including the 2019 result of the IRA (Switzerland), \\href{https://doi.org/10.1088/0026-1394/58/1A/06009}{\\textit{Metrologia}, 2021, \\textbf{58}, Tech. Suppl., 06009}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "?",
+        "Degrees of Equivalence" : {
+            "?" : {
+                "D_i" : 0,
+                "U_i" : 0
+            }
+        }
     },
     "Data from IRA-2019": {
         "Eligible for the Key Comparison Reference Value (KCRV)": true,
@@ -63,7 +70,7 @@
         "Comments on the equivalent activity": null,
         "Initials of the person who entered the data plus the date": "CM (14/12/2020) method corrected 25/10/21",
         "Initials of the person(s) who verified the data plus the date": "MN (6/1/2021)",
-        "Status of the data": "Not yet published"
+        "Status of the data": "Published with the key comparison BIPM.RI(II)-K1"
     }
   }
 }

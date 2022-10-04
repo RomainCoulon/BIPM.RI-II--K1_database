@@ -1,7 +1,7 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2022-10-03",
+    "Release date": "2022-10-04",
     "References":{
         " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
         },
@@ -32,9 +32,24 @@
         "Name of the comparison": "BIPM.RI(II)-K1.Sn-113",
         "Year of publication": "2022",
         "Key Comparison Reference Value (KCRV)": "58840(310) kBq",
-        "Reference of the published comparison report": "in draft A stage",
+        "Reference of the published comparison report": "Michotte C., Courte S., Nonis M., Coulon R., Fr\\'echou C. and L\\'{e}py M.-C., Update of the BIPM comparison BIPM.RI(II)-K1.Sn-113 of activity measurements of the radionuclide $^{113}$Sn to include the 2017 result of the LNE-LNHB (France), \\href{https://doi.org/10.1088/0026-1394/59/1A/06016}, {\\textit{Metrologia}, 2022, \\textbf{59}, Tech. Suppl., 06016}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "kBq",
+        "Degrees of Equivalence" : {
+            "PTB" : {
+                "D_i" : 300,
+                "U_i" : 1300
+            },
+            "CIEMAT" : {
+                "D_i" : -410,
+                "U_i" : 870
+            },
+            "LNE-LNHB" : {
+                "D_i" : -100,
+                "U_i" : 1200
+            }
+        }
     },
     "Data from BKFH-1988": {
         "Eligible for the Key Comparison Reference Value (KCRV)": false,
@@ -349,7 +364,7 @@
         "Comments on the equivalent activity": null,
         "Initials of the person who entered the data plus the date": "RC (2021)",
         "Initials of the person(s) who verified the data plus the date": "CM (21/02/2022), RC(13/05/2022)",
-        "Status of the data": "Not yet published"
+        "Status of the data": "Published with the key comparison BIPM.RI(II)-K1"
     },
     "Data from NIST-1975": {
         "Eligible for the Key Comparison Reference Value (KCRV)": false,

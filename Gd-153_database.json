@@ -1,7 +1,7 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2022-10-03",
+    "Release date": "2022-10-04",
     "References":{
         " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
         },
@@ -24,9 +24,16 @@
         "Name of the comparison": "BIPM.RI(II)-K1.Gd-153",
         "Year of publication": "2021",
         "Key Comparison Reference Value (KCRV)": "364200(2000) kBq",
-        "Reference of the published comparison report": "Final report ready for publication",
+        "Reference of the published comparison report": "Michotte C., Courte S., Nonis M., Coulon R., Judge S., Bergeron D.E., Cessna J.T., Fitzgerald R.P., Laureano-Perez L. and Pibida L., Update of the BIPM comparison BIPM.RI(II)-K1.Gd-153 of activity measurements of the radionuclide $^{153}$Gd to include the 2020 result of the NIST (United States), \\href{https://doi.org/10.1088/0026-1394/58/1A/06027}{\\textit{Metrologia}, 2021, \\textbf{58}, Tech. Suppl., 06027}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "kBq",
+        "Degrees of Equivalence" : {
+            "NIST" : {
+                "D_i" : -2105,
+                "U_i" : 4097
+            }
+        }
     },
     "Data from CMI-IIR-1989": {
         "Eligible for the Key Comparison Reference Value (KCRV)": true,
@@ -244,7 +251,7 @@
         "Comments on the equivalent activity": null,
         "Initials of the person who entered the data plus the date": "CM (10/05/2021)",
         "Initials of the person(s) who verified the data plus the date": "SC (10/05/2021)",
-        "Status of the data": "Not yet published"
+        "Status of the data": "Published with the key comparison BIPM.RI(II)-K1"
     }
   }
 }

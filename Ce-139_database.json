@@ -1,7 +1,7 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2022-09-21",
+    "Release date": "2022-10-04",
     "References":{
         " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
         },
@@ -40,11 +40,56 @@
         "Name of the comparison": "BIPM.RI(II)-K1.Ce-139",
         "Year of publication": "2022",
         "Key Comparison Reference Value (KCRV)": "132.77(14) MBq",
-        "Reference of the published comparison report": "Drat A stage",
+        "Reference of the published comparison report": "Coulon R., Michotte C., Courte S., Nonis M., Judge S., Thiam C., Bobin C., Fr\\'echou C., van Rooy M.W., van Staden M.J. and Lubbe J., Update of the BIPM comparison BIPM.RI(II)-K1.Ce-139 of activity measurements of the radionuclide $^{139}$Ce to include the 2019 result of the NMISA (South Africa) and the 2022 result of the LNE-LNHB (France), \\href{https://doi.org/10.1088/0026-1394/48/1A/06019}{\\textit{Metrologia}, 2022, \\textbf{59}, Tech. Suppl., 06019}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "NMIJ" : {
+                "D_i" : -0.03,
+                "U_i" : 0.65
+            },
+            "PTB" : {
+                "D_i" : -0.16,
+                "U_i" : 0.63
+            },
+            "BEV" : {
+                "D_i" : -1.2,
+                "U_i" : 2.4
+            },
+            "NMISA" : {
+                "D_i" : 1.0,
+                "U_i" : 1.4
+            },
+            "LNE-LNHB" : {
+                "D_i" : -0.03,
+                "U_i" : 0.98
+            }
+        }
     },
     "Linked comparison APMP.RI(II)-K2.Ce-139(2004)": {
+        "Name of the linked comparison": "APMP.RI(II)-K2.Ce-139",
+        "Year of the link with the SIR": "2004",
+        "Reference of the linked comparison": "Hino Y., Park T.S., Yuen M.C., Yuandi Y., Simpson B., van Wyngaardt W.M., Kharitonov I.A., 2005, APMP comparison of the activity measurements of Ce139, APMP/TCRI-II Report Ce-139, \\href{https://www.bipm.org/cc/CCRI(II)/Allowed/18/CCRI(II)05-33.pdf}{CCRI(II)/05-33}.",
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "INER" : {
+                "D_i" : 0.1,
+                "U_i" : 1.0
+            },
+            "KRISS" : {
+                "D_i" : -0.9,
+                "U_i" : 1.1
+            },
+            "NIM" : {
+                "D_i" : 2.0,
+                "U_i" : 1.5
+            },
+            "VNIIM" : {
+                "D_i" : 0.29,
+                "U_i" : 0.63
+            }
+        }
     },
     "Data from BEV-2008": {
         "Eligible for the Key Comparison Reference Value (KCRV)": false,
@@ -97,7 +142,7 @@
         "Laboratory": {
             "Acronym": "BIPM",
             "Full name": "Bureau International des Poids et Mesures",
-            "Address": "Pavillon de Breteuil, F-92312 S?vres Cedex",
+            "Address": "Pavillon de Breteuil, F-92312 Sèvres Cedex",
             "Country": "",
             "Regional Metrology Organization (RMO)": "",
             "Old acronyms": "-"
@@ -456,7 +501,7 @@
         "Eligible for Degree of Equivalence (DoE)": false,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel (LNE-LNHB)",
+            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -501,7 +546,7 @@
         "Eligible for Degree of Equivalence (DoE)": true,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel (LNE-LNHB)",
+            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -539,7 +584,7 @@
         "Comments on the equivalent activity": null,
         "Initials of the person who entered the data plus the date": "RC (25/04/2022)",
         "Initials of the person(s) who verified the data plus the date": "SC (18/05/2022) RC (18/05/2022) RC (04/08/2022)",
-        "Status of the data": "Not yet published"
+        "Status of the data": "Published with the key comparison BIPM.RI(II)-K1"
     },
     "Data from LNMRI-IRD-1997": {
         "Eligible for the Key Comparison Reference Value (KCRV)": true,
@@ -817,7 +862,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "Cape Town ",
+            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -862,7 +907,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "Cape Town ",
+            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -907,7 +952,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "Cape Town ",
+            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -952,7 +997,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "Cape Town ",
+            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -997,7 +1042,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "Cape Town ",
+            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -1042,7 +1087,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "Cape Town ",
+            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -1079,7 +1124,7 @@
         "Comments on the equivalent activity": null,
         "Initials of the person who entered the data plus the date": "SJ (09/04/2020)",
         "Initials of the person(s) who verified the data plus the date": "SC (14/04/2020); corrected CM (09/10/2020)",
-        "Status of the data": "Not yet published"
+        "Status of the data": "Published with the key comparison BIPM.RI(II)-K1"
     },
     "Data from NPL-1981": {
         "Eligible for the Key Comparison Reference Value (KCRV)": true,
