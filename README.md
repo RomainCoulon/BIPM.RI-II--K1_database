@@ -43,7 +43,23 @@ Each time a report is published, an entry is created such as "Key comparison BIP
 
 ### Key comparison metadata
 
-The key comparison metadata is data on the key comparison data presented above. All submissions by laboratories of standard solutions of the radionuclide of interest are detailed. Each entry is referenced by the acronym of the national metrology institutes (NMI) and designated institutes (DI), followed by the year of submission (e.g. NIST-2020). 
+The key comparison metadata is data on the key comparison data presented above. All submissions by laboratories of standard solutions of the radionuclide of interest are detailed. Each entry is referenced by the acronym of the national metrology institutes (NMI) and designated institutes (DI), followed by the year of submission (e.g. NIST-2020).
+
+The first two entries specify with a Boolean value whether the submission is eligible for the rules defined by the CIPM/CCRI(II) to produce a DoE and be used for the calculation of the reference value. In the 3<sup>rd</sup> entry, administrative deltails on the participant are given. In the 4<sup>th</sup> and 5<sup>th</sup> entries, the contributors involved in the BIPM measurement and the participating laboratory are listed. In the 6<sup>th</sup> entry, the reference date for which the laboratory calculated the activity is given in the format "YYYY-MM-DD HH:mm UT". In the 7<sup>th</sup> entry, the acronym(s) of the method(s) used by the laboratory are specified according to the nomenclature defined by the CIPM/CCRI(II). When several methods, they are separated by a ",". In the eighth entry, the full description of the method(s) is given and further relevant comments are written in the ninth entry. The particulars ("number of sample" and "number of method") of the submission are given in the 10<sup>th</sup> entry. They make it possible to know what the values that will be given later correspond to. The configurations can be as follows:
+
+a) "1 sample and 1 measurement method"
+
+b) "1 sample and several measurement methods"
+
+c) "1 sample and average of several measurement methods"
+
+d) "Several samples and several measurement methods"
+
+e) "Several samples and  average of several measurement methods"
+
+f) "Several samples and 1 measurement method"
+
+In configurations a) and c), only one value is given in the following entries. In configurations b), e) d) and f), several values - seprated by "," - are given in the following entries. In entries 11, 12, 13, 14, are respectively given, the activity(ies), the relative type A standard uncertainty(ies), the relative type B standard uncertainty(ies), the relative combined standard uncertainty(ies). 
 
 * Data from Lab-Acronym-YYYY
   - Eligible for the Key Comparison Reference Value (KCRV)
