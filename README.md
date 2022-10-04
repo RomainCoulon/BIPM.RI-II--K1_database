@@ -25,7 +25,7 @@ The root of the file consists of two sections. The first section gives general i
 
 ### Key comparison data
 
-Each time a report is published, an entry is created such as "Key comparison BIPM.RI(II)-K1.Xx-ZZZ(YYYY)", where Xx-ZZZ is the radionuclide (eg. Am-241) and YYYY is the year of publication. The key comparison value (KCRV) is expressed as a string with the value followed by the standard uncertainty in brackets, then a space and finally the unit (e.g. "5980.8(64) kBq"). Values of the degrees of equivalence (DoE) are in number. The quantity $D_i$ is the value of the DoE and $U_i$ is the extended uncertainty ($k$=2). Please note that while the KCRV is reported for each reporting year, the degrees of equivalence are only available for publications after 2019.
+Each time a report is published, an entry is created such as "Key comparison BIPM.RI(II)-K1.Xx-ZZZ(YYYY)", where Xx-ZZZ is the radionuclide (eg. Am-241) and YYYY is the year of publication. The key comparison value (KCRV) is expressed as a string with the value followed by the standard uncertainty in brackets, then a space and finally the unit (e.g. "5980.8(64) kBq"). Values of the degrees of equivalence (DoE) are in number. The quantity $D_i$ is the value of the DoE and $U_i$ is the extended uncertainty (_k_=2). Please note that while the KCRV is reported for each reporting year, the degrees of equivalence are only available for publications after 2019.
 
 #### Representation of the tree structure of the "Key comparison data" entry 
 * Key comparison BIPM.RI(II)-K1.Ag-110m(YYYY)
@@ -61,7 +61,29 @@ e) "Several samples and  average of several measurement methods"
 
 f) "Several samples and 1 measurement method"
 
-In configurations a) and c), only one value is given in the following entries. In configurations b), e) d) and f), several values - seprated by "," - are given in the following entries. In entries 11, 12, 13, 14, are respectively given, the activity(ies), the relative type A standard uncertainty(ies), the relative type B standard uncertainty(ies), the relative combined standard uncertainty(ies). 
+In configurations a) and c), only one value is given in the following entries. In configurations b), e) d) and f), several values - seprated by "," - are given in the following entries. In entries 11, 12, 13, 14, are respectively given, the activity(ies), the relative type A standard uncertainty(ies), the relative type B standard uncertainty(ies), the relative combined standard uncertainty(ies). The Half-life used by the laboratory in given in 15<sup>th</sup> entry and the reference used in the 16<sup>th</sup> entry. The entry 16 is the date of the measurement made by the BIPM SIR system in the format "DD/MM/YYYY". Then, entries 17 to 23, provide the properties of the standard solution, respectively: the chemical composition of the solution,
+the solvent concentration of the solution, the carrier concentration of the solution, the density of the solution, the relative activity of impurities contained into the solution, some comments on impurities contained into the solution and finally the mass of the solution. Next entries are the measurement results from the BIPM SIR system. They are shown in the following order
+
+a) the number of the reference radium source used (could be form "1" to "5")
+
+b) the equivalent activity measured by the SIR
+
+c) the relative standard uncertainty of the equivalent activity considering only the SIR contribution 
+
+d) some comments on the SIR measurement
+
+e) the combined standard uncertainty of the equivalent activity
+
+f) the number of the equivalent activity measurement retained for the degree of equivalence when several samples or several methods
+
+g) the specified equivalent activity for the degree of equivalence (could be specifies in case of averaging between samples or methods)
+
+h) the specified equivalent activity for the key comparison reference value (could be specifies in case of averaging between samples or methods)
+
+i) some addition comments on how the final equivalent activity was obtained
+
+Finally, the last entries are the signatures of the person who entered the values and the person who checked the entries according to the BIPM quality system. The last entry on the comparison status should always be: "Published with the key comparison BIPM.RI(II)-K1".
+
 
 #### Representation of the tree structure of the "Key comparison metadata" entry 
 * Data from Lab-Acronym-YYYY
