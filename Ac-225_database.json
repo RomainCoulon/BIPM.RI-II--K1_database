@@ -1,0 +1,140 @@
+{
+"General information":{
+    "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
+    "Release date": "2023-01-03",
+    "References":{
+        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
+        },
+    "Contact persons":{
+        " Dr Romain Coulon": " romain.coulon@bipm.org ",
+        " Dr Carine Michotte": " cmichott@bipm.org ",
+        " Dr Vincent Gressier": "vincent.gressier@bipm.org "
+        }
+    },
+"Ac-225": {
+    "Key comparison BIPM.RI(II)-K1.Ac-225(2021)": {
+        "Name of the comparison": "BIPM.RI(II)-K1.Ac-225",
+        "Year of publication": "2021",
+        "Key Comparison Reference Value (KCRV)": "not evaluated",
+        "Reference of the published comparison report": "Michotte C., Courte S., Nonis M., Coulon R., Judge S., Kossert K., N\\\"ahle O., Final report of the new BIPM comparison BIPM.RI(II)-K1.Ac-225 of activity measurements of the radionuclide $^{225}$Ac to include the 2019 result of the PTB (Germany), \\href{https://doi.org/10.1088/0026-1394/58/1A/06018}{\\textit{Metrologia}, 2021, \\textbf{58}, Tech. Suppl., 06018}",
+        "Editorial assistant(s)": null,
+        "Comments on the publication": null,
+        "Unit": "?",
+        "Degrees of Equivalence" : {
+            "?" : {
+                "D_i" : 0,
+                "U_i" : 0
+            }
+        }
+    },
+    "Key comparison BIPM.RI(II)-K1.Ac-225(2022)": {
+        "Name of the comparison": "BIPM.RI(II)-K1.Ac-225",
+        "Year of publication": "2022",
+        "Key Comparison Reference Value (KCRV)": "74800(280) kBq",
+        "Reference of the published comparison report": "Coulon R., Michotte C., Courte S., Nonis M., Ziemek T, Marganiec-Ga\\l{}\\c{a}zka J., Lech E., Saganowski P., Czudek M., Listkowska A., Update of the BIPM comparison BIPM.RI(II)-K1.Ac-225 of activity measurements of the radionuclide $^{225}$Ac to include the 2021 result of the POLATOM (Poland), \\href{https://doi.org/10.1088/0026-1394/60/1A/06001}{\\textit{Metrologia}, 2023, \\textbf{60}, Tech. Suppl., 06001}",
+        "Editorial assistant(s)": null,
+        "Comments on the publication": null,
+        "Unit": "kBq",
+        "Degrees of Equivalence" : {
+            "PTB" : {
+                "D_i" : -280,
+                "U_i" : 560
+            },
+            "POLATOM" : {
+                "D_i" : 280,
+                "U_i" : 560
+            }
+        }
+    },
+    "Data from POLATOM-2021": {
+        "Eligible for the Key Comparison Reference Value (KCRV)": true,
+        "Eligible for Degree of Equivalence (DoE)": true,
+        "Laboratory": {
+            "Acronym": "POLATOM",
+            "Full name": "National Centre for Nuclear Research Radioisotope Centre POLATOM",
+            "Address": "05-400 Otwock",
+            "Country": "Poland",
+            "Regional Metrology Organization (RMO)": "EURAMET",
+            "Old acronyms": "IBJ, RC"
+            },
+        "Contributor(s) from the BIPM": "R.~Coulon,  C.~Michotte, S.~Courte, M.~Nonis",
+        "Contributor(s) from the laboratory": "T. Ziemek, J. Marganiec-Ga\\l{}\\c{a}zka, E. Lech, P. Saganowski, M. Czudek, A. Listkowska",
+        "Date of reference specified by the laboratory": "2021-07-05 12:00 UT",
+        "Acronym(s) of the measurement method(s)": "4P-LS-MX-00-00-TD, 4P-LS-MX-00-00-TD",
+        "Description of the measurement method(s)": "TDCR, TDCR",
+        "Comment(s) on the measurement method(s)": "The TDCR method was used in the 4pi(LS)-gamma coincidence system (TDCRG) with TDCR detector in the beta channel~\\cite{Ziemek2016}. The result is the weighted mean of these two measurement systems evaluated by POLATOM and is equal to 2023(5) kBq.",
+        "Particularities of the submission to the SIR": "1 sample and average of several measurement methods",
+        "Activity measured by the laboratory / kBq": "2023",
+        "Type A evaluation of the relative standard uncertainty of the activity measured by the laboratory": null,
+        "Type B evaluation of the relative standard uncertainty of the activity measured by the laboratory": null,
+        "Combined relative standard uncertainty of the activity measured by the laboratory": "0.26",
+        "Date of the measurement by the BIPM international reference system (SIR)": "06/07/2021",
+        "Half-life used by the laboratory / d": "9.920(3)",
+        "Reference for the decay data used by the laboratory": "S. Pomm\\'e et al. \\href{https://doi.org/10.1016/j.apradiso.2012.07.014}{\\textit{Appl. Radiat. Isot.}, \\textbf{70} 2012, 2608-2614}",
+        "Chemical composition of the solution": "HCl",
+        "Solvent concentration of the solution / (mol.dm-3)": "0.1",
+        "Carrier concentration of the solution / (µg.g-1)": "none",
+        "Density of the solution / (g.cm-3)": "1",
+        "Relative activity of impurities contained into the solution": "none",
+        "Comments on impurities contained into the solution": "Radioactive solution was measured on gamma spectrometer using HPGe detector. No impurities were detected in the solution.",
+        "Mass of the solution /g": "3.57991",
+        "Number of the radium source used by the SIR": "2",
+        "Equivalent activity measured by the SIR / kBq": "75081",
+        "Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4": "11",
+        "Comments on the SIR measurement": null,
+        "Combined standard uncertainty of the equivalent activity / kBq": "210",
+        "Number of the equivalent activity measurement retained for the degree of equivalence": null,
+        "Specified equivalent activity for the degree of equivalence": null,
+        "Specified equivalent activity for the key comparison reference value": null,
+        "Comments on the equivalent activity": null,
+        "Initials of the person who entered the data plus the date": "RC (12/05/2022)",
+        "Initials of the person(s) who verified the data plus the date": "SC (29/6/2022), RC (03/10/2022 - draft A)",
+        "Status of the data": "Published with the key comparison BIPM.RI(II)-K1"
+    },
+    "Data from PTB-2019": {
+        "Eligible for the Key Comparison Reference Value (KCRV)": true,
+        "Eligible for Degree of Equivalence (DoE)": true,
+        "Laboratory": {
+            "Acronym": "PTB",
+            "Full name": "Physikalisch-Technische Bundesanstalt",
+            "Address": "Bundesallee 100, D-38116 Braunschweig",
+            "Country": "Germany",
+            "Regional Metrology Organization (RMO)": "EURAMET",
+            "Old acronyms": "-"
+            },
+        "Contributor(s) from the BIPM": "C. Michotte, S. Courte, M. Nonis, R. Coulon, S. Judge",
+        "Contributor(s) from the laboratory": "O. N\\\"{a}hle, K. Kossert",
+        "Date of reference specified by the laboratory": "2019-06-14 00:00 UT",
+        "Acronym(s) of the measurement method(s)": "4P-LS-MX-00-00-TD",
+        "Description of the measurement method(s)": "TDCR",
+        "Comment(s) on the measurement method(s)": "See details in \\cite{Kossert-Ac225}",
+        "Particularities of the submission to the SIR": "1 sample and 1 measurement method",
+        "Activity measured by the laboratory / kBq": "10066",
+        "Type A evaluation of the relative standard uncertainty of the activity measured by the laboratory": "0.05",
+        "Type B evaluation of the relative standard uncertainty of the activity measured by the laboratory": "0.25",
+        "Combined relative standard uncertainty of the activity measured by the laboratory": null,
+        "Date of the measurement by the BIPM international reference system (SIR)": "21/06/2019",
+        "Half-life used by the laboratory / d": "9.920(3)",
+        "Reference for the decay data used by the laboratory": null,
+        "Chemical composition of the solution": "225Ac in HCl",
+        "Solvent concentration of the solution / (mol.dm-3)": "0.1",
+        "Carrier concentration of the solution / (µg.g-1)": "-",
+        "Density of the solution / (g.cm-3)": "approx. 1.0",
+        "Relative activity of impurities contained into the solution": "225Ra: 9.8(25)x10-3 %",
+        "Comments on impurities contained into the solution": "Impurity not at equilibrium; correction for the SIR measurement assuming the source production date is equal to the reference date",
+        "Mass of the solution /g": "3.60885",
+        "Number of the radium source used by the SIR": "3",
+        "Equivalent activity measured by the SIR / kBq": "74519",
+        "Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4": "8",
+        "Comments on the SIR measurement": null,
+        "Combined standard uncertainty of the equivalent activity / kBq": "200",
+        "Number of the equivalent activity measurement retained for the degree of equivalence": null,
+        "Specified equivalent activity for the degree of equivalence": null,
+        "Specified equivalent activity for the key comparison reference value": null,
+        "Comments on the equivalent activity": null,
+        "Initials of the person who entered the data plus the date": "CM (9/2/2021)",
+        "Initials of the person(s) who verified the data plus the date": "SC (16/2/2021)",
+        "Status of the data": "Published with the key comparison BIPM.RI(II)-K1"
+    }
+  }
+}
