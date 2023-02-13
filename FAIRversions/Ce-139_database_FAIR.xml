@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Comparison>
+	<General_information>
+		<Comparison_code>BIPM.RI(II)-K1.Ce-139</Comparison_code>
+		<Pilot>
+			<Acronym>BIPM</Acronym>
+			<ROR_indentifier>https://ror.org/055vkyj43</ROR_indentifier>
+		</Pilot>
+	</General_information>
+	<Comparison_data>
+		<Release>
+			<Year>2003</Year>
+			<doi>https://doi.org/10.1088/0026-1394/40/1A/06012</doi>
+		</Release>
+		<Release>
+			<Year>2005</Year>
+			<doi>https://doi.org/10.1088/0026-1394/42/1A/06012</doi>
+		</Release>
+		<Release>
+			<Year>2011</Year>
+			<doi>https://doi.org/10.1088/0026-1394/48/1A/06019</doi>
+		</Release>
+		<Release>
+			<Year>2022</Year>
+			<doi>https://doi.org/10.1088/0026-1394/48/1A/06019</doi>
+		</Release>
+	</Comparison_data>
+	<Comparison_metadata>
+	</Comparison_metadata>
+</Comparison>

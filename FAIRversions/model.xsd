@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 	xmlns:xs = "http://www.w3.org/2001/XMLSchema"
+			xmlns:qudt = "http://qudt.org/vocab">
+	<xs:element name = "Comparison">
+		<xs:complexType>
+			<xs:sequence minOccurs = "0" maxOccurs = "1">
+				<xs:element name = "General_information">
+                    <xs:complexType>
+                        <xs:sequence minOccurs = "0" maxOccurs = "1">
+                            <xs:element name = "Comparison_code" type="xs:string"></xs:element>
+                            <xs:element name = "Pilot">
+                                <xs:complexType>
+                                    <xs:sequence minOccurs = "0" maxOccurs = "1">                                
+                                        <xs:element name = "Acronym" type = "xs:string"></xs:element>
+                                        <xs:element name = "ROR_indentifier" type = "xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name = "Comparison_data">
+                    <xs:complexType>
+                        <xs:sequence minOccurs = "0" maxOccurs = "unbounded">
+                            <xs:element name = "Release">
+                                <xs:complexType>
+                                    <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                        <xs:element name = "Year" type="xs:gYear"></xs:element>
+                                        <xs:element name = "doi" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name = "Comparison_metadata"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
