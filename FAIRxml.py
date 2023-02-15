@@ -11,13 +11,17 @@ import csv
 Radionuclide = "Ce-139" # select the radionuclide
 
 
-def readROR(NMI):
-    with open('MNId.csv', mode ='r')as file:
-        csvFile = csv.reader(file)
+def readRMO(NMI):
+    with open('FAIRversions/NMId.csv', mode ='r')as file:
+        csvFile = csv.reader(file, delimiter=';')
         for lines in csvFile:
-            print(lines)
+            if lines[0] == NMI: return lines[4]
 
-print(readROR("NIST"))
+def readROR(NMI):
+    with open('FAIRversions/NMId.csv', mode ='r')as file:
+        csvFile = csv.reader(file, delimiter=';')
+        for lines in csvFile:
+            if lines[0] == NMI: return lines[7]
 
 fileName = Radionuclide+"_database.xml"
 FAIRfileName = "FAIRversions/"+Radionuclide+"_database_FAIR.xml"
@@ -111,7 +115,8 @@ for i, line in enumerate(Lines):
         FAIRfile.write("\t\t\t\t<Degree_of_equivalence>\n")
         FAIRfile.write("\t\t\t\t\t<laboratory>\n")
         FAIRfile.write("\t\t\t\t\t\t<Acronym>"+Lab_acronym+"</Acronym>\n")
-        # implement ROR
+        if readROR(Lab_acronym)!="":
+            FAIRfile.write("\t\t\t\t\t\t<ROR>"+readROR(Lab_acronym)+"</ROR>\n")
         FAIRfile.write("\t\t\t\t\t</laboratory>\n")
         FAIRfile.write("\t\t\t\t\t<value>"+DoE+"</value>\n")
         
@@ -159,10 +164,44 @@ for i, line in enumerate(Lines):
     if "<Data_from" in line and "</key>" in lineP:
         FAIRfile.write("\t</Comparison_data>\n")
         FAIRfile.write("\t<Comparison_metadata>\n")
+
+
+    if "<Data_from" in line:
+        i1=line.find("from_")
+        i2=line.find("type")
+        Lab_acronym=line[i1+5:i2-6]
+        year=line[i2-5:i2-1].replace(" ","")
+        FAIRfile.write("\t\t<Submission>\n")
+        FAIRfile.write("\t\t\t<laboratory>\n")
+        FAIRfile.write("\t\t\t\t<Acronym>"+Lab_acronym+"</Acronym>\n")
+        if readROR(Lab_acronym)!="":
+            FAIRfile.write("\t\t\t\t<ROR>"+readROR(Lab_acronym)+"</ROR>\n")
+        FAIRfile.write("\t\t\t</laboratory>\n")
+        FAIRfile.write("\t\t\t<year>"+year+"</year>\n")
+
+    if "</Data_from" in line:
+        FAIRfile.write("\t\t</Submission>\n")
+
+    if "Eligible for the Key Comparison Reference Value (KCRV)" in line:
+        if "False" in line:
+            FAIRfile.write("\t\t\t<inKCRV>false</inKCRV>\n")
+        elif "True" in line:
+            FAIRfile.write("\t\t\t<inKCRV>true</inKCRV>\n")
+
+    if "Eligible for Degree of Equivalence (DoE)" in line:
+        if "False" in line:
+            FAIRfile.write("\t\t\t<DoE_valid>false</DoE_valid>\n")
+        elif "True" in line:
+            FAIRfile.write("\t\t\t<DoE_valid>true</DoE_valid>\n")
+
     if "</"+Radionuclide+">" in line:
         FAIRfile.write("\t</Comparison_metadata>\n")
     
-    
+
+
+
+
+
     lineP2=lineP
     lineP=line
     

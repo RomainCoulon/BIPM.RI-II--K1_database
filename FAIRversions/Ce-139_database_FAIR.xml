@@ -55,6 +55,7 @@
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>PTB</Acronym>
+						<ROR>https://ror.org/05r3f7h03</ROR>
 					</laboratory>
 					<value>-0.16</value>
 					<Expanded_uncertainty>0.63</Expanded_uncertainty>
@@ -63,6 +64,7 @@
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>BEV</Acronym>
+						<ROR>https://ror.org/038680g19</ROR>
 					</laboratory>
 					<value>-1.2</value>
 					<Expanded_uncertainty>2.4</Expanded_uncertainty>
@@ -71,6 +73,7 @@
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>NMISA</Acronym>
+						<ROR>https://ror.org/02j01mp63</ROR>
 					</laboratory>
 					<value>1.0</value>
 					<Expanded_uncertainty>1.4</Expanded_uncertainty>
@@ -79,6 +82,7 @@
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>LNE-LNHB</Acronym>
+						<ROR>https://ror.org/03az79194</ROR>
 					</laboratory>
 					<value>-0.03</value>
 					<Expanded_uncertainty>0.98</Expanded_uncertainty>
@@ -95,6 +99,7 @@
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>INER</Acronym>
+						<ROR>https://ror.org/052jx3443</ROR>
 					</laboratory>
 					<value>0.1</value>
 					<Expanded_uncertainty>1.0</Expanded_uncertainty>
@@ -103,6 +108,7 @@
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>KRISS</Acronym>
+						<ROR>https://ror.org/01az7b475</ROR>
 					</laboratory>
 					<value>-0.9</value>
 					<Expanded_uncertainty>1.1</Expanded_uncertainty>
@@ -111,6 +117,7 @@
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>NIM</Acronym>
+						<ROR>https://ror.org/05dw0p167</ROR>
 					</laboratory>
 					<value>2.0</value>
 					<Expanded_uncertainty>1.5</Expanded_uncertainty>
@@ -119,6 +126,7 @@
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>VNIIM</Acronym>
+						<ROR>https://ror.org/017c99632</ROR>
 					</laboratory>
 					<value>0.29</value>
 					<Expanded_uncertainty>0.63</Expanded_uncertainty>
@@ -128,5 +136,246 @@
 		</Release>
 	</Comparison_data>
 	<Comparison_metadata>
+		<Submission>
+			<laboratory>
+				<Acronym>BEV</Acronym>
+				<ROR>https://ror.org/038680g19</ROR>
+			</laboratory>
+			<year>2008</year>
+			<inKCRV>false</inKCRV>
+			<DoE_valid>true</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>BIPM</Acronym>
+				<ROR>https://ror.org/055vkyj43</ROR>
+			</laboratory>
+			<year>1976</year>
+			<inKCRV>true</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>BKFH</Acronym>
+				<ROR>https://ror.org/03c6pbw79</ROR>
+			</laboratory>
+			<year>1984</year>
+			<inKCRV>true</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>CMI</Acronym>
+				<ROR>https://ror.org/02m5haa59</ROR>
+			</laboratory>
+			<year>1985</year>
+			<inKCRV>true</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>INER</Acronym>
+				<ROR>https://ror.org/052jx3443</ROR>
+			</laboratory>
+			<year>2004</year>
+			<inKCRV>false</inKCRV>
+			<DoE_valid>true</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>IRA</Acronym>
+				<ROR>https://ror.org/05a353079</ROR>
+			</laboratory>
+			<year>1983</year>
+			<inKCRV>false</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>IRA</Acronym>
+				<ROR>https://ror.org/05a353079</ROR>
+			</laboratory>
+			<year>2000</year>
+			<inKCRV>true</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>KAE</Acronym>
+				<ROR>https://ror.org/01xb4fs50</ROR>
+			</laboratory>
+			<year>1976</year>
+			<inKCRV>false</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>KRISS</Acronym>
+				<ROR>https://ror.org/01az7b475</ROR>
+			</laboratory>
+			<year>2004</year>
+			<inKCRV>false</inKCRV>
+			<DoE_valid>true</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>LNE-LNHB</Acronym>
+				<ROR>https://ror.org/03az79194</ROR>
+			</laboratory>
+			<year>1997</year>
+			<inKCRV>false</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>LNE-LNHB</Acronym>
+				<ROR>https://ror.org/03az79194</ROR>
+			</laboratory>
+			<year>2022</year>
+			<inKCRV>true</inKCRV>
+			<DoE_valid>true</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>LNMRI-IRD</Acronym>
+				<ROR>https://ror.org/00q0yh079</ROR>
+			</laboratory>
+			<year>1997</year>
+			<inKCRV>true</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>NIM</Acronym>
+				<ROR>https://ror.org/05dw0p167</ROR>
+			</laboratory>
+			<year>2004</year>
+			<inKCRV>false</inKCRV>
+			<DoE_valid>true</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>NIST</Acronym>
+				<ROR>https://ror.org/05xpvk416</ROR>
+			</laboratory>
+			<year>1988</year>
+			<inKCRV>true</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>NIST</Acronym>
+				<ROR>https://ror.org/05xpvk416</ROR>
+			</laboratory>
+			<year>1997</year>
+			<inKCRV>false</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>NMIJ</Acronym>
+			</laboratory>
+			<year>1994</year>
+			<inKCRV>false</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>NMIJ</Acronym>
+			</laboratory>
+			<year>2004</year>
+			<inKCRV>true</inKCRV>
+			<DoE_valid>true</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>NMISA</Acronym>
+				<ROR>https://ror.org/02j01mp63</ROR>
+			</laboratory>
+			<year>2004</year>
+			<inKCRV>false</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>NMISA</Acronym>
+				<ROR>https://ror.org/02j01mp63</ROR>
+			</laboratory>
+			<year>1980</year>
+			<inKCRV>false</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>NMISA</Acronym>
+				<ROR>https://ror.org/02j01mp63</ROR>
+			</laboratory>
+			<year>1982</year>
+			<inKCRV>false</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>NMISA</Acronym>
+				<ROR>https://ror.org/02j01mp63</ROR>
+			</laboratory>
+			<year>1983</year>
+			<inKCRV>false</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>NMISA</Acronym>
+				<ROR>https://ror.org/02j01mp63</ROR>
+			</laboratory>
+			<year>1999</year>
+			<inKCRV>false</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>NMISA</Acronym>
+				<ROR>https://ror.org/02j01mp63</ROR>
+			</laboratory>
+			<year>2019</year>
+			<inKCRV>true</inKCRV>
+			<DoE_valid>true</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>NPL</Acronym>
+				<ROR>https://ror.org/015w2mp89</ROR>
+			</laboratory>
+			<year>1981</year>
+			<inKCRV>true</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>PTB</Acronym>
+				<ROR>https://ror.org/05r3f7h03</ROR>
+			</laboratory>
+			<year>1999</year>
+			<inKCRV>false</inKCRV>
+			<DoE_valid>false</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>PTB</Acronym>
+				<ROR>https://ror.org/05r3f7h03</ROR>
+			</laboratory>
+			<year>2008</year>
+			<inKCRV>true</inKCRV>
+			<DoE_valid>true</DoE_valid>
+		</Submission>
+		<Submission>
+			<laboratory>
+				<Acronym>VNIIM</Acronym>
+				<ROR>https://ror.org/017c99632</ROR>
+			</laboratory>
+			<year>2004</year>
+			<inKCRV>false</inKCRV>
+			<DoE_valid>true</DoE_valid>
+		</Submission>
 	</Comparison_metadata>
 </Comparison>
