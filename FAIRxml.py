@@ -6,8 +6,18 @@ This program carries out the FAIRification of the machine-readable files of key 
 
 @author: romain.coulon
 """
+import csv
 
 Radionuclide = "Ce-139" # select the radionuclide
+
+
+def readROR(NMI):
+    with open('MNId.csv', mode ='r')as file:
+        csvFile = csv.reader(file)
+        for lines in csvFile:
+            print(lines)
+
+print(readROR("NIST"))
 
 fileName = Radionuclide+"_database.xml"
 FAIRfileName = "FAIRversions/"+Radionuclide+"_database_FAIR.xml"
