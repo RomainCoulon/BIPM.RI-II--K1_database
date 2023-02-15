@@ -10,19 +10,121 @@
 	<Comparison_data>
 		<Release>
 			<Year>2003</Year>
+			<KCRV>
+				<value>132.87</value>
+				<unit>MBq</unit>
+				<standard_deviation>17</standard_deviation>
+			</KCRV>
 			<doi>https://doi.org/10.1088/0026-1394/40/1A/06012</doi>
 		</Release>
 		<Release>
 			<Year>2005</Year>
+			<KCRV>
+				<value>132.74</value>
+				<unit>MBq</unit>
+				<standard_deviation>11</standard_deviation>
+			</KCRV>
 			<doi>https://doi.org/10.1088/0026-1394/42/1A/06012</doi>
 		</Release>
 		<Release>
 			<Year>2011</Year>
+			<KCRV>
+				<value>132.73</value>
+				<unit>MBq</unit>
+				<standard_deviation>11</standard_deviation>
+			</KCRV>
 			<doi>https://doi.org/10.1088/0026-1394/48/1A/06019</doi>
 		</Release>
 		<Release>
 			<Year>2022</Year>
+			<KCRV>
+				<value>132.77</value>
+				<unit>MBq</unit>
+				<standard_deviation>14</standard_deviation>
+			</KCRV>
 			<doi>https://doi.org/10.1088/0026-1394/48/1A/06019</doi>
+			<Degrees_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>NMIJ</Acronym>
+					</laboratory>
+					<value>-0.03</value>
+					<Expanded_uncertainty>0.65</Expanded_uncertainty>
+					<unit>MBq</unit>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>PTB</Acronym>
+					</laboratory>
+					<value>-0.16</value>
+					<Expanded_uncertainty>0.63</Expanded_uncertainty>
+					<unit>MBq</unit>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>BEV</Acronym>
+					</laboratory>
+					<value>-1.2</value>
+					<Expanded_uncertainty>2.4</Expanded_uncertainty>
+					<unit>MBq</unit>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>NMISA</Acronym>
+					</laboratory>
+					<value>1.0</value>
+					<Expanded_uncertainty>1.4</Expanded_uncertainty>
+					<unit>MBq</unit>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>LNE-LNHB</Acronym>
+					</laboratory>
+					<value>-0.03</value>
+					<Expanded_uncertainty>0.98</Expanded_uncertainty>
+					<unit>MBq</unit>
+				</Degree_of_equivalence>
+			</Degrees_of_equivalence>
+			<Degrees_of_equivalence>
+				<linked_comparison>
+					<Comparison_code>APMP.RI(II)-K2.Ce-139</Comparison_code>
+					<RMO>APMP</RMO>
+					<Year>2004</Year>
+					<doi>https://www.bipm.org/cc/CCRI(II)/Allowed/18/CCRI(II)05-33.pdf</doi>
+				</linked_comparison>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>INER</Acronym>
+					</laboratory>
+					<value>0.1</value>
+					<Expanded_uncertainty>1.0</Expanded_uncertainty>
+					<unit>MBq</unit>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>KRISS</Acronym>
+					</laboratory>
+					<value>-0.9</value>
+					<Expanded_uncertainty>1.1</Expanded_uncertainty>
+					<unit>MBq</unit>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>NIM</Acronym>
+					</laboratory>
+					<value>2.0</value>
+					<Expanded_uncertainty>1.5</Expanded_uncertainty>
+					<unit>MBq</unit>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>VNIIM</Acronym>
+					</laboratory>
+					<value>0.29</value>
+					<Expanded_uncertainty>0.63</Expanded_uncertainty>
+					<unit>MBq</unit>
+				</Degree_of_equivalence>
+			</Degrees_of_equivalence>
 		</Release>
 	</Comparison_data>
 	<Comparison_metadata>

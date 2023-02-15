@@ -61,8 +61,89 @@ for i, line in enumerate(Lines):
             i1=line.find("https")
             i2=line.find("}{")
             FAIRfile.write("\t\t\t<doi>"+line[i1:i2]+"</doi>\n")
-            FAIRfile.write("\t\t</Release>\n")
+            
+    if ("</key>" in lineP and "<Data_from" in line) or ("</key>" in lineP and "<key name=\"Key comparison" in line) :
+        FAIRfile.write("\t\t</Release>\n")
 
+    if "<key name=\"Key Comparison Reference Value (KCRV)\"" in line:
+        i1=line.find("\">")
+        i2=line.find("</")
+        line_change1=line[i1+2:i2]
+        i3=line_change1.find("(")
+        i4=line_change1.find(")")
+        value=line_change1[:i3]
+        u=line_change1[i3+1:i4]
+        unit=line_change1[i4+2:]
+        FAIRfile.write("\t\t\t<KCRV>\n")
+        FAIRfile.write("\t\t\t\t<value>"+value+"</value>\n")
+        FAIRfile.write("\t\t\t\t<unit>"+unit+"</unit>\n")
+        FAIRfile.write("\t\t\t\t<standard_deviation>"+u+"</standard_deviation>\n")
+        FAIRfile.write("\t\t\t</KCRV>\n")
+
+    if "<Unit type=\"str\">" in line:
+        i1=line.find(">")
+        i2=line.find("</U")
+        unitDoE=line[i1+1:i2]
+
+    if "<Degrees_of_Equivalence type=\"dict\">" in line and "<Reference_of_the_linked" not in lineP2:
+        FAIRfile.write("\t\t\t<Degrees_of_equivalence>\n")
+
+    if "</Degrees_of_Equivalence>" in line:
+        FAIRfile.write("\t\t\t</Degrees_of_equivalence>\n")
+
+    if "type=\"dict\">" in lineP and "<D_i type=\"float\">" in line:
+        i1=lineP.find("<")
+        i2=lineP.find("type")
+        Lab_acronym=lineP[i1+1:i2].replace(" ","")
+        i1=line.find("\">")
+        i2=line.find("</D")
+        DoE=line[i1+2:i2]
+        FAIRfile.write("\t\t\t\t<Degree_of_equivalence>\n")
+        FAIRfile.write("\t\t\t\t\t<laboratory>\n")
+        FAIRfile.write("\t\t\t\t\t\t<Acronym>"+Lab_acronym+"</Acronym>\n")
+        # implement ROR
+        FAIRfile.write("\t\t\t\t\t</laboratory>\n")
+        FAIRfile.write("\t\t\t\t\t<value>"+DoE+"</value>\n")
+        
+
+    if "</D_i>" in lineP and "<U_i" in line:
+        i1=line.find("\">")
+        i2=line.find("</U_i")
+        U=line[i1+2:i2]
+        
+        FAIRfile.write("\t\t\t\t\t<Expanded_uncertainty>"+U+"</Expanded_uncertainty>\n")
+        FAIRfile.write("\t\t\t\t\t<unit>"+unitDoE+"</unit>\n")
+        FAIRfile.write("\t\t\t\t</Degree_of_equivalence>\n")
+
+    if "<Name_of_the_linked_" in line:
+        i1=line.find("str\">")
+        i2=line.find("</Name")
+        code = line[i1+5:i2]
+        i3=line.find(".RI(II)")
+        rmoOrCC=line[i1+5:i3]
+        FAIRfile.write("\t\t\t<Degrees_of_equivalence>\n")
+        FAIRfile.write("\t\t\t\t<linked_comparison>\n")
+        FAIRfile.write("\t\t\t\t\t<Comparison_code>"+code+"</Comparison_code>\n")
+        if rmoOrCC == "CCRI":
+            FAIRfile.write("\t\t\t\t\t<Consultative_Committee>CCRI</Consultative_Committee>\n")
+        else:
+            FAIRfile.write("\t\t\t\t\t<RMO>"+rmoOrCC+"</RMO>\n")
+
+    if "<Year_of_the_link" in line:
+        i1=line.find("str\">")
+        i2=line.find("</Year")
+        year = line[i1+5:i2]
+        FAIRfile.write("\t\t\t\t\t<Year>"+year+"</Year>\n")
+
+    if "<Reference_of_the_linked" in line:
+        if "href" in line:
+            i1=line.find("https")
+            i2=line.find("}{")
+            FAIRfile.write("\t\t\t\t\t<doi>"+line[i1:i2]+"</doi>\n")
+
+
+    if "<Unit type=" in line and "<Reference_of_the_linked" in lineP:
+        FAIRfile.write("\t\t\t\t</linked_comparison>\n")
 
 
     if "<Data_from" in line and "</key>" in lineP:
@@ -70,8 +151,11 @@ for i, line in enumerate(Lines):
         FAIRfile.write("\t<Comparison_metadata>\n")
     if "</"+Radionuclide+">" in line:
         FAIRfile.write("\t</Comparison_metadata>\n")
-
+    
+    
+    lineP2=lineP
     lineP=line
+    
 
 
 

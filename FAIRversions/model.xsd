@@ -24,9 +24,52 @@
                         <xs:sequence minOccurs = "0" maxOccurs = "unbounded">
                             <xs:element name = "Release">
                                 <xs:complexType>
-                                    <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                    <xs:sequence minOccurs = "0" maxOccurs = "unbounded">
                                         <xs:element name = "Year" type="xs:gYear"></xs:element>
+                                        <xs:element name = "KCRV">
+                                            <xs:complexType>
+                                                <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                    <xs:element name = "value" type="xs:decimal"></xs:element>
+                                                    <xs:element name = "unit" type="xs:string"></xs:element>
+                                                    <xs:element name = "standard_deviation" type="xs:decimal"></xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
                                         <xs:element name = "doi" type="xs:string"></xs:element>
+                                        <xs:element name = "Degrees_of_equivalence" minOccurs ="0" maxOccurs = "unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence minOccurs = "0" maxOccurs = "unbounded">
+                                                    <xs:element name = "linked_comparison" minOccurs = "0">
+                                                        <xs:complexType>
+                                                            <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                <xs:element name = "Comparison_code" type="xs:string"></xs:element>
+                                                                <xs:element name = "Consultative_Committee" type="xs:string" minOccurs="0"></xs:element>
+                                                                <xs:element name = "RMO" type="xs:string" minOccurs="0"></xs:element>
+                                                                <xs:element name = "Year" type="xs:gYear"></xs:element>
+                                                                <xs:element name = "doi" type="xs:string"></xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name = "Degree_of_equivalence">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name = "laboratory">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                            <xs:element name = "Acronym" type = "xs:string"></xs:element>
+                                                                            <xs:element name = "ROR_indentifier" type = "xs:string" minOccurs = "0"></xs:element>                                                                
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name = "value" type = "xs:decimal"></xs:element>
+                                                                <xs:element name = "Expanded_uncertainty" type = "xs:decimal"></xs:element>      
+                                                                <xs:element name = "unit" type = "xs:string"></xs:element>   
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
