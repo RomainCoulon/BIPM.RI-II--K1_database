@@ -144,6 +144,7 @@
 			<year>2008</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>true</DoE_valid>
+			<Reference_date>2008-12-01T00:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -153,6 +154,7 @@
 			<year>1976</year>
 			<inKCRV>true</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>1976-03-15T00:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -162,6 +164,7 @@
 			<year>1984</year>
 			<inKCRV>true</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>1984-06-30T12:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -171,6 +174,7 @@
 			<year>1985</year>
 			<inKCRV>true</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>1985-01-24T12:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -180,6 +184,7 @@
 			<year>2004</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>true</DoE_valid>
+			<Reference_date>2004-03-01T00:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -189,6 +194,7 @@
 			<year>1983</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>1983-11-15T00:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -198,6 +204,7 @@
 			<year>2000</year>
 			<inKCRV>true</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>2000-12-01T12:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -207,6 +214,7 @@
 			<year>1976</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>1976-05-19T02:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -216,6 +224,7 @@
 			<year>2004</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>true</DoE_valid>
+			<Reference_date>2004-03-01T00:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -225,6 +234,7 @@
 			<year>1997</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>1997-02-01T12:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -234,6 +244,7 @@
 			<year>2022</year>
 			<inKCRV>true</inKCRV>
 			<DoE_valid>true</DoE_valid>
+			<Reference_date>2022-01-03T12:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -243,6 +254,7 @@
 			<year>1997</year>
 			<inKCRV>true</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>1997-08-01T00:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -252,6 +264,7 @@
 			<year>2004</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>true</DoE_valid>
+			<Reference_date>2004-03-01T00:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -261,6 +274,7 @@
 			<year>1988</year>
 			<inKCRV>true</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>1987-12-03T17:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -270,6 +284,7 @@
 			<year>1997</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>1997-01-01T12:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -278,6 +293,7 @@
 			<year>1994</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>1994-12-01T12:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -286,6 +302,7 @@
 			<year>2004</year>
 			<inKCRV>true</inKCRV>
 			<DoE_valid>true</DoE_valid>
+			<Reference_date>2004-03-01T00:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -295,6 +312,7 @@
 			<year>2004</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>2004-03-01T00:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -304,6 +322,7 @@
 			<year>1980</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>1980-10-24T10:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -313,6 +332,7 @@
 			<year>1982</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>1982-04-01T10:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -322,6 +342,7 @@
 			<year>1983</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>1983-11-01T12:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -331,6 +352,7 @@
 			<year>1999</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>1999-01-12T12:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -340,6 +362,7 @@
 			<year>2019</year>
 			<inKCRV>true</inKCRV>
 			<DoE_valid>true</DoE_valid>
+			<Reference_date>2019-01-30T10:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -349,6 +372,7 @@
 			<year>1981</year>
 			<inKCRV>true</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>1981-10-05T00:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -358,6 +382,7 @@
 			<year>1999</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
+			<Reference_date>1999-11-01T00:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -367,6 +392,7 @@
 			<year>2008</year>
 			<inKCRV>true</inKCRV>
 			<DoE_valid>true</DoE_valid>
+			<Reference_date>2008-02-01T00:00Z</Reference_date>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -376,6 +402,7 @@
 			<year>2004</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>true</DoE_valid>
+			<Reference_date>2004-03-01T00:00Z</Reference_date>
 		</Submission>
 	</Comparison_metadata>
 </Comparison>

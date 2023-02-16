@@ -31,6 +31,9 @@ Lines = file.readlines()
 
 FAIRfile = open(FAIRfileName, 'w')
 
+indexDate=[]
+BIPMdate=[]
+
 for i, line in enumerate(Lines):
 
     # rewrite the 1st line
@@ -179,6 +182,23 @@ for i, line in enumerate(Lines):
         FAIRfile.write("\t\t\t</laboratory>\n")
         FAIRfile.write("\t\t\t<year>"+year+"</year>\n")
 
+    if "Date of the measurement by the BIPM international" in line:
+        i1=line.find("str\">")
+        i2=line.find("</key")
+        date1=line[i1+5:i2]
+        year=date1[-4:]
+        mounth=date1[3:5]
+        day=date1[:2]
+        BIPMdate.append(year+"-"+mounth+"-"+day+"Z")        
+        #2002-09-24Z
+
+    if "Date_of_reference_specified_by_the_laboratory" in line:
+        i1=line.find("str\">")
+        i2=line.find("</Date")
+        dateRef=line[i1+5:i2-3].replace(" ","T")+"Z"
+        FAIRfile.write("\t\t\t<Reference_date>"+dateRef+"</Reference_date>\n")
+
+
     if "</Data_from" in line:
         FAIRfile.write("\t\t</Submission>\n")
 
@@ -205,9 +225,6 @@ for i, line in enumerate(Lines):
     lineP2=lineP
     lineP=line
     
-
-
-
 
 #    xmlns:bibtex "http://purl.oclc.org/NET/nknouf/ns/bibtex#"
 

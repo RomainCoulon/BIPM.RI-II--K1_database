@@ -93,6 +93,7 @@
                                         <xs:element name = "year" type = "xs:gYear"></xs:element>
                                         <xs:element name = "inKCRV" type = "xs:boolean"></xs:element>
                                         <xs:element name = "DoE_valid" type = "xs:boolean"></xs:element>
+                                        <xs:element name = "Reference_date" type = "xs:dateTime"></xs:element>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
