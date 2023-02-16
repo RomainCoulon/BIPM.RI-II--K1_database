@@ -262,10 +262,30 @@ for i, line in enumerate(Lines):
     if "</"+Radionuclide+">" in line:
         FAIRfile.write("\t</Comparison_metadata>\n")
     
+    if "Acronym(s) of the measurement method(s" in line:
+        i1=line.find("\"str\"")
+        i2=line.find("</key")
+        methods = line[i1+6:i2].split(", ")
+    
+    if "Activity measured by the laboratory" in line and ("null" not in line):
+        i1=line.find("y /")
+        i2=line.find("type")
+        unit_Ai = line[i1+3:i2-2].replace(" ","")
+        i3=line.find("</key")
+        Ai=line[i2+11:i3].split(", ")
+        AiFlag = True
+    elif "Activity measured by the laboratory" in line and ("null" in line):
+        AiFlag = False
 
+    if "<Type_A_evaluation_of_the_relative" in line and AiFlag:
+        i1=line.find("type=\"str\"")
+        i2=line.find("</Type_A")
+        uA_Ai=line[i1+11:i2].split(", ")
 
-
-
+    if "<Type_B_evaluation_of_the_relative" in line and AiFlag:
+        i1=line.find("type=\"str\"")
+        i2=line.find("</Type_B")
+        uB_Ai=line[i1+11:i2].split(", ")
 
     lineP2=lineP
     lineP=line
