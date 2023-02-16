@@ -12,7 +12,7 @@
                                 <xs:complexType>
                                     <xs:sequence minOccurs = "0" maxOccurs = "1">                                
                                         <xs:element name = "Acronym" type = "xs:string"></xs:element>
-                                        <xs:element name = "ROR_indentifier" type = "xs:string"></xs:element>
+                                        <xs:element name = "ROR_indentifier" type = "xs:anyURI"></xs:element>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
@@ -46,7 +46,7 @@
                                                                 <xs:element name = "Consultative_Committee" type="xs:string" minOccurs="0"></xs:element>
                                                                 <xs:element name = "RMO" type="xs:string" minOccurs="0"></xs:element>
                                                                 <xs:element name = "Year" type="xs:gYear"></xs:element>
-                                                                <xs:element name = "doi" type="xs:string"></xs:element>
+                                                                <xs:element name = "doi" type="xs:anyURI"></xs:element>
                                                             </xs:sequence>
                                                         </xs:complexType>
                                                     </xs:element>
@@ -57,7 +57,7 @@
                                                                     <xs:complexType>
                                                                         <xs:sequence minOccurs = "0" maxOccurs = "1">
                                                                             <xs:element name = "Acronym" type = "xs:string"></xs:element>
-                                                                            <xs:element name = "ROR" type = "xs:string" minOccurs = "0"></xs:element>                                                                
+                                                                            <xs:element name = "ROR" type = "xs:anyURI" minOccurs = "0"></xs:element>                                                                
                                                                         </xs:sequence>
                                                                     </xs:complexType>
                                                                 </xs:element>
@@ -86,14 +86,37 @@
                                             <xs:complexType>
                                                 <xs:sequence minOccurs = "0" maxOccurs = "1">
                                                     <xs:element name = "Acronym" type = "xs:string"></xs:element>
-                                                    <xs:element name = "ROR" type = "xs:string" minOccurs = "0"></xs:element>                                                                
+                                                    <xs:element name = "ROR" type = "xs:anyURI" minOccurs = "0"></xs:element>                                                                
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
                                         <xs:element name = "year" type = "xs:gYear"></xs:element>
                                         <xs:element name = "inKCRV" type = "xs:boolean"></xs:element>
                                         <xs:element name = "DoE_valid" type = "xs:boolean"></xs:element>
-                                        <xs:element name = "Reference_date" type = "xs:dateTime"></xs:element>
+                                        <xs:element name = "Laboratory_measurements">
+                                            <xs:complexType>
+                                                <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                    <xs:element name = "Reference_date" type = "xs:dateTime"></xs:element>
+                                                    <xs:element name = "Half-life" minOccurs = "0">
+                                                        <xs:complexType>
+                                                            <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                <xs:element name = "value" type = "xs:decimal"></xs:element>
+                                                                <xs:element name = "unit" type = "xs:string"></xs:element>
+                                                                <xs:element name = "standard_deviation" type = "xs:decimal" minOccurs = "0"></xs:element>
+                                                                <xs:element name = "reference" minOccurs = "0">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                            <xs:element name = "detail" type = "xs:string" minOccurs = "0"></xs:element>
+                                                                            <xs:element name = "doi" type = "xs:anyURI" minOccurs = "0"></xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>

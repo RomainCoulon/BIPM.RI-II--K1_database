@@ -49,8 +49,13 @@ for i, line in enumerate(Lines):
         FAIRfile.write("xmlns:qudt=\"http://qudt.org/2.1/schema/qudt\"\n")
         FAIRfile.write("xmlns:qudtUnit=\"http://qudt.org/schema/qudt/Unit\n")
         FAIRfile.write("  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n")
+        
+        FAIRfile.write("<Comparison xmlns=\"https://www.w3schools.com\"\n \
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n \
+        xsi:schemaLocation=\"https://github.com/RomainCoulon/BIPM.RI-II--K1_database/blob/main/FAIRversions/model.xsd\">\n")
         """
         FAIRfile.write("<Comparison>\n")
+
     if "</all>" in line:
         FAIRfile.write("</Comparison>")
 
@@ -195,9 +200,49 @@ for i, line in enumerate(Lines):
     if "Date_of_reference_specified_by_the_laboratory" in line:
         i1=line.find("str\">")
         i2=line.find("</Date")
-        dateRef=line[i1+5:i2-3].replace(" ","T")+"Z"
-        FAIRfile.write("\t\t\t<Reference_date>"+dateRef+"</Reference_date>\n")
+        dateRef=line[i1+5:i2-3].replace(" ","T")+":00Z"
+        FAIRfile.write("\t\t\t<Laboratory_measurements>\n")
+        FAIRfile.write("\t\t\t\t<Reference_date>"+dateRef+"</Reference_date>\n")
+        
 
+    if "Half-life used by the laboratory" in line:
+        i1 = line.find("laboratory /")
+        i2 = line.find("type")
+        unit = line[i1+12:i2-2].replace(" ","")
+        if "null" not in line:
+            HalfLife = True
+            FAIRfile.write("\t\t\t\t<Half-life>\n")
+            if "(" in line:
+                i3=line.find("(")
+                i5=line.find(")")
+                FAIRfile.write("\t\t\t\t\t<value>"+line[i2+11:i3]+"</value>\n")
+                FAIRfile.write("\t\t\t\t\t<unit>"+unit+"</unit>\n")
+                FAIRfile.write("\t\t\t\t\t<standard_deviation>"+line[i2+11:i3]+"</standard_deviation>\n")
+            else:
+                i4=line.find(">/key")
+                FAIRfile.write("\t\t\t\t\t<value>"+line[i2+11:i4-6]+"</value>\n")
+                FAIRfile.write("\t\t\t\t\t<unit>"+unit+"</unit>\n")
+        else:
+            HalfLife = False
+
+    if  "Reference_for_the_decay_data_used_by_the_laboratory type=\"null\"/" in line:
+        if HalfLife: FAIRfile.write("\t\t\t\t</Half-life>\n")
+        FAIRfile.write("\t\t\t</Laboratory_measurements>\n")
+    elif "Reference_for_the_decay_data_used_by_the_laboratory" in line:
+        if "\href" in line:
+            i1=line.find("http")
+            i2=line.find("}{")
+            FAIRfile.write("\t\t\t\t\t<reference>\n")
+            FAIRfile.write("\t\t\t\t\t\t<doi>"+line[i1:i2]+"</doi>\n")
+            FAIRfile.write("\t\t\t\t\t</reference>\n")
+        else:
+            i1=line.find("type=\"str\"")
+            i2=line.find("</")
+            FAIRfile.write("\t\t\t\t\t<reference>\n")
+            FAIRfile.write("\t\t\t\t\t\t<detail>"+line[i1+11:i2]+"</detail>\n")
+            FAIRfile.write("\t\t\t\t\t</reference>\n")
+        FAIRfile.write("\t\t\t\t</Half-life>\n")
+        FAIRfile.write("\t\t\t</Laboratory_measurements>\n")        
 
     if "</Data_from" in line:
         FAIRfile.write("\t\t</Submission>\n")
