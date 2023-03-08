@@ -1,6 +1,6 @@
 {
 "General information":{
-    "dcterms:Description": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
+    "dcterms:description": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
     "dcterms:date": "2022-10-04",
     "dcterms:references":{
         " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
@@ -110,7 +110,7 @@
         "Comment(s) on the measurement method(s)": null,
         "Particularities of the submission to the SIR": "1 sample and 1 measurement method",
         "value_measured": { "quantity_type": "someprefix:RadioactivityRate", "si:value": 484, "si:unit": "someprefix:kBq" },
-        "uncertainty_relative": { "typeA": 0.31, "typeB": 0.84 , "combined": NULL },
+        "uncertainty_relative": { "typeA": 0.31, "typeB": 0.84 , "combined": null },
 		"Values_reference": { "quantity_type": "someprefix:halfLife", "si:value": 137.641, "si:unit": "someprefix:d", "date": "2008-12-02" },
         "Reference for the decay data used by the laboratory": null,
         "experimental_conditions": {
