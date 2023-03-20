@@ -97,6 +97,15 @@
                                             <xs:complexType>
                                                 <xs:sequence minOccurs = "0" maxOccurs = "1">
                                                     <xs:element name = "Reference_date" type = "xs:dateTime"></xs:element>
+                                                    <xs:element name = "Method" minOccurs = "0" maxOccurs = "unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                <xs:element name = "Method_ID" type = "xs:string" minOccurs = "0"></xs:element>
+                                                                <xs:element name = "Description" type = "xs:string" minOccurs = "0"></xs:element>
+                                                                <xs:element name = "Comments" type = "xs:string" minOccurs = "0"></xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
                                                     <xs:element name = "Half-life" minOccurs = "0">
                                                         <xs:complexType>
                                                             <xs:sequence minOccurs = "0" maxOccurs = "1">

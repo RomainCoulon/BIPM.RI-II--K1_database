@@ -286,6 +286,12 @@ for i, line in enumerate(Lines):
         i1=line.find("type=\"str\"")
         i2=line.find("</Type_B")
         uB_Ai=line[i1+11:i2].split(", ")
+        
+        for meth_i in methods:
+            FAIRfile.write("\t\t\t\t<Method>\n")
+            FAIRfile.write("\t\t\t\t\t<Method_ID>"+meth_i+"</Method_ID>\n")
+            FAIRfile.write("\t\t\t\t</Method>\n")
+
 
     lineP2=lineP
     lineP=line
