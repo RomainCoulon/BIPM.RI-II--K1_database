@@ -7,6 +7,7 @@ This program carries out the FAIRification of the machine-readable files of key 
 @author: romain.coulon
 """
 import csv
+import numpy as np
 
 Radionuclide = "Ce-139" # select the radionuclide
 
@@ -33,7 +34,7 @@ FAIRfile = open(FAIRfileName, 'w')
 
 indexDate=[]
 BIPMdate=[]
-
+HalfLife = False
 for i, line in enumerate(Lines):
 
     # rewrite the 1st line
@@ -202,7 +203,7 @@ for i, line in enumerate(Lines):
         i2=line.find("</Date")
         dateRef=line[i1+5:i2-3].replace(" ","T")+":00Z"
         FAIRfile.write("\t\t\t<Laboratory_measurements>\n")
-        FAIRfile.write("\t\t\t\t<Reference_date>"+dateRef+"</Reference_date>\n")
+        #FAIRfile.write("\t\t\t\t<Reference_date>"+dateRef+"</Reference_date>\n")
         
 
     if "Half-life used by the laboratory" in line:
@@ -211,38 +212,49 @@ for i, line in enumerate(Lines):
         unit = line[i1+12:i2-2].replace(" ","")
         if "null" not in line:
             HalfLife = True
-            FAIRfile.write("\t\t\t\t<Half-life>\n")
+            #FAIRfile.write("\t\t\t\t<Half-life>\n")
             if "(" in line:
                 i3=line.find("(")
                 i5=line.find(")")
-                FAIRfile.write("\t\t\t\t\t<value>"+line[i2+11:i3]+"</value>\n")
-                FAIRfile.write("\t\t\t\t\t<unit>"+unit+"</unit>\n")
-                FAIRfile.write("\t\t\t\t\t<standard_deviation>"+line[i2+11:i3]+"</standard_deviation>\n")
+                halfLifeValue = line[i2+11:i3]
+                halfLifeUnit = unit
+                halfLifeStd = line[i2+11:i3]
+                #FAIRfile.write("\t\t\t\t\t<value>"+halfLifeValue+"</value>\n")
+                #FAIRfile.write("\t\t\t\t\t<unit>"+halfLifeUnit+"</unit>\n")
+                #FAIRfile.write("\t\t\t\t\t<standard_deviation>"+halfLifeStd+"</standard_deviation>\n")
             else:
                 i4=line.find(">/key")
-                FAIRfile.write("\t\t\t\t\t<value>"+line[i2+11:i4-6]+"</value>\n")
-                FAIRfile.write("\t\t\t\t\t<unit>"+unit+"</unit>\n")
+                halfLifeStd = False
+                halfLifeValue = line[i2+11:i4-6]
+                halfLifeUnit = unit
+                #FAIRfile.write("\t\t\t\t\t<value>"+line[i2+11:i4-6]+"</value>\n")
+                #FAIRfile.write("\t\t\t\t\t<unit>"+unit+"</unit>\n")
         else:
             HalfLife = False
 
     if  "Reference_for_the_decay_data_used_by_the_laboratory type=\"null\"/" in line:
-        if HalfLife: FAIRfile.write("\t\t\t\t</Half-life>\n")
-        FAIRfile.write("\t\t\t</Laboratory_measurements>\n")
+        ReferenceDecayData = False
+        #if HalfLife: FAIRfile.write("\t\t\t\t</Half-life>\n")
+        #FAIRfile.write("\t\t\t</Laboratory_measurements>\n")
     elif "Reference_for_the_decay_data_used_by_the_laboratory" in line:
+        ReferenceDecayData = True
         if "\href" in line:
             i1=line.find("http")
             i2=line.find("}{")
-            FAIRfile.write("\t\t\t\t\t<reference>\n")
-            FAIRfile.write("\t\t\t\t\t\t<doi>"+line[i1:i2]+"</doi>\n")
-            FAIRfile.write("\t\t\t\t\t</reference>\n")
+            DOIdecayData = line[i1:i2]
+            #FAIRfile.write("\t\t\t\t\t<reference>\n")
+            #FAIRfile.write("\t\t\t\t\t\t<doi>"+DOIdecayData+"</doi>\n")
+            #FAIRfile.write("\t\t\t\t\t</reference>\n")
         else:
+            DOIdecayData = False
             i1=line.find("type=\"str\"")
             i2=line.find("</")
-            FAIRfile.write("\t\t\t\t\t<reference>\n")
-            FAIRfile.write("\t\t\t\t\t\t<detail>"+line[i1+11:i2]+"</detail>\n")
-            FAIRfile.write("\t\t\t\t\t</reference>\n")
-        FAIRfile.write("\t\t\t\t</Half-life>\n")
-        FAIRfile.write("\t\t\t</Laboratory_measurements>\n")        
+            DetaildecayData = line[i1+11:i2]
+            #FAIRfile.write("\t\t\t\t\t<reference>\n")
+            #FAIRfile.write("\t\t\t\t\t\t<detail>"+DetaildecayData+"</detail>\n")
+            #FAIRfile.write("\t\t\t\t\t</reference>\n")
+        #FAIRfile.write("\t\t\t\t</Half-life>\n")
+            
 
     if "</Data_from" in line:
         FAIRfile.write("\t\t</Submission>\n")
@@ -267,6 +279,19 @@ for i, line in enumerate(Lines):
         i2=line.find("</key")
         methods = line[i1+6:i2].split(", ")
     
+    if "Description of the measurement method" in line:
+        i1=line.find("\"str\"")
+        i2=line.find("</key")
+        DescriptMethod = line[i1+6:i2].split(", ")
+
+    if "Comment(s) on the measurement method" in line:
+        if "null" not in line:
+            i1=line.find("\"str\"")
+            i2=line.find("</key")
+            CommentMethod = line[i1+6:i2].split(", ")
+        else:
+            CommentMethod = False
+
     if "Activity measured by the laboratory" in line and ("null" not in line):
         i1=line.find("y /")
         i2=line.find("type")
@@ -286,12 +311,62 @@ for i, line in enumerate(Lines):
         i1=line.find("type=\"str\"")
         i2=line.find("</Type_B")
         uB_Ai=line[i1+11:i2].split(", ")
-        
-        for meth_i in methods:
-            FAIRfile.write("\t\t\t\t<Method>\n")
-            FAIRfile.write("\t\t\t\t\t<Method_ID>"+meth_i+"</Method_ID>\n")
-            FAIRfile.write("\t\t\t\t</Method>\n")
 
+    if "<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type=\"null" in line and AiFlag:
+        uC_Ai = []
+        for ind in range(len(uA_Ai)):
+            uC_Ai.append(round(np.sqrt(float(uA_Ai[ind])**2+float(uB_Ai[ind])**2),3))
+    elif "<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type=\"str" in line and AiFlag:
+        i1=line.find("type=\"str\"")
+        i2=line.find("</Combined")
+        uC_Ai=line[i1+6:i2].split(", ")
+
+    if "Status_of_the_data" in line:       
+        for indexMeth, meth_i in enumerate(methods):
+            FAIRfile.write("\t\t\t\t<Mesurement>\n")
+            FAIRfile.write("\t\t\t\t\t<Reference_date>"+dateRef+"</Reference_date>\n")
+            if HalfLife == True:
+                FAIRfile.write("\t\t\t\t\t<Half-life>\n")
+                FAIRfile.write("\t\t\t\t\t\t<value>"+halfLifeValue+"</value>\n")
+                FAIRfile.write("\t\t\t\t\t\t<unit>"+halfLifeUnit+"</unit>\n")
+                if halfLifeStd: FAIRfile.write("\t\t\t\t\t\t<standard_deviation>"+halfLifeStd+"</standard_deviation>\n")
+                if ReferenceDecayData:
+                    if DOIdecayData:
+                        FAIRfile.write("\t\t\t\t\t\t<reference>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t<doi>"+DOIdecayData+"</doi>\n")
+                        FAIRfile.write("\t\t\t\t\t\t</reference>\n")
+                    else:
+                        FAIRfile.write("\t\t\t\t\t\t<reference>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t<detail>"+DetaildecayData+"</detail>\n")
+                        FAIRfile.write("\t\t\t\t\t\t</reference>\n")
+                FAIRfile.write("\t\t\t\t\t</Half-life>\n")
+            FAIRfile.write("\t\t\t\t\t<Method_ID>"+meth_i+"</Method_ID>\n")
+            FAIRfile.write("\t\t\t\t\t<Description>"+DescriptMethod[indexMeth]+"</Description>\n")
+            if CommentMethod:
+                FAIRfile.write("\t\t\t\t\t<Comments>"+CommentMethod[0]+"</Comments>\n")
+            if AiFlag:
+                FAIRfile.write("\t\t\t\t\t<Activity>\n")
+                if len(Ai) == len(methods):
+                    FAIRfile.write("\t\t\t\t\t\t<value>"+str(Ai[indexMeth])+"</value>\n")
+                    FAIRfile.write("\t\t\t\t\t\t<unit>"+str(unit_Ai)+"</unit>\n")
+                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_A>"+str(uA_Ai[indexMeth])+"</relative_standard_uncertainty_type_A>\n")
+                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_B>"+str(uB_Ai[indexMeth])+"</relative_standard_uncertainty_type_B>\n")
+                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_combined>"+str(uC_Ai[indexMeth])+"</relative_standard_uncertainty_combined>\n")
+                elif len(Ai) > len(methods):
+                    FAIRfile.write("\t\t\t\t\t\t<value>"+str(Ai[0])+"</value>\n")
+                    FAIRfile.write("\t\t\t\t\t\t<unit>"+str(unit_Ai)+"</unit>\n")
+                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_A>"+str(uA_Ai[0])+"</relative_standard_uncertainty_type_A>\n")
+                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_B>"+str(uB_Ai[0])+"</relative_standard_uncertainty_type_B>\n")
+                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_combined>"+str(uC_Ai[0])+"</relative_standard_uncertainty_combined>\n")
+                else:
+                    FAIRfile.write("\t\t\t\t\t\t<value>"+str(Ai[0])+"</value>\n")
+                    FAIRfile.write("\t\t\t\t\t\t<unit>"+str(unit_Ai)+"</unit>\n")
+                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_A>"+str(uA_Ai[0])+"</relative_standard_uncertainty_type_A>\n")
+                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_B>"+str(uB_Ai[0])+"</relative_standard_uncertainty_type_B>\n")
+                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_combined>"+str(uC_Ai[0])+"</relative_standard_uncertainty_combined>\n")
+                FAIRfile.write("\t\t\t\t\t</Activity>\n")
+            FAIRfile.write("\t\t\t\t</Mesurement>\n")
+        FAIRfile.write("\t\t\t</Laboratory_measurements>\n")    
 
     lineP2=lineP
     lineP=line

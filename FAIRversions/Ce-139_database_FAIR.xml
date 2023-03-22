@@ -145,14 +145,22 @@
 			<inKCRV>false</inKCRV>
 			<DoE_valid>true</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>2008-12-01T00:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>2008-12-01T00:00:00Z</Reference_date>
+					<Half-life>
+						<value>137.641</value>
+						<unit>d</unit>
+					</Half-life>
 					<Method_ID>4P-IC-GR-00-00-00</Method_ID>
-				</Method>
-				<Half-life>
-					<value>137.641</value>
-					<unit>d</unit>
-				</Half-life>
+					<Description>Ionization chamber</Description>
+					<Activity>
+						<value>484</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.31</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.84</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.895</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -164,15 +172,23 @@
 			<inKCRV>true</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>1976-03-15T00:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>1976-03-15T00:00:00Z</Reference_date>
+					<Half-life>
+						<value>137.65</value>
+						<unit>d</unit>
+						<standard_deviation>137.65</standard_deviation>
+					</Half-life>
 					<Method_ID>4P-PC-00-NA-GR-CO</Method_ID>
-				</Method>
-				<Half-life>
-					<value>137.65</value>
-					<unit>d</unit>
-					<standard_deviation>137.65</standard_deviation>
-				</Half-life>
+					<Description>4pi(PC)-gamma coincidence</Description>
+					<Activity>
+						<value>2493.2</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.19</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>1.17</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>1.185</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -184,15 +200,23 @@
 			<inKCRV>true</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>1984-06-30T12:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>1984-06-30T12:00:00Z</Reference_date>
+					<Half-life>
+						<value>137.64</value>
+						<unit>d</unit>
+						<standard_deviation>137.64</standard_deviation>
+					</Half-life>
 					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
-				</Method>
-				<Half-life>
-					<value>137.64</value>
-					<unit>d</unit>
-					<standard_deviation>137.64</standard_deviation>
-				</Half-life>
+					<Description>4pi(x,e)-gamma coincidence</Description>
+					<Activity>
+						<value>3616</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.03</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.35</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.351</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -204,14 +228,22 @@
 			<inKCRV>true</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>1985-01-24T12:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>1985-01-24T12:00:00Z</Reference_date>
+					<Half-life>
+						<value>137.5</value>
+						<unit>d</unit>
+					</Half-life>
 					<Method_ID>4P-00-MX-NA-GR-CO</Method_ID>
-				</Method>
-				<Half-life>
-					<value>137.5</value>
-					<unit>d</unit>
-				</Half-life>
+					<Description>4pi(x,e)-gamma coincidence</Description>
+					<Activity>
+						<value>14820</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.05</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.23</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.235</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -223,7 +255,11 @@
 			<inKCRV>false</inKCRV>
 			<DoE_valid>true</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+				<Mesurement>
+					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
+					<Description>4pi(PC)(x,e)-gamma</Description>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -235,10 +271,18 @@
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>1983-11-15T00:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>1983-11-15T00:00:00Z</Reference_date>
 					<Method_ID>4P-PC-XR-NA-GR-CO</Method_ID>
-				</Method>
+					<Description>4pi(PC)x-gamma coincidence</Description>
+					<Activity>
+						<value>2690</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.05</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.3</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.304</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -250,15 +294,23 @@
 			<inKCRV>true</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>2000-12-01T12:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>2000-12-01T12:00:00Z</Reference_date>
+					<Half-life>
+						<value>137.64</value>
+						<unit>d</unit>
+						<standard_deviation>137.64</standard_deviation>
+					</Half-life>
 					<Method_ID>4P-00-XR-NA-GR-CO</Method_ID>
-				</Method>
-				<Half-life>
-					<value>137.64</value>
-					<unit>d</unit>
-					<standard_deviation>137.64</standard_deviation>
-				</Half-life>
+					<Description>4pi x-gamma coincidence</Description>
+					<Activity>
+						<value>5224</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.54</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.23</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.587</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -270,10 +322,18 @@
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>1976-05-19T02:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>1976-05-19T02:00:00Z</Reference_date>
 					<Method_ID>2P-NA-GR-00-00-00</Method_ID>
-				</Method>
+					<Description>NaI(Tl) gamma spectrometry</Description>
+					<Activity>
+						<value>1687</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.83</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.21</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.856</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -285,7 +345,11 @@
 			<inKCRV>false</inKCRV>
 			<DoE_valid>true</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+				<Mesurement>
+					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
+					<Description>4pi(PP)(x,e)-gamma</Description>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -297,18 +361,26 @@
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>1997-02-01T12:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>1997-02-01T12:00:00Z</Reference_date>
+					<Half-life>
+						<value>137.640</value>
+						<unit>d</unit>
+						<standard_deviation>137.640</standard_deviation>
+						<reference>
+							<detail>Taylor J.G.V., private communication (1975) superseded by Rutledge A.R. Smith L.V, Merritt JS., AECL report 6692 (1980)</detail>
+						</reference>
+					</Half-life>
 					<Method_ID>4P-PC-BP-NA-GR-CO</Method_ID>
-				</Method>
-				<Half-life>
-					<value>137.640</value>
-					<unit>d</unit>
-					<standard_deviation>137.640</standard_deviation>
-					<reference>
-						<detail>Taylor J.G.V., private communication (1975) superseded by Rutledge A.R. Smith L.V, Merritt JS., AECL report 6692 (1980)</detail>
-					</reference>
-				</Half-life>
+					<Description>4pi beta-gamma coincidence</Description>
+					<Activity>
+						<value>2848</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.50</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.02</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.5</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -320,21 +392,48 @@
 			<inKCRV>true</inKCRV>
 			<DoE_valid>true</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>2022-01-03T12:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>2022-01-03T12:00:00Z</Reference_date>
+					<Half-life>
+						<value>137.641</value>
+						<unit>d</unit>
+						<standard_deviation>137.641</standard_deviation>
+						<reference>
+							<doi>http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol4.pdf</doi>
+						</reference>
+					</Half-life>
 					<Method_ID>4P-NA-MX-00-00-HE</Method_ID>
-				</Method>
-				<Method>
+					<Description>4pi x-gamma counting</Description>
+					<Comments>The activity of 2439.1~kBq is used. It corresponds to the arithmetic mean of both results. The relative uncertainty of 0.35\% is used. It corresponds to the higher value of both results.</Comments>
+					<Activity>
+						<value>2435.4</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.141</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.321</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.351</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
+				<Mesurement>
+					<Reference_date>2022-01-03T12:00:00Z</Reference_date>
+					<Half-life>
+						<value>137.641</value>
+						<unit>d</unit>
+						<standard_deviation>137.641</standard_deviation>
+						<reference>
+							<doi>http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol4.pdf</doi>
+						</reference>
+					</Half-life>
 					<Method_ID>4P-LS-MX-NA-GR-AC</Method_ID>
-				</Method>
-				<Half-life>
-					<value>137.641</value>
-					<unit>d</unit>
-					<standard_deviation>137.641</standard_deviation>
-					<reference>
-						<doi>http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol4.pdf</doi>
-					</reference>
-				</Half-life>
+					<Description>4pi beta-gamma coincidence method</Description>
+					<Comments>The activity of 2439.1~kBq is used. It corresponds to the arithmetic mean of both results. The relative uncertainty of 0.35\% is used. It corresponds to the higher value of both results.</Comments>
+					<Activity>
+						<value>2442.8</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.315</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.102</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.331</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -346,10 +445,18 @@
 			<inKCRV>true</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>1997-08-01T00:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>1997-08-01T00:00:00Z</Reference_date>
 					<Method_ID>4P-00-MX-NA-GR-CO</Method_ID>
-				</Method>
+					<Description>4pi(x,e)-gamma coincidence</Description>
+					<Activity>
+						<value>1071</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.22</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.25</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.333</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -361,7 +468,11 @@
 			<inKCRV>false</inKCRV>
 			<DoE_valid>true</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+				<Mesurement>
+					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
+					<Description>4pi(PC)(x,e)-gamma</Description>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -373,15 +484,24 @@
 			<inKCRV>true</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>1987-12-03T17:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>1987-12-03T17:00:00Z</Reference_date>
+					<Half-life>
+						<value>137.64</value>
+						<unit>d</unit>
+						<standard_deviation>137.64</standard_deviation>
+					</Half-life>
 					<Method_ID>4P-IC-GR-00-00-00</Method_ID>
-				</Method>
-				<Half-life>
-					<value>137.64</value>
-					<unit>d</unit>
-					<standard_deviation>137.64</standard_deviation>
-				</Half-life>
+					<Description>Ionization chamber</Description>
+					<Comments>Calibrated by 4pi(PC)-gamma coincidence counting in 1976</Comments>
+					<Activity>
+						<value>1850</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.01</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.3</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.3</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -393,10 +513,19 @@
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>1997-01-01T12:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>1997-01-01T12:00:00Z</Reference_date>
 					<Method_ID>4P-IC-GR-00-00-00</Method_ID>
-				</Method>
+					<Description>Ionization chamber</Description>
+					<Comments>Calibrated by 4pi(PC)-gamma coincidence counting in 1976</Comments>
+					<Activity>
+						<value>730.9</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.24</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.247</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -407,10 +536,18 @@
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>1994-12-01T12:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>1994-12-01T12:00:00Z</Reference_date>
 					<Method_ID>4P-00-MX-NA-GR-CO</Method_ID>
-				</Method>
+					<Description>4pi(x,e)-gamma coincidence</Description>
+					<Activity>
+						<value>538</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.2</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.34</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.394</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -421,14 +558,23 @@
 			<inKCRV>true</inKCRV>
 			<DoE_valid>true</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>2004-03-01T00:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+					<Half-life>
+						<value>137.64</value>
+						<unit>d</unit>
+					</Half-life>
 					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
-				</Method>
-				<Half-life>
-					<value>137.64</value>
-					<unit>d</unit>
-				</Half-life>
+					<Description>4pi(x,e)-gamma coincidence</Description>
+					<Comments>The ampoule measured by the NMIJ was used to make the link of the APMP.RI(II)-K2 comparison to the SIR.</Comments>
+					<Activity>
+						<value>1111.2</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.17</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.07</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.184</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -440,7 +586,11 @@
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+				<Mesurement>
+					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+					<Method_ID>4P-LS-MX-NA-GR-CO</Method_ID>
+					<Description>4P(LS)(x,e)-gamma</Description>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -452,10 +602,18 @@
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>1980-10-24T10:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>1980-10-24T10:00:00Z</Reference_date>
 					<Method_ID>4P-LS-BP-NA-GR-CO</Method_ID>
-				</Method>
+					<Description>4pi(LS) beta-gamma coincidence</Description>
+					<Activity>
+						<value>46640</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.19</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.44</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.479</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -467,10 +625,18 @@
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>1982-04-01T10:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>1982-04-01T10:00:00Z</Reference_date>
 					<Method_ID>4P-LS-BP-NA-GR-CO</Method_ID>
-				</Method>
+					<Description>4pi(LS) beta-gamma coincidence</Description>
+					<Activity>
+						<value>42670</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.39</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.33</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.511</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -482,10 +648,18 @@
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>1983-11-01T12:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>1983-11-01T12:00:00Z</Reference_date>
 					<Method_ID>4P-LS-BP-NA-GR-CO</Method_ID>
-				</Method>
+					<Description>4pi(LS) beta-gamma coincidence</Description>
+					<Activity>
+						<value>55170</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.18</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.42</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.457</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -497,14 +671,22 @@
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>1999-01-12T12:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>1999-01-12T12:00:00Z</Reference_date>
+					<Half-life>
+						<value>137.64</value>
+						<unit>d</unit>
+					</Half-life>
 					<Method_ID>4P-LS-MX-NA-GR-CO</Method_ID>
-				</Method>
-				<Half-life>
-					<value>137.64</value>
-					<unit>d</unit>
-				</Half-life>
+					<Description>4pi(LS) (x,e)-gamma coincidence</Description>
+					<Activity>
+						<value>13700</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.05</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.63</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.632</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -516,14 +698,22 @@
 			<inKCRV>true</inKCRV>
 			<DoE_valid>true</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>2019-01-30T10:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>2019-01-30T10:00:00Z</Reference_date>
+					<Half-life>
+						<value>137.641</value>
+						<unit>d</unit>
+					</Half-life>
 					<Method_ID>4P-LS-MX-NA-GR-CO</Method_ID>
-				</Method>
-				<Half-life>
-					<value>137.641</value>
-					<unit>d</unit>
-				</Half-life>
+					<Description>4pi(LS) (e,X)-gamma coincidence</Description>
+					<Activity>
+						<value>1547.58</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.05</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.52</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.522</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -535,10 +725,19 @@
 			<inKCRV>true</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>1981-10-05T00:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>1981-10-05T00:00:00Z</Reference_date>
 					<Method_ID>4P-IC-GR-00-00-00</Method_ID>
-				</Method>
+					<Description>Ionization chamber</Description>
+					<Comments>Calibrated by 4pi(PC)-gamma coincidence counting</Comments>
+					<Activity>
+						<value>2402</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.15</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.4</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.427</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -550,18 +749,40 @@
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>1999-11-01T00:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>1999-11-01T00:00:00Z</Reference_date>
+					<Half-life>
+						<value>137.66</value>
+						<unit>d</unit>
+						<standard_deviation>137.66</standard_deviation>
+					</Half-life>
 					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
-				</Method>
-				<Method>
+					<Description>4pi(PC)EC-gamma coincidence</Description>
+					<Activity>
+						<value>5400</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.14</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.152</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
+				<Mesurement>
+					<Reference_date>1999-11-01T00:00:00Z</Reference_date>
+					<Half-life>
+						<value>137.66</value>
+						<unit>d</unit>
+						<standard_deviation>137.66</standard_deviation>
+					</Half-life>
 					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
-				</Method>
-				<Half-life>
-					<value>137.66</value>
-					<unit>d</unit>
-					<standard_deviation>137.66</standard_deviation>
-				</Half-life>
+					<Description>and 4pi(PPC)EC-gamma coincidence</Description>
+					<Activity>
+						<value>5400</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.14</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.152</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -573,18 +794,42 @@
 			<inKCRV>true</inKCRV>
 			<DoE_valid>true</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>2008-02-01T00:00:00Z</Reference_date>
-				<Method>
+				<Mesurement>
+					<Reference_date>2008-02-01T00:00:00Z</Reference_date>
+					<Half-life>
+						<value>137.66</value>
+						<unit>d</unit>
+						<standard_deviation>137.66</standard_deviation>
+					</Half-life>
 					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
-				</Method>
-				<Method>
+					<Description>4pi(PC)EC-gamma coincidence</Description>
+					<Comments>Weighted mean result taking correlation into account for the uncertainties</Comments>
+					<Activity>
+						<value>4145</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.23</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.238</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
+				<Mesurement>
+					<Reference_date>2008-02-01T00:00:00Z</Reference_date>
+					<Half-life>
+						<value>137.66</value>
+						<unit>d</unit>
+						<standard_deviation>137.66</standard_deviation>
+					</Half-life>
 					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
-				</Method>
-				<Half-life>
-					<value>137.66</value>
-					<unit>d</unit>
-					<standard_deviation>137.66</standard_deviation>
-				</Half-life>
+					<Description>and 4pi(PPC)EC-gamma coincidence</Description>
+					<Comments>Weighted mean result taking correlation into account for the uncertainties</Comments>
+					<Activity>
+						<value>4145</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.23</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.238</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 		<Submission>
@@ -596,7 +841,11 @@
 			<inKCRV>false</inKCRV>
 			<DoE_valid>true</DoE_valid>
 			<Laboratory_measurements>
-				<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+				<Mesurement>
+					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
+					<Description>4pi(PC)(x,e)-gamma</Description>
+				</Mesurement>
 			</Laboratory_measurements>
 		</Submission>
 	</Comparison_metadata>
