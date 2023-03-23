@@ -335,7 +335,6 @@ for i, line in enumerate(Lines):
             unit_mass = line[i3+6:i4-2]
             for ii_mass, i_mass in enumerate(mass):
                 solutionID.append(Radionuclide+Lab_acronym+year+"-"+str(ii_mass+1))
-                print(solutionID)
                 if "(" in i_mass:
                     i5 = i_mass.find("(")
                     i6 = i_mass.find(")")
@@ -344,6 +343,44 @@ for i, line in enumerate(Lines):
                 else:
                     u_mass = False
 
+    def ChemID(x):
+        y_smiles = False
+        y_InChIKey =  False
+        # Ce-135
+        if x == "CeCl3":
+            y_smiles = "[Cl-].[Cl-].[Cl-].[Ce+3]"
+            y_InChIKey = "VYLVYHXQOHJDJL-UHFFFAOYSA-K"
+        if x == "CeCl2":
+            y_smiles = "[Cl-].[Cl-].[Ce]"
+            y_InChIKey = "ANFLYVRDLFXAOY-UHFFFAOYSA-L"
+        if x == "Ce3+":
+            y_smiles = "[Ce+3]"
+            y_InChIKey = "XQTIWNLDFPPCIU-UHFFFAOYSA-N"        
+        if x == "Ce3":
+            y_smiles = "[Ce]"
+            y_InChIKey = "GWXLDORMOJMVQZ-UHFFFAOYSA-N"
+        if x == "HCl":
+            y_smiles = "[Ce]"
+            y_InChIKey = "GWXLDORMOJMVQZ-UHFFFAOYSA-N"           
+
+        return y_smiles, y_InChIKey
+
+
+    if "Chemical_composition_of_the_solution" in line:
+        Carrier = False
+        Solvant = False
+        i1=line.find("type=\"str\"")
+        i2=line.find("</Chem")
+        ChemComp = line[i1+11:i2]
+        if "in" in ChemComp:
+            Carrier = ChemComp.split(" in ")[0]
+            Solvant = ChemComp.split(" in ")[0]
+        else:
+            Carrier = False
+            Solvant = ChemComp           
+
+        CarrierSMILES, CarrierInChiKey =  ChemID(Carrier)
+        SolvantSMILES, SolvantInChiKey =  ChemID(Solvant)
 
     
     if "Status_of_the_data" in line:
@@ -358,7 +395,16 @@ for i, line in enumerate(Lines):
                 FAIRfile.write("\t\t\t\t\t\t<unit>"+unit_mass+"</unit>\n")
                 if u_mass: FAIRfile.write("\t\t\t\t\t\t<standard_uncertainty>"+u_mass[indexMass]+"</standard_uncertainty>\n")
                 FAIRfile.write("\t\t\t\t\t</mass>\n")
-                
+                FAIRfile.write("\t\t\t\t\t<Chemical_composition>\n")
+                FAIRfile.write("\t\t\t\t\t\t<Solvant>\n")
+                if SolvantSMILES: FAIRfile.write("\t\t\t\t\t\t\t<SMILES>"+SolvantSMILES+"</SMILES>\n")
+                if SolvantInChiKey: FAIRfile.write("\t\t\t\t\t\t\t<InChIKey>"+SolvantInChiKey+"</InChIKey>\n")
+                FAIRfile.write("\t\t\t\t\t\t</Solvant>\n")
+                FAIRfile.write("\t\t\t\t\t\t<Carrier>\n")
+                if CarrierSMILES: FAIRfile.write("\t\t\t\t\t\t\t<SMILES>"+CarrierSMILES+"</SMILES>\n")
+                if CarrierInChiKey: FAIRfile.write("\t\t\t\t\t\t\t<InChIKey>"+CarrierInChiKey+"</InChIKey>\n")
+                FAIRfile.write("\t\t\t\t\t\t</Carrier>\n")
+                FAIRfile.write("\t\t\t\t\t</Chemical_composition>\n")
                 FAIRfile.write("\t\t\t\t</Radioactive_solution>\n")
         FAIRfile.write("\t\t\t</Radioactive_solutions>\n")
         FAIRfile.write("\t\t\t<Laboratory_measurements>\n")
