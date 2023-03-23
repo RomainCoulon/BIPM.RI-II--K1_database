@@ -343,6 +343,27 @@ for i, line in enumerate(Lines):
                 else:
                     u_mass = False
 
+    if "Density of the solution " in line:
+        if "null" in line: DensityFlag = False
+        else:
+            u_density = []
+            DensityFlag = True
+            i1=line.find("type=\"str\"")
+            i2=line.find("</key")
+            density = line[i1+11:i2].split(", ")
+            i3=line.find("tion /")
+            i4=line.find("type")
+            unit_density = line[i3+8:i4-3]
+            for ii_density, i_density in enumerate(density):
+                if "(" in i_density:
+                    i5 = i_density.find("(")
+                    i6 = i_density.find(")")
+                    u_density.append(i_density[i5+1:i6])
+                    density[ii_density] = i_density[:i5]
+                else:
+                    u_density = False
+
+
     def ChemID(x):
         y_smiles = False
         y_InChIKey =  False
@@ -419,6 +440,14 @@ for i, line in enumerate(Lines):
                 FAIRfile.write("\t\t\t\t\t\t<unit>"+unit_mass+"</unit>\n")
                 if u_mass: FAIRfile.write("\t\t\t\t\t\t<standard_uncertainty>"+u_mass[indexMass]+"</standard_uncertainty>\n")
                 FAIRfile.write("\t\t\t\t\t</mass>\n")
+
+                FAIRfile.write("\t\t\t\t\t<density>\n")
+                print(density)
+                FAIRfile.write("\t\t\t\t\t\t<value>"+density[0]+"</value>\n")
+                FAIRfile.write("\t\t\t\t\t\t<unit>"+unit_density+"</unit>\n")
+                if u_density: FAIRfile.write("\t\t\t\t\t\t<standard_uncertainty>"+u_density[0]+"</standard_uncertainty>\n")
+                FAIRfile.write("\t\t\t\t\t</density>\n")
+
                 FAIRfile.write("\t\t\t\t\t<Chemical_composition>\n")
                 FAIRfile.write("\t\t\t\t\t\t<Solvant>\n")
                 if SolvantSMILES: FAIRfile.write("\t\t\t\t\t\t\t<SMILES>"+SolvantSMILES+"</SMILES>\n")

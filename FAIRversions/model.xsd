@@ -109,6 +109,15 @@
                                                                         </xs:sequence>
                                                                     </xs:complexType>
                                                                 </xs:element>
+                                                                 <xs:element name = "density" minOccurs = "0" maxOccurs = "1">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                            <xs:element name = "value" type = "xs:decimal"></xs:element>
+                                                                            <xs:element name = "unit" type = "xs:string"></xs:element>
+                                                                            <xs:element name = "standard_uncertainty" type = "xs:decimal" minOccurs = "0"></xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
                                                                 <xs:element name = "Chemical_composition" minOccurs = "0" maxOccurs = "1">
                                                                     <xs:complexType>
                                                                         <xs:sequence minOccurs = "0" maxOccurs = "1">
