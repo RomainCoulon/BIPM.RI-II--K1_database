@@ -427,6 +427,20 @@ for i, line in enumerate(Lines):
             i4=line.find(")")
             Carrier_conc_unit =line[i3+3:i4]
 
+    if "Relative_activity_of_impurities_contained_into_the_solution" in line:
+        if "null" in line:
+            impurityFlag = False
+            reportedImpurity = "Not reported"
+        else:
+            i1 = line.find("\"str\"")
+            i2 = line.find("</Rel")
+            reportedImpurity = line[i1+6:i2]
+            #if ":" in reportedImpurity:
+            #    reportedImpurity = reportedImpurity.split(";")
+            #    for iImpurity in reportedImpurity:
+            #        i3=iImpurity.find(":")
+
+
 
     if "Status_of_the_data" in line:
 
@@ -442,7 +456,6 @@ for i, line in enumerate(Lines):
                 FAIRfile.write("\t\t\t\t\t</mass>\n")
 
                 FAIRfile.write("\t\t\t\t\t<density>\n")
-                print(density)
                 FAIRfile.write("\t\t\t\t\t\t<value>"+density[0]+"</value>\n")
                 FAIRfile.write("\t\t\t\t\t\t<unit>"+unit_density+"</unit>\n")
                 if u_density: FAIRfile.write("\t\t\t\t\t\t<standard_uncertainty>"+u_density[0]+"</standard_uncertainty>\n")
@@ -468,6 +481,7 @@ for i, line in enumerate(Lines):
                     FAIRfile.write("\t\t\t\t\t\t\t</Concentration>\n")
                 FAIRfile.write("\t\t\t\t\t\t</Carrier>\n")
                 FAIRfile.write("\t\t\t\t\t</Chemical_composition>\n")
+                FAIRfile.write("\t\t\t\t\t<impurities>"+reportedImpurity+"</impurities>\n")
                 FAIRfile.write("\t\t\t\t</Radioactive_solution>\n")
         FAIRfile.write("\t\t\t</Radioactive_solutions>\n")
         FAIRfile.write("\t\t\t<Laboratory_measurements>\n")

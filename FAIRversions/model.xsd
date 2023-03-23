@@ -156,6 +156,7 @@
                                                                         </xs:sequence>
                                                                     </xs:complexType>
                                                                 </xs:element>
+                                                                <xs:element name = "impurities" type = "xs:string"></xs:element>
                                                             </xs:sequence>
                                                         </xs:complexType>
                                                     </xs:element>
