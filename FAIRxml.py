@@ -202,7 +202,7 @@ for i, line in enumerate(Lines):
         i1=line.find("str\">")
         i2=line.find("</Date")
         dateRef=line[i1+5:i2-3].replace(" ","T")+":00Z"
-        FAIRfile.write("\t\t\t<Laboratory_measurements>\n")
+        #FAIRfile.write("\t\t\t<Laboratory_measurements>\n")
         #FAIRfile.write("\t\t\t\t<Reference_date>"+dateRef+"</Reference_date>\n")
         
 
@@ -321,7 +321,44 @@ for i, line in enumerate(Lines):
         i2=line.find("</Combined")
         uC_Ai=line[i1+6:i2].split(", ")
 
-    if "Status_of_the_data" in line:       
+    if "Mass of the solution" in line:
+        if "null" in line: MassFlag = False
+        else:
+            u_mass = []
+            MassFlag = True
+            i1=line.find("type=\"str\"")
+            i2=line.find("</key")
+            mass = line[i1+11:i2].split(", ")
+            i3=line.find("tion /")
+            i4=line.find("type")
+            unit_mass = line[i3+6:i4-2]
+            for ii_mass, i_mass in enumerate(mass):
+                if "(" in i_mass:
+                    i5 = i_mass.find("(")
+                    i6 = i_mass.find(")")
+                    u_mass.append(i_mass[i5+1:i6])
+                    mass[ii_mass] = i_mass[:i5]
+                else:
+                    u_mass = False 
+
+
+    
+    if "Status_of_the_data" in line:
+
+        FAIRfile.write("\t\t\t<Radioactive_solutions>\n")
+        for indexMass, mass_i in enumerate(mass):
+            if MassFlag: 
+                FAIRfile.write("\t\t\t\t<Radioactive_solution>\n")
+                
+                FAIRfile.write("\t\t\t\t\t<mass>\n")
+                FAIRfile.write("\t\t\t\t\t\t<value>"+mass_i+"</value>\n")
+                FAIRfile.write("\t\t\t\t\t\t<unit>"+unit_mass+"</unit>\n")
+                if u_mass: FAIRfile.write("\t\t\t\t\t\t<standard_uncertainty>"+u_mass[indexMass]+"</standard_uncertainty>\n")
+                FAIRfile.write("\t\t\t\t\t</mass>\n")
+                
+                FAIRfile.write("\t\t\t\t</Radioactive_solution>\n")
+        FAIRfile.write("\t\t\t</Radioactive_solutions>\n")
+        FAIRfile.write("\t\t\t<Laboratory_measurements>\n")
         for indexMeth, meth_i in enumerate(methods):
             FAIRfile.write("\t\t\t\t<Mesurement>\n")
             FAIRfile.write("\t\t\t\t\t<Reference_date>"+dateRef+"</Reference_date>\n")
