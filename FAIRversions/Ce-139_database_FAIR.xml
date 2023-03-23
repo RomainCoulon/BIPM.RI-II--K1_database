@@ -146,7 +146,7 @@
 			<DoE_valid>true</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139BEV2008-1</ID_solution>
+					<Solution_ID>Ce-139BEV2008-1</Solution_ID>
 					<mass>
 						<value>3.6184</value>
 						<unit>g</unit>
@@ -182,14 +182,14 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139BIPM1976-1</ID_solution>
+					<Solution_ID>Ce-139BIPM1976-1</Solution_ID>
 					<mass>
 						<value>3.50917</value>
 						<unit>g</unit>
 					</mass>
 				</Radioactive_solution>
 				<Radioactive_solution>
-					<ID_solution>Ce-139BIPM1976-2</ID_solution>
+					<Solution_ID>Ce-139BIPM1976-2</Solution_ID>
 					<mass>
 						<value>3.50687</value>
 						<unit>g</unit>
@@ -226,7 +226,7 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139BKFH1984-1</ID_solution>
+					<Solution_ID>Ce-139BKFH1984-1</Solution_ID>
 					<mass>
 						<value>3.6002</value>
 						<unit>g</unit>
@@ -263,7 +263,7 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139CMI1985-1</ID_solution>
+					<Solution_ID>Ce-139CMI1985-1</Solution_ID>
 					<mass>
 						<value>3.6109</value>
 						<unit>g</unit>
@@ -317,7 +317,7 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139IRA1983-1</ID_solution>
+					<Solution_ID>Ce-139IRA1983-1</Solution_ID>
 					<mass>
 						<value>3.602</value>
 						<unit>g</unit>
@@ -349,7 +349,7 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139IRA2000-1</ID_solution>
+					<Solution_ID>Ce-139IRA2000-1</Solution_ID>
 					<mass>
 						<value>3.5887</value>
 						<unit>g</unit>
@@ -387,14 +387,14 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139KAE1976-1</ID_solution>
+					<Solution_ID>Ce-139KAE1976-1</Solution_ID>
 					<mass>
 						<value>3.50770</value>
 						<unit>g</unit>
 					</mass>
 				</Radioactive_solution>
 				<Radioactive_solution>
-					<ID_solution>Ce-139KAE1976-2</ID_solution>
+					<Solution_ID>Ce-139KAE1976-2</Solution_ID>
 					<mass>
 						<value>3.51237</value>
 						<unit>g</unit>
@@ -444,14 +444,14 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139LNE-LNHB1997-1</ID_solution>
+					<Solution_ID>Ce-139LNE-LNHB1997-1</Solution_ID>
 					<mass>
 						<value>3.5510</value>
 						<unit>g</unit>
 					</mass>
 				</Radioactive_solution>
 				<Radioactive_solution>
-					<ID_solution>Ce-139LNE-LNHB1997-2</ID_solution>
+					<Solution_ID>Ce-139LNE-LNHB1997-2</Solution_ID>
 					<mass>
 						<value>3.5001</value>
 						<unit>g</unit>
@@ -491,7 +491,7 @@
 			<DoE_valid>true</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139LNE-LNHB2022-1</ID_solution>
+					<Solution_ID>Ce-139LNE-LNHB2022-1</Solution_ID>
 					<mass>
 						<value>3.7170</value>
 						<unit>g</unit>
@@ -554,7 +554,7 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139LNMRI-IRD1997-1</ID_solution>
+					<Solution_ID>Ce-139LNMRI-IRD1997-1</Solution_ID>
 					<mass>
 						<value>3.59277</value>
 						<unit>g</unit>
@@ -604,7 +604,7 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139NIST1988-1</ID_solution>
+					<Solution_ID>Ce-139NIST1988-1</Solution_ID>
 					<mass>
 						<value>3.7072</value>
 						<unit>g</unit>
@@ -642,7 +642,7 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139NIST1997-1</ID_solution>
+					<Solution_ID>Ce-139NIST1997-1</Solution_ID>
 					<mass>
 						<value>3.65063</value>
 						<unit>g</unit>
@@ -674,7 +674,7 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139NMIJ1994-1</ID_solution>
+					<Solution_ID>Ce-139NMIJ1994-1</Solution_ID>
 					<mass>
 						<value>3.6108</value>
 						<unit>g</unit>
@@ -705,7 +705,7 @@
 			<DoE_valid>true</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139NMIJ2004-1</ID_solution>
+					<Solution_ID>Ce-139NMIJ2004-1</Solution_ID>
 					<mass>
 						<value>3.56386</value>
 						<unit>g</unit>
@@ -760,14 +760,14 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139NMISA1980-1</ID_solution>
+					<Solution_ID>Ce-139NMISA1980-1</Solution_ID>
 					<mass>
 						<value>0.51635</value>
 						<unit>g</unit>
 					</mass>
 				</Radioactive_solution>
 				<Radioactive_solution>
-					<ID_solution>Ce-139NMISA1980-2</ID_solution>
+					<Solution_ID>Ce-139NMISA1980-2</Solution_ID>
 					<mass>
 						<value>0.52313</value>
 						<unit>g</unit>
@@ -799,7 +799,7 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139NMISA1982-1</ID_solution>
+					<Solution_ID>Ce-139NMISA1982-1</Solution_ID>
 					<mass>
 						<value>0.52097</value>
 						<unit>g</unit>
@@ -831,14 +831,14 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139NMISA1983-1</ID_solution>
+					<Solution_ID>Ce-139NMISA1983-1</Solution_ID>
 					<mass>
 						<value>0.253975</value>
 						<unit>g</unit>
 					</mass>
 				</Radioactive_solution>
 				<Radioactive_solution>
-					<ID_solution>Ce-139NMISA1983-2</ID_solution>
+					<Solution_ID>Ce-139NMISA1983-2</Solution_ID>
 					<mass>
 						<value>0.254797</value>
 						<unit>g</unit>
@@ -870,7 +870,7 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139NMISA1999-1</ID_solution>
+					<Solution_ID>Ce-139NMISA1999-1</Solution_ID>
 					<mass>
 						<value>3.603</value>
 						<unit>g</unit>
@@ -906,7 +906,7 @@
 			<DoE_valid>true</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139NMISA2019-1</ID_solution>
+					<Solution_ID>Ce-139NMISA2019-1</Solution_ID>
 					<mass>
 						<value>3.71105</value>
 						<unit>g</unit>
@@ -942,7 +942,7 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139NPL1981-1</ID_solution>
+					<Solution_ID>Ce-139NPL1981-1</Solution_ID>
 					<mass>
 						<value>3.7053</value>
 						<unit>g</unit>
@@ -975,7 +975,7 @@
 			<DoE_valid>false</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139PTB1999-1</ID_solution>
+					<Solution_ID>Ce-139PTB1999-1</Solution_ID>
 					<mass>
 						<value>3.73978</value>
 						<unit>g</unit>
@@ -1029,7 +1029,7 @@
 			<DoE_valid>true</DoE_valid>
 			<Radioactive_solutions>
 				<Radioactive_solution>
-					<ID_solution>Ce-139PTB2008-1</ID_solution>
+					<Solution_ID>Ce-139PTB2008-1</Solution_ID>
 					<mass>
 						<value>3.67728</value>
 						<unit>g</unit>

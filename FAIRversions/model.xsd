@@ -99,7 +99,7 @@
                                                     <xs:element name = "Radioactive_solution">
                                                         <xs:complexType>
                                                             <xs:sequence minOccurs = "0" maxOccurs = "1">
-                                                                <xs:element name = "ID_solution" type = "xs:string"></xs:element>
+                                                                <xs:element name = "Solution_ID" type = "xs:string"></xs:element>
                                                                 <xs:element name = "mass" minOccurs = "0" maxOccurs = "1">
                                                                     <xs:complexType>
                                                                         <xs:sequence minOccurs = "0" maxOccurs = "1">

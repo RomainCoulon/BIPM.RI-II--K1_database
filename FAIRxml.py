@@ -352,7 +352,7 @@ for i, line in enumerate(Lines):
         for indexMass, mass_i in enumerate(mass):
             if MassFlag: 
                 FAIRfile.write("\t\t\t\t<Radioactive_solution>\n")
-                FAIRfile.write("\t\t\t\t\t<ID_solution>"+solutionID[indexMass]+"</ID_solution>\n")
+                FAIRfile.write("\t\t\t\t\t<Solution_ID>"+solutionID[indexMass]+"</Solution_ID>\n")
                 FAIRfile.write("\t\t\t\t\t<mass>\n")
                 FAIRfile.write("\t\t\t\t\t\t<value>"+mass_i+"</value>\n")
                 FAIRfile.write("\t\t\t\t\t\t<unit>"+unit_mass+"</unit>\n")
