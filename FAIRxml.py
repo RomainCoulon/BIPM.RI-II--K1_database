@@ -325,6 +325,7 @@ for i, line in enumerate(Lines):
         if "null" in line: MassFlag = False
         else:
             u_mass = []
+            solutionID = []
             MassFlag = True
             i1=line.find("type=\"str\"")
             i2=line.find("</key")
@@ -333,13 +334,15 @@ for i, line in enumerate(Lines):
             i4=line.find("type")
             unit_mass = line[i3+6:i4-2]
             for ii_mass, i_mass in enumerate(mass):
+                solutionID.append(Radionuclide+Lab_acronym+year+"-"+str(ii_mass+1))
+                print(solutionID)
                 if "(" in i_mass:
                     i5 = i_mass.find("(")
                     i6 = i_mass.find(")")
                     u_mass.append(i_mass[i5+1:i6])
                     mass[ii_mass] = i_mass[:i5]
                 else:
-                    u_mass = False 
+                    u_mass = False
 
 
     
@@ -349,7 +352,7 @@ for i, line in enumerate(Lines):
         for indexMass, mass_i in enumerate(mass):
             if MassFlag: 
                 FAIRfile.write("\t\t\t\t<Radioactive_solution>\n")
-                
+                FAIRfile.write("\t\t\t\t\t<ID_solution>"+solutionID[indexMass]+"</ID_solution>\n")
                 FAIRfile.write("\t\t\t\t\t<mass>\n")
                 FAIRfile.write("\t\t\t\t\t\t<value>"+mass_i+"</value>\n")
                 FAIRfile.write("\t\t\t\t\t\t<unit>"+unit_mass+"</unit>\n")
