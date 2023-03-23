@@ -153,12 +153,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>35</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -199,12 +207,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.2</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>20</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -216,12 +232,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.2</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>20</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -232,7 +256,7 @@
 					<Half-life>
 						<value>137.65</value>
 						<unit>d</unit>
-						<standard_deviation>137.65</standard_deviation>
+						<standard_deviation>7</standard_deviation>
 					</Half-life>
 					<Method_ID>4P-PC-00-NA-GR-CO</Method_ID>
 					<Description>4pi(PC)-gamma coincidence</Description>
@@ -263,8 +287,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
+							<SMILES>[Ce]</SMILES>
+							<InChIKey>GWXLDORMOJMVQZ-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>25</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -275,7 +311,7 @@
 					<Half-life>
 						<value>137.64</value>
 						<unit>d</unit>
-						<standard_deviation>137.64</standard_deviation>
+						<standard_deviation>5</standard_deviation>
 					</Half-life>
 					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(x,e)-gamma coincidence</Description>
@@ -306,12 +342,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.08</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>30</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -370,12 +414,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Ce+3]</SMILES>
-							<InChIKey>XQTIWNLDFPPCIU-UHFFFAOYSA-N</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Ce+3]</SMILES>
 							<InChIKey>XQTIWNLDFPPCIU-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>7.5</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -413,12 +465,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Ce+3]</SMILES>
-							<InChIKey>XQTIWNLDFPPCIU-UHFFFAOYSA-N</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Ce+3]</SMILES>
 							<InChIKey>XQTIWNLDFPPCIU-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>20</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -429,7 +489,7 @@
 					<Half-life>
 						<value>137.64</value>
 						<unit>d</unit>
-						<standard_deviation>137.64</standard_deviation>
+						<standard_deviation>2</standard_deviation>
 					</Half-life>
 					<Method_ID>4P-00-XR-NA-GR-CO</Method_ID>
 					<Description>4pi x-gamma coincidence</Description>
@@ -460,12 +520,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.2</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>15</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -477,12 +545,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.2</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>15</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -537,12 +613,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.5</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>10</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -554,12 +638,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.5</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>10</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -570,7 +662,7 @@
 					<Half-life>
 						<value>137.640</value>
 						<unit>d</unit>
-						<standard_deviation>137.640</standard_deviation>
+						<standard_deviation>23</standard_deviation>
 						<reference>
 							<detail>Taylor J.G.V., private communication (1975) superseded by Rutledge A.R. Smith L.V, Merritt JS., AECL report 6692 (1980)</detail>
 						</reference>
@@ -605,12 +697,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>10</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -621,7 +721,7 @@
 					<Half-life>
 						<value>137.641</value>
 						<unit>d</unit>
-						<standard_deviation>137.641</standard_deviation>
+						<standard_deviation>20</standard_deviation>
 						<reference>
 							<doi>http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol4.pdf</doi>
 						</reference>
@@ -642,7 +742,7 @@
 					<Half-life>
 						<value>137.641</value>
 						<unit>d</unit>
-						<standard_deviation>137.641</standard_deviation>
+						<standard_deviation>20</standard_deviation>
 						<reference>
 							<doi>http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol4.pdf</doi>
 						</reference>
@@ -677,12 +777,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>30</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -737,12 +845,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.4</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>16</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -753,7 +869,7 @@
 					<Half-life>
 						<value>137.64</value>
 						<unit>d</unit>
-						<standard_deviation>137.64</standard_deviation>
+						<standard_deviation>2</standard_deviation>
 					</Half-life>
 					<Method_ID>4P-IC-GR-00-00-00</Method_ID>
 					<Description>Ionization chamber</Description>
@@ -785,12 +901,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.77</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>100</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -827,12 +951,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>10</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -868,12 +1000,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Ce]</SMILES>
-							<InChIKey>ANFLYVRDLFXAOY-UHFFFAOYSA-L</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Ce]</SMILES>
 							<InChIKey>ANFLYVRDLFXAOY-UHFFFAOYSA-L</InChIKey>
+							<Concentration>
+								<value>100</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -933,12 +1073,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>170</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -950,12 +1098,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>170</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -992,12 +1148,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>180</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -1034,12 +1198,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>409</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -1051,12 +1223,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>409</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -1093,12 +1273,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>534</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -1139,12 +1327,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.5</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>10</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -1185,12 +1381,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>40</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -1228,12 +1432,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>0.1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>35</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -1244,7 +1456,7 @@
 					<Half-life>
 						<value>137.66</value>
 						<unit>d</unit>
-						<standard_deviation>137.66</standard_deviation>
+						<standard_deviation>6</standard_deviation>
 					</Half-life>
 					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(PC)EC-gamma coincidence</Description>
@@ -1261,7 +1473,7 @@
 					<Half-life>
 						<value>137.66</value>
 						<unit>d</unit>
-						<standard_deviation>137.66</standard_deviation>
+						<standard_deviation>6</standard_deviation>
 					</Half-life>
 					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
 					<Description>and 4pi(PPC)EC-gamma coincidence</Description>
@@ -1292,12 +1504,20 @@
 					</mass>
 					<Chemical_composition>
 						<Solvant>
-							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
-							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<SMILES>[Cl]</SMILES>
+							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<Concentration>
+								<value>1</value>
+								<unit>mol.dm-3</unit>
+							</Concentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<Concentration>
+								<value>35</value>
+								<unit>µg.g-1</unit>
+							</Concentration>
 						</Carrier>
 					</Chemical_composition>
 				</Radioactive_solution>
@@ -1308,7 +1528,7 @@
 					<Half-life>
 						<value>137.66</value>
 						<unit>d</unit>
-						<standard_deviation>137.66</standard_deviation>
+						<standard_deviation>6</standard_deviation>
 					</Half-life>
 					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(PC)EC-gamma coincidence</Description>
@@ -1326,7 +1546,7 @@
 					<Half-life>
 						<value>137.66</value>
 						<unit>d</unit>
-						<standard_deviation>137.66</standard_deviation>
+						<standard_deviation>6</standard_deviation>
 					</Half-life>
 					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
 					<Description>and 4pi(PPC)EC-gamma coincidence</Description>

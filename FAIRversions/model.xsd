@@ -117,6 +117,14 @@
                                                                                     <xs:sequence minOccurs = "0" maxOccurs = "1">
                                                                                         <xs:element name = "SMILES" type = "xs:string"></xs:element>
                                                                                         <xs:element name = "InChIKey" type = "xs:string"></xs:element>
+                                                                                        <xs:element name = "Concentration" minOccurs = "0" maxOccurs = "1">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                                                    <xs:element name = "value" type = "xs:decimal"></xs:element>
+                                                                                                    <xs:element name = "unit" type = "xs:string"></xs:element>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
                                                                                     </xs:sequence>
                                                                                 </xs:complexType>
                                                                             </xs:element>
@@ -125,6 +133,14 @@
                                                                                     <xs:sequence minOccurs = "0" maxOccurs = "1">
                                                                                         <xs:element name = "SMILES" type = "xs:string"></xs:element>
                                                                                         <xs:element name = "InChIKey" type = "xs:string"></xs:element>
+                                                                                        <xs:element name = "Concentration" minOccurs = "0" maxOccurs = "1">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                                                    <xs:element name = "value" type = "xs:decimal"></xs:element>
+                                                                                                    <xs:element name = "unit" type = "xs:string"></xs:element>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
                                                                                     </xs:sequence>
                                                                                 </xs:complexType>
                                                                             </xs:element>

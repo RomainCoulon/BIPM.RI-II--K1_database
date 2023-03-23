@@ -218,7 +218,7 @@ for i, line in enumerate(Lines):
                 i5=line.find(")")
                 halfLifeValue = line[i2+11:i3]
                 halfLifeUnit = unit
-                halfLifeStd = line[i2+11:i3]
+                halfLifeStd = line[i3+1:i5]
                 #FAIRfile.write("\t\t\t\t\t<value>"+halfLifeValue+"</value>\n")
                 #FAIRfile.write("\t\t\t\t\t<unit>"+halfLifeUnit+"</unit>\n")
                 #FAIRfile.write("\t\t\t\t\t<standard_deviation>"+halfLifeStd+"</standard_deviation>\n")
@@ -356,12 +356,12 @@ for i, line in enumerate(Lines):
         if x == "Ce3+":
             y_smiles = "[Ce+3]"
             y_InChIKey = "XQTIWNLDFPPCIU-UHFFFAOYSA-N"        
-        if x == "Ce3":
+        if x == "Ce":
             y_smiles = "[Ce]"
             y_InChIKey = "GWXLDORMOJMVQZ-UHFFFAOYSA-N"
         if x == "HCl":
-            y_smiles = "[Ce]"
-            y_InChIKey = "GWXLDORMOJMVQZ-UHFFFAOYSA-N"           
+            y_smiles = "[Cl]"
+            y_InChIKey = "VEXZGXHMUGYJMC-UHFFFAOYSA-N"          
 
         return y_smiles, y_InChIKey
 
@@ -374,15 +374,39 @@ for i, line in enumerate(Lines):
         ChemComp = line[i1+11:i2]
         if "in" in ChemComp:
             Carrier = ChemComp.split(" in ")[0]
-            Solvant = ChemComp.split(" in ")[0]
+            Solvant = ChemComp.split(" in ")[1]
         else:
             Carrier = False
             Solvant = ChemComp           
-
+        
         CarrierSMILES, CarrierInChiKey =  ChemID(Carrier)
         SolvantSMILES, SolvantInChiKey =  ChemID(Solvant)
 
-    
+    if "Solvent concentration of the solution / (mol.dm-3)" in line:
+        if "null" in line:
+            Solvant_conc = False
+        else:
+            i1=line.find("\"str\"")
+            i2=line.find("</key")
+            Solvant_conc = line[i1+6:i2]
+            i3=line.find("/ (")
+            i4=line.find(")")
+            Solvant_conc_unit =line[i3+3:i4]
+
+    if "Carrier concentration of the solution" in line:
+        if "null" in line:
+            Carrier_conc = False
+        else:
+            i1=line.find("\"str\"")
+            i2=line.find("</key")
+            Carrier_conc = line[i1+6:i2]
+            i5=Carrier_conc.find(":")
+            Carrier_conc = Carrier_conc[i5+1:]
+            i3=line.find("/ (")
+            i4=line.find(")")
+            Carrier_conc_unit =line[i3+3:i4]
+
+
     if "Status_of_the_data" in line:
 
         FAIRfile.write("\t\t\t<Radioactive_solutions>\n")
@@ -399,10 +423,20 @@ for i, line in enumerate(Lines):
                 FAIRfile.write("\t\t\t\t\t\t<Solvant>\n")
                 if SolvantSMILES: FAIRfile.write("\t\t\t\t\t\t\t<SMILES>"+SolvantSMILES+"</SMILES>\n")
                 if SolvantInChiKey: FAIRfile.write("\t\t\t\t\t\t\t<InChIKey>"+SolvantInChiKey+"</InChIKey>\n")
+                if Solvant_conc:
+                    FAIRfile.write("\t\t\t\t\t\t\t<Concentration>\n")
+                    FAIRfile.write("\t\t\t\t\t\t\t\t<value>"+Solvant_conc+"</value>\n")
+                    FAIRfile.write("\t\t\t\t\t\t\t\t<unit>"+Solvant_conc_unit+"</unit>\n")
+                    FAIRfile.write("\t\t\t\t\t\t\t</Concentration>\n")
                 FAIRfile.write("\t\t\t\t\t\t</Solvant>\n")
                 FAIRfile.write("\t\t\t\t\t\t<Carrier>\n")
                 if CarrierSMILES: FAIRfile.write("\t\t\t\t\t\t\t<SMILES>"+CarrierSMILES+"</SMILES>\n")
                 if CarrierInChiKey: FAIRfile.write("\t\t\t\t\t\t\t<InChIKey>"+CarrierInChiKey+"</InChIKey>\n")
+                if Carrier_conc:
+                    FAIRfile.write("\t\t\t\t\t\t\t<Concentration>\n")
+                    FAIRfile.write("\t\t\t\t\t\t\t\t<value>"+Carrier_conc+"</value>\n")
+                    FAIRfile.write("\t\t\t\t\t\t\t\t<unit>"+Carrier_conc_unit+"</unit>\n")
+                    FAIRfile.write("\t\t\t\t\t\t\t</Concentration>\n")
                 FAIRfile.write("\t\t\t\t\t\t</Carrier>\n")
                 FAIRfile.write("\t\t\t\t\t</Chemical_composition>\n")
                 FAIRfile.write("\t\t\t\t</Radioactive_solution>\n")
