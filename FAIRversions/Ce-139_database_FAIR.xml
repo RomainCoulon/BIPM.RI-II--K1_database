@@ -195,6 +195,11 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139BEV2008-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -304,6 +309,10 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -365,6 +374,11 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139BKFH1984-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -425,6 +439,11 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139CMI1985-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -444,6 +463,11 @@
 					<Description>4pi(PC)(x,e)-gamma</Description>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139CMI1985-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -500,6 +524,11 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139IRA1983-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -563,6 +592,11 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139IRA2000-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -664,6 +698,10 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -689,6 +727,11 @@
 					<Description>4pi(PP)(x,e)-gamma</Description>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139KAE1976-1 Ce-139KAE1976-2 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -804,6 +847,10 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -892,6 +939,10 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -948,6 +999,11 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139LNMRI-IRD1997-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -967,6 +1023,11 @@
 					<Description>4pi(PC)(x,e)-gamma</Description>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139LNMRI-IRD1997-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1029,6 +1090,11 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139NIST1988-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1086,6 +1152,11 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139NIST1997-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1141,6 +1212,11 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139NMIJ1994-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1201,6 +1277,11 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139NMIJ2004-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1220,6 +1301,11 @@
 					<Description>4P(LS)(x,e)-gamma</Description>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139NMIJ2004-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1319,6 +1405,10 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1375,6 +1465,11 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139NMISA1982-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1474,6 +1569,10 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1534,6 +1633,11 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139NMISA1999-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1594,6 +1698,11 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139NMISA2019-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1651,6 +1760,11 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139NPL1981-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1730,6 +1844,11 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139PTB1999-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1811,6 +1930,11 @@
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139PTB2008-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1830,6 +1954,11 @@
 					<Description>4pi(PC)(x,e)-gamma</Description>
 				</Mesurement>
 			</Laboratory_measurements>
+			<BIPM_measurements>
+				<BIPM_measurement>
+				<Solution_ID>Ce-139PTB2008-1 </Solution_ID>
+				</BIPM_measurement>
+			<BIPM_measurements>
 		</Submission>
 	</Comparison_metadata>
 </Comparison>

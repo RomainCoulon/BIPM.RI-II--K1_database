@@ -440,7 +440,18 @@ for i, line in enumerate(Lines):
             #    for iImpurity in reportedImpurity:
             #        i3=iImpurity.find(":")
 
+    if "Number_of_the_radium_source_u" in line:
+        if "null" in line:
+            RaRef = False
+        else:
+            i1 = line.find("\"str\"")
+            i2 = line.find("</Num")
+            RaRef = line[i1+6:i2].split(", ")
 
+    if "Equivalent activity measured by the SIR" in  line:
+        i1 = line.find("\"str\"")
+        i2 = line.find("</key")
+        Ae = line[i1+6:i2].split(", ")
 
     if "Status_of_the_data" in line:
 
@@ -485,7 +496,6 @@ for i, line in enumerate(Lines):
                 FAIRfile.write("\t\t\t\t</Radioactive_solution>\n")
         FAIRfile.write("\t\t\t</Radioactive_solutions>\n")
         FAIRfile.write("\t\t\t<Laboratory_measurements>\n")
-        print(methods, mass, Ai)
         for indexMeth, meth_i in enumerate(methods):
             for indexMass, mass_i in enumerate(mass):
                 FAIRfile.write("\t\t\t\t<Mesurement>\n")
@@ -532,8 +542,20 @@ for i, line in enumerate(Lines):
                         FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_combined>"+str(uC_Ai[0])+"</relative_standard_uncertainty_combined>\n")
                     FAIRfile.write("\t\t\t\t\t</Activity>\n")
                 FAIRfile.write("\t\t\t\t</Mesurement>\n")
-        FAIRfile.write("\t\t\t</Laboratory_measurements>\n")    
-
+        FAIRfile.write("\t\t\t</Laboratory_measurements>\n")
+        massEqAe = len(mass)==len(Ae)
+        methEqAe = len(methods)==len(Ae)
+        #print(RaRef, Ai, Ae, massEqAe, methEqAe)
+        FAIRfile.write("\t\t\t<BIPM_measurements>\n")
+        FAIRfile.write("\t\t\t\t<BIPM_measurement>\n")
+        if len(Ae)==1:
+            FAIRfile.write("\t\t\t\t<Solution_ID>")
+            for sol in solutionID:
+                FAIRfile.write(sol+ " ")
+            FAIRfile.write("</Solution_ID>\n")
+            print(Ae, RaRef, str(solutionID))
+        FAIRfile.write("\t\t\t\t</BIPM_measurement>\n")
+        FAIRfile.write("\t\t\t<BIPM_measurements>\n")
     lineP2=lineP
     lineP=line
     
