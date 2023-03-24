@@ -170,6 +170,7 @@
                                                         <xs:complexType>
                                                             <xs:sequence minOccurs = "0" maxOccurs = "1">
                                                                 <xs:element name = "Reference_date" type = "xs:dateTime"></xs:element>
+                                                                <xs:element name = "Solution_ID" type = "xs:string"></xs:element>
                                                                 <xs:element name = "Half-life" minOccurs = "0">
                                                                     <xs:complexType>
                                                                         <xs:sequence minOccurs = "0" maxOccurs = "1">

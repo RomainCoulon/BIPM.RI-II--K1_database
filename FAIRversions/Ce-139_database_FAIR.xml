@@ -179,6 +179,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>2008-12-01T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139BEV2008-1</Solution_ID>
 					<Half-life>
 						<value>137.641</value>
 						<unit>d</unit>
@@ -268,6 +269,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>1976-03-15T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139BIPM1976-1</Solution_ID>
 					<Half-life>
 						<value>137.65</value>
 						<unit>d</unit>
@@ -277,6 +279,24 @@
 					<Description>4pi(PC)-gamma coincidence</Description>
 					<Activity>
 						<value>2493.2</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.19</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>1.17</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>1.185</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
+				<Mesurement>
+					<Reference_date>1976-03-15T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139BIPM1976-2</Solution_ID>
+					<Half-life>
+						<value>137.65</value>
+						<unit>d</unit>
+						<standard_deviation>7</standard_deviation>
+					</Half-life>
+					<Method_ID>4P-PC-00-NA-GR-CO</Method_ID>
+					<Description>4pi(PC)-gamma coincidence</Description>
+					<Activity>
+						<value>2493.7</value>
 						<unit>kBq</unit>
 						<relative_standard_uncertainty_type_A>0.19</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>1.17</relative_standard_uncertainty_type_B>
@@ -328,6 +348,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>1984-06-30T12:00:00Z</Reference_date>
+					<Solution_ID>Ce-139BKFH1984-1</Solution_ID>
 					<Half-life>
 						<value>137.64</value>
 						<unit>d</unit>
@@ -388,6 +409,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>1985-01-24T12:00:00Z</Reference_date>
+					<Solution_ID>Ce-139CMI1985-1</Solution_ID>
 					<Half-life>
 						<value>137.5</value>
 						<unit>d</unit>
@@ -417,6 +439,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139CMI1985-1</Solution_ID>
 					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(PC)(x,e)-gamma</Description>
 				</Mesurement>
@@ -465,6 +488,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>1983-11-15T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139IRA1983-1</Solution_ID>
 					<Method_ID>4P-PC-XR-NA-GR-CO</Method_ID>
 					<Description>4pi(PC)x-gamma coincidence</Description>
 					<Activity>
@@ -522,6 +546,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>2000-12-01T12:00:00Z</Reference_date>
+					<Solution_ID>Ce-139IRA2000-1</Solution_ID>
 					<Half-life>
 						<value>137.64</value>
 						<unit>d</unit>
@@ -614,10 +639,24 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>1976-05-19T02:00:00Z</Reference_date>
+					<Solution_ID>Ce-139KAE1976-1</Solution_ID>
 					<Method_ID>2P-NA-GR-00-00-00</Method_ID>
 					<Description>NaI(Tl) gamma spectrometry</Description>
 					<Activity>
 						<value>1687</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.83</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.21</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.856</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
+				<Mesurement>
+					<Reference_date>1976-05-19T02:00:00Z</Reference_date>
+					<Solution_ID>Ce-139KAE1976-2</Solution_ID>
+					<Method_ID>2P-NA-GR-00-00-00</Method_ID>
+					<Description>NaI(Tl) gamma spectrometry</Description>
+					<Activity>
+						<value>1689</value>
 						<unit>kBq</unit>
 						<relative_standard_uncertainty_type_A>0.83</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.21</relative_standard_uncertainty_type_B>
@@ -639,6 +678,13 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139KAE1976-1</Solution_ID>
+					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
+					<Description>4pi(PP)(x,e)-gamma</Description>
+				</Mesurement>
+				<Mesurement>
+					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139KAE1976-2</Solution_ID>
 					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(PP)(x,e)-gamma</Description>
 				</Mesurement>
@@ -717,6 +763,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>1997-02-01T12:00:00Z</Reference_date>
+					<Solution_ID>Ce-139LNE-LNHB1997-1</Solution_ID>
 					<Half-life>
 						<value>137.640</value>
 						<unit>d</unit>
@@ -729,6 +776,27 @@
 					<Description>4pi beta-gamma coincidence</Description>
 					<Activity>
 						<value>2848</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.50</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.02</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.5</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
+				<Mesurement>
+					<Reference_date>1997-02-01T12:00:00Z</Reference_date>
+					<Solution_ID>Ce-139LNE-LNHB1997-2</Solution_ID>
+					<Half-life>
+						<value>137.640</value>
+						<unit>d</unit>
+						<standard_deviation>23</standard_deviation>
+						<reference>
+							<detail>Taylor J.G.V., private communication (1975) superseded by Rutledge A.R. Smith L.V, Merritt JS., AECL report 6692 (1980)</detail>
+						</reference>
+					</Half-life>
+					<Method_ID>4P-PC-BP-NA-GR-CO</Method_ID>
+					<Description>4pi beta-gamma coincidence</Description>
+					<Activity>
+						<value>2807</value>
 						<unit>kBq</unit>
 						<relative_standard_uncertainty_type_A>0.50</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.02</relative_standard_uncertainty_type_B>
@@ -781,6 +849,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>2022-01-03T12:00:00Z</Reference_date>
+					<Solution_ID>Ce-139LNE-LNHB2022-1</Solution_ID>
 					<Half-life>
 						<value>137.641</value>
 						<unit>d</unit>
@@ -802,6 +871,7 @@
 				</Mesurement>
 				<Mesurement>
 					<Reference_date>2022-01-03T12:00:00Z</Reference_date>
+					<Solution_ID>Ce-139LNE-LNHB2022-1</Solution_ID>
 					<Half-life>
 						<value>137.641</value>
 						<unit>d</unit>
@@ -866,6 +936,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>1997-08-01T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139LNMRI-IRD1997-1</Solution_ID>
 					<Method_ID>4P-00-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(x,e)-gamma coincidence</Description>
 					<Activity>
@@ -891,6 +962,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139LNMRI-IRD1997-1</Solution_ID>
 					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(PC)(x,e)-gamma</Description>
 				</Mesurement>
@@ -939,6 +1011,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>1987-12-03T17:00:00Z</Reference_date>
+					<Solution_ID>Ce-139NIST1988-1</Solution_ID>
 					<Half-life>
 						<value>137.64</value>
 						<unit>d</unit>
@@ -1000,6 +1073,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>1997-01-01T12:00:00Z</Reference_date>
+					<Solution_ID>Ce-139NIST1997-1</Solution_ID>
 					<Method_ID>4P-IC-GR-00-00-00</Method_ID>
 					<Description>Ionization chamber</Description>
 					<Comments>Calibrated by 4pi(PC)-gamma coincidence counting in 1976</Comments>
@@ -1055,6 +1129,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>1994-12-01T12:00:00Z</Reference_date>
+					<Solution_ID>Ce-139NMIJ1994-1</Solution_ID>
 					<Method_ID>4P-00-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(x,e)-gamma coincidence</Description>
 					<Activity>
@@ -1109,6 +1184,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139NMIJ2004-1</Solution_ID>
 					<Half-life>
 						<value>137.64</value>
 						<unit>d</unit>
@@ -1139,6 +1215,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139NMIJ2004-1</Solution_ID>
 					<Method_ID>4P-LS-MX-NA-GR-CO</Method_ID>
 					<Description>4P(LS)(x,e)-gamma</Description>
 				</Mesurement>
@@ -1217,10 +1294,24 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>1980-10-24T10:00:00Z</Reference_date>
+					<Solution_ID>Ce-139NMISA1980-1</Solution_ID>
 					<Method_ID>4P-LS-BP-NA-GR-CO</Method_ID>
 					<Description>4pi(LS) beta-gamma coincidence</Description>
 					<Activity>
 						<value>46640</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.19</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.44</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.479</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
+				<Mesurement>
+					<Reference_date>1980-10-24T10:00:00Z</Reference_date>
+					<Solution_ID>Ce-139NMISA1980-2</Solution_ID>
+					<Method_ID>4P-LS-BP-NA-GR-CO</Method_ID>
+					<Description>4pi(LS) beta-gamma coincidence</Description>
+					<Activity>
+						<value>47250</value>
 						<unit>kBq</unit>
 						<relative_standard_uncertainty_type_A>0.19</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.44</relative_standard_uncertainty_type_B>
@@ -1272,6 +1363,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>1982-04-01T10:00:00Z</Reference_date>
+					<Solution_ID>Ce-139NMISA1982-1</Solution_ID>
 					<Method_ID>4P-LS-BP-NA-GR-CO</Method_ID>
 					<Description>4pi(LS) beta-gamma coincidence</Description>
 					<Activity>
@@ -1357,10 +1449,24 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>1983-11-01T12:00:00Z</Reference_date>
+					<Solution_ID>Ce-139NMISA1983-1</Solution_ID>
 					<Method_ID>4P-LS-BP-NA-GR-CO</Method_ID>
 					<Description>4pi(LS) beta-gamma coincidence</Description>
 					<Activity>
 						<value>55170</value>
+						<unit>kBq</unit>
+						<relative_standard_uncertainty_type_A>0.18</relative_standard_uncertainty_type_A>
+						<relative_standard_uncertainty_type_B>0.42</relative_standard_uncertainty_type_B>
+						<relative_standard_uncertainty_combined>0.457</relative_standard_uncertainty_combined>
+					</Activity>
+				</Mesurement>
+				<Mesurement>
+					<Reference_date>1983-11-01T12:00:00Z</Reference_date>
+					<Solution_ID>Ce-139NMISA1983-2</Solution_ID>
+					<Method_ID>4P-LS-BP-NA-GR-CO</Method_ID>
+					<Description>4pi(LS) beta-gamma coincidence</Description>
+					<Activity>
+						<value>55350</value>
 						<unit>kBq</unit>
 						<relative_standard_uncertainty_type_A>0.18</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.42</relative_standard_uncertainty_type_B>
@@ -1412,6 +1518,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>1999-01-12T12:00:00Z</Reference_date>
+					<Solution_ID>Ce-139NMISA1999-1</Solution_ID>
 					<Half-life>
 						<value>137.64</value>
 						<unit>d</unit>
@@ -1471,6 +1578,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>2019-01-30T10:00:00Z</Reference_date>
+					<Solution_ID>Ce-139NMISA2019-1</Solution_ID>
 					<Half-life>
 						<value>137.641</value>
 						<unit>d</unit>
@@ -1530,6 +1638,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>1981-10-05T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139NPL1981-1</Solution_ID>
 					<Method_ID>4P-IC-GR-00-00-00</Method_ID>
 					<Description>Ionization chamber</Description>
 					<Comments>Calibrated by 4pi(PC)-gamma coincidence counting</Comments>
@@ -1586,6 +1695,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>1999-11-01T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139PTB1999-1</Solution_ID>
 					<Half-life>
 						<value>137.66</value>
 						<unit>d</unit>
@@ -1603,6 +1713,7 @@
 				</Mesurement>
 				<Mesurement>
 					<Reference_date>1999-11-01T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139PTB1999-1</Solution_ID>
 					<Half-life>
 						<value>137.66</value>
 						<unit>d</unit>
@@ -1663,6 +1774,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>2008-02-01T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139PTB2008-1</Solution_ID>
 					<Half-life>
 						<value>137.66</value>
 						<unit>d</unit>
@@ -1681,6 +1793,7 @@
 				</Mesurement>
 				<Mesurement>
 					<Reference_date>2008-02-01T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139PTB2008-1</Solution_ID>
 					<Half-life>
 						<value>137.66</value>
 						<unit>d</unit>
@@ -1712,6 +1825,7 @@
 			<Laboratory_measurements>
 				<Mesurement>
 					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
+					<Solution_ID>Ce-139PTB2008-1</Solution_ID>
 					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(PC)(x,e)-gamma</Description>
 				</Mesurement>

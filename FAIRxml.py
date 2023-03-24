@@ -485,50 +485,53 @@ for i, line in enumerate(Lines):
                 FAIRfile.write("\t\t\t\t</Radioactive_solution>\n")
         FAIRfile.write("\t\t\t</Radioactive_solutions>\n")
         FAIRfile.write("\t\t\t<Laboratory_measurements>\n")
+        print(methods, mass, Ai)
         for indexMeth, meth_i in enumerate(methods):
-            FAIRfile.write("\t\t\t\t<Mesurement>\n")
-            FAIRfile.write("\t\t\t\t\t<Reference_date>"+dateRef+"</Reference_date>\n")
-            if HalfLife == True:
-                FAIRfile.write("\t\t\t\t\t<Half-life>\n")
-                FAIRfile.write("\t\t\t\t\t\t<value>"+halfLifeValue+"</value>\n")
-                FAIRfile.write("\t\t\t\t\t\t<unit>"+halfLifeUnit+"</unit>\n")
-                if halfLifeStd: FAIRfile.write("\t\t\t\t\t\t<standard_deviation>"+halfLifeStd+"</standard_deviation>\n")
-                if ReferenceDecayData:
-                    if DOIdecayData:
-                        FAIRfile.write("\t\t\t\t\t\t<reference>\n")
-                        FAIRfile.write("\t\t\t\t\t\t\t<doi>"+DOIdecayData+"</doi>\n")
-                        FAIRfile.write("\t\t\t\t\t\t</reference>\n")
+            for indexMass, mass_i in enumerate(mass):
+                FAIRfile.write("\t\t\t\t<Mesurement>\n")
+                FAIRfile.write("\t\t\t\t\t<Reference_date>"+dateRef+"</Reference_date>\n")
+                FAIRfile.write("\t\t\t\t\t<Solution_ID>"+solutionID[indexMass]+"</Solution_ID>\n")
+                if HalfLife == True:
+                    FAIRfile.write("\t\t\t\t\t<Half-life>\n")
+                    FAIRfile.write("\t\t\t\t\t\t<value>"+halfLifeValue+"</value>\n")
+                    FAIRfile.write("\t\t\t\t\t\t<unit>"+halfLifeUnit+"</unit>\n")
+                    if halfLifeStd: FAIRfile.write("\t\t\t\t\t\t<standard_deviation>"+halfLifeStd+"</standard_deviation>\n")
+                    if ReferenceDecayData:
+                        if DOIdecayData:
+                            FAIRfile.write("\t\t\t\t\t\t<reference>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t<doi>"+DOIdecayData+"</doi>\n")
+                            FAIRfile.write("\t\t\t\t\t\t</reference>\n")
+                        else:
+                            FAIRfile.write("\t\t\t\t\t\t<reference>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t<detail>"+DetaildecayData+"</detail>\n")
+                            FAIRfile.write("\t\t\t\t\t\t</reference>\n")
+                    FAIRfile.write("\t\t\t\t\t</Half-life>\n")
+                FAIRfile.write("\t\t\t\t\t<Method_ID>"+meth_i+"</Method_ID>\n")
+                FAIRfile.write("\t\t\t\t\t<Description>"+DescriptMethod[indexMeth]+"</Description>\n")
+                if CommentMethod:
+                    FAIRfile.write("\t\t\t\t\t<Comments>"+CommentMethod[0]+"</Comments>\n")
+                if AiFlag:
+                    FAIRfile.write("\t\t\t\t\t<Activity>\n")
+                    if len(Ai) == len(methods):
+                        FAIRfile.write("\t\t\t\t\t\t<value>"+str(Ai[indexMeth])+"</value>\n")
+                        FAIRfile.write("\t\t\t\t\t\t<unit>"+str(unit_Ai)+"</unit>\n")
+                        FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_A>"+str(uA_Ai[indexMeth])+"</relative_standard_uncertainty_type_A>\n")
+                        FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_B>"+str(uB_Ai[indexMeth])+"</relative_standard_uncertainty_type_B>\n")
+                        FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_combined>"+str(uC_Ai[indexMeth])+"</relative_standard_uncertainty_combined>\n")
+                    elif len(Ai) > len(methods):
+                        FAIRfile.write("\t\t\t\t\t\t<value>"+str(Ai[indexMass])+"</value>\n")
+                        FAIRfile.write("\t\t\t\t\t\t<unit>"+str(unit_Ai)+"</unit>\n")
+                        FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_A>"+str(uA_Ai[0])+"</relative_standard_uncertainty_type_A>\n")
+                        FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_B>"+str(uB_Ai[0])+"</relative_standard_uncertainty_type_B>\n")
+                        FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_combined>"+str(uC_Ai[0])+"</relative_standard_uncertainty_combined>\n")
                     else:
-                        FAIRfile.write("\t\t\t\t\t\t<reference>\n")
-                        FAIRfile.write("\t\t\t\t\t\t\t<detail>"+DetaildecayData+"</detail>\n")
-                        FAIRfile.write("\t\t\t\t\t\t</reference>\n")
-                FAIRfile.write("\t\t\t\t\t</Half-life>\n")
-            FAIRfile.write("\t\t\t\t\t<Method_ID>"+meth_i+"</Method_ID>\n")
-            FAIRfile.write("\t\t\t\t\t<Description>"+DescriptMethod[indexMeth]+"</Description>\n")
-            if CommentMethod:
-                FAIRfile.write("\t\t\t\t\t<Comments>"+CommentMethod[0]+"</Comments>\n")
-            if AiFlag:
-                FAIRfile.write("\t\t\t\t\t<Activity>\n")
-                if len(Ai) == len(methods):
-                    FAIRfile.write("\t\t\t\t\t\t<value>"+str(Ai[indexMeth])+"</value>\n")
-                    FAIRfile.write("\t\t\t\t\t\t<unit>"+str(unit_Ai)+"</unit>\n")
-                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_A>"+str(uA_Ai[indexMeth])+"</relative_standard_uncertainty_type_A>\n")
-                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_B>"+str(uB_Ai[indexMeth])+"</relative_standard_uncertainty_type_B>\n")
-                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_combined>"+str(uC_Ai[indexMeth])+"</relative_standard_uncertainty_combined>\n")
-                elif len(Ai) > len(methods):
-                    FAIRfile.write("\t\t\t\t\t\t<value>"+str(Ai[0])+"</value>\n")
-                    FAIRfile.write("\t\t\t\t\t\t<unit>"+str(unit_Ai)+"</unit>\n")
-                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_A>"+str(uA_Ai[0])+"</relative_standard_uncertainty_type_A>\n")
-                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_B>"+str(uB_Ai[0])+"</relative_standard_uncertainty_type_B>\n")
-                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_combined>"+str(uC_Ai[0])+"</relative_standard_uncertainty_combined>\n")
-                else:
-                    FAIRfile.write("\t\t\t\t\t\t<value>"+str(Ai[0])+"</value>\n")
-                    FAIRfile.write("\t\t\t\t\t\t<unit>"+str(unit_Ai)+"</unit>\n")
-                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_A>"+str(uA_Ai[0])+"</relative_standard_uncertainty_type_A>\n")
-                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_B>"+str(uB_Ai[0])+"</relative_standard_uncertainty_type_B>\n")
-                    FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_combined>"+str(uC_Ai[0])+"</relative_standard_uncertainty_combined>\n")
-                FAIRfile.write("\t\t\t\t\t</Activity>\n")
-            FAIRfile.write("\t\t\t\t</Mesurement>\n")
+                        FAIRfile.write("\t\t\t\t\t\t<value>"+str(Ai[0])+"</value>\n")
+                        FAIRfile.write("\t\t\t\t\t\t<unit>"+str(unit_Ai)+"</unit>\n")
+                        FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_A>"+str(uA_Ai[0])+"</relative_standard_uncertainty_type_A>\n")
+                        FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_B>"+str(uB_Ai[0])+"</relative_standard_uncertainty_type_B>\n")
+                        FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_combined>"+str(uC_Ai[0])+"</relative_standard_uncertainty_combined>\n")
+                    FAIRfile.write("\t\t\t\t\t</Activity>\n")
+                FAIRfile.write("\t\t\t\t</Mesurement>\n")
         FAIRfile.write("\t\t\t</Laboratory_measurements>\n")    
 
     lineP2=lineP
