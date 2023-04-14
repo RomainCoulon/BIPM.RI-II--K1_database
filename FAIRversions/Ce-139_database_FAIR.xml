@@ -197,9 +197,21 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139BEV2008-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139BEV2008-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-IC-GR-00-00-00</Method>
+					</Methods>
+					<Reference_source>1</Reference_source>
+					<Equivalent_activity>
+						<value>131.6</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>1.2</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0016</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -311,8 +323,36 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
+					<Solutions>
+						<Solution_ID>Ce-139BIPM1976-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-PC-00-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>1</Reference_source>
+					<Equivalent_activity>
+						<value>132.28</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>1.58</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0012</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+				<BIPM_measurement>
+					<Solutions>
+						<Solution_ID>Ce-139BIPM1976-2</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-PC-00-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>1</Reference_source>
+					<Equivalent_activity>
+						<value>132.38</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.78</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0012</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
+				</BIPM_measurement>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -376,9 +416,21 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139BKFH1984-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139BKFH1984-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-PP-MX-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>2</Reference_source>
+					<Equivalent_activity>
+						<value>132.02</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.48</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0011</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -441,9 +493,21 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139CMI1985-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139CMI1985-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-00-MX-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>3</Reference_source>
+					<Equivalent_activity>
+						<value>132.77</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.34</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0008</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -465,9 +529,19 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139CMI1985-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139CMI1985-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-PC-MX-NA-GR-CO</Method>
+					</Methods>
+					<Equivalent_activity>
+						<value>132.88</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.48</standard_uncertainty_combined>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -526,9 +600,21 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139IRA1983-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139IRA1983-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-PC-XR-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>2</Reference_source>
+					<Equivalent_activity>
+						<value>132.63</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.42</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0011</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -594,9 +680,21 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139IRA2000-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139IRA2000-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-00-XR-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>1</Reference_source>
+					<Equivalent_activity>
+						<value>132.93</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.8</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.001</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -700,8 +798,36 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
+					<Solutions>
+						<Solution_ID>Ce-139KAE1976-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>2P-NA-GR-00-00-00</Method>
+					</Methods>
+					<Reference_source>1</Reference_source>
+					<Equivalent_activity>
+						<value>124.5</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>1.1</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0012</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+				<BIPM_measurement>
+					<Solutions>
+						<Solution_ID>Ce-139KAE1976-2</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>2P-NA-GR-00-00-00</Method>
+					</Methods>
+					<Reference_source>1</Reference_source>
+					<Equivalent_activity>
+						<value>124.6</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>1.1</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0012</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
+				</BIPM_measurement>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -729,9 +855,20 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139KAE1976-1 Ce-139KAE1976-2 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139KAE1976-1</Solution_ID>
+						<Solution_ID>Ce-139KAE1976-2</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-PP-MX-NA-GR-CO</Method>
+					</Methods>
+					<Equivalent_activity>
+						<value>131.89</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.53</standard_uncertainty_combined>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -849,8 +986,36 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
+					<Solutions>
+						<Solution_ID>Ce-139LNE-LNHB1997-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-PC-BP-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>2</Reference_source>
+					<Equivalent_activity>
+						<value>132.71</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.68</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.001</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+				<BIPM_measurement>
+					<Solutions>
+						<Solution_ID>Ce-139LNE-LNHB1997-2</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-PC-BP-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>2</Reference_source>
+					<Equivalent_activity>
+						<value>132.75</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.68</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0011</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
+				</BIPM_measurement>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -941,8 +1106,36 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
+					<Solutions>
+						<Solution_ID>Ce-139LNE-LNHB2022-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-NA-MX-00-00-HE</Method>
+					</Methods>
+					<Reference_source>1</Reference_source>
+					<Equivalent_activity>
+						<value>132.53</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.51</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0015</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+				<BIPM_measurement>
+					<Solutions>
+						<Solution_ID>Ce-139LNE-LNHB2022-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-LS-MX-NA-GR-AC</Method>
+					</Methods>
+					<Reference_source>1</Reference_source>
+					<Equivalent_activity>
+						<value>132.94</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.49</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0015</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
+				</BIPM_measurement>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1001,9 +1194,21 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139LNMRI-IRD1997-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139LNMRI-IRD1997-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-00-MX-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>1</Reference_source>
+					<Equivalent_activity>
+						<value>132.69</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.48</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0015</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1025,9 +1230,19 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139LNMRI-IRD1997-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139LNMRI-IRD1997-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-PC-MX-NA-GR-CO</Method>
+					</Methods>
+					<Equivalent_activity>
+						<value>134.74</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.74</standard_uncertainty_combined>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1092,9 +1307,21 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139NIST1988-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139NIST1988-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-IC-GR-00-00-00</Method>
+					</Methods>
+					<Reference_source>1</Reference_source>
+					<Equivalent_activity>
+						<value>133.38</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.44</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0013</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1154,9 +1381,21 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139NIST1997-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139NIST1997-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-IC-GR-00-00-00</Method>
+					</Methods>
+					<Reference_source>1</Reference_source>
+					<Equivalent_activity>
+						<value>134.41</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.38</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0014</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1214,9 +1453,21 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139NMIJ1994-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139NMIJ1994-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-00-MX-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>1</Reference_source>
+					<Equivalent_activity>
+						<value>134.22</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.57</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0017</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1279,9 +1530,21 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139NMIJ2004-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139NMIJ2004-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-PC-MX-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>1</Reference_source>
+					<Equivalent_activity>
+						<value>132.74</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.35</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0017</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1303,9 +1566,19 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139NMIJ2004-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139NMIJ2004-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-LS-MX-NA-GR-CO</Method>
+					</Methods>
+					<Equivalent_activity>
+						<value>133.21</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.74</standard_uncertainty_combined>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1407,8 +1680,36 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
+					<Solutions>
+						<Solution_ID>Ce-139NMISA1980-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-LS-BP-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>4</Reference_source>
+					<Equivalent_activity>
+						<value>134.95</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.66</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0008</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+				<BIPM_measurement>
+					<Solutions>
+						<Solution_ID>Ce-139NMISA1980-2</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-LS-BP-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>4</Reference_source>
+					<Equivalent_activity>
+						<value>134.90</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.66</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0008</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
+				</BIPM_measurement>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1467,9 +1768,21 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139NMISA1982-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139NMISA1982-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-LS-BP-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>4</Reference_source>
+					<Equivalent_activity>
+						<value>134.2</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.7</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0008</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1571,8 +1884,36 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
+					<Solutions>
+						<Solution_ID>Ce-139NMISA1983-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-LS-BP-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>4</Reference_source>
+					<Equivalent_activity>
+						<value>133.77</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.62</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0008</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+				<BIPM_measurement>
+					<Solutions>
+						<Solution_ID>Ce-139NMISA1983-2</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-LS-BP-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>4</Reference_source>
+					<Equivalent_activity>
+						<value>133.70</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.62</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0008</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
+				</BIPM_measurement>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1635,9 +1976,21 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139NMISA1999-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139NMISA1999-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-LS-MX-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>3</Reference_source>
+					<Equivalent_activity>
+						<value>133.1</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.85</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0008</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1700,9 +2053,21 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139NMISA2019-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139NMISA2019-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-LS-MX-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>1</Reference_source>
+					<Equivalent_activity>
+						<value>133.81</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.73</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0015</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1762,9 +2127,21 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139NPL1981-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139NPL1981-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-IC-GR-00-00-00</Method>
+					</Methods>
+					<Reference_source>2</Reference_source>
+					<Equivalent_activity>
+						<value>132.76</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.59</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.0011</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1846,9 +2223,22 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139PTB1999-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139PTB1999-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-PC-MX-NA-GR-CO</Method>
+						<Method>4P-PP-MX-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>2</Reference_source>
+					<Equivalent_activity>
+						<value>132.66</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.24</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.001</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1932,9 +2322,22 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139PTB2008-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139PTB2008-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-PC-MX-NA-GR-CO</Method>
+						<Method>4P-PP-MX-NA-GR-CO</Method>
+					</Methods>
+					<Reference_source>2</Reference_source>
+					<Equivalent_activity>
+						<value>132.61</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.34</standard_uncertainty_combined>
+						<relative_standard_uncertainty_from_SIR>0.001</relative_standard_uncertainty_from_SIR>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 		<Submission>
 			<laboratory>
@@ -1956,9 +2359,19 @@
 			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-				<Solution_ID>Ce-139PTB2008-1 </Solution_ID>
+					<Solutions>
+						<Solution_ID>Ce-139PTB2008-1</Solution_ID>
+					</Solutions>
+					<Methods>
+						<Method>4P-PC-MX-NA-GR-CO</Method>
+					</Methods>
+					<Equivalent_activity>
+						<value>133.06</value>
+						<unit>MBq</unit>
+						<standard_uncertainty_combined>0.28</standard_uncertainty_combined>
+					</Equivalent_activity>
 				</BIPM_measurement>
-			<BIPM_measurements>
+			</BIPM_measurements>
 		</Submission>
 	</Comparison_metadata>
 </Comparison>

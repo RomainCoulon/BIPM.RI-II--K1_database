@@ -452,6 +452,24 @@ for i, line in enumerate(Lines):
         i1 = line.find("\"str\"")
         i2 = line.find("</key")
         Ae = line[i1+6:i2].split(", ")
+        i3 = line.find("SIR /")
+        AeUnit = line[i3+6:i1-7]
+
+    if "Relative standard uncertainty (SIR contribution)" in line:
+        if "null" in line:
+            u_SIR_Ae = False
+        else:
+            i1 = line.find("\"str\"")
+            i2 = line.find("</key")
+            u_SIR_Ae = line[i1+6:i2].split(", ")
+
+    if  "Combined standard uncertainty of the equivalent activity" in line:
+        if "null" in line:
+            u_Ae = False
+        else:
+            i1 = line.find("\"str\"")
+            i2 = line.find("</key")
+            u_Ae = line[i1+6:i2].split(", ")        
 
     if "Status_of_the_data" in line:
 
@@ -547,15 +565,116 @@ for i, line in enumerate(Lines):
         methEqAe = len(methods)==len(Ae)
         #print(RaRef, Ai, Ae, massEqAe, methEqAe)
         FAIRfile.write("\t\t\t<BIPM_measurements>\n")
-        FAIRfile.write("\t\t\t\t<BIPM_measurement>\n")
+
         if len(Ae)==1:
-            FAIRfile.write("\t\t\t\t<Solution_ID>")
+            FAIRfile.write("\t\t\t\t<BIPM_measurement>\n")
+            FAIRfile.write("\t\t\t\t\t<Solutions>\n")
             for sol in solutionID:
-                FAIRfile.write(sol+ " ")
-            FAIRfile.write("</Solution_ID>\n")
-            print(Ae, RaRef, str(solutionID))
-        FAIRfile.write("\t\t\t\t</BIPM_measurement>\n")
-        FAIRfile.write("\t\t\t<BIPM_measurements>\n")
+                FAIRfile.write("\t\t\t\t\t\t<Solution_ID>")
+                FAIRfile.write(sol)
+                FAIRfile.write("</Solution_ID>\n")
+            FAIRfile.write("\t\t\t\t\t</Solutions>\n")
+
+            FAIRfile.write("\t\t\t\t\t<Methods>\n")
+            for meth in methods:
+                FAIRfile.write("\t\t\t\t\t\t<Method>")
+                FAIRfile.write(meth)
+                FAIRfile.write("</Method>\n")
+            FAIRfile.write("\t\t\t\t\t</Methods>\n")
+
+            if RaRef:
+                FAIRfile.write("\t\t\t\t\t<Reference_source>")
+                FAIRfile.write(RaRef[0])
+                FAIRfile.write("</Reference_source>\n")
+            FAIRfile.write("\t\t\t\t\t<Equivalent_activity>\n")
+            FAIRfile.write("\t\t\t\t\t\t<value>")
+            FAIRfile.write(Ae[0])
+            FAIRfile.write("</value>\n")
+            FAIRfile.write("\t\t\t\t\t\t<unit>")
+            FAIRfile.write(AeUnit)
+            FAIRfile.write("</unit>\n")
+            FAIRfile.write("\t\t\t\t\t\t<standard_uncertainty_combined>")
+            FAIRfile.write(u_Ae[0])
+            FAIRfile.write("</standard_uncertainty_combined>\n")
+            if u_SIR_Ae:
+                FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_from_SIR>")
+                FAIRfile.write(str(round(float(u_SIR_Ae[0])*1e-4,4)))
+                FAIRfile.write("</relative_standard_uncertainty_from_SIR>\n")
+            FAIRfile.write("\t\t\t\t\t</Equivalent_activity>\n")
+            FAIRfile.write("\t\t\t\t</BIPM_measurement>\n")
+        
+        elif len(solutionID)>1:
+            for i_sol, sol in enumerate(solutionID):
+                FAIRfile.write("\t\t\t\t<BIPM_measurement>\n")
+                FAIRfile.write("\t\t\t\t\t<Solutions>\n")
+                FAIRfile.write("\t\t\t\t\t\t<Solution_ID>")
+                FAIRfile.write(sol)
+                FAIRfile.write("</Solution_ID>\n")
+                FAIRfile.write("\t\t\t\t\t</Solutions>\n")
+                FAIRfile.write("\t\t\t\t\t<Methods>\n")
+                FAIRfile.write("\t\t\t\t\t\t<Method>")
+                FAIRfile.write(methods[0])
+                FAIRfile.write("</Method>\n")
+                FAIRfile.write("\t\t\t\t\t</Methods>\n")
+                if RaRef:
+                    FAIRfile.write("\t\t\t\t\t<Reference_source>")
+                    FAIRfile.write(RaRef[i_sol])
+                    FAIRfile.write("</Reference_source>\n")
+                FAIRfile.write("\t\t\t\t\t<Equivalent_activity>\n")
+                FAIRfile.write("\t\t\t\t\t\t<value>")
+                FAIRfile.write(Ae[i_sol])
+                FAIRfile.write("</value>\n")
+                FAIRfile.write("\t\t\t\t\t\t<unit>")
+                FAIRfile.write(AeUnit)
+                FAIRfile.write("</unit>\n")
+                FAIRfile.write("\t\t\t\t\t\t<standard_uncertainty_combined>")
+                FAIRfile.write(u_Ae[i_sol])
+                FAIRfile.write("</standard_uncertainty_combined>\n")
+                if u_SIR_Ae:
+                   FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_from_SIR>")
+                   FAIRfile.write(str(round(float(u_SIR_Ae[i_sol])*1e-4,4)))
+                   FAIRfile.write("</relative_standard_uncertainty_from_SIR>\n")
+                FAIRfile.write("\t\t\t\t\t</Equivalent_activity>\n")
+                FAIRfile.write("\t\t\t\t</BIPM_measurement>\n")
+
+        elif len(methods)>1:
+           for i_meth, meth in enumerate(methods):
+                FAIRfile.write("\t\t\t\t<BIPM_measurement>\n")
+                FAIRfile.write("\t\t\t\t\t<Solutions>\n")
+                FAIRfile.write("\t\t\t\t\t\t<Solution_ID>")
+                FAIRfile.write(solutionID[0])
+                FAIRfile.write("</Solution_ID>\n")
+                FAIRfile.write("\t\t\t\t\t</Solutions>\n")
+                FAIRfile.write("\t\t\t\t\t<Methods>\n")
+                FAIRfile.write("\t\t\t\t\t\t<Method>")
+                FAIRfile.write(meth)
+                FAIRfile.write("</Method>\n")
+                FAIRfile.write("\t\t\t\t\t</Methods>\n")
+                if RaRef:
+                    FAIRfile.write("\t\t\t\t\t<Reference_source>")
+                    FAIRfile.write(RaRef[0])
+                    FAIRfile.write("</Reference_source>\n")
+                FAIRfile.write("\t\t\t\t\t<Equivalent_activity>\n")
+                FAIRfile.write("\t\t\t\t\t\t<value>")
+                FAIRfile.write(Ae[i_meth])
+                FAIRfile.write("</value>\n")
+                FAIRfile.write("\t\t\t\t\t\t<unit>")
+                FAIRfile.write(AeUnit)
+                FAIRfile.write("</unit>\n")
+                FAIRfile.write("\t\t\t\t\t\t<standard_uncertainty_combined>")
+                FAIRfile.write(u_Ae[i_meth])
+                FAIRfile.write("</standard_uncertainty_combined>\n")
+                if u_SIR_Ae:
+                   FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_from_SIR>")
+                   FAIRfile.write(str(round(float(u_SIR_Ae[0])*1e-4,4)))
+                   FAIRfile.write("</relative_standard_uncertainty_from_SIR>\n")
+                FAIRfile.write("\t\t\t\t\t</Equivalent_activity>\n")
+                FAIRfile.write("\t\t\t\t</BIPM_measurement>\n")
+        else:
+            print("warning: not managed!")
+
+
+        FAIRfile.write("\t\t\t</BIPM_measurements>\n")
     lineP2=lineP
     lineP=line
     

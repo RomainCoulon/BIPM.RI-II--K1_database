@@ -210,12 +210,38 @@
                                         </xs:element>
                                         <xs:element name = "BIPM_measurements">
                                             <xs:complexType>
-                                                <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                <xs:sequence minOccurs = "0" maxOccurs = "unbounded">
                                                     <xs:element name = "BIPM_measurement">
                                                         <xs:complexType>
                                                             <xs:sequence minOccurs = "0" maxOccurs = "unbounded">
+                                                                <xs:element name = "Solutions">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                            <xs:element name = "Solution_ID" type = "xs:string" maxOccurs = "unbounded"></xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name = "Methods">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                            <xs:element name = "Method" type = "xs:string" maxOccurs = "unbounded"></xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name = "Reference_source" type = "xs:string" minOccurs = "0"></xs:element>
+                                                                <xs:element name = "Equivalent_activity">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                            <xs:element name = "value" type = "xs:decimal"></xs:element>
+                                                                            <xs:element name = "unit" type = "xs:string"></xs:element>
+                                                                            <xs:element name = "standard_uncertainty_combined" type = "xs:decimal"></xs:element>
+                                                                            <xs:element name = "relative_standard_uncertainty_from_SIR" type = "xs:decimal" minOccurs = "0"></xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>                                                                
                                                             </xs:sequence>
                                                         </xs:complexType>
+                                                    </xs:element>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
