@@ -50,12 +50,13 @@ for i, line in enumerate(Lines):
         FAIRfile.write("xmlns:qudt=\"http://qudt.org/2.1/schema/qudt\"\n")
         FAIRfile.write("xmlns:qudtUnit=\"http://qudt.org/schema/qudt/Unit\n")
         FAIRfile.write("  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n")
-        
+        """
         FAIRfile.write("<Comparison xmlns=\"https://www.w3schools.com\"\n \
         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n \
-        xsi:schemaLocation=\"https://github.com/RomainCoulon/BIPM.RI-II--K1_database/blob/main/FAIRversions/model.xsd\">\n")
-        """
-        FAIRfile.write("<Comparison>\n")
+        xsi:schemaLocation=\"http://si-digital-framework.org/BIPM.RI-II--K1_database/FAIRversions/model.xsd\"\n \
+        si:schemaLocation=\"http://si-digital-framework.org/SI#\">\n")
+        
+        #FAIRfile.write("<Comparison>\n")
 
     if "</all>" in line:
         FAIRfile.write("</Comparison>")

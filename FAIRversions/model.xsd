@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema 	xmlns:xs = "http://www.w3.org/2001/XMLSchema"
-			xmlns:qudt = "http://qudt.org/vocab">
+			xmlns:si = "http://si-digital-framework.org/SI#">
 	<xs:element name = "Comparison">
 		<xs:complexType>
 			<xs:sequence minOccurs = "0" maxOccurs = "1">
@@ -30,7 +30,7 @@
                                             <xs:complexType>
                                                 <xs:sequence minOccurs = "0" maxOccurs = "1">
                                                     <xs:element name = "value" type="xs:decimal"></xs:element>
-                                                    <xs:element name = "unit" type="xs:string"></xs:element>
+                                                    <xs:element name = "unit" type="si:hasUnit"></xs:element>
                                                     <xs:element name = "standard_deviation" type="xs:decimal"></xs:element>
                                                 </xs:sequence>
                                             </xs:complexType>
