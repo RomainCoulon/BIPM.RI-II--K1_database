@@ -52,9 +52,10 @@ for i, line in enumerate(Lines):
         FAIRfile.write("  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n")
         """
         FAIRfile.write("<Comparison xmlns=\"https://www.w3schools.com\"\n \
-        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n \
-        xsi:schemaLocation=\"http://si-digital-framework.org/BIPM.RI-II--K1_database/FAIRversions/model.xsd\"\n \
-        si:schemaLocation=\"http://si-digital-framework.org/SI#\">\n")
+                xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n \
+                xsi:schemaLocation=\"http://si-digital-framework.org/BIPM.RI-II--K1_database/FAIRversions/model.xsd\"\n \
+                xmlns:si=\"http://si-digital-framework.org/SI#\" \n \
+                xmlns:qudt=\"http://qudt.org/2.1/vocab/unit\" >\n")
         
         #FAIRfile.write("<Comparison>\n")
 

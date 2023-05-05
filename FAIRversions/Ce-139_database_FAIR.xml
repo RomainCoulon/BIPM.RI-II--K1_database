@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Comparison xmlns="https://www.w3schools.com"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://si-digital-framework.org/BIPM.RI-II--K1_database/FAIRversions/model.xsd"
-         si:schemaLocation="http://si-digital-framework.org/SI#">
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://si-digital-framework.org/BIPM.RI-II--K1_database/FAIRversions/model.xsd"
+                 xmlns:si="http://si-digital-framework.org/SI#" 
+                 xmlns:qudt="http://qudt.org/2.1/vocab/unit" >
 	<General_information>
 		<Comparison_code>BIPM.RI(II)-K1.Ce-139</Comparison_code>
 		<Pilot>
