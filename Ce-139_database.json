@@ -1,16 +1,16 @@
 {
 "General information":{
-    "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2022-10-04",
-    "References":{
+    "dcterms:description": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
+    "dcterms:date": "2022-10-04",
+    "dcterms:references":{
         " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
         },
-    "Contact persons":{
-        " Dr Romain Coulon": " romain.coulon@bipm.org ",
-        " Dr Carine Michotte": " cmichott@bipm.org ",
-        " Dr Vincent Gressier": "vincent.gressier@bipm.org "
-        }
-    },
+    "Contact persons": [
+        { "name": "Dr Romain Coulon"	, "e-mail": "romain.coulon@bipm.org"	},
+        { "name": "Dr Carine Michotte"	, "e-mail": "cmichott@bipm.org"	},
+        { "name": "Dr Vincent Gressier"	, "e-mail": "vincent.gressier@bipm.org"	}
+    ]
+},
 "Ce-139": {
     "Key comparison BIPM.RI(II)-K1.Ce-139(2003)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Ce-139",
@@ -109,20 +109,23 @@
         "Description of the measurement method(s)": "Ionization chamber",
         "Comment(s) on the measurement method(s)": null,
         "Particularities of the submission to the SIR": "1 sample and 1 measurement method",
-        "Activity measured by the laboratory / kBq": "484",
-        "Type A evaluation of the relative standard uncertainty of the activity measured by the laboratory": "0.31",
-        "Type B evaluation of the relative standard uncertainty of the activity measured by the laboratory": "0.84",
-        "Combined relative standard uncertainty of the activity measured by the laboratory": null,
-        "Date of the measurement by the BIPM international reference system (SIR)": "02/12/2008",
-        "Half-life used by the laboratory / d": "137.641",
+        "value_measured": { "quantity_type": "someprefix:RadioactivityRate", "si:value": 484, "si:unit": "someprefix:kBq" },
+        "uncertainty_relative": { "typeA": 0.31, "typeB": 0.84 , "combined": null },
+		"Values_reference": { "quantity_type": "someprefix:halfLife", "si:value": 137.641, "si:unit": "someprefix:d", "date": "2008-12-02" },
         "Reference for the decay data used by the laboratory": null,
-        "Chemical composition of the solution": "CeCl3 in HCl",
-        "Solvent concentration of the solution / (mol.dm-3)": "1",
-        "Carrier concentration of the solution / (µg.g-1)": "CeCl3:35",
-        "Density of the solution / (g.cm-3)": "1",
+        "experimental_conditions": {
+			"solution": {
+				"chemical_composition": ["CeCl3","HCl"],
+				"values":[
+					{"quantity_type": "concentration_solvent", "si:value": 1, "si:unit": "mol.dm-3"},
+					{"quantity_type": "concentration_carrier", "si:value": 35, "si:unit": "µg.g-1"},
+					{"quantity_type": "mass_volumic", "si:value": 1, "si:unit": "g.cm-3"},
+					{"quantity_type": "mass", "si:value": 3.6184, "si:unit": "g"}
+				]
+			}
+		}
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
-        "Mass of the solution /g": "3.6184",
         "Number of the radium source used by the SIR": "1",
         "Equivalent activity measured by the SIR / MBq": "131.6",
         "Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4": "16",
@@ -132,8 +135,8 @@
         "Specified equivalent activity for the degree of equivalence": null,
         "Specified equivalent activity for the key comparison reference value": null,
         "Comments on the equivalent activity": null,
-        "Initials of the person who entered the data plus the date": "SJ (09/04/2020)",
-        "Initials of the person(s) who verified the data plus the date": "SC (14/04/2020)",
+        "data_ingest": { "responsible": "SJ", "date": "2020-04-09" },
+        "data_verification": { "responsible": "SC", "date": "2020-04-14" },
         "Status of the data": "Published with the key comparison BIPM.RI(II)-K1"
     },
     "Data from BIPM-1976": {
