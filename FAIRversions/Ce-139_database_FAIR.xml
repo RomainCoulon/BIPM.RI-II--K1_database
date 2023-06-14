@@ -272,6 +272,7 @@
 								<dsi:uncertainty>0.895</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.31</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.84</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -287,9 +288,14 @@
 					</Methods>
 					<Reference_source>1</Reference_source>
 					<Equivalent_activity>
-						<value>131.6</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>1.2</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>131.6</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>1.2</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0016</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -405,6 +411,7 @@
 								<dsi:uncertainty>1.185</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.19</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>1.17</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -432,6 +439,7 @@
 								<dsi:uncertainty>1.185</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.19</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>1.17</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -447,9 +455,14 @@
 					</Methods>
 					<Reference_source>1</Reference_source>
 					<Equivalent_activity>
-						<value>132.28</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>1.58</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>132.28</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>1.58</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0012</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -462,9 +475,14 @@
 					</Methods>
 					<Reference_source>1</Reference_source>
 					<Equivalent_activity>
-						<value>132.38</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.78</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>132.38</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.78</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0012</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -542,6 +560,7 @@
 								<dsi:uncertainty>0.351</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.03</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.35</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -557,9 +576,14 @@
 					</Methods>
 					<Reference_source>2</Reference_source>
 					<Equivalent_activity>
-						<value>132.02</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.48</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>132.02</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.48</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0011</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -633,6 +657,7 @@
 								<dsi:uncertainty>0.235</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.05</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.23</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -648,9 +673,14 @@
 					</Methods>
 					<Reference_source>3</Reference_source>
 					<Equivalent_activity>
-						<value>132.77</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.34</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>132.77</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.34</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0008</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -683,9 +713,14 @@
 						<Method>4P-PC-MX-NA-GR-CO</Method>
 					</Methods>
 					<Equivalent_activity>
-						<value>132.88</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.48</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>132.88</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.48</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</Equivalent_activity>
 				</BIPM_measurement>
 			</BIPM_measurements>
@@ -752,6 +787,7 @@
 								<dsi:uncertainty>0.304</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.05</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.3</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -767,9 +803,14 @@
 					</Methods>
 					<Reference_source>2</Reference_source>
 					<Equivalent_activity>
-						<value>132.63</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.42</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>132.63</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.42</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0011</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -855,6 +896,7 @@
 								<dsi:uncertainty>0.587</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.54</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.23</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -870,9 +912,14 @@
 					</Methods>
 					<Reference_source>1</Reference_source>
 					<Equivalent_activity>
-						<value>132.93</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.8</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>132.93</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.8</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.001</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -986,6 +1033,7 @@
 								<dsi:uncertainty>0.856</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.83</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.21</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -1003,6 +1051,7 @@
 								<dsi:uncertainty>0.856</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.83</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.21</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -1018,9 +1067,14 @@
 					</Methods>
 					<Reference_source>1</Reference_source>
 					<Equivalent_activity>
-						<value>124.5</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>1.1</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>124.5</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>1.1</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0012</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -1033,9 +1087,14 @@
 					</Methods>
 					<Reference_source>1</Reference_source>
 					<Equivalent_activity>
-						<value>124.6</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>1.1</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>124.6</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>1.1</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0012</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -1075,9 +1134,14 @@
 						<Method>4P-PP-MX-NA-GR-CO</Method>
 					</Methods>
 					<Equivalent_activity>
-						<value>131.89</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.53</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>131.89</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.53</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</Equivalent_activity>
 				</BIPM_measurement>
 			</BIPM_measurements>
@@ -1195,6 +1259,7 @@
 								<dsi:uncertainty>0.5</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.50</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.02</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -1225,6 +1290,7 @@
 								<dsi:uncertainty>0.5</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.50</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.02</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -1240,9 +1306,14 @@
 					</Methods>
 					<Reference_source>2</Reference_source>
 					<Equivalent_activity>
-						<value>132.71</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.68</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>132.71</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.68</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.001</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -1255,9 +1326,14 @@
 					</Methods>
 					<Reference_source>2</Reference_source>
 					<Equivalent_activity>
-						<value>132.75</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.68</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>132.75</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.68</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0011</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -1343,6 +1419,7 @@
 								<dsi:uncertainty>0.351</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.141</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.321</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -1374,6 +1451,7 @@
 								<dsi:uncertainty>0.331</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.315</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.102</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -1389,9 +1467,14 @@
 					</Methods>
 					<Reference_source>1</Reference_source>
 					<Equivalent_activity>
-						<value>132.53</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.51</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>132.53</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.51</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0015</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -1404,9 +1487,14 @@
 					</Methods>
 					<Reference_source>1</Reference_source>
 					<Equivalent_activity>
-						<value>132.94</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.49</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>132.94</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.49</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0015</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -1474,6 +1562,7 @@
 								<dsi:uncertainty>0.333</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.22</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.25</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -1489,9 +1578,14 @@
 					</Methods>
 					<Reference_source>1</Reference_source>
 					<Equivalent_activity>
-						<value>132.69</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.48</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>132.69</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.48</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0015</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -1524,9 +1618,14 @@
 						<Method>4P-PC-MX-NA-GR-CO</Method>
 					</Methods>
 					<Equivalent_activity>
-						<value>134.74</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.74</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>134.74</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.74</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</Equivalent_activity>
 				</BIPM_measurement>
 			</BIPM_measurements>
@@ -1604,6 +1703,7 @@
 								<dsi:uncertainty>0.3</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.01</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.3</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -1619,9 +1719,14 @@
 					</Methods>
 					<Reference_source>1</Reference_source>
 					<Equivalent_activity>
-						<value>133.38</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.44</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>133.38</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.44</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0013</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -1690,6 +1795,7 @@
 								<dsi:uncertainty>0.247</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.24</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -1705,9 +1811,14 @@
 					</Methods>
 					<Reference_source>1</Reference_source>
 					<Equivalent_activity>
-						<value>134.41</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.38</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>134.41</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.38</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0014</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -1774,6 +1885,7 @@
 								<dsi:uncertainty>0.394</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.2</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.34</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -1789,9 +1901,14 @@
 					</Methods>
 					<Reference_source>1</Reference_source>
 					<Equivalent_activity>
-						<value>134.22</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.57</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>134.22</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.57</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0017</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -1865,6 +1982,7 @@
 								<dsi:uncertainty>0.184</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.17</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.07</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -1880,9 +1998,14 @@
 					</Methods>
 					<Reference_source>1</Reference_source>
 					<Equivalent_activity>
-						<value>132.74</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.35</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>132.74</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.35</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0017</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -1915,9 +2038,14 @@
 						<Method>4P-LS-MX-NA-GR-CO</Method>
 					</Methods>
 					<Equivalent_activity>
-						<value>133.21</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.74</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>133.21</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.74</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</Equivalent_activity>
 				</BIPM_measurement>
 			</BIPM_measurements>
@@ -2022,6 +2150,7 @@
 								<dsi:uncertainty>0.479</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.19</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.44</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -2039,6 +2168,7 @@
 								<dsi:uncertainty>0.479</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.19</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.44</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -2054,9 +2184,14 @@
 					</Methods>
 					<Reference_source>4</Reference_source>
 					<Equivalent_activity>
-						<value>134.95</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.66</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>134.95</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.66</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0008</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -2069,9 +2204,14 @@
 					</Methods>
 					<Reference_source>4</Reference_source>
 					<Equivalent_activity>
-						<value>134.90</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.66</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>134.90</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.66</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0008</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -2139,6 +2279,7 @@
 								<dsi:uncertainty>0.511</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.39</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.33</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -2154,9 +2295,14 @@
 					</Methods>
 					<Reference_source>4</Reference_source>
 					<Equivalent_activity>
-						<value>134.2</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.7</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>134.2</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.7</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0008</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -2262,6 +2408,7 @@
 								<dsi:uncertainty>0.457</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.18</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.42</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -2279,6 +2426,7 @@
 								<dsi:uncertainty>0.457</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.18</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.42</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -2294,9 +2442,14 @@
 					</Methods>
 					<Reference_source>4</Reference_source>
 					<Equivalent_activity>
-						<value>133.77</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.62</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>133.77</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.62</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0008</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -2309,9 +2462,14 @@
 					</Methods>
 					<Reference_source>4</Reference_source>
 					<Equivalent_activity>
-						<value>133.70</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.62</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>133.70</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.62</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0008</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -2385,6 +2543,7 @@
 								<dsi:uncertainty>0.632</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.05</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.63</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -2400,9 +2559,14 @@
 					</Methods>
 					<Reference_source>3</Reference_source>
 					<Equivalent_activity>
-						<value>133.1</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.85</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>133.1</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.85</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0008</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -2476,6 +2640,7 @@
 								<dsi:uncertainty>0.522</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.05</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.52</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -2491,9 +2656,14 @@
 					</Methods>
 					<Reference_source>1</Reference_source>
 					<Equivalent_activity>
-						<value>133.81</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.73</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>133.81</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.73</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0015</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -2562,6 +2732,7 @@
 								<dsi:uncertainty>0.427</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.15</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.4</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -2577,9 +2748,14 @@
 					</Methods>
 					<Reference_source>2</Reference_source>
 					<Equivalent_activity>
-						<value>132.76</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.59</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>132.76</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.59</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.0011</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -2657,6 +2833,7 @@
 								<dsi:uncertainty>0.152</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.14</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -2684,6 +2861,7 @@
 								<dsi:uncertainty>0.152</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.14</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -2700,15 +2878,33 @@
 					</Methods>
 					<Reference_source>2</Reference_source>
 					<Equivalent_activity>
-						<value>132.66</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.24</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>132.66</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.24</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.001</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
 			</BIPM_measurements>
 		</Submission>
-								<dsi:value>3.67728</dsi:value>
+		<Submission>
+			<laboratory>
+				<Acronym>PTB</Acronym>
+				<ROR>https://ror.org/05r3f7h03</ROR>
+			</laboratory>
+			<year>2008</year>
+			<inKCRV>true</inKCRV>
+			<DoE_valid>true</DoE_valid>
+			<Radioactive_solutions>
+				<Radioactive_solution>
+					<Solution_ID>Ce-139PTB2008-1</Solution_ID>
+					<mass>
+						<dsi:real>
+							<dsi:value>3.67728</dsi:value>
 							<dsi:unit>\gram</dsi:unit>
 						</dsi:real>
 					</mass>
@@ -2763,11 +2959,12 @@
 					<Activity>
 						<dsi:real>
 							<dsi:value>4145</dsi:value>
-							<dsi:unit>kBq</dsi:unit>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
 								<dsi:uncertainty>0.238</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.23</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -2791,11 +2988,12 @@
 					<Activity>
 						<dsi:real>
 							<dsi:value>4145</dsi:value>
-							<dsi:unit>kBq</dsi:unit>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
 								<dsi:uncertainty>0.238</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.23</relative_standard_uncertainty_type_B>
 					</Activity>
@@ -2812,9 +3010,14 @@
 					</Methods>
 					<Reference_source>2</Reference_source>
 					<Equivalent_activity>
-						<value>132.61</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.34</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>132.61</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.34</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<relative_standard_uncertainty_from_SIR>0.001</relative_standard_uncertainty_from_SIR>
 					</Equivalent_activity>
 				</BIPM_measurement>
@@ -2847,9 +3050,14 @@
 						<Method>4P-PC-MX-NA-GR-CO</Method>
 					</Methods>
 					<Equivalent_activity>
-						<value>133.06</value>
-						<unit>MBq</unit>
-						<standard_uncertainty_combined>0.28</standard_uncertainty_combined>
+						<dsi:real>
+							<dsi:value>133.06</dsi:value>
+							<dsi:unit>\mega\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.28</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</Equivalent_activity>
 				</BIPM_measurement>
 			</BIPM_measurements>

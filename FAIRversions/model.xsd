@@ -316,9 +316,14 @@
                                                                 <xs:element name = "Equivalent_activity">
                                                                     <xs:complexType>
                                                                         <xs:sequence minOccurs = "0" maxOccurs = "1">
-                                                                            <xs:element name = "value" type = "xs:decimal"></xs:element>
-                                                                            <xs:element name = "unit" type = "xs:string"></xs:element>
-                                                                            <xs:element name = "standard_uncertainty_combined" type = "xs:decimal"></xs:element>
+                                                                            </xs:annotation>
+                                                                                <xs:documentation xml:lang="en">         
+                                                                                    The equivalent activity measurement is defined by a dsi:real element.
+                                                                                    This element is expected to contain a value, a multiple derive unit becquerel,
+                                                                                    and a standard uncertainty (a coverage factor equal to 1).
+                                                                                    The derived SI unit becquerel is defined in http://si-digital-framework.org/SI#/becquerel 
+                                                                                </xs:documentation>
+                                                                            </xs:annotation>
                                                                             <xs:element name = "relative_standard_uncertainty_from_SIR" type = "xs:decimal" minOccurs = "0"></xs:element>
                                                                         </xs:sequence>
                                                                     </xs:complexType>
