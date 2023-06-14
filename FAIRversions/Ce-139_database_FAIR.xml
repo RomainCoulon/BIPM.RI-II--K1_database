@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Comparison xmlns="https://www.w3schools.com"
+<comp:comparison xmlns:ri="BIPM_RI_II_K1_Schema"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xsi:schemaLocation="http://si-digital-framework.org/BIPM.RI-II--K1_database/FAIRversions/model.xsd"
-                 xmlns:si="http://si-digital-framework.org/SI#" 
-                 xmlns:qudt="http://qudt.org/2.1/vocab/unit" >
+                 xmlns:dsi="http://ptb.de/si"
+                 xmlns:si = "http://si-digital-framework.org/SI#">
 	<General_information>
 		<Comparison_code>BIPM.RI(II)-K1.Ce-139</Comparison_code>
 		<Pilot>
@@ -15,36 +14,56 @@
 		<Release>
 			<Year>2003</Year>
 			<KCRV>
-				<value>132.87</value>
-				<unit>MBq</unit>
-				<standard_deviation>17</standard_deviation>
+				<dsi:real>
+					<dsi:value>132.87</dsi:value>
+					<dsi:unit>\mega\becquerel</dsi:unit>
+					<dsi:expandedUnc>
+						<dsi:uncertainty>17</dsi:uncertainty>
+						<dsi:coverageFactor>1</dsi:coverageFactor>
+					</dsi:expandedUnc>
+				</dsi:real>
 			</KCRV>
 			<doi>https://doi.org/10.1088/0026-1394/40/1A/06012</doi>
 		</Release>
 		<Release>
 			<Year>2005</Year>
 			<KCRV>
-				<value>132.74</value>
-				<unit>MBq</unit>
-				<standard_deviation>11</standard_deviation>
+				<dsi:real>
+					<dsi:value>132.74</dsi:value>
+					<dsi:unit>\mega\becquerel</dsi:unit>
+					<dsi:expandedUnc>
+						<dsi:uncertainty>11</dsi:uncertainty>
+						<dsi:coverageFactor>1</dsi:coverageFactor>
+					</dsi:expandedUnc>
+				</dsi:real>
 			</KCRV>
 			<doi>https://doi.org/10.1088/0026-1394/42/1A/06012</doi>
 		</Release>
 		<Release>
 			<Year>2011</Year>
 			<KCRV>
-				<value>132.73</value>
-				<unit>MBq</unit>
-				<standard_deviation>11</standard_deviation>
+				<dsi:real>
+					<dsi:value>132.73</dsi:value>
+					<dsi:unit>\mega\becquerel</dsi:unit>
+					<dsi:expandedUnc>
+						<dsi:uncertainty>11</dsi:uncertainty>
+						<dsi:coverageFactor>1</dsi:coverageFactor>
+					</dsi:expandedUnc>
+				</dsi:real>
 			</KCRV>
 			<doi>https://doi.org/10.1088/0026-1394/48/1A/06019</doi>
 		</Release>
 		<Release>
 			<Year>2022</Year>
 			<KCRV>
-				<value>132.77</value>
-				<unit>MBq</unit>
-				<standard_deviation>14</standard_deviation>
+				<dsi:real>
+					<dsi:value>132.77</dsi:value>
+					<dsi:unit>\mega\becquerel</dsi:unit>
+					<dsi:expandedUnc>
+						<dsi:uncertainty>14</dsi:uncertainty>
+						<dsi:coverageFactor>1</dsi:coverageFactor>
+					</dsi:expandedUnc>
+				</dsi:real>
 			</KCRV>
 			<doi>https://doi.org/10.1088/0026-1394/48/1A/06019</doi>
 			<Degrees_of_equivalence>
@@ -52,45 +71,70 @@
 					<laboratory>
 						<Acronym>NMIJ</Acronym>
 					</laboratory>
-					<value>-0.03</value>
-					<Expanded_uncertainty>0.65</Expanded_uncertainty>
-					<unit>MBq</unit>
+					<dsi:real>
+						<dsi:value>-0.03</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.65</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+						</dsi:expandedUnc>
+					</dsi:real>
 				</Degree_of_equivalence>
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>PTB</Acronym>
 						<ROR>https://ror.org/05r3f7h03</ROR>
 					</laboratory>
-					<value>-0.16</value>
-					<Expanded_uncertainty>0.63</Expanded_uncertainty>
-					<unit>MBq</unit>
+					<dsi:real>
+						<dsi:value>-0.16</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.63</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+						</dsi:expandedUnc>
+					</dsi:real>
 				</Degree_of_equivalence>
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>BEV</Acronym>
 						<ROR>https://ror.org/038680g19</ROR>
 					</laboratory>
-					<value>-1.2</value>
-					<Expanded_uncertainty>2.4</Expanded_uncertainty>
-					<unit>MBq</unit>
+					<dsi:real>
+						<dsi:value>-1.2</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>2.4</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+						</dsi:expandedUnc>
+					</dsi:real>
 				</Degree_of_equivalence>
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>NMISA</Acronym>
 						<ROR>https://ror.org/02j01mp63</ROR>
 					</laboratory>
-					<value>1.0</value>
-					<Expanded_uncertainty>1.4</Expanded_uncertainty>
-					<unit>MBq</unit>
+					<dsi:real>
+						<dsi:value>1.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.4</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+						</dsi:expandedUnc>
+					</dsi:real>
 				</Degree_of_equivalence>
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>LNE-LNHB</Acronym>
 						<ROR>https://ror.org/03az79194</ROR>
 					</laboratory>
-					<value>-0.03</value>
-					<Expanded_uncertainty>0.98</Expanded_uncertainty>
-					<unit>MBq</unit>
+					<dsi:real>
+						<dsi:value>-0.03</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.98</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+						</dsi:expandedUnc>
+					</dsi:real>
 				</Degree_of_equivalence>
 			</Degrees_of_equivalence>
 			<Degrees_of_equivalence>
@@ -105,36 +149,56 @@
 						<Acronym>INER</Acronym>
 						<ROR>https://ror.org/052jx3443</ROR>
 					</laboratory>
-					<value>0.1</value>
-					<Expanded_uncertainty>1.0</Expanded_uncertainty>
-					<unit>MBq</unit>
+					<dsi:real>
+						<dsi:value>0.1</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.0</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+						</dsi:expandedUnc>
+					</dsi:real>
 				</Degree_of_equivalence>
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>KRISS</Acronym>
 						<ROR>https://ror.org/01az7b475</ROR>
 					</laboratory>
-					<value>-0.9</value>
-					<Expanded_uncertainty>1.1</Expanded_uncertainty>
-					<unit>MBq</unit>
+					<dsi:real>
+						<dsi:value>-0.9</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.1</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+						</dsi:expandedUnc>
+					</dsi:real>
 				</Degree_of_equivalence>
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>NIM</Acronym>
 						<ROR>https://ror.org/05dw0p167</ROR>
 					</laboratory>
-					<value>2.0</value>
-					<Expanded_uncertainty>1.5</Expanded_uncertainty>
-					<unit>MBq</unit>
+					<dsi:real>
+						<dsi:value>2.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.5</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+						</dsi:expandedUnc>
+					</dsi:real>
 				</Degree_of_equivalence>
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>VNIIM</Acronym>
 						<ROR>https://ror.org/017c99632</ROR>
 					</laboratory>
-					<value>0.29</value>
-					<Expanded_uncertainty>0.63</Expanded_uncertainty>
-					<unit>MBq</unit>
+					<dsi:real>
+						<dsi:value>0.29</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.63</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+						</dsi:expandedUnc>
+					</dsi:real>
 				</Degree_of_equivalence>
 			</Degrees_of_equivalence>
 		</Release>
@@ -152,29 +216,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139BEV2008-1</Solution_ID>
 					<mass>
-						<value>3.6184</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.6184</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>35</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>35</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -185,17 +257,23 @@
 					<Reference_date>2008-12-01T00:00:00Z</Reference_date>
 					<Solution_ID>Ce-139BEV2008-1</Solution_ID>
 					<Half-life>
-						<value>137.641</value>
-						<unit>d</unit>
+						<dsi:real>
+							<dsi:value>137.641</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+						</dsi:real>
 					</Half-life>
 					<Method_ID>4P-IC-GR-00-00-00</Method_ID>
 					<Description>Ionization chamber</Description>
 					<Activity>
-						<value>484</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>484</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.895</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.31</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.84</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.895</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -229,29 +307,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139BIPM1976-1</Solution_ID>
 					<mass>
-						<value>3.50917</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.50917</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.2</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.2</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>20</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>20</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Negligible</impurities>
@@ -259,29 +345,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139BIPM1976-2</Solution_ID>
 					<mass>
-						<value>3.50687</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.50687</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.2</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.2</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>20</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>20</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Negligible</impurities>
@@ -292,36 +386,54 @@
 					<Reference_date>1976-03-15T00:00:00Z</Reference_date>
 					<Solution_ID>Ce-139BIPM1976-1</Solution_ID>
 					<Half-life>
-						<value>137.65</value>
-						<unit>d</unit>
-						<standard_deviation>7</standard_deviation>
+						<dsi:real>
+							<dsi:value>137.65</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>7</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</Half-life>
 					<Method_ID>4P-PC-00-NA-GR-CO</Method_ID>
 					<Description>4pi(PC)-gamma coincidence</Description>
 					<Activity>
-						<value>2493.2</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>2493.2</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>1.185</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.19</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>1.17</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>1.185</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 				<Mesurement>
 					<Reference_date>1976-03-15T00:00:00Z</Reference_date>
 					<Solution_ID>Ce-139BIPM1976-2</Solution_ID>
 					<Half-life>
-						<value>137.65</value>
-						<unit>d</unit>
-						<standard_deviation>7</standard_deviation>
+						<dsi:real>
+							<dsi:value>137.65</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>7</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</Half-life>
 					<Method_ID>4P-PC-00-NA-GR-CO</Method_ID>
 					<Description>4pi(PC)-gamma coincidence</Description>
 					<Activity>
-						<value>2493.7</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>2493.7</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>1.185</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.19</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>1.17</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>1.185</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -370,29 +482,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139BKFH1984-1</Solution_ID>
 					<mass>
-						<value>3.6002</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.6002</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Ce]</SMILES>
 							<InChIKey>GWXLDORMOJMVQZ-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>25</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>25</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -403,18 +523,27 @@
 					<Reference_date>1984-06-30T12:00:00Z</Reference_date>
 					<Solution_ID>Ce-139BKFH1984-1</Solution_ID>
 					<Half-life>
-						<value>137.64</value>
-						<unit>d</unit>
-						<standard_deviation>5</standard_deviation>
+						<dsi:real>
+							<dsi:value>137.64</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>5</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</Half-life>
 					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(x,e)-gamma coincidence</Description>
 					<Activity>
-						<value>3616</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>3616</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.351</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.03</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.35</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.351</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -448,29 +577,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139CMI1985-1</Solution_ID>
 					<mass>
-						<value>3.6109</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.6109</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.08</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.08</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>30</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>30</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>&lt;0.1%</impurities>
@@ -481,17 +618,23 @@
 					<Reference_date>1985-01-24T12:00:00Z</Reference_date>
 					<Solution_ID>Ce-139CMI1985-1</Solution_ID>
 					<Half-life>
-						<value>137.5</value>
-						<unit>d</unit>
+						<dsi:real>
+							<dsi:value>137.5</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+						</dsi:real>
 					</Half-life>
 					<Method_ID>4P-00-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(x,e)-gamma coincidence</Description>
 					<Activity>
-						<value>14820</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>14820</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.235</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.05</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.23</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.235</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -559,29 +702,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139IRA1983-1</Solution_ID>
 					<mass>
-						<value>3.602</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.602</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Ce+3]</SMILES>
 							<InChIKey>XQTIWNLDFPPCIU-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>7.5</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>7.5</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -594,11 +745,15 @@
 					<Method_ID>4P-PC-XR-NA-GR-CO</Method_ID>
 					<Description>4pi(PC)x-gamma coincidence</Description>
 					<Activity>
-						<value>2690</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>2690</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.304</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.05</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.3</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.304</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -632,31 +787,45 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139IRA2000-1</Solution_ID>
 					<mass>
-						<value>3.5887</value>
-						<unit>g</unit>
-						<standard_uncertainty>1</standard_uncertainty>
+						<dsi:real>
+							<dsi:value>3.5887</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>1</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1.000</value>
-						<unit>g.cm-3</unit>
-						<standard_uncertainty>7</standard_uncertainty>
+						<dsi:real>
+							<dsi:value>1.000</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>7</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Ce+3]</SMILES>
 							<InChIKey>XQTIWNLDFPPCIU-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>20</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>20</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -667,18 +836,27 @@
 					<Reference_date>2000-12-01T12:00:00Z</Reference_date>
 					<Solution_ID>Ce-139IRA2000-1</Solution_ID>
 					<Half-life>
-						<value>137.64</value>
-						<unit>d</unit>
-						<standard_deviation>2</standard_deviation>
+						<dsi:real>
+							<dsi:value>137.64</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>2</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</Half-life>
 					<Method_ID>4P-00-XR-NA-GR-CO</Method_ID>
 					<Description>4pi x-gamma coincidence</Description>
 					<Activity>
-						<value>5224</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>5224</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.587</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.54</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.23</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.587</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -712,30 +890,41 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139KAE1976-1</Solution_ID>
 					<mass>
-						<value>3.50770</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.50770</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1.000</value>
-						<unit>g.cm-3</unit>
-						<standard_uncertainty>7</standard_uncertainty>
+						<dsi:real>
+							<dsi:value>1.000</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>7</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.2</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.2</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>15</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>15</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -743,30 +932,41 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139KAE1976-2</Solution_ID>
 					<mass>
-						<value>3.51237</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.51237</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1.000</value>
-						<unit>g.cm-3</unit>
-						<standard_uncertainty>7</standard_uncertainty>
+						<dsi:real>
+							<dsi:value>1.000</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>7</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.2</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.2</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>15</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>15</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -779,11 +979,15 @@
 					<Method_ID>2P-NA-GR-00-00-00</Method_ID>
 					<Description>NaI(Tl) gamma spectrometry</Description>
 					<Activity>
-						<value>1687</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>1687</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.856</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.83</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.21</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.856</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 				<Mesurement>
@@ -792,11 +996,15 @@
 					<Method_ID>2P-NA-GR-00-00-00</Method_ID>
 					<Description>NaI(Tl) gamma spectrometry</Description>
 					<Activity>
-						<value>1689</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>1689</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.856</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.83</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.21</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.856</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -886,29 +1094,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139LNE-LNHB1997-1</Solution_ID>
 					<mass>
-						<value>3.5510</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.5510</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.5</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.5</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>10</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>10</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -916,29 +1132,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139LNE-LNHB1997-2</Solution_ID>
 					<mass>
-						<value>3.5001</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.5001</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.5</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.5</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>10</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>10</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -949,9 +1173,14 @@
 					<Reference_date>1997-02-01T12:00:00Z</Reference_date>
 					<Solution_ID>Ce-139LNE-LNHB1997-1</Solution_ID>
 					<Half-life>
-						<value>137.640</value>
-						<unit>d</unit>
-						<standard_deviation>23</standard_deviation>
+						<dsi:real>
+							<dsi:value>137.640</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>23</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<reference>
 							<detail>Taylor J.G.V., private communication (1975) superseded by Rutledge A.R. Smith L.V, Merritt JS., AECL report 6692 (1980)</detail>
 						</reference>
@@ -959,20 +1188,29 @@
 					<Method_ID>4P-PC-BP-NA-GR-CO</Method_ID>
 					<Description>4pi beta-gamma coincidence</Description>
 					<Activity>
-						<value>2848</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>2848</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.5</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.50</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.02</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.5</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 				<Mesurement>
 					<Reference_date>1997-02-01T12:00:00Z</Reference_date>
 					<Solution_ID>Ce-139LNE-LNHB1997-2</Solution_ID>
 					<Half-life>
-						<value>137.640</value>
-						<unit>d</unit>
-						<standard_deviation>23</standard_deviation>
+						<dsi:real>
+							<dsi:value>137.640</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>23</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<reference>
 							<detail>Taylor J.G.V., private communication (1975) superseded by Rutledge A.R. Smith L.V, Merritt JS., AECL report 6692 (1980)</detail>
 						</reference>
@@ -980,11 +1218,15 @@
 					<Method_ID>4P-PC-BP-NA-GR-CO</Method_ID>
 					<Description>4pi beta-gamma coincidence</Description>
 					<Activity>
-						<value>2807</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>2807</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.5</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.50</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.02</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.5</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -1033,30 +1275,41 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139LNE-LNHB2022-1</Solution_ID>
 					<mass>
-						<value>3.7170</value>
-						<unit>g</unit>
-						<standard_uncertainty>6</standard_uncertainty>
+						<dsi:real>
+							<dsi:value>3.7170</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>6</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>10</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>10</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>None detected</impurities>
@@ -1067,9 +1320,14 @@
 					<Reference_date>2022-01-03T12:00:00Z</Reference_date>
 					<Solution_ID>Ce-139LNE-LNHB2022-1</Solution_ID>
 					<Half-life>
-						<value>137.641</value>
-						<unit>d</unit>
-						<standard_deviation>20</standard_deviation>
+						<dsi:real>
+							<dsi:value>137.641</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>20</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<reference>
 							<doi>http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol4.pdf</doi>
 						</reference>
@@ -1078,20 +1336,29 @@
 					<Description>4pi x-gamma counting</Description>
 					<Comments>The activity of 2439.1~kBq is used. It corresponds to the arithmetic mean of both results. The relative uncertainty of 0.35\% is used. It corresponds to the higher value of both results.</Comments>
 					<Activity>
-						<value>2435.4</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>2435.4</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.351</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.141</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.321</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.351</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 				<Mesurement>
 					<Reference_date>2022-01-03T12:00:00Z</Reference_date>
 					<Solution_ID>Ce-139LNE-LNHB2022-1</Solution_ID>
 					<Half-life>
-						<value>137.641</value>
-						<unit>d</unit>
-						<standard_deviation>20</standard_deviation>
+						<dsi:real>
+							<dsi:value>137.641</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>20</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 						<reference>
 							<doi>http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol4.pdf</doi>
 						</reference>
@@ -1100,11 +1367,15 @@
 					<Description>4pi beta-gamma coincidence method</Description>
 					<Comments>The activity of 2439.1~kBq is used. It corresponds to the arithmetic mean of both results. The relative uncertainty of 0.35\% is used. It corresponds to the higher value of both results.</Comments>
 					<Activity>
-						<value>2442.8</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>2442.8</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.331</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.315</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.102</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.331</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -1153,29 +1424,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139LNMRI-IRD1997-1</Solution_ID>
 					<mass>
-						<value>3.59277</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.59277</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>0.998</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>0.998</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>30</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>30</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -1188,11 +1467,15 @@
 					<Method_ID>4P-00-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(x,e)-gamma coincidence</Description>
 					<Activity>
-						<value>1071</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>1071</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.333</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.22</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.25</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.333</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -1260,29 +1543,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139NIST1988-1</Solution_ID>
 					<mass>
-						<value>3.7072</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.7072</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1.005</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1.005</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.4</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.4</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>16</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>16</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>54Mn: 0.0017(3)%; 65Zn: 0.029(3)%</impurities>
@@ -1293,19 +1584,28 @@
 					<Reference_date>1987-12-03T17:00:00Z</Reference_date>
 					<Solution_ID>Ce-139NIST1988-1</Solution_ID>
 					<Half-life>
-						<value>137.64</value>
-						<unit>d</unit>
-						<standard_deviation>2</standard_deviation>
+						<dsi:real>
+							<dsi:value>137.64</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>2</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</Half-life>
 					<Method_ID>4P-IC-GR-00-00-00</Method_ID>
 					<Description>Ionization chamber</Description>
 					<Comments>Calibrated by 4pi(PC)-gamma coincidence counting in 1976</Comments>
 					<Activity>
-						<value>1850</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>1850</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.3</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.01</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.3</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.3</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -1339,29 +1639,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139NIST1997-1</Solution_ID>
 					<mass>
-						<value>3.65063</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.65063</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1.012</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1.012</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.77</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.77</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>100</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>100</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -1375,11 +1683,15 @@
 					<Description>Ionization chamber</Description>
 					<Comments>Calibrated by 4pi(PC)-gamma coincidence counting in 1976</Comments>
 					<Activity>
-						<value>730.9</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>730.9</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.247</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.24</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.247</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -1412,29 +1724,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139NMIJ1994-1</Solution_ID>
 					<mass>
-						<value>3.6108</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.6108</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>10</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>10</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -1447,11 +1767,15 @@
 					<Method_ID>4P-00-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(x,e)-gamma coincidence</Description>
 					<Activity>
-						<value>538</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>538</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.394</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.2</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.34</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.394</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -1484,29 +1808,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139NMIJ2004-1</Solution_ID>
 					<mass>
-						<value>3.56386</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.56386</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1.002</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1.002</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Ce]</SMILES>
 							<InChIKey>ANFLYVRDLFXAOY-UHFFFAOYSA-L</InChIKey>
-							<Concentration>
-								<value>100</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>100</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -1517,18 +1849,24 @@
 					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
 					<Solution_ID>Ce-139NMIJ2004-1</Solution_ID>
 					<Half-life>
-						<value>137.64</value>
-						<unit>d</unit>
+						<dsi:real>
+							<dsi:value>137.64</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+						</dsi:real>
 					</Half-life>
 					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(x,e)-gamma coincidence</Description>
 					<Comments>The ampoule measured by the NMIJ was used to make the link of the APMP.RI(II)-K2 comparison to the SIR.</Comments>
 					<Activity>
-						<value>1111.2</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>1111.2</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.184</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.17</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.07</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.184</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -1596,29 +1934,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139NMISA1980-1</Solution_ID>
 					<mass>
-						<value>0.51635</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>0.51635</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1.037</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1.037</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>170</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>170</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -1626,29 +1972,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139NMISA1980-2</Solution_ID>
 					<mass>
-						<value>0.52313</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>0.52313</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1.037</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1.037</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>170</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>170</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -1661,11 +2015,15 @@
 					<Method_ID>4P-LS-BP-NA-GR-CO</Method_ID>
 					<Description>4pi(LS) beta-gamma coincidence</Description>
 					<Activity>
-						<value>46640</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>46640</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.479</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.19</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.44</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.479</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 				<Mesurement>
@@ -1674,11 +2032,15 @@
 					<Method_ID>4P-LS-BP-NA-GR-CO</Method_ID>
 					<Description>4pi(LS) beta-gamma coincidence</Description>
 					<Activity>
-						<value>47250</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>47250</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.479</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.19</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.44</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.479</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -1727,29 +2089,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139NMISA1982-1</Solution_ID>
 					<mass>
-						<value>0.52097</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>0.52097</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1.037</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1.037</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>180</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>180</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -1762,11 +2132,15 @@
 					<Method_ID>4P-LS-BP-NA-GR-CO</Method_ID>
 					<Description>4pi(LS) beta-gamma coincidence</Description>
 					<Activity>
-						<value>42670</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>42670</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.511</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.39</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.33</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.511</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -1800,29 +2174,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139NMISA1983-1</Solution_ID>
 					<mass>
-						<value>0.253975</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>0.253975</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1.017</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1.017</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>409</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>409</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -1830,29 +2212,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139NMISA1983-2</Solution_ID>
 					<mass>
-						<value>0.254797</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>0.254797</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1.017</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1.017</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>409</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>409</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -1865,11 +2255,15 @@
 					<Method_ID>4P-LS-BP-NA-GR-CO</Method_ID>
 					<Description>4pi(LS) beta-gamma coincidence</Description>
 					<Activity>
-						<value>55170</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>55170</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.457</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.18</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.42</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.457</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 				<Mesurement>
@@ -1878,11 +2272,15 @@
 					<Method_ID>4P-LS-BP-NA-GR-CO</Method_ID>
 					<Description>4pi(LS) beta-gamma coincidence</Description>
 					<Activity>
-						<value>55350</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>55350</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.457</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.18</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.42</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.457</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -1931,29 +2329,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139NMISA1999-1</Solution_ID>
 					<mass>
-						<value>3.603</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.603</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1.023</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1.023</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>534</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>534</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -1964,17 +2370,23 @@
 					<Reference_date>1999-01-12T12:00:00Z</Reference_date>
 					<Solution_ID>Ce-139NMISA1999-1</Solution_ID>
 					<Half-life>
-						<value>137.64</value>
-						<unit>d</unit>
+						<dsi:real>
+							<dsi:value>137.64</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+						</dsi:real>
 					</Half-life>
 					<Method_ID>4P-LS-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(LS) (x,e)-gamma coincidence</Description>
 					<Activity>
-						<value>13700</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>13700</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.632</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.05</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.63</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.632</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -2008,29 +2420,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139NMISA2019-1</Solution_ID>
 					<mass>
-						<value>3.71105</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.71105</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.5</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.5</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>10</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>10</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>None detected</impurities>
@@ -2041,17 +2461,23 @@
 					<Reference_date>2019-01-30T10:00:00Z</Reference_date>
 					<Solution_ID>Ce-139NMISA2019-1</Solution_ID>
 					<Half-life>
-						<value>137.641</value>
-						<unit>d</unit>
+						<dsi:real>
+							<dsi:value>137.641</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+						</dsi:real>
 					</Half-life>
 					<Method_ID>4P-LS-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(LS) (e,X)-gamma coincidence</Description>
 					<Activity>
-						<value>1547.58</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>1547.58</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.522</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.05</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.52</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.522</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -2085,29 +2511,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139NPL1981-1</Solution_ID>
 					<mass>
-						<value>3.7053</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.7053</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1.0015</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1.0015</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>40</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>40</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -2121,11 +2555,15 @@
 					<Description>Ionization chamber</Description>
 					<Comments>Calibrated by 4pi(PC)-gamma coincidence counting</Comments>
 					<Activity>
-						<value>2402</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>2402</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.427</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.15</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.4</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.427</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -2159,29 +2597,37 @@
 				<Radioactive_solution>
 					<Solution_ID>Ce-139PTB1999-1</Solution_ID>
 					<mass>
-						<value>3.73978</value>
-						<unit>g</unit>
+						<dsi:real>
+							<dsi:value>3.73978</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>0.999</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>0.999</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>0.1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>0.1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>35</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>35</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -2192,36 +2638,54 @@
 					<Reference_date>1999-11-01T00:00:00Z</Reference_date>
 					<Solution_ID>Ce-139PTB1999-1</Solution_ID>
 					<Half-life>
-						<value>137.66</value>
-						<unit>d</unit>
-						<standard_deviation>6</standard_deviation>
+						<dsi:real>
+							<dsi:value>137.66</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>6</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</Half-life>
 					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(PC)EC-gamma coincidence</Description>
 					<Activity>
-						<value>5400</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>5400</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.152</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.14</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.152</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 				<Mesurement>
 					<Reference_date>1999-11-01T00:00:00Z</Reference_date>
 					<Solution_ID>Ce-139PTB1999-1</Solution_ID>
 					<Half-life>
-						<value>137.66</value>
-						<unit>d</unit>
-						<standard_deviation>6</standard_deviation>
+						<dsi:real>
+							<dsi:value>137.66</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>6</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</Half-life>
 					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
 					<Description>and 4pi(PPC)EC-gamma coincidence</Description>
 					<Activity>
-						<value>5400</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>5400</dsi:value>
+							<dsi:unit>\kilo\becquerel</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.152</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.14</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.152</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -2244,41 +2708,36 @@
 				</BIPM_measurement>
 			</BIPM_measurements>
 		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>PTB</Acronym>
-				<ROR>https://ror.org/05r3f7h03</ROR>
-			</laboratory>
-			<year>2008</year>
-			<inKCRV>true</inKCRV>
-			<DoE_valid>true</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Ce-139PTB2008-1</Solution_ID>
-					<mass>
-						<value>3.67728</value>
-						<unit>g</unit>
+								<dsi:value>3.67728</dsi:value>
+							<dsi:unit>\gram</dsi:unit>
+						</dsi:real>
 					</mass>
 					<density>
-						<value>1.016</value>
-						<unit>g.cm-3</unit>
+						<dsi:real>
+							<dsi:value>1.016</dsi:value>
+							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						</dsi:real>
 					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<Concentration>
-								<value>1</value>
-								<unit>mol.dm-3</unit>
-							</Concentration>
+							<SolvantConcentration>
+								<dsi:real>
+									<dsi:value>1</dsi:value>
+									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+								</dsi:real>
+							</SolvantConcentration>
 						</Solvant>
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
-							<Concentration>
-								<value>35</value>
-								<unit>µg.g-1</unit>
-							</Concentration>
+							<CarrierConcentration>
+								<dsi:real>
+									<dsi:value>35</dsi:value>
+									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+								</dsi:real>
+							</CarrierConcentration>
 						</Carrier>
 					</Chemical_composition>
 					<impurities>Not reported</impurities>
@@ -2289,38 +2748,56 @@
 					<Reference_date>2008-02-01T00:00:00Z</Reference_date>
 					<Solution_ID>Ce-139PTB2008-1</Solution_ID>
 					<Half-life>
-						<value>137.66</value>
-						<unit>d</unit>
-						<standard_deviation>6</standard_deviation>
+						<dsi:real>
+							<dsi:value>137.66</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>6</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</Half-life>
 					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
 					<Description>4pi(PC)EC-gamma coincidence</Description>
 					<Comments>Weighted mean result taking correlation into account for the uncertainties</Comments>
 					<Activity>
-						<value>4145</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>4145</dsi:value>
+							<dsi:unit>kBq</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.238</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.23</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.238</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 				<Mesurement>
 					<Reference_date>2008-02-01T00:00:00Z</Reference_date>
 					<Solution_ID>Ce-139PTB2008-1</Solution_ID>
 					<Half-life>
-						<value>137.66</value>
-						<unit>d</unit>
-						<standard_deviation>6</standard_deviation>
+						<dsi:real>
+							<dsi:value>137.66</dsi:value>
+							<dsi:unit>\day</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>6</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
+						</dsi:real>
 					</Half-life>
 					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
 					<Description>and 4pi(PPC)EC-gamma coincidence</Description>
 					<Comments>Weighted mean result taking correlation into account for the uncertainties</Comments>
 					<Activity>
-						<value>4145</value>
-						<unit>kBq</unit>
+						<dsi:real>
+							<dsi:value>4145</dsi:value>
+							<dsi:unit>kBq</dsi:unit>
+							<dsi:expandedUnc>
+								<dsi:uncertainty>0.238</dsi:uncertainty>
+								<dsi:coverageFactor>1</dsi:coverageFactor>
+							</dsi:expandedUnc>
 						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
 						<relative_standard_uncertainty_type_B>0.23</relative_standard_uncertainty_type_B>
-						<relative_standard_uncertainty_combined>0.238</relative_standard_uncertainty_combined>
 					</Activity>
 				</Mesurement>
 			</Laboratory_measurements>
@@ -2378,4 +2855,4 @@
 			</BIPM_measurements>
 		</Submission>
 	</Comparison_metadata>
-</Comparison>
+</comp:comparison>
