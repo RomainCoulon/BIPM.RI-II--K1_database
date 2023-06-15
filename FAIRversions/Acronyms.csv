@@ -1,0 +1,16 @@
+Geometry;acronym;Detector;acronym2;;Radiation;acronym;Mode;acronym2;;Examples of method;acronym
+4 $\pi$;4P;proportional counter ;PC;;positron;PO;efficiency tracing;ET;;4$\pi$(PC)$\beta$-$\gamma$ coincidence counting;4P-PC-BP-NA-GR-CO
+defined solid angle;SA;press. Prop. Counter;PP;;beta particle;BP;internal gas counting;IG;;4$\pi$(PPC)$\beta$-$\gamma$ coincidence counting eff. trac;4P-PP-MX-NA-GR-CT
+2 $\pi$;2P;liquid scintillation counting;LS;;Auger electron;AE;CIEMAT/NIST;CN;;defined solid angle $\alpha$-particle counting with a PIPS detector;SA-PS-AP-00-00-00
+undefined solid angle;UA;NaI(Tl);NA;;conversion electron;CE;sum counting;SC;;4$\pi$(PPC)AX-$\gamma$(GeHP)-anticoincidence counting;4P-PP-MX-GH-GR-AC
+;;Ge(HP);GH;;mixed electrons;ME;coincidence;CO;;4$\pi$CsI-$\beta$,AX,$\gamma$ counting;4P-CS-MX-00-00-HE
+;;Ge(Li);GL;;bremsstrahlung;BS;anticoincidence;AC;;calibrated IC;4P-IC-GR-00-00-00
+;;Si(Li);SL;;gamma rays;GR;coincidence counting with efficiency tracing;CT;;internal gas counting;4P-PC-BP-00-00-IG
+;;CsI(Tl);CS;;x-rays;XR;anticoincidence counting with efficiency tracing;AT;;;
+;;ionization chamber;IC;;photons ($x + \gamma$);PH;triple-to-double coincidence ratio counting;TD;;;
+;;grid ionization chamber;GC;;photons + electrons;PE;selective sampling;SS;;;
+;;Cerenkov detector;CD;;alpha particle;AP;high efficiency;HE;;;
+;;calorimeter;CA;;mixture of various radiation;MX;digital coincidence counting;DC;;;
+;;solid plastic scintillator;SP;;;;;;;;
+;;PIPS detector;PS;;;;;;;;
+;;CeBr3;CB;;;;;;;;

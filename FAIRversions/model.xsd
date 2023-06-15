@@ -22,9 +22,11 @@
                 <xs:annotation>
                     <xs:documentation xml:lang="en">
                         Key comparison results are key data in the realization of the derived unit becquerel for a given radionuclide.
-                        The ultimate semantic reference is provided by http://si-digital-framework.org/SI#/becquerel
-                        The key comparison reference value and degreees of equivalence obtained in BIPM.RI(II)-K1 comparisons
-                        are made available in this machine-readable document. 
+                        The ultimate semantic reference for this derived SI unit is provided by http://si-digital-framework.org/SI#/becquerel
+                        The key comparison results are officially publish on BIPM the Key Comparison DataBase https://www.bipm.org/kcdb/  
+                        Additionally, to facilitate machine readability and actionability,
+                        the key comparison reference value and degreees of equivalence obtained in BIPM.RI(II)-K1 comparisons are made available in this machine-readable document.
+                        The metadata supporting these results are also included in this machine-readable document. 
                     </xs:documentation"> 
                 </xs:annotation>                        			
 				<xs:element name = "General_information">
@@ -48,7 +50,14 @@
                             </xs:element>                            
                             <xs:element name = "Pilot">
                                 <xs:complexType>
-                                    <xs:sequence minOccurs = "0" maxOccurs = "1">                                
+                                    <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                        <xs:annotation>
+                                            <xs:documentation xml:lang="en">
+                                                The pilot laboratory is identified by: 
+                                                _ The accronym given is the list of signatories of the CIPM MRA: https://www.bipm.org/en/cipm-mra/participation/ 
+                                                _ The RoR identifer (when available): https://ror.org/ 
+                                            </xs:documentation"> 
+                                        </xs:annotation>                                                                  
                                         <xs:element name = "Acronym" type = "xs:string"></xs:element>
                                         <xs:element name = "ROR_indentifier" type = "xs:anyURI"></xs:element>
                                     </xs:sequence>
@@ -69,10 +78,24 @@
                                                 <xs:sequence minOccurs = "0" maxOccurs = "1">
                                                     <xs:annotation>
                                                         <xs:documentation xml:lang="en">
-                                                            The key comparison value KCRV is defined by a dsi: real element.
+                                                            The key comparison reference value (KCRV) is defined by a dsi: real element.
                                                             This element is expected to contain a value, a multiple of becquerel as unit,
                                                             and a standard uncertainty (a coverage factor equal to 1).
                                                             The unit is defined in http://si-digital-framework.org/SI#/becquerel
+                                                            
+                                                            In May 2013, the CCRI(II) decided to calculate the KCRV by using the power-moderated weighted mean (PMM).
+                                                            https://doi.org/10.1088/0026-1394/52/3/S200
+                                                            key comparison results can be selected for the KCRV with the following provisions: 
+                                                            _ results for solutions standardized by only primary techniques are accepted,
+                                                                 with the exception of radioactive gas standards (for which results from transfer instrument measurements that are directly traceable to a primary measurement in the laboratory may be included); 
+                                                            _ each NMI or other laboratory may use only one result (normally the most recent result or the mean if more than one ampoule is submitted);
+                                                            _ results more than 20 years old are included in the calculation of the KCRV but are not included in data shown in the KCDB or in the plots in this report, as they have expired;Acronym
+                                                            _ possible outliers can be identified on a mathematical basis and excluded from the KCRV     using the normalized error test with a test value of 2.5 and using the modified uncertainties;
+                                                            _ results can also be excluded for technical reasons; and
+                                                            _ the CCRI(II) is always the final arbiter regarding excluding any data from the calculation of the KCRV.\\ 
+                                                                Although the KCRV may be modified when other NMIs participate, on the advice of the Key Comparison Working Group of the CCRI(II),
+                                                                such modifications are made only by the CCRI(II) during one of its biennial meetings,
+                                                                or by consensus through electronic means (e.g., email) as discussed at the CCRI(II) meeting in 2013.
                                                         </xs:documentation"> 
                                                     </xs:annotation>
                                                     <xs:element ref="dsi:real">
@@ -86,6 +109,13 @@
                                                     <xs:element name = "linked_comparison" minOccurs = "0">
                                                         <xs:complexType>
                                                             <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                <xs:annotation>
+                                                                    <xs:documentation xml:lang="en">
+                                                                        In some cases, CCRI(II) or regional key comparisons could have been linked to the SIR.
+                                                                        The degrees of equivalence in compliance with BIPM.RI(II)-K1 comparisons are provided.
+                                                                        The linked comparison is identified by its CIPM-MRA identifer wiht the year and the DOI of the related comparison report.  
+                                                                    </xs:documentation">
+                                                                </xs:annotation>
                                                                 <xs:element name = "Comparison_code" type="xs:string"></xs:element>
                                                                 <xs:element name = "Consultative_Committee" type="xs:string" minOccurs="0"></xs:element>
                                                                 <xs:element name = "RMO" type="xs:string" minOccurs="0"></xs:element>
@@ -97,9 +127,29 @@
                                                     <xs:element name = "Degree_of_equivalence">
                                                         <xs:complexType>
                                                             <xs:sequence>
+                                                                <xs:annotation>
+                                                                    <xs:documentation xml:lang="en">
+                                                                        Every participant in a comparison is entitled to have one result included in the KCDB as long as the NMI is a signatory or designated institute listed in the CIPM MRA and the result is valid (i.e., not older than 20 years).
+                                                                        An NMI may withdraw its result only if all other participants agree.
+                                                                        The degree of equivalence of a given measurement standard is the degree to which this standard is consistent with the KCRV.
+                                                                        The degree of equivalence is expressed quantitatively in terms of the deviation from the key comparison reference value and the expanded uncertainty of this deviation ($k = 2$).
+                                                                        The CCRI(II) agree on the following statement on degree of equivalence evaluated in BIPM.RI(II)-K1 comparisons: 
+                                                                        _ The degree of equivalence of the result of a particular NMI, $i$, with the key comparison reference value is expressed as the difference $D_{i}$ between the values $D_{i}=A_{\textrm{e}i}-KCRV$
+                                                                            and the expanded uncertainty ($k=2$)  of this difference, $U_{i}$, known as the equivalence uncertainty; hence $U_{i}=2u(D_{i})$.
+                                                                        _ When the result of the NMI $i$ is included in the KCRV with a weight $w_{i}$, then $u^{2}(D_{i})=(1-2w_{i})u_i^{2}+u^{2}(KCRV)$.
+                                                                        _ However, when the result of the NMI $i$ is not included in the KCRV, then $u^2(D_i)=u_i^2+u^2(KCRV)$.
+                                                                    </xs:documentation">
+                                                                </xs:annotation>
                                                                 <xs:element name = "laboratory">
                                                                     <xs:complexType>
                                                                         <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                            <xs:annotation>
+                                                                                <xs:documentation xml:lang="en">
+                                                                                    The participant laboratory is identified by: 
+                                                                                    _ The accronym given is the list of signatories of the CIPM MRA: https://www.bipm.org/en/cipm-mra/participation/ 
+                                                                                    _ The RoR identifer (when available): https://ror.org/ 
+                                                                                </xs:documentation"> 
+                                                                            </xs:annotation>                                                                           
                                                                             <xs:element name = "Acronym" type = "xs:string"></xs:element>
                                                                             <xs:element name = "ROR" type = "xs:anyURI" minOccurs = "0"></xs:element>                                                                
                                                                         </xs:sequence>
@@ -139,9 +189,28 @@
                             <xs:element name = "Submission">
                                 <xs:complexType>
                                     <xs:sequence minOccurs = "0" maxOccurs = "unbounded">
+                                        <xs:annotation>
+                                           	<xs:documentation xml:lang="en">         
+                                                A submission to obtain a degree of equivalence is described by providing details on:
+                                                _ The participating labotory (xml element: "laboratory")
+                                                _ The year of the participation, ie measurment by the SIR  (xml element: "year")
+                                                _ The boolean indicator (true or false) saying if the result is used in the KCRV (xml element: "inKCRV")
+                                                _ The boolean indicator (true or false) saying if the result is currently valid for a degree of equivalence published in the KCDB (xml element: "DoE_valid")
+                                                _ Details on the radioactive standard solution (xml element: "Radioactive_solutions")
+                                                _ Details on the activity measurement carried out by the laboratory (xml element: "Laboratory_measurements")
+                                                _ Details on the SIR measurement (equivalent activity) carried out by the BIPM (xml element: "BIPM_measurements")
+                                            </xs:documentation>
+                                        </xs:annotation>                                          
                                         <xs:element name = "laboratory">
                                             <xs:complexType>
                                                 <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                    <xs:annotation>
+                                                        <xs:documentation xml:lang="en">
+                                                            The participant laboratory is identified by: 
+                                                            _ The accronym given is the list of signatories of the CIPM MRA: https://www.bipm.org/en/cipm-mra/participation/ 
+                                                            _ The RoR identifer (when available): https://ror.org/ 
+                                                        </xs:documentation"> 
+                                                    </xs:annotation>                                                       
                                                     <xs:element name = "Acronym" type = "xs:string"></xs:element>
                                                     <xs:element name = "ROR" type = "xs:anyURI" minOccurs = "0"></xs:element>                                                                
                                                 </xs:sequence>
@@ -156,6 +225,20 @@
                                                     <xs:element name = "Radioactive_solution">
                                                         <xs:complexType>
                                                             <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                <xs:annotation>
+                                                                    <xs:documentation xml:lang="en">
+                                                                        A radioactive standard solution submitted by a laboratory is defined by:
+                                                                        _ An identifier (xml element: "Solution_ID") built such that RLY-I
+                                                                            R: the radionuclide (eg. Ce-139)
+                                                                            L: the acronym of the laboratory given in https://www.bipm.org/en/cipm-mra/participation/
+                                                                            Y: the year of the measurement in the SIR
+                                                                            I: an incremental number to identifier each ampoule in a set of ampoule sent by the laboratory
+                                                                        _ The mass measurement of the solution carried out by the laboratory (xml element: "mass")
+                                                                        _ The density measurement of the solution carried out by the laboratory (xml element: "density")
+                                                                        _ The chemical composition of the solution (xml element: "Chemical_composition")
+                                                                        _ Details on possible impurities contained in the solution (xml element: "impurities")
+                                                                    </xs:documentation"> 
+                                                                </xs:annotation>    
                                                                 <xs:element name = "Solution_ID" type = "xs:string"></xs:element>
                                                                 <xs:element name = "mass" minOccurs = "0" maxOccurs = "1">
                                                                     <xs:complexType>
@@ -270,6 +353,19 @@
                                                     <xs:element name = "Mesurement" minOccurs = "0" maxOccurs = "unbounded">
                                                         <xs:complexType>
                                                             <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                <xs:annotation>
+                                                                    <xs:documentation xml:lang="en">
+                                                                        An activity measurement carried out by a laboratory is defined by:
+                                                                        _ The reference date (xml element: "Reference_date")
+                                                                        _ The identifier of the measured solution (xml element: "Solution_ID") built such that RLY-I
+                                                                            R: the radionuclide (eg. Ce-139)
+                                                                            L: the acronym of the laboratory given in https://www.bipm.org/en/cipm-mra/participation/
+                                                                            Y: the year of the measurement in the SIR
+                                                                            I: an incremental number to identifier each ampoule in a set of ampoule sent by the laboratory
+                                                                        _ The half-life used by the laboratory (xml element: "Half-life")
+                                                                        _ The identifier of the standardization method as defined in 
+                                                                    </xs:documentation"> 
+                                                                </xs:annotation> 
                                                                 <xs:element name = "Reference_date" type = "xs:dateTime"></xs:element>
                                                                 <xs:element name = "Solution_ID" type = "xs:string"></xs:element>
                                                                 <xs:element name = "Half-life" minOccurs = "0">
