@@ -31,6 +31,21 @@
                     <xs:complexType>
                         <xs:sequence minOccurs = "0" maxOccurs = "1">
                             <xs:element name = "Comparison_code" type="xs:string"></xs:element>
+                            <xs:element name = "Radionuclide">
+                                <xs:complexType>
+                                    <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                    <xs:annotation>
+                                        <xs:documentation xml:lang="en">
+                                            The radioniclide is identified by: 
+                                            _ The SMILES identifer, media type: chemical/x-daylight-smiles
+                                            _ The InChIKey identifer  http://inchi.info/inchikey_overview_en.html
+                                        </xs:documentation"> 
+                                    </xs:annotation>                                     
+                                    <xs:element name = "SMILES" type = "xs:string"></xs:element>
+                                    <xs:element name = "InChIKey" type = "xs:string"></xs:element>                                    
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>                            
                             <xs:element name = "Pilot">
                                 <xs:complexType>
                                     <xs:sequence minOccurs = "0" maxOccurs = "1">                                
@@ -180,6 +195,13 @@
                                                                             <xs:element name = "Solvant" minOccurs = "0" maxOccurs = "1">
                                                                                 <xs:complexType>
                                                                                     <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                                        <xs:annotation>
+                                                                                            <xs:documentation xml:lang="en">
+                                                                                                The solvant is identified by: 
+                                                                                                _ The SMILES identifer, media type: chemical/x-daylight-smiles
+                                                                                                _ The InChIKey identifer  http://inchi.info/inchikey_overview_en.html
+                                                                                            </xs:documentation"> 
+                                                                                        </xs:annotation>
                                                                                         <xs:element name = "SMILES" type = "xs:string"></xs:element>
                                                                                         <xs:element name = "InChIKey" type = "xs:string"></xs:element>
                                                                                         <xs:element name = "SolvantConcentration" minOccurs = "0" maxOccurs = "1">
@@ -204,6 +226,13 @@
                                                                             <xs:element name = "Carrier" minOccurs = "0" maxOccurs = "1">
                                                                                 <xs:complexType>
                                                                                     <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                                        <xs:annotation>
+                                                                                            <xs:documentation xml:lang="en">
+                                                                                                The carrier molecule is identified by: 
+                                                                                                _ The SMILES identifer, media type: chemical/x-daylight-smiles
+                                                                                                _ The InChIKey identifer  http://inchi.info/inchikey_overview_en.html
+                                                                                            </xs:documentation"> 
+                                                                                        </xs:annotation>                                                                                    
                                                                                         <xs:element name = "SMILES" type = "xs:string"></xs:element>
                                                                                         <xs:element name = "InChIKey" type = "xs:string"></xs:element>
                                                                                         <xs:element name = "CarrierConcentration" minOccurs = "0" maxOccurs = "1">

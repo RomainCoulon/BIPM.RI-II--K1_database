@@ -23,6 +23,20 @@ def readROR(NMI):
         csvFile = csv.reader(file, delimiter=';')
         for lines in csvFile:
             if lines[0] == NMI: return lines[7]
+            
+def readSMILES(rad, x):
+    with open('FAIRversions/ChemID/'+rad+'.csv', mode ='r')as file:
+        csvFile = csv.reader(file, delimiter=';')
+        for lines in csvFile:
+            if lines[0] == x: return lines[1]
+            
+def readINCHIKEY(rad, x):
+    with open('FAIRversions/ChemID/'+rad+'.csv', mode ='r')as file:
+        csvFile = csv.reader(file, delimiter=';')
+        for lines in csvFile:
+            if lines[0] == x: return lines[2]
+            
+            
 
 fileName = Radionuclide+"_database.xml"
 FAIRfileName = "FAIRversions/"+Radionuclide+"_database_FAIR.xml"
@@ -58,6 +72,10 @@ for i, line in enumerate(Lines):
     if "<General_information type=\"dict\">" in line:
         FAIRfile.write("\t<General_information>\n")
         FAIRfile.write("\t\t<Comparison_code>BIPM.RI(II)-K1."+Radionuclide+"</Comparison_code>\n")
+        FAIRfile.write("\t\t<Radionuclide>\n")
+        FAIRfile.write("\t\t\t<SMILES>+"+readSMILES(Radionuclide, Radionuclide)+"</SMILES>\n")
+        FAIRfile.write("\t\t\t<InChIKey>"+readINCHIKEY(Radionuclide, Radionuclide)+"</InChIKey>\n")
+        FAIRfile.write("\t\t</Radionuclide>\n")
         FAIRfile.write("\t\t<Pilot>\n")
         FAIRfile.write("\t\t\t<Acronym>BIPM</Acronym>\n")
         FAIRfile.write("\t\t\t<ROR_indentifier>https://ror.org/055vkyj43</ROR_indentifier>\n")
@@ -410,23 +428,10 @@ for i, line in enumerate(Lines):
     def ChemID(x):
         y_smiles = False
         y_InChIKey =  False
-        # Ce-135
-        if x == "CeCl3":
-            y_smiles = "[Cl-].[Cl-].[Cl-].[Ce+3]"
-            y_InChIKey = "VYLVYHXQOHJDJL-UHFFFAOYSA-K"
-        if x == "CeCl2":
-            y_smiles = "[Cl-].[Cl-].[Ce]"
-            y_InChIKey = "ANFLYVRDLFXAOY-UHFFFAOYSA-L"
-        if x == "Ce3+":
-            y_smiles = "[Ce+3]"
-            y_InChIKey = "XQTIWNLDFPPCIU-UHFFFAOYSA-N"        
-        if x == "Ce":
-            y_smiles = "[Ce]"
-            y_InChIKey = "GWXLDORMOJMVQZ-UHFFFAOYSA-N"
-        if x == "HCl":
-            y_smiles = "[Cl]"
-            y_InChIKey = "VEXZGXHMUGYJMC-UHFFFAOYSA-N"          
-
+        
+        y_smiles = readSMILES(Radionuclide, x)
+        y_InChIKey = readINCHIKEY(Radionuclide, x)
+          
         return y_smiles, y_InChIKey
 
 
