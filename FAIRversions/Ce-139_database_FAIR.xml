@@ -9,6 +9,7 @@
 			<SMILES>+[139Ce]</SMILES>
 			<InChIKey>GWXLDORMOJMVQZ-BJUDXGSMSA-N</InChIKey>
 		</Radionuclide>
+		<ServiceCategoryID></ServiceCategoryID>
 		<Pilot>
 			<Acronym>BIPM</Acronym>
 			<ROR_indentifier>https://ror.org/055vkyj43</ROR_indentifier>
@@ -2987,8 +2988,7 @@
 						</dsi:real>
 					</Half-life>
 					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
-					<Description>and 4pi(PPC)EC-gamma coincidence</Description>
-					<Comments>Weighted mean result taking correlation into account for the uncertainties</Comments>
+					<Description>and 4pi(PPC)EC-gamma coincidence</Description>					<Comments>Weighted mean result taking correlation into account for the uncertainties</Comments>
 					<Activity>
 						<dsi:real>
 							<dsi:value>4145</dsi:value>

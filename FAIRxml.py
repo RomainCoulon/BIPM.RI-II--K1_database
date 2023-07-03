@@ -76,6 +76,7 @@ for i, line in enumerate(Lines):
         FAIRfile.write("\t\t\t<SMILES>+"+readSMILES(Radionuclide, Radionuclide)+"</SMILES>\n")
         FAIRfile.write("\t\t\t<InChIKey>"+readINCHIKEY(Radionuclide, Radionuclide)+"</InChIKey>\n")
         FAIRfile.write("\t\t</Radionuclide>\n")
+        FAIRfile.write("\t\t<ServiceCategoryID></ServiceCategoryID>\n")
         FAIRfile.write("\t\t<Pilot>\n")
         FAIRfile.write("\t\t\t<Acronym>BIPM</Acronym>\n")
         FAIRfile.write("\t\t\t<ROR_indentifier>https://ror.org/055vkyj43</ROR_indentifier>\n")
