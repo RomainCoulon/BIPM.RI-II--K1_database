@@ -59,14 +59,14 @@ for i, line in enumerate(Lines):
 
     # rewrite the root 
     if "<all>" in line:
-        FAIRfile.write("<comp:comparison xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n \
+        FAIRfile.write("<Comparison xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n \
                 xsi:schemaLocation=\"https://github.com/RomainCoulon/BIPM.RI-II--K1_database/blob/main/FAIRversions/model.xsd\"\n \
                 xmlns:dsi=\"https://ptb.de/si\">\n")
         
         #FAIRfile.write("<Comparison>\n")
 
     if "</all>" in line:
-        FAIRfile.write("</comp:comparison>")
+        FAIRfile.write("</Comparison>")
 
     if "<General_information type=\"dict\">" in line:
         FAIRfile.write("\t<General_information>\n")

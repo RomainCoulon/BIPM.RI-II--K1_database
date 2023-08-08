@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<comp:comparison xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<Comparison xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:schemaLocation="https://github.com/RomainCoulon/BIPM.RI-II--K1_database/blob/main/FAIRversions/model.xsd"
                  xmlns:dsi="https://ptb.de/si">
 	<General_information>
@@ -2986,7 +2986,7 @@
 							</dsi:expandedUnc>
 						</dsi:real>
 					</Half-life>
-					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
+     					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
 					<Description>and 4pi(PPC)EC-gamma coincidence</Description>
 					<Comments>Weighted mean result taking correlation into account for the uncertainties</Comments>
 					<Activity>

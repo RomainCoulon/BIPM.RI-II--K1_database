@@ -3,7 +3,7 @@
             xmlns:dsi = "https://ptb.de/si"
             elementFormDefault="qualified">
             
-            <xs:import namespace = "https://ptb/de/si"
+            <xs:import namespace = "https://ptb.de/si"
             schemaLocation = "https://www.ptb.de/si/v1.3.1/SI_Format.xsd"/>
             
             <xs:annotation>
