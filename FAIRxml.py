@@ -59,10 +59,9 @@ for i, line in enumerate(Lines):
 
     # rewrite the root 
     if "<all>" in line:
-        FAIRfile.write("<comp:comparison xmlns:ri=\"BIPM_RI_II_K1_Schema\"\n \
-                xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n \
-                xmlns:dsi=\"http://ptb.de/si\"\n \
-                xmlns:si = \"http://si-digital-framework.org/SI#\">\n")
+        FAIRfile.write("<comp:comparison xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n \
+                xsi:schemaLocation=\"https://github.com/RomainCoulon/BIPM.RI-II--K1_database/blob/main/FAIRversions/model.xsd\"\n \
+                xmlns:dsi=\"https://ptb.de/si\">\n")
         
         #FAIRfile.write("<Comparison>\n")
 

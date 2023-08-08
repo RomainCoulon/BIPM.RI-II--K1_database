@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema 	xmlns:xs = "http://www.w3.org/2001/XMLSchema"
             xmlns:dsi = "https://ptb.de/si"
-            xmlns:si = "http://si-digital-framework.org/SI#"
-            
-            
-            targetNamespace="BIPM_RI_II_K1_Schema"
-            xmlns:comp="BIPM_RI_II_K1_Schema"
             elementFormDefault="qualified">
             
             <xs:import namespace = "https://ptb/de/si"
@@ -23,15 +18,15 @@
                 <xs:annotation>
                     <xs:documentation xml:lang="en">
                         Key comparison results are key data in the realization of the derived unit becquerel for a given radionuclide.
-                        The ultimate semantic reference for this derived SI unit is provided by http://si-digital-framework.org/SI#/becquerel
+                        The ultimate semantic reference for this derived SI unit is provided by http://si-digital-framework.org/SI#becquerel
                         The key comparison results are officially publish on BIPM the Key Comparison DataBase https://www.bipm.org/kcdb/  
                         Additionally, to facilitate machine readability and actionability,
-                        the key comparison reference value and degreees of equivalence obtained in BIPM.RI(II)-K1 comparisons are made available in this machine-readable document.
+                        the key comparison reference value and degrees of equivalence obtained in BIPM.RI(II)-K1 comparisons are made available in this machine-readable document.
                         The metadata supporting these results are also included in this machine-readable document.
                         The root structure is composed of:
                         _ The general information about the key comparison (xml element: "General_information")
                         _ The results of the key comparison (xml element: "Comparison_data")
-                        _ The metadata (administraive and technical) supporting these results (xml element: "Comparison_metadata")
+                        _ The metadata (administrative and technical) supporting these results (xml element: "Comparison_metadata")
                     </xs:documentation> 
                 </xs:annotation>                        			
 				<xs:element name = "General_information">
@@ -51,9 +46,9 @@
                                     <xs:sequence minOccurs = "0" maxOccurs = "1">
                                     <xs:annotation>
                                         <xs:documentation xml:lang="en">
-                                            The radioniclide is identified by: 
-                                            _ The SMILES identifer, media type: chemical/x-daylight-smiles
-                                            _ The InChIKey identifer  http://inchi.info/inchikey_overview_en.html
+                                            The radionuclide is identified by: 
+                                            _ The SMILES identifier, media type: chemical/x-daylight-smiles
+                                            _ The InChIKey identifier  http://inchi.info/inchikey_overview_en.html
                                         </xs:documentation> 
                                     </xs:annotation>                                     
                                     <xs:element name = "SMILES" type = "xs:string"></xs:element>
@@ -68,8 +63,8 @@
                                         <xs:annotation>
                                             <xs:documentation xml:lang="en">
                                                 The pilot laboratory is identified by: 
-                                                _ The accronym given is the list of signatories of the CIPM MRA: https://www.bipm.org/en/cipm-mra/participation/ 
-                                                _ The RoR identifer (when available): https://ror.org/ 
+                                                _ The acronym given is the list of signatories of the CIPM MRA: https://www.bipm.org/en/cipm-mra/participation/ 
+                                                _ The RoR identifier (when available): https://ror.org/ 
                                             </xs:documentation> 
                                         </xs:annotation>                                                                  
                                         <xs:element name = "Acronym" type = "xs:string"></xs:element>
@@ -118,7 +113,7 @@
                                                             The key comparison reference value (KCRV) is defined by a dsi: real element.
                                                             This element is expected to contain a value, a multiple of becquerel as unit,
                                                             and a standard uncertainty (a coverage factor equal to 1).
-                                                            The becquerel unit is defined in http://si-digital-framework.org/SI#/becquerel
+                                                            The becquerel unit is defined in http://si-digital-framework.org/SI#becquerel
                                                         </xs:documentation> 
                                                     </xs:annotation>
                                                     <xs:element ref="dsi:real"></xs:element>
@@ -137,9 +132,9 @@
                                                                         In some cases, CCRI(II) or regional key comparisons could have been linked to the SIR.
                                                                         The degrees of equivalence in compliance with BIPM.RI(II)-K1 comparisons are provided.
                                                                         The linked comparison is identified
-                                                                        _ by its CIPM-MRA identifer file:///C:/Users/romain.coulon/Downloads/CIPM-MRA-G-11.pdf (xml element: "Comparison_code")
-                                                                        _ the Consultative Commitee (CC) that organize the comparison (xml element: "Consultative_Committee")
-                                                                        _ or the Regional Metrology Orgnaization (RMO) that organize the comparison (xml element: "RMO")
+                                                                        _ by its CIPM-MRA identifier file:///C:/Users/romain.coulon/Downloads/CIPM-MRA-G-11.pdf (xml element: "Comparison_code")
+                                                                        _ the Consultative Committee (CC) that organize the comparison (xml element: "Consultative_Committee")
+                                                                        _ or the Regional Metrology Organization (RMO) that organize the comparison (xml element: "RMO")
                                                                         _ the year when the comparison was carried out (xml element: "Year")
                                                                         _ the DOI of the report of the linked comparison (xml element: "doi")  
                                                                     </xs:documentation>
@@ -167,12 +162,12 @@
                                                                         _ When the result of the NMI $i$ is included in the KCRV with a weight $w_{i}$, then $u^{2}(D_{i})=(1-2w_{i})u_i^{2}+u^{2}(KCRV)$.
                                                                         _ However, when the result of the NMI $i$ is not included in the KCRV, then $u^2(D_i)=u_i^2+u^2(KCRV)$.
                                                                         
-                                                                        A degree of equivalance is reported with the following elements:
+                                                                        A degree of equivalence is reported with the following elements:
                                                                         _ The laboratory (xml element: "laboratory")
                                                                         _ The degree of equivalence defined by a dsi:real element.
                                                                             This element is expected to contain a value, a multiple of becquerel as unit,
                                                                             and an expanded uncertainty with a coverage factor equal to 2.
-                                                                            The becquerel unit is defined in http://si-digital-framework.org/SI#/becquerel
+                                                                            The becquerel unit is defined in http://si-digital-framework.org/SI#becquerel
                                                                     </xs:documentation>
                                                                 </xs:annotation>
                                                                 <xs:element name = "laboratory">
@@ -181,8 +176,8 @@
                                                                             <xs:annotation>
                                                                                 <xs:documentation xml:lang="en">
                                                                                     The participant laboratory is identified by: 
-                                                                                    _ The accronym (xml element: "Acronym") given is the list of signatories of the CIPM MRA: https://www.bipm.org/en/cipm-mra/participation/ 
-                                                                                    _ The RoR identifer (xml element: "ROR") : https://ror.org/ 
+                                                                                    _ The acronym (xml element: "Acronym") given is the list of signatories of the CIPM MRA: https://www.bipm.org/en/cipm-mra/participation/ 
+                                                                                    _ The RoR identifier (xml element: "ROR") : https://ror.org/ 
                                                                                 </xs:documentation> 
                                                                             </xs:annotation>                                                                           
                                                                             <xs:element name = "Acronym" type = "xs:string"></xs:element>
@@ -210,7 +205,7 @@
                                	<xs:documentation xml:lang="en">         
                             		The metadata of key comparisons BIPM.RI(II)-K1 provide administrative and technical information
                             		on each submission (xml element: "Submission") that contribute to the realization of the derived unit becquerel for a given radionuclide.
-                                    The ultimate semantic reference for the becquerel unit is provided by http://si-digital-framework.org/SI#/becquerel
+                                    The ultimate semantic reference for the becquerel unit is provided by http://si-digital-framework.org/SI#becquerel
                                 </xs:documentation>
                             </xs:annotation>
                             <xs:element name = "Submission">
@@ -219,8 +214,8 @@
                                         <xs:annotation>
                                            	<xs:documentation xml:lang="en">         
                                                 A submission to obtain a degree of equivalence is described by providing details on:
-                                                _ The participating labotory (xml element: "laboratory")
-                                                _ The year of the participation, ie measurment by the SIR  (xml element: "year")
+                                                _ The participating laboratory (xml element: "laboratory")
+                                                _ The year of the participation, ie measurement by the SIR  (xml element: "year")
                                                 _ The boolean indicator (true or false) saying if the result is used in the KCRV (xml element: "inKCRV")
                                                 _ The boolean indicator (true or false) saying if the result is currently valid for a degree of equivalence published in the KCDB (xml element: "DoE_valid")
                                                 _ Details on the radioactive standard solution (xml element: "Radioactive_solutions")
@@ -234,8 +229,8 @@
                                                     <xs:annotation>
                                                         <xs:documentation xml:lang="en">
                                                             The participant laboratory is identified by: 
-                                                            _ The accronym (xml element: "Acronym") given is the list of signatories of the CIPM MRA: https://www.bipm.org/en/cipm-mra/participation/ 
-                                                            _ The RoR identifer (xml element: "ROR") : https://ror.org/ 
+                                                            _ The acronym (xml element: "Acronym") given is the list of signatories of the CIPM MRA: https://www.bipm.org/en/cipm-mra/participation/ 
+                                                            _ The RoR identifier (xml element: "ROR") : https://ror.org/ 
                                                         </xs:documentation> 
                                                     </xs:annotation>                                                       
                                                     <xs:element name = "Acronym" type = "xs:string"></xs:element>
@@ -274,8 +269,8 @@
                                                                                 <xs:documentation xml:lang="en">         
                                                                                 This mass measurement is defined by a dsi:real element.
                                                                           		This element is expected to contain a value, a multiple of kilogram as unit,
-                                                                                and a (optional) standard uncertainty (a coverage factor equal to 1).                                                               	and an expanded uncertainty with a coverage factor equal to 2.
-                                                                                The SI base unit kilogram is defined in http://si-digital-framework.org/SI#/kilogram
+                                                                                and a (optional) standard uncertainty (a coverage factor equal to 1).
+                                                                                The SI base unit kilogram is defined in http://si-digital-framework.org/SI#kilogram
                                                                                 </xs:documentation>
                                                                             </xs:annotation>                                                               		                                                       
                                                                             <xs:element ref="dsi:real"></xs:element>
@@ -289,10 +284,10 @@
                                                                                  <xs:documentation xml:lang="en">         
                                                                                  This density measurement is defined by a dsi:real element.
                                                                            		 This element is expected to contain a value, a coherent derived unit for the derived quantity density,
-                                                                                 and a (optional) standard uncertainty (a coverage factor equal to 1).                                                               	and an expanded uncertainty with a coverage factor equal to 2.
+                                                                                 and a (optional) standard uncertainty (a coverage factor equal to 1).
                                                                                  The derived unit is composed by:
-                                                                                 the SI base unit kilogram defined in http://si-digital-framework.org/SI#/kilogram
-                                                                                 the SIR base unit metre defined in http://si-digital-framework.org/SI#/meter
+                                                                                 the SI base unit kilogram defined in http://si-digital-framework.org/SI#kilogram
+                                                                                 the SIR base unit metre defined in http://si-digital-framework.org/SI#meter
                                                                                  </xs:documentation>
                                                                              </xs:annotation>
                                                                              <xs:element ref="dsi:real"></xs:element>
@@ -308,8 +303,8 @@
                                                                                         <xs:annotation>
                                                                                             <xs:documentation xml:lang="en">
                                                                                                 The solvant is identified by: 
-                                                                                                _ The SMILES identifer, media type: chemical/x-daylight-smiles
-                                                                                                _ The InChIKey identifer  http://inchi.info/inchikey_overview_en.html
+                                                                                                _ The SMILES identifier, media type: chemical/x-daylight-smiles
+                                                                                                _ The InChIKey identifier  http://inchi.info/inchikey_overview_en.html
                                                                                             </xs:documentation> 
                                                                                         </xs:annotation>
                                                                                         <xs:element name = "SMILES" type = "xs:string"></xs:element>
@@ -322,8 +317,8 @@
                                                                                                          This concentration measurement is defined by a dsi:real element.
                                                                                                    		 This element is expected to contain a value, a coherent derived unit for the derived quantity amount of substance concentration,
                                                                                                          The derived unit is composed by:
-                                                                                                         the SI base unit mole defined in http://si-digital-framework.org/SI#/mole
-                                                                                                         the SIR base unit metre defined in http://si-digital-framework.org/SI#/meter
+                                                                                                         the SI base unit mole defined in http://si-digital-framework.org/SI#mole
+                                                                                                         the SIR base unit metre defined in http://si-digital-framework.org/SI#meter
                                                                                                          </xs:documentation>
                                                                                                      </xs:annotation>
                                                                                                      <xs:element ref="dsi:real"></xs:element>                                                                                                
@@ -339,8 +334,8 @@
                                                                                         <xs:annotation>
                                                                                             <xs:documentation xml:lang="en">
                                                                                                 The carrier molecule is identified by: 
-                                                                                                _ The SMILES identifer, media type: chemical/x-daylight-smiles
-                                                                                                _ The InChIKey identifer  http://inchi.info/inchikey_overview_en.html
+                                                                                                _ The SMILES identifier, media type: chemical/x-daylight-smiles
+                                                                                                _ The InChIKey identifier  http://inchi.info/inchikey_overview_en.html
                                                                                             </xs:documentation> 
                                                                                         </xs:annotation>                                                                                    
                                                                                         <xs:element name = "SMILES" type = "xs:string"></xs:element>
@@ -353,8 +348,8 @@
                                                                                                          This concentration measurement is defined by a dsi:real element.
                                                                                                    		 This element is expected to contain a value, a coherent derived unit for the quantity mass ratio,
                                                                                                          The derived unit is composed by:
-                                                                                                         the SI base unit kilogram defined in http://si-digital-framework.org/SI#/kilogram 
-                                                                                                         the SIR base unit kilogram defined in http://si-digital-framework.org/SI#/kilogram 
+                                                                                                         the SI base unit kilogram defined in http://si-digital-framework.org/SI#kilogram 
+                                                                                                         the SIR base unit kilogram defined in http://si-digital-framework.org/SI#kilogram 
                                                                                                          </xs:documentation>
                                                                                                      </xs:annotation>
                                                                                                      <xs:element ref="dsi:real"></xs:element>     
@@ -391,7 +386,7 @@
                                                                             I: an incremental number to identifier each ampoule in a set of ampoule sent by the laboratory
                                                                         _ The half-life used by the laboratory (xml element: "Half-life")
                                                                         _ The identifier (xml element: "Method_ID") of the standardization method such as it has been defined by the CCRI(II)  https://github.com/RomainCoulon/BIPM.RI-II--K1_database/blob/main/FAIRversions/Acronyms.csv
-                                                                        _ A more detailed decription of the measurement method in string (xml element: "Description")
+                                                                        _ A more detailed description of the measurement method in string (xml element: "Description")
                                                                         _ Possible additional comments on the measurements (xml element: "Comments")
                                                                         _ The result of the activity measurement (xml element: "Activity")
                                                                     </xs:documentation> 
@@ -406,7 +401,7 @@
                                                                                     The half-life is defined by a dsi:real element.
                                                                                     This element is expected to contain a value, a base unit for the quantity time,
                                                                                     and a (optional) standard uncertainty (a coverage factor equal to 1).
-                                                                                    The base unit second is defined in http://si-digital-framework.org/SI#/second
+                                                                                    The base unit second is defined in http://si-digital-framework.org/SI#second
                                                                                     The reference (optional) of the half-life evaluation is given in the xml element: "reference"  
                                                                                 </xs:documentation>
                                                                             </xs:annotation>
@@ -416,7 +411,7 @@
                                                                                     <xs:sequence minOccurs = "0" maxOccurs = "1">
                                                                                         <xs:annotation>
                                                                                             <xs:documentation xml:lang="en">         
-                                                                                                The reference could be defined by the bibliograhical description in string (xml element: "detail")
+                                                                                                The reference could be defined by the bibliographical description in string (xml element: "detail")
                                                                                                 or/and the DOI of the document (xml element: "doi").
                                                                                             </xs:documentation>
                                                                                         </xs:annotation>
@@ -439,10 +434,10 @@
                                                                                     The activity measurement is defined by a dsi:real element.
                                                                                     This element is expected to contain a value, a multiple derive unit becquerel,
                                                                                     and a standard uncertainty (a coverage factor equal to 1).
-                                                                                    The derived SI unit becquerel is defined in http://si-digital-framework.org/SI#/becquerel 
+                                                                                    The derived SI unit becquerel is defined in http://si-digital-framework.org/SI#becquerel 
                                                                                     Additionally,
-                                                                                    _ relative standard uncertainty from type A evaluation is given as a dimentionless decimal (xml element: "relative_standard_uncertainty_type_A")
-                                                                                    _ relative standard uncertainty from type B evaluation is given as a dimentionless decimal (xml element: "relative_standard_uncertainty_type_B")  
+                                                                                    _ relative standard uncertainty from type A evaluation is given as a dimensionless decimal (xml element: "relative_standard_uncertainty_type_A")
+                                                                                    _ relative standard uncertainty from type B evaluation is given as a dimensionless decimal (xml element: "relative_standard_uncertainty_type_B")  
                                                                                 </xs:documentation>
                                                                             </xs:annotation>
                                                                             <xs:element ref="dsi:real"></xs:element>
@@ -495,11 +490,12 @@
                                                                                     The equivalent activity measurement is defined by a dsi:real element.
                                                                                     This element is expected to contain a value, a multiple derive unit becquerel,
                                                                                     and a standard uncertainty (a coverage factor equal to 1).
-                                                                                    The derived SI unit becquerel is defined in http://si-digital-framework.org/SI#/becquerel 
+                                                                                    The derived SI unit becquerel is defined in http://si-digital-framework.org/SI#becquerel 
                                                                                     In addition,
-                                                                                    _ the relative standard uncertainty from the SIR system is given as a dimentionless decimal (xml element: "relative_standard_uncertainty_type_A")
+                                                                                    _ the relative standard uncertainty from the SIR system is given as a dimensionless decimal (xml element: "relative_standard_uncertainty_type_A")
                                                                                 </xs:documentation>
                                                                             </xs:annotation>
+                                                                            <xs:element ref="dsi:real"></xs:element>
                                                                             <xs:element name = "relative_standard_uncertainty_from_SIR" type = "xs:decimal" minOccurs = "0"></xs:element>
                                                                         </xs:sequence>
                                                                     </xs:complexType>

@@ -1,9 +1,11 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2022-10-04",
+    "Release date": "2023-08-08",
+    "Note": "This version of the machine-readable comparison report is not definitive. The format is under discussion within the CCRI and CIPM to best reflect the requirements of ionizing radiation metrology and to conform to the SI digital framework. Users can use this document to analyse key comparison data and metadata more efficiently with their software. However, users should bear in mind that the format will necessarily evolve in subsequent updates of this key comparison, which will not guarantee the long-term compatibility of their interface. ", 
     "References":{
-        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
+        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 ",
+        " [2] ": " Romain Coulon et al 2023 Meas. Sci. Technol. 34 074009 - https://doi.org/10.1088/1361-6501/accd0b "
         },
     "Contact persons":{
         " Dr Romain Coulon": " romain.coulon@bipm.org ",
@@ -40,7 +42,7 @@
         "Name of the comparison": "BIPM.RI(II)-K1.Ce-139",
         "Year of publication": "2022",
         "Key Comparison Reference Value (KCRV)": "132.77(14) MBq",
-        "Reference of the published comparison report": "Coulon R., Michotte C., Courte S., Nonis M., Judge S., Thiam C., Bobin C., Fr\\'echou C., van Rooy M.W., van Staden M.J. and Lubbe J., Update of the BIPM comparison BIPM.RI(II)-K1.Ce-139 of activity measurements of the radionuclide $^{139}$Ce to include the 2019 result of the NMISA (South Africa) and the 2022 result of the LNE-LNHB (France), \\href{https://doi.org/10.1088/0026-1394/48/1A/06019}{\\textit{Metrologia}, 2022, \\textbf{59}, Tech. Suppl., 06019}",
+        "Reference of the published comparison report": "Coulon R., Michotte C., Courte S., Nonis M., Judge S., Thiam C., Bobin C., Fr\\'echou C., van Rooy M.W., van Staden M.J. and Lubbe J., Update of the BIPM comparison BIPM.RI(II)-K1.Ce-139 of activity measurements of the radionuclide $^{139}$Ce to include the 2019 result of the NMISA (South Africa) and the 2022 result of the LNE-LNHB (France), \\href{https://doi.org/10.1088/0026-1394/59/1A/06019}{\\textit{Metrologia}, 2022, \\textbf{59}, Tech. Suppl., 06019}",
         "Editorial assistant(s)": null,
         "Comments on the publication": null,
         "Unit": "MBq",
@@ -187,7 +189,7 @@
         "Laboratory": {
             "Acronym": "BKFH",
             "Full name": "Government Office of the Capital City Budapest",
-            "Address": "Németvölgyi Ùt 37-39 H-1124 Budapest",
+            "Address": "Nemetvölgyi Ut 37-39 H-1124 Budapest",
             "Country": "Hungary",
             "Regional Metrology Organization (RMO)": "EURAMET",
             "Old acronyms": "OMH, MKEH"
@@ -501,7 +503,7 @@
         "Eligible for Degree of Equivalence (DoE)": false,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -546,7 +548,7 @@
         "Eligible for Degree of Equivalence (DoE)": true,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -637,7 +639,7 @@
         "Laboratory": {
             "Acronym": "NIM",
             "Full name": "National Institute of Metrology",
-            "Address": "No. 18, Bei San Huan Dong Rd. 100029 Pékin",
+            "Address": "No. 18, Bei San Huan Dong Rd. 100029 Pekin",
             "Country": "China",
             "Regional Metrology Organization (RMO)": "APMP",
             "Old acronyms": "-"
@@ -862,7 +864,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
+            "Address": "15 Lower Hope Road, Rosebank, Cape Town, 7700",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -907,7 +909,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
+            "Address": "15 Lower Hope Road, Rosebank, Cape Town, 7700",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -952,7 +954,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
+            "Address": "15 Lower Hope Road, Rosebank, Cape Town, 7700",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -997,7 +999,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
+            "Address": "15 Lower Hope Road, Rosebank, Cape Town, 7700",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -1042,7 +1044,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
+            "Address": "15 Lower Hope Road, Rosebank, Cape Town, 7700",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -1087,7 +1089,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
+            "Address": "15 Lower Hope Road, Rosebank, Cape Town, 7700",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -1267,7 +1269,7 @@
         "Laboratory": {
             "Acronym": "VNIIM",
             "Full name": "D.I. Mendeleyev Institute for Metrology",
-            "Address": "Saint-Pétersbourg",
+            "Address": "Saint-Petersbourg",
             "Country": "Russian Federation",
             "Regional Metrology Organization (RMO)": "COOMET",
             "Old acronyms": "-"
