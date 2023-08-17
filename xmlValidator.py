@@ -1,18 +1,12 @@
 import lxml 
-
-from lxml import etree
-
 from tabulate import tabulate
-
 import textwrap
 
 Radionuclide = "Ce-139" # select the radionuclide
 FAIRfileName = "FAIRversions/"+Radionuclide+"_database_FAIR.xml"
 
 xml_file = lxml.etree.parse(FAIRfileName)
-xml_validator = lxml.etree.XMLSchema(file="FAIRversions/model.xsd")
-
-
+xml_validator = lxml.etree.XMLSchema(file="FAIRversions/KC_model_RI_II.xsd")
 
 is_valid = xml_validator.validate(xml_file)
 

@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Comparison xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xsi:schemaLocation="https://github.com/RomainCoulon/BIPM.RI-II--K1_database/blob/main/FAIRversions/model.xsd"
                  xmlns:dsi="https://ptb.de/si">
 	<General_information>
 		<Comparison_code>BIPM.RI(II)-K1.Ce-139</Comparison_code>
-		<Radionuclide>
-			<SMILES>+[139Ce]</SMILES>
-			<InChIKey>GWXLDORMOJMVQZ-BJUDXGSMSA-N</InChIKey>
-		</Radionuclide>
 		<ServiceCategoryID></ServiceCategoryID>
 		<Pilot>
 			<Acronym>BIPM</Acronym>
@@ -16,11 +11,12 @@
 	</General_information>
 	<Comparison_data>
 		<Release>
+			<doi>https://doi.org/10.1088/0026-1394/40/1A/06012</doi>
 			<Year>2003</Year>
 			<KCRV>
 				<dsi:real>
 					<dsi:value>132.87</dsi:value>
-					<dsi:unit>\mega\becquerel</dsi:unit>
+					<dsi:unit>MBq</dsi:unit>
 					<dsi:expandedUnc>
 						<dsi:uncertainty>17</dsi:uncertainty>
 						<dsi:coverageFactor>1</dsi:coverageFactor>
@@ -28,14 +24,273 @@
 					</dsi:expandedUnc>
 				</dsi:real>
 			</KCRV>
-			<doi>https://doi.org/10.1088/0026-1394/40/1A/06012</doi>
+			<Degrees_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>BIPM</Acronym>
+						<ROR>https://ror.org/055vkyj43</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.4</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>2.2</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>NPL</Acronym>
+						<ROR>https://ror.org/015w2mp89</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.1</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>BKFH</Acronym>
+						<PastAcronyms>OMH, MKEH</PastAcronyms>
+						<ROR>https://ror.org/03c6pbw79</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.7</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>CMI</Acronym>
+						<PastAcronyms>UVVVR, CMI-IIR</PastAcronyms>
+						<ROR>https://ror.org/02m5haa59</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.7</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>NIST</Acronym>
+						<PastAcronyms>NBS</PastAcronyms>
+						<ROR>https://ror.org/05xpvk416</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>1.7</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.9</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>LNE-LNHB</Acronym>
+						<PastAcronyms>LMRI, LPRI, BNM-LNHB</PastAcronyms>
+						<ROR>https://ror.org/03az79194</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.3</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>LNMRI-IRD</Acronym>
+						<PastAcronyms>IEA, IPEN</PastAcronyms>
+						<ROR>https://ror.org/00q0yh079</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>PTB</Acronym>
+						<ROR>https://ror.org/05r3f7h03</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.1</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.6</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>IRA</Acronym>
+						<PastAcronyms>IER</PastAcronyms>
+						<ROR>https://ror.org/05a353079</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.2</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.5</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+			</Degrees_of_equivalence>
+			<Degrees_of_equivalence>
+				<linked_comparison>
+					<Comparison_code>CCRI(II)-K2.Ce-139(1976)</Comparison_code>
+					<Consultative_Committee>CCRI(II)</Consultative_Committee>
+					<Year>1976</Year>
+					<doi>https://doi.org/10.1016/0029-554X(78)90597-9</doi>
+				</linked_comparison>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>ANSTO</Acronym>
+						<PastAcronyms>AAEC</PastAcronyms>
+						<ROR>https://ror.org/05j7fep28</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.6</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.9</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>BARC</Acronym>
+						<ROR>https://ror.org/05w6wfp17</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.3</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.6</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>IFIN-HH</Acronym>
+						<ROR>https://ror.org/00d3pnh21</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.1</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.1</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>JRC</Acronym>
+						<PastAcronyms>IRMM, CBNM</PastAcronyms>
+						<ROR>https://ror.org/02ef88m96</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.7</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.8</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>NRC</Acronym>
+						<ROR>https://ror.org/04mte1k06</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.4</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.6</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>POLATOM</Acronym>
+						<PastAcronyms>IBJ, RC</PastAcronyms>
+						<ROR>https://ror.org/00nzsxq20</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.2</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.2</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>VNIIM</Acronym>
+						<ROR>https://ror.org/017c99632</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.6</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.5</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+			</Degrees_of_equivalence>
 		</Release>
 		<Release>
+			<doi>https://doi.org/10.1088/0026-1394/42/1A/06012</doi>
 			<Year>2005</Year>
 			<KCRV>
 				<dsi:real>
 					<dsi:value>132.74</dsi:value>
-					<dsi:unit>\mega\becquerel</dsi:unit>
+					<dsi:unit>MBq</dsi:unit>
 					<dsi:expandedUnc>
 						<dsi:uncertainty>11</dsi:uncertainty>
 						<dsi:coverageFactor>1</dsi:coverageFactor>
@@ -43,14 +298,358 @@
 					</dsi:expandedUnc>
 				</dsi:real>
 			</KCRV>
-			<doi>https://doi.org/10.1088/0026-1394/42/1A/06012</doi>
+			<Degrees_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>BIPM</Acronym>
+						<ROR>https://ror.org/055vkyj43</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.4</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>2.2</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>NPL</Acronym>
+						<ROR>https://ror.org/015w2mp89</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.1</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>BKFH</Acronym>
+						<PastAcronyms>OMH, MKEH</PastAcronyms>
+						<ROR>https://ror.org/03c6pbw79</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.7</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.0</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>CMI</Acronym>
+						<PastAcronyms>UVVVR, CMI-IIR</PastAcronyms>
+						<ROR>https://ror.org/02m5haa59</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.7</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>NIST</Acronym>
+						<PastAcronyms>NBS</PastAcronyms>
+						<ROR>https://ror.org/05xpvk416</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>1.7</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.9</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>LNE-LNHB</Acronym>
+						<PastAcronyms>LMRI, LPRI, BNM-LNHB</PastAcronyms>
+						<ROR>https://ror.org/03az79194</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.3</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>LNMRI-IRD</Acronym>
+						<PastAcronyms>IEA, IPEN</PastAcronyms>
+						<ROR>https://ror.org/00q0yh079</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.0</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>PTB</Acronym>
+						<ROR>https://ror.org/05r3f7h03</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.1</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.6</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>IRA</Acronym>
+						<PastAcronyms>IER</PastAcronyms>
+						<ROR>https://ror.org/05a353079</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.2</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.5</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>NMIJ</Acronym>
+						<PastAcronyms>ETL</PastAcronyms>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.7</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+			</Degrees_of_equivalence>
+			<Degrees_of_equivalence>
+				<linked_comparison>
+					<Comparison_code>CCRI(II)-K2.Ce-139(1976)</Comparison_code>
+					<Consultative_Committee>CCRI(II)</Consultative_Committee>
+					<Year>1976</Year>
+					<doi>https://doi.org/10.1016/0029-554X(78)90597-9</doi>
+				</linked_comparison>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>ANSTO</Acronym>
+						<PastAcronyms>AAEC</PastAcronyms>
+						<ROR>https://ror.org/05j7fep28</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.5</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.8</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>BARC</Acronym>
+						<ROR>https://ror.org/05w6wfp17</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.1</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.6</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>IFIN-HH</Acronym>
+						<ROR>https://ror.org/00d3pnh21</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.3</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.0</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>JRC</Acronym>
+						<PastAcronyms>IRMM, CBNM</PastAcronyms>
+						<ROR>https://ror.org/02ef88m96</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.5</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.8</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>NRC</Acronym>
+						<ROR>https://ror.org/04mte1k06</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.2</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.5</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>POLATOM</Acronym>
+						<PastAcronyms>IBJ, RC</PastAcronyms>
+						<ROR>https://ror.org/00nzsxq20</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.2</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+			</Degrees_of_equivalence>
+			<Degrees_of_equivalence>
+				<linked_comparison>
+					<Comparison_code>APMP.RI(II)-K2.Ce-139(2004)</Comparison_code>
+					<RMO>APMP.RI</RMO>
+					<Year>2004</Year>
+					<doi>https:/doi.org/10.1088/0026-1394/48/1A/06019</doi>
+				</linked_comparison>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>NMISA</Acronym>
+						<PastAcronyms>NAC, CSIR-NML</PastAcronyms>
+						<ROR>https://ror.org/02j01mp63</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.5</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.5</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>INER</Acronym>
+						<ROR>https://ror.org/052jx3443</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.1</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.0</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>KRISS</Acronym>
+						<PastAcronyms>KSRI</PastAcronyms>
+						<ROR>https://ror.org/01az7b475</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.8</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.1</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>NIM</Acronym>
+						<ROR>https://ror.org/05dw0p167</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>2.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.5</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>VNIIM</Acronym>
+						<ROR>https://ror.org/017c99632</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.3</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.6</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+			</Degrees_of_equivalence>
 		</Release>
 		<Release>
+			<doi>https://doi.org/10.1088/0026-1394/48/1A/06019</doi>
 			<Year>2011</Year>
 			<KCRV>
 				<dsi:real>
 					<dsi:value>132.73</dsi:value>
-					<dsi:unit>\mega\becquerel</dsi:unit>
+					<dsi:unit>MBq</dsi:unit>
 					<dsi:expandedUnc>
 						<dsi:uncertainty>11</dsi:uncertainty>
 						<dsi:coverageFactor>1</dsi:coverageFactor>
@@ -58,14 +657,211 @@
 					</dsi:expandedUnc>
 				</dsi:real>
 			</KCRV>
-			<doi>https://doi.org/10.1088/0026-1394/48/1A/06019</doi>
+			<Degrees_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>NIST</Acronym>
+						<PastAcronyms>NBS</PastAcronyms>
+						<ROR>https://ror.org/05xpvk416</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>1.7</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.9</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>LNE-LNHB</Acronym>
+						<PastAcronyms>LMRI, LPRI, BNM-LNHB</PastAcronyms>
+						<ROR>https://ror.org/03az79194</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.3</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>LNMRI-IRD</Acronym>
+						<PastAcronyms>IEA, IPEN</PastAcronyms>
+						<ROR>https://ror.org/00q0yh079</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.0</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>IRA</Acronym>
+						<PastAcronyms>IER</PastAcronyms>
+						<ROR>https://ror.org/05a353079</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.2</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.5</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>NMIJ</Acronym>
+						<PastAcronyms>ETL</PastAcronyms>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.7</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>PTB</Acronym>
+						<ROR>https://ror.org/05r3f7h03</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.1</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.7</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>BEV</Acronym>
+						<PastAcronyms>IRK</PastAcronyms>
+						<ROR>https://ror.org/038680g19</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-1.1</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>2.4</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+			</Degrees_of_equivalence>
+			<Degrees_of_equivalence>
+				<linked_comparison>
+					<Comparison_code>APMP.RI(II)-K2.Ce-139(2004)</Comparison_code>
+					<RMO>APMP.RI</RMO>
+					<Year>2004</Year>
+					<doi>https:/doi.org/10.1088/0026-1394/48/1A/06019</doi>
+				</linked_comparison>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>NMISA</Acronym>
+						<PastAcronyms>NAC, CSIR-NML</PastAcronyms>
+						<ROR>https://ror.org/02j01mp63</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.5</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.5</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>INER</Acronym>
+						<ROR>https://ror.org/052jx3443</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.1</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.0</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>KRISS</Acronym>
+						<PastAcronyms>KSRI</PastAcronyms>
+						<ROR>https://ror.org/01az7b475</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>-0.8</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.1</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>NIM</Acronym>
+						<ROR>https://ror.org/05dw0p167</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>2.0</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1.5</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+				<Degree_of_equivalence>
+					<laboratory>
+						<Acronym>VNIIM</Acronym>
+						<ROR>https://ror.org/017c99632</ROR>
+					</laboratory>
+					<dsi:real>
+						<dsi:value>0.3</dsi:value>
+						<dsi:unit>\mega\becquerel</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>0.6</dsi:uncertainty>
+							<dsi:coverageFactor>2</dsi:coverageFactor>
+							<dsi:coverageProbability>0.95</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</dsi:real>
+				</Degree_of_equivalence>
+			</Degrees_of_equivalence>
 		</Release>
 		<Release>
+			<doi>https://doi.org/10.1088/0026-1394/59/1A/06019</doi>
 			<Year>2022</Year>
 			<KCRV>
 				<dsi:real>
 					<dsi:value>132.77</dsi:value>
-					<dsi:unit>\mega\becquerel</dsi:unit>
+					<dsi:unit>MBq</dsi:unit>
 					<dsi:expandedUnc>
 						<dsi:uncertainty>14</dsi:uncertainty>
 						<dsi:coverageFactor>1</dsi:coverageFactor>
@@ -73,11 +869,11 @@
 					</dsi:expandedUnc>
 				</dsi:real>
 			</KCRV>
-			<doi>https://doi.org/10.1088/0026-1394/59/1A/06019</doi>
 			<Degrees_of_equivalence>
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>NMIJ</Acronym>
+						<PastAcronyms>ETL</PastAcronyms>
 					</laboratory>
 					<dsi:real>
 						<dsi:value>-0.03</dsi:value>
@@ -107,6 +903,7 @@
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>BEV</Acronym>
+						<PastAcronyms>IRK</PastAcronyms>
 						<ROR>https://ror.org/038680g19</ROR>
 					</laboratory>
 					<dsi:real>
@@ -122,6 +919,7 @@
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>NMISA</Acronym>
+						<PastAcronyms>NAC, CSIR-NML</PastAcronyms>
 						<ROR>https://ror.org/02j01mp63</ROR>
 					</laboratory>
 					<dsi:real>
@@ -137,6 +935,7 @@
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>LNE-LNHB</Acronym>
+						<PastAcronyms>LMRI, LPRI, BNM-LNHB</PastAcronyms>
 						<ROR>https://ror.org/03az79194</ROR>
 					</laboratory>
 					<dsi:real>
@@ -152,10 +951,10 @@
 			</Degrees_of_equivalence>
 			<Degrees_of_equivalence>
 				<linked_comparison>
-					<Comparison_code>APMP.RI(II)-K2.Ce-139</Comparison_code>
-					<RMO>APMP</RMO>
+					<Comparison_code>APMP.RI(II)-K2.Ce-139(2004)</Comparison_code>
+					<RMO>APMP.RI</RMO>
 					<Year>2004</Year>
-					<doi>https://www.bipm.org/cc/CCRI(II)/Allowed/18/CCRI(II)05-33.pdf</doi>
+					<doi>https:/doi.org/10.1088/0026-1394/48/1A/06019</doi>
 				</linked_comparison>
 				<Degree_of_equivalence>
 					<laboratory>
@@ -175,6 +974,7 @@
 				<Degree_of_equivalence>
 					<laboratory>
 						<Acronym>KRISS</Acronym>
+						<PastAcronyms>KSRI</PastAcronyms>
 						<ROR>https://ror.org/01az7b475</ROR>
 					</laboratory>
 					<dsi:real>
@@ -248,6 +1048,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>1</dsi:value>
@@ -258,6 +1059,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>35</dsi:value>
@@ -347,6 +1149,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.2</dsi:value>
@@ -357,6 +1160,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>20</dsi:value>
@@ -385,6 +1189,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.2</dsi:value>
@@ -395,6 +1200,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>20</dsi:value>
@@ -540,6 +1346,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.1</dsi:value>
@@ -550,6 +1357,7 @@
 						<Carrier>
 							<SMILES>[Ce]</SMILES>
 							<InChIKey>GWXLDORMOJMVQZ-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/Ce </InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>25</dsi:value>
@@ -644,6 +1452,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.08</dsi:value>
@@ -654,6 +1463,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>30</dsi:value>
@@ -724,24 +1534,8 @@
 			<year>2004</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>true</DoE_valid>
-			<Radioactive_solutions>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
-					<Solution_ID>Ce-139CMI1985-1</Solution_ID>
-					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
-					<Description>4pi(PC)(x,e)-gamma</Description>
-				</Mesurement>
-			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Ce-139CMI1985-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-PC-MX-NA-GR-CO</Method>
-					</Methods>
 					<Equivalent_activity>
 						<dsi:real>
 							<dsi:value>132.88</dsi:value>
@@ -753,6 +1547,7 @@
 							</dsi:expandedUnc>
 						</dsi:real>
 					</Equivalent_activity>
+					<fromLinkedComparison>APMP.RI(II)-K2.Ce-139</fromLinkedComparison>
 				</BIPM_measurement>
 			</BIPM_measurements>
 		</Submission>
@@ -783,6 +1578,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.1</dsi:value>
@@ -793,6 +1589,7 @@
 						<Carrier>
 							<SMILES>[Ce+3]</SMILES>
 							<InChIKey>XQTIWNLDFPPCIU-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/Ce/q+3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>7.5</dsi:value>
@@ -886,6 +1683,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.1</dsi:value>
@@ -896,6 +1694,7 @@
 						<Carrier>
 							<SMILES>[Ce+3]</SMILES>
 							<InChIKey>XQTIWNLDFPPCIU-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/Ce/q+3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>20</dsi:value>
@@ -995,6 +1794,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.2</dsi:value>
@@ -1005,6 +1805,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>15</dsi:value>
@@ -1038,6 +1839,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.2</dsi:value>
@@ -1048,6 +1850,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>15</dsi:value>
@@ -1152,31 +1955,8 @@
 			<year>2004</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>true</DoE_valid>
-			<Radioactive_solutions>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
-					<Solution_ID>Ce-139KAE1976-1</Solution_ID>
-					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
-					<Description>4pi(PP)(x,e)-gamma</Description>
-				</Mesurement>
-				<Mesurement>
-					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
-					<Solution_ID>Ce-139KAE1976-2</Solution_ID>
-					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
-					<Description>4pi(PP)(x,e)-gamma</Description>
-				</Mesurement>
-			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Ce-139KAE1976-1</Solution_ID>
-						<Solution_ID>Ce-139KAE1976-2</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-PP-MX-NA-GR-CO</Method>
-					</Methods>
 					<Equivalent_activity>
 						<dsi:real>
 							<dsi:value>131.89</dsi:value>
@@ -1188,6 +1968,7 @@
 							</dsi:expandedUnc>
 						</dsi:real>
 					</Equivalent_activity>
+					<fromLinkedComparison>APMP.RI(II)-K2.Ce-139</fromLinkedComparison>
 				</BIPM_measurement>
 			</BIPM_measurements>
 		</Submission>
@@ -1218,6 +1999,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.5</dsi:value>
@@ -1228,6 +2010,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>10</dsi:value>
@@ -1256,6 +2039,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.5</dsi:value>
@@ -1266,6 +2050,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>10</dsi:value>
@@ -1422,6 +2207,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.1</dsi:value>
@@ -1432,6 +2218,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>10</dsi:value>
@@ -1585,6 +2372,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>1</dsi:value>
@@ -1595,6 +2383,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>30</dsi:value>
@@ -1659,24 +2448,8 @@
 			<year>2004</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>true</DoE_valid>
-			<Radioactive_solutions>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
-					<Solution_ID>Ce-139LNMRI-IRD1997-1</Solution_ID>
-					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
-					<Description>4pi(PC)(x,e)-gamma</Description>
-				</Mesurement>
-			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Ce-139LNMRI-IRD1997-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-PC-MX-NA-GR-CO</Method>
-					</Methods>
 					<Equivalent_activity>
 						<dsi:real>
 							<dsi:value>134.74</dsi:value>
@@ -1688,6 +2461,7 @@
 							</dsi:expandedUnc>
 						</dsi:real>
 					</Equivalent_activity>
+					<fromLinkedComparison>APMP.RI(II)-K2.Ce-139</fromLinkedComparison>
 				</BIPM_measurement>
 			</BIPM_measurements>
 		</Submission>
@@ -1718,6 +2492,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.4</dsi:value>
@@ -1728,6 +2503,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>16</dsi:value>
@@ -1823,6 +2599,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.77</dsi:value>
@@ -1833,6 +2610,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>100</dsi:value>
@@ -1916,6 +2694,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.1</dsi:value>
@@ -1926,6 +2705,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>10</dsi:value>
@@ -2008,6 +2788,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.1</dsi:value>
@@ -2018,6 +2799,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Ce]</SMILES>
 							<InChIKey>ANFLYVRDLFXAOY-UHFFFAOYSA-L</InChIKey>
+							<InChI>InChI=1S/Ce.2ClH/h;2*1H/p-2 </InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>100</dsi:value>
@@ -2089,24 +2871,8 @@
 			<year>2004</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>false</DoE_valid>
-			<Radioactive_solutions>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
-					<Solution_ID>Ce-139NMIJ2004-1</Solution_ID>
-					<Method_ID>4P-LS-MX-NA-GR-CO</Method_ID>
-					<Description>4P(LS)(x,e)-gamma</Description>
-				</Mesurement>
-			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Ce-139NMIJ2004-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-LS-MX-NA-GR-CO</Method>
-					</Methods>
 					<Equivalent_activity>
 						<dsi:real>
 							<dsi:value>133.21</dsi:value>
@@ -2118,6 +2884,7 @@
 							</dsi:expandedUnc>
 						</dsi:real>
 					</Equivalent_activity>
+					<fromLinkedComparison>APMP.RI(II)-K2.Ce-139</fromLinkedComparison>
 				</BIPM_measurement>
 			</BIPM_measurements>
 		</Submission>
@@ -2148,6 +2915,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>1</dsi:value>
@@ -2158,6 +2926,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>170</dsi:value>
@@ -2186,6 +2955,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>1</dsi:value>
@@ -2196,6 +2966,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>170</dsi:value>
@@ -2319,6 +3090,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>1</dsi:value>
@@ -2329,6 +3101,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>180</dsi:value>
@@ -2412,6 +3185,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>1</dsi:value>
@@ -2422,6 +3196,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>409</dsi:value>
@@ -2450,6 +3225,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>1</dsi:value>
@@ -2460,6 +3236,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>409</dsi:value>
@@ -2583,6 +3360,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>1</dsi:value>
@@ -2593,6 +3371,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>534</dsi:value>
@@ -2682,6 +3461,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.5</dsi:value>
@@ -2692,6 +3472,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>10</dsi:value>
@@ -2781,6 +3562,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.1</dsi:value>
@@ -2791,6 +3573,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>40</dsi:value>
@@ -2875,6 +3658,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>0.1</dsi:value>
@@ -2885,6 +3669,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>35</dsi:value>
@@ -3010,6 +3795,7 @@
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
 							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
+							<InChI>InChI=1S/ClH/h1H</InChI>
 							<SolvantConcentration>
 								<dsi:real>
 									<dsi:value>1</dsi:value>
@@ -3020,6 +3806,7 @@
 						<Carrier>
 							<SMILES>[Cl-].[Cl-].[Cl-].[Ce+3]</SMILES>
 							<InChIKey>VYLVYHXQOHJDJL-UHFFFAOYSA-K</InChIKey>
+							<InChI>InChI=1S/Ce.3ClH/h;3*1H/q+3;;;/p-3</InChI>
 							<CarrierConcentration>
 								<dsi:real>
 									<dsi:value>35</dsi:value>
@@ -3128,24 +3915,8 @@
 			<year>2004</year>
 			<inKCRV>false</inKCRV>
 			<DoE_valid>true</DoE_valid>
-			<Radioactive_solutions>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>2004-03-01T00:00:00Z</Reference_date>
-					<Solution_ID>Ce-139PTB2008-1</Solution_ID>
-					<Method_ID>4P-PC-MX-NA-GR-CO</Method_ID>
-					<Description>4pi(PC)(x,e)-gamma</Description>
-				</Mesurement>
-			</Laboratory_measurements>
 			<BIPM_measurements>
 				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Ce-139PTB2008-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-PC-MX-NA-GR-CO</Method>
-					</Methods>
 					<Equivalent_activity>
 						<dsi:real>
 							<dsi:value>133.06</dsi:value>
@@ -3153,10 +3924,11 @@
 							<dsi:expandedUnc>
 								<dsi:uncertainty>0.28</dsi:uncertainty>
 								<dsi:coverageFactor>1</dsi:coverageFactor>
-								<dsi:coverageProbability>0.95</dsi:coverageProbability>
+								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
 						</dsi:real>
 					</Equivalent_activity>
+					<fromLinkedComparison>APMP.RI(II)-K2.Ce-139</fromLinkedComparison>
 				</BIPM_measurement>
 			</BIPM_measurements>
 		</Submission>

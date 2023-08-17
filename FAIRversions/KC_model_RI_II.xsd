@@ -36,26 +36,10 @@
                                 <xs:documentation xml:lang="en">
                                     The general information of the comparison are:
                                     _ the comparison code of the key comparison (xml element: "Comparison_code") such as defined in the CIPM MRA file:///C:/Users/romain.coulon/Downloads/CIPM-MRA-G-11.pdf
-                                    _ the identification of the radionuclide
                                     _ the identification of the pilot laboratory
                                 </xs:documentation> 
                             </xs:annotation>                         
                             <xs:element name = "Comparison_code" type="xs:string"></xs:element>
-                            <xs:element name = "Radionuclide">
-                                <xs:complexType>
-                                    <xs:sequence minOccurs = "0" maxOccurs = "1">
-                                    <xs:annotation>
-                                        <xs:documentation xml:lang="en">
-                                            The radionuclide is identified by: 
-                                            _ The SMILES identifier, media type: chemical/x-daylight-smiles
-                                            _ The InChIKey identifier  http://inchi.info/inchikey_overview_en.html
-                                        </xs:documentation> 
-                                    </xs:annotation>                                     
-                                    <xs:element name = "SMILES" type = "xs:string"></xs:element>
-                                    <xs:element name = "InChIKey" type = "xs:string"></xs:element>                                    
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
                             <xs:element name = "ServiceCategoryID" type="xs:anyURI"></xs:element>       
                             <xs:element name = "Pilot">
                                 <xs:complexType>
@@ -84,13 +68,14 @@
                                         <xs:annotation>
                                             <xs:documentation xml:lang="en">
                                                 The comparison data is reported with the following elements: 
-                                                _ The year of the comparison, meaning the year of the first publication or update of the comparison results (xml element: "Year")
-                                                _ The KCRV (xml element: "KCRV")
                                                 _ The DOI of the related Metrologia technical supplement (xml element: "doi")
+												_ The year of the comparison, meaning the year of the first publication or update of the comparison results (xml element: "Year")
+                                                _ The KCRV (xml element: "KCRV")
                                                 _ The degrees of equivalence (xml element: "Degrees_of_equivalence")
                                             </xs:documentation>
                                         </xs:annotation>   
-                                        <xs:element name = "Year" type="xs:gYear"></xs:element>
+                                        <xs:element name = "doi" type="xs:anyURI"></xs:element>
+										<xs:element name = "Year" type="xs:gYear"></xs:element>
                                         <xs:element name = "KCRV">
                                             <xs:complexType>
                                                 <xs:sequence minOccurs = "0" maxOccurs = "1">
@@ -120,7 +105,6 @@
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name = "doi" type="xs:string"></xs:element>
                                         <xs:element name = "Degrees_of_equivalence" minOccurs ="0" maxOccurs = "unbounded">
                                             <xs:complexType>
                                                 <xs:sequence minOccurs = "0" maxOccurs = "unbounded">
@@ -177,11 +161,13 @@
                                                                                 <xs:documentation xml:lang="en">
                                                                                     The participant laboratory is identified by: 
                                                                                     _ The acronym (xml element: "Acronym") given is the list of signatories of the CIPM MRA: https://www.bipm.org/en/cipm-mra/participation/ 
+																					_ The past acronyms that this institute used in the past
                                                                                     _ The RoR identifier (xml element: "ROR") : https://ror.org/ 
                                                                                 </xs:documentation> 
                                                                             </xs:annotation>                                                                           
                                                                             <xs:element name = "Acronym" type = "xs:string"></xs:element>
-                                                                            <xs:element name = "ROR" type = "xs:anyURI" minOccurs = "0"></xs:element>                                                                
+                                                                            <xs:element name = "PastAcronyms" type = "xs:string" minOccurs = "0"></xs:element>      
+																			<xs:element name = "ROR" type = "xs:anyURI" minOccurs = "0"></xs:element>                                                                
                                                                         </xs:sequence>
                                                                     </xs:complexType>
                                                                 </xs:element>                                                               		                                                       
@@ -234,6 +220,7 @@
                                                         </xs:documentation> 
                                                     </xs:annotation>                                                       
                                                     <xs:element name = "Acronym" type = "xs:string"></xs:element>
+													<xs:element name = "PastAcronyms" type = "xs:string" minOccurs = "0"></xs:element>   
                                                     <xs:element name = "ROR" type = "xs:anyURI" minOccurs = "0"></xs:element>                                                                
                                                 </xs:sequence>
                                             </xs:complexType>
@@ -241,7 +228,7 @@
                                         <xs:element name = "year" type = "xs:gYear"></xs:element>
                                         <xs:element name = "inKCRV" type = "xs:boolean"></xs:element>
                                         <xs:element name = "DoE_valid" type = "xs:boolean"></xs:element>
-                                        <xs:element name = "Radioactive_solutions">
+                                        <xs:element name = "Radioactive_solutions" minOccurs = "0" maxOccurs = "1">
                                             <xs:complexType>
                                                 <xs:sequence minOccurs = "0" maxOccurs = "unbounded">
                                                     <xs:element name = "Radioactive_solution">
@@ -309,6 +296,7 @@
                                                                                         </xs:annotation>
                                                                                         <xs:element name = "SMILES" type = "xs:string"></xs:element>
                                                                                         <xs:element name = "InChIKey" type = "xs:string"></xs:element>
+																						<xs:element name = "InChI" type = "xs:string"></xs:element>
                                                                                         <xs:element name = "SolvantConcentration" minOccurs = "0" maxOccurs = "1">
                                                                                             <xs:complexType>
                                                                                                 <xs:sequence minOccurs = "0" maxOccurs = "1">
@@ -340,6 +328,7 @@
                                                                                         </xs:annotation>                                                                                    
                                                                                         <xs:element name = "SMILES" type = "xs:string"></xs:element>
                                                                                         <xs:element name = "InChIKey" type = "xs:string"></xs:element>
+																						<xs:element name = "InChI" type = "xs:string"></xs:element>
                                                                                         <xs:element name = "CarrierConcentration" minOccurs = "0" maxOccurs = "1">
                                                                                             <xs:complexType>
                                                                                                 <xs:sequence minOccurs = "0" maxOccurs = "1">
@@ -369,7 +358,7 @@
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name = "Laboratory_measurements">
+                                        <xs:element name = "Laboratory_measurements" minOccurs = "0" maxOccurs = "1">
                                             <xs:complexType>
                                                 <xs:sequence minOccurs = "0" maxOccurs = "1">
                                                     <xs:element name = "Mesurement" minOccurs = "0" maxOccurs = "unbounded">
@@ -467,14 +456,14 @@
                                                                         _ the equivalence activity evaluation by the SIR (xml element: "Equivalent_activity") 
                                                                     </xs:documentation>
                                                                 </xs:annotation>                                                                
-                                                                <xs:element name = "Solutions">
+                                                                <xs:element name = "Solutions" minOccurs = "0" maxOccurs = "1">
                                                                     <xs:complexType>
                                                                         <xs:sequence minOccurs = "0" maxOccurs = "1">
                                                                             <xs:element name = "Solution_ID" type = "xs:string" maxOccurs = "unbounded"></xs:element>
                                                                         </xs:sequence>
                                                                     </xs:complexType>
                                                                 </xs:element>
-                                                                <xs:element name = "Methods">
+                                                                <xs:element name = "Methods" minOccurs = "0" maxOccurs = "1">
                                                                     <xs:complexType>
                                                                         <xs:sequence minOccurs = "0" maxOccurs = "1">
                                                                             <xs:element name = "Method" type = "xs:string" maxOccurs = "unbounded"></xs:element>
@@ -499,7 +488,8 @@
                                                                             <xs:element name = "relative_standard_uncertainty_from_SIR" type = "xs:decimal" minOccurs = "0"></xs:element>
                                                                         </xs:sequence>
                                                                     </xs:complexType>
-                                                                </xs:element>                                                                
+                                                                </xs:element>
+                                                                <xs:element name = "fromLinkedComparison" type = "xs:string" minOccurs = "0"></xs:element>
                                                             </xs:sequence>
                                                         </xs:complexType>
                                                     </xs:element>
