@@ -2,7 +2,7 @@
 <all>
 	<General_information type="dict">
 		<Content type="str">This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.</Content>
-		<Release_date type="str">2023-08-16</Release_date>
+		<Release_date type="str">2023-08-22</Release_date>
 		<Note type="str">This version of the machine-readable comparison report is not definitive. The format is under discussion within the CCRI and CIPM to best reflect the requirements of ionizing radiation metrology and to conform to the SI digital framework. Users can use this document to analyse key comparison data and metadata more efficiently with their software. However, users should bear in mind that the format will necessarily evolve in subsequent updates of this key comparison, which will not guarantee the long-term compatibility of their interface. </Note>
 		<References type="dict">
 			<key name=" [1] " type="str"> Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 </key>
@@ -25,39 +25,47 @@
 			<Unit type="str">MBq</Unit>
 			<Degrees_of_Equivalence type="dict">
 				<BIPM type="dict">
-					<D_i type="float">-0.4</D_i>
+					<D_i type="float">-0.5</D_i>
 					<U_i type="float">2.2</U_i>
 				</BIPM>
 				<NPL type="dict">
-					<D_i type="float">0.0</D_i>
+					<D_i type="float">-0.1</D_i>
 					<U_i type="float">1.1</U_i>
 				</NPL>
 				<BKFH type="dict">
-					<D_i type="float">-0.7</D_i>
+					<D_i type="float">-0.9</D_i>
 					<U_i type="int">1</U_i>
 				</BKFH>
 				<CMI type="dict">
-					<D_i type="float">0.0</D_i>
+					<D_i type="float">-0.1</D_i>
 					<U_i type="float">0.7</U_i>
 				</CMI>
+				<NMIJ type="dict">
+					<D_i type="float">1.3</D_i>
+					<U_i type="float">1.1</U_i>
+				</NMIJ>
 				<NIST type="dict">
-					<D_i type="float">1.7</D_i>
+					<D_i type="float">1.5</D_i>
 					<U_i type="float">0.9</U_i>
 				</NIST>
 				<LNE-LNHB type="dict">
-					<D_i type="float">0.0</D_i>
+					<D_i type="float">-0.1</D_i>
 					<U_i type="float">1.3</U_i>
 				</LNE-LNHB>
 				<LNMRI-IRD type="dict">
-					<D_i type="float">0.0</D_i>
+					<D_i type="float">-0.2</D_i>
 					<U_i type="int">1</U_i>
 				</LNMRI-IRD>
+				<NMISA type="dict">
+					<D_i type="float">0.2</D_i>
+					<U_i type="float">1.6</U_i>
+				</NMISA>
 				<PTB type="dict">
-					<D_i type="float">-0.1</D_i>
+					<D_i type="float">-0.2</D_i>
 					<U_i type="float">0.6</U_i>
 				</PTB>
 				<IRA type="dict">
-					<D_i type="float">0.2</D_i>
+					<D_i type="float">0.1</D_i>
 					<U_i type="float">1.5</U_i>
 				</IRA>
 			</Degrees_of_Equivalence>

@@ -621,6 +621,12 @@ for i, line in enumerate(Lines):
         i4=line_change1.find(")")
         valueKCRV=line_change1[:i3]
         uKCRV=line_change1[i3+1:i4]
+        nDig_u=len(uKCRV)
+        if "." in valueKCRV[-2]:
+            uKCRV = uKCRV[0]+"."+uKCRV[1]
+        if "." in valueKCRV[-3]:
+            uKCRV = "0."+uKCRV
+        print(valueKCRV,uKCRV,valueKCRV[-nDig_u:])
         unitKCRV=line_change1[i4+2:]
         if unitKCRV == "GBq":  unit = "\\giga\\becquerel"
         if unitKCRV == "MBq":  unit = "\\mega\\becquerel"

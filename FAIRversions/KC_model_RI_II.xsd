@@ -19,7 +19,18 @@
                     <xs:documentation xml:lang="en">
                         Key comparison results are key data in the realization of the derived unit becquerel for a given radionuclide.
                         The ultimate semantic reference for this derived SI unit is provided by http://si-digital-framework.org/SI#becquerel
-                        The key comparison results are officially publish on BIPM the Key Comparison DataBase https://www.bipm.org/kcdb/  
+                        The key comparison results are officially publish on BIPM the Key Comparison DataBase https://www.bipm.org/kcdb/
+						
+						Successful participation in this comparison by a laboratory may provide evidential support for 
+						Calibration and Measurement Capability (CMC) claims for [nuclide] measured using the laboratory’s 
+						method(s) used in the comparison or methods calibrated by those used for the comparison. This
+						comparison may also be used to support CMC claims for those radionuclides measured in the laboratory 
+						using the same method and having a degree of difficulty at or below that of the radionuclide measured 
+						in this comparison as indicated in the current Measurement Methods Matrix (MMM)[1].
+						[1] International Rules for CMC Claims in Ionizing Radiation Metrology Doc 3 March 16 2021 (Sept 2020),
+						Consultative Committee for Ionizing Radiation metrology (CCRI),
+						https://www.bipm.org/documents/20126/54619299/Rules+for+entering+CMC+claims+in+ionizing+radiation+metrology/c0b97b77-99e1-4abb-1d10-9a90a35fc9bf
+						
                         Additionally, to facilitate machine readability and actionability,
                         the key comparison reference value and degrees of equivalence obtained in BIPM.RI(II)-K1 comparisons are made available in this machine-readable document.
                         The metadata supporting these results are also included in this machine-readable document.
