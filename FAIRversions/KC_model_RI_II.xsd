@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema 	xmlns:xs = "http://www.w3.org/2001/XMLSchema"
+<xs:schema  xmlns:xs = "http://www.w3.org/2001/XMLSchema"
             xmlns:dsi = "https://ptb.de/si"
             elementFormDefault="qualified">
             
@@ -12,9 +12,9 @@
                 </xs:documentation>
             </xs:annotation>
             
-	<xs:element name = "Comparison">
-		<xs:complexType>
-			<xs:sequence minOccurs = "0" maxOccurs = "1">
+    <xs:element name = "Comparison">
+        <xs:complexType>
+            <xs:sequence minOccurs = "0" maxOccurs = "1">
                 <xs:annotation>
                     <xs:documentation xml:lang="en">
                         Key comparison results are key data in the realization of the derived unit becquerel for a given radionuclide.
@@ -39,8 +39,8 @@
                         _ The results of the key comparison (xml element: "Comparison_data")
                         _ The metadata (administrative and technical) supporting these results (xml element: "Comparison_metadata")
                     </xs:documentation> 
-                </xs:annotation>                        			
-				<xs:element name = "General_information">
+                </xs:annotation>
+                <xs:element name = "General_information">
                     <xs:complexType>
                         <xs:sequence minOccurs = "0" maxOccurs = "1">
                             <xs:annotation>
@@ -110,7 +110,7 @@
                                                             This element is expected to contain a value, a multiple of becquerel as unit,
                                                             and a standard uncertainty (a coverage factor equal to 1).
                                                             The becquerel unit is defined in https://si-digital-framework.org/si-unit/Bq
-															and the possible prefixes in https://si-digital-framework.org/si-prefixes/
+                                                            and the possible prefixes in https://si-digital-framework.org/si-prefixes/
                                                         </xs:documentation> 
                                                     </xs:annotation>
                                                     <xs:element ref="dsi:real"></xs:element>
@@ -164,7 +164,7 @@
                                                                             This element is expected to contain a value, a multiple of becquerel as unit,
                                                                             and an expanded uncertainty with a coverage factor equal to 2.
                                                                             The becquerel unit is defined in https://si-digital-framework.org/si-unit/Bq
-																			and the possible prefixes in https://si-digital-framework.org/si-prefixes/
+                                                                            and the possible prefixes in https://si-digital-framework.org/si-prefixes/
                                                                     </xs:documentation>
                                                                 </xs:annotation>
                                                                 <xs:element name = "laboratory">
@@ -180,10 +180,10 @@
                                                                             </xs:annotation>                                                                           
                                                                             <xs:element name = "Acronym" type = "xs:string"></xs:element>
                                                                             <xs:element name = "PastAcronyms" type = "xs:string" minOccurs = "0"></xs:element>      
-																			<xs:element name = "ROR" type = "xs:anyURI" minOccurs = "0"></xs:element>                                                                
+                                                                            <xs:element name = "ROR" type = "xs:anyURI" minOccurs = "0"></xs:element>                                                                
                                                                         </xs:sequence>
                                                                     </xs:complexType>
-                                                                </xs:element>                                                               		                                                       
+                                                                </xs:element>
                                                                 <xs:element ref="dsi:real"></xs:element>
                                                             </xs:sequence>
                                                         </xs:complexType>
@@ -201,7 +201,7 @@
                     <xs:complexType>
                         <xs:sequence minOccurs = "0" maxOccurs = "unbounded">
                             <xs:annotation>
-                               	<xs:documentation xml:lang="en">         
+                                <xs:documentation xml:lang="en">         
                                     The metadata of key comparisons BIPM.RI(II)-K1 provide administrative and technical information
                                     on each submission (xml element: "Submission") that contribute to the realization of the derived unit becquerel for a given radionuclide.
                                     The ultimate semantic reference for the becquerel unit is provided by https://si-digital-framework.org/si-unit/Bq
@@ -211,7 +211,7 @@
                                 <xs:complexType>
                                     <xs:sequence minOccurs = "0" maxOccurs = "unbounded">
                                         <xs:annotation>
-                                           	<xs:documentation xml:lang="en">         
+                                            <xs:documentation xml:lang="en">         
                                                 A submission to obtain a degree of equivalence is described by providing details on:
                                                 _ The participating laboratory (xml element: "laboratory")
                                                 _ The year of the participation, ie measurement by the SIR  (xml element: "year")
@@ -272,7 +272,7 @@
                                                                                 and a (optional) standard uncertainty (a coverage factor equal to 1).
                                                                                 The SI unit gram is defined in https://si-digital-framework.org/si-unit/g
                                                                                 </xs:documentation>
-                                                                            </xs:annotation>                                                               		                                                       
+                                                                            </xs:annotation>
                                                                             <xs:element ref="dsi:real"></xs:element>
                                                                         </xs:sequence>
                                                                     </xs:complexType>
@@ -303,7 +303,7 @@
                                                                                                 The solvant is identified by: 
                                                                                                 _ The SMILES identifier, media type: chemical/x-daylight-smiles
                                                                                                 _ The InChIKey identifier  http://inchi.info/inchikey_overview_en.html
-																								_ The InChI identifier https://iupac.org/project/2000-025-1-800/
+                                                                                                _ The InChI identifier https://iupac.org/project/2000-025-1-800/
                                                                                             </xs:documentation> 
                                                                                         </xs:annotation>
                                                                                         <xs:element name = "SMILES" type = "xs:string"></xs:element>
@@ -334,7 +334,7 @@
                                                                                                 The carrier molecule is identified by: 
                                                                                                 _ The SMILES identifier, media type: chemical/x-daylight-smiles
                                                                                                 _ The InChIKey identifier  http://inchi.info/inchikey_overview_en.html
-																								_ The InChI identifier https://iupac.org/project/2000-025-1-800/
+                                                                                                _ The InChI identifier https://iupac.org/project/2000-025-1-800/
                                                                                             </xs:documentation> 
                                                                                         </xs:annotation>                                                                                    
                                                                                         <xs:element name = "SMILES" type = "xs:string"></xs:element>
@@ -400,7 +400,7 @@
                                                                                     This element is expected to contain a value, a base unit for the quantity time,
                                                                                     and a (optional) standard uncertainty (a coverage factor equal to 1).
                                                                                     The base unit second is defined in https://si-digital-framework.org/si-unit/s
-																					and the possible prefixes in https://si-digital-framework.org/si-prefixes/
+                                                                                    and the possible prefixes in https://si-digital-framework.org/si-prefixes/
                                                                                     The reference (optional) of the half-life evaluation is given in the xml element: "reference"  
                                                                                 </xs:documentation>
                                                                             </xs:annotation>
@@ -434,7 +434,7 @@
                                                                                     This element is expected to contain a value, a multiple derive unit becquerel,
                                                                                     and a standard uncertainty (a coverage factor equal to 1).
                                                                                     The derived SI unit becquerel is defined in https://si-digital-framework.org/si-unit/Bq
-																					and the possible prefixes in https://si-digital-framework.org/si-prefixes/
+                                                                                    and the possible prefixes in https://si-digital-framework.org/si-prefixes/
                                                                                     Additionally,
                                                                                     _ relative standard uncertainty from type A evaluation is given as a dimensionless decimal (xml element: "relative_standard_uncertainty_type_A")
                                                                                     _ relative standard uncertainty from type B evaluation is given as a dimensionless decimal (xml element: "relative_standard_uncertainty_type_B")  
@@ -491,7 +491,7 @@
                                                                                     This element is expected to contain a value, a multiple derive unit becquerel,
                                                                                     and a standard uncertainty (a coverage factor equal to 1).
                                                                                     The derived SI unit becquerel is defined in https://si-digital-framework.org/si-unit/Bq
-																					and the possible prefixes in https://si-digital-framework.org/si-prefixes/
+                                                                                    and the possible prefixes in https://si-digital-framework.org/si-prefixes/
                                                                                     In addition,
                                                                                     _ the relative standard uncertainty from the SIR system is given as a dimensionless decimal (xml element: "relative_standard_uncertainty_type_A")
                                                                                 </xs:documentation>
