@@ -54,7 +54,7 @@
                             <xs:element name = "ServiceCategoryID" type="xs:anyURI"></xs:element>       
                             <xs:element name = "Pilot">
                                 <xs:complexType>
-                                    <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                    <xs:sequence minOccurs = "0" maxOccurs = "unbounded">
                                         <xs:annotation>
                                             <xs:documentation xml:lang="en">
                                                 The pilot laboratory is identified by: 
@@ -87,7 +87,7 @@
                                         </xs:annotation>   
                                         <xs:element name = "doi" type="xs:anyURI"></xs:element>
                                         <xs:element name = "Year" type="xs:gYear"></xs:element>
-                                        <xs:element name = "KCRV">
+                                        <xs:element name = "KCRV" minOccurs = "0" maxOccurs = "1">
                                             <xs:complexType>
                                                 <xs:sequence minOccurs = "0" maxOccurs = "1">
                                                     <xs:annotation>
@@ -306,9 +306,9 @@
                                                                                                 _ The InChI identifier https://iupac.org/project/2000-025-1-800/
                                                                                             </xs:documentation> 
                                                                                         </xs:annotation>
-                                                                                        <xs:element name = "SMILES" type = "xs:string"></xs:element>
-                                                                                        <xs:element name = "InChIKey" type = "xs:string"></xs:element>
-                                                                                        <xs:element name = "InChI" type = "xs:string"></xs:element>
+                                                                                        <xs:element name = "SMILES" type = "xs:string" minOccurs = "0" maxOccurs = "1"></xs:element>
+                                                                                        <xs:element name = "InChIKey" type = "xs:string" minOccurs = "0" maxOccurs = "1"></xs:element>
+                                                                                        <xs:element name = "InChI" type = "xs:string" minOccurs = "0" maxOccurs = "1"></xs:element>
                                                                                         <xs:element name = "SolvantConcentration" minOccurs = "0" maxOccurs = "1">
                                                                                             <xs:complexType>
                                                                                                 <xs:sequence minOccurs = "0" maxOccurs = "1">
@@ -326,7 +326,7 @@
                                                                                     </xs:sequence>
                                                                                 </xs:complexType>
                                                                             </xs:element>
-                                                                            <xs:element name = "Carrier" minOccurs = "0" maxOccurs = "1">
+                                                                            <xs:element name = "Carrier" minOccurs = "0" maxOccurs = "unbounded">
                                                                                 <xs:complexType>
                                                                                     <xs:sequence minOccurs = "0" maxOccurs = "1">
                                                                                         <xs:annotation>
@@ -337,9 +337,9 @@
                                                                                                 _ The InChI identifier https://iupac.org/project/2000-025-1-800/
                                                                                             </xs:documentation> 
                                                                                         </xs:annotation>                                                                                    
-                                                                                        <xs:element name = "SMILES" type = "xs:string"></xs:element>
-                                                                                        <xs:element name = "InChIKey" type = "xs:string"></xs:element>
-                                                                                        <xs:element name = "InChI" type = "xs:string"></xs:element>
+                                                                                        <xs:element name = "SMILES" type = "xs:string" minOccurs = "0" maxOccurs = "1"></xs:element>
+                                                                                        <xs:element name = "InChIKey" type = "xs:string" minOccurs = "0" maxOccurs = "1"></xs:element>
+                                                                                        <xs:element name = "InChI" type = "xs:string" minOccurs = "0" maxOccurs = "1"></xs:element>
                                                                                         <xs:element name = "CarrierConcentration" minOccurs = "0" maxOccurs = "1">
                                                                                             <xs:complexType>
                                                                                                 <xs:sequence minOccurs = "0" maxOccurs = "1">
@@ -441,8 +441,8 @@
                                                                                 </xs:documentation>
                                                                             </xs:annotation>
                                                                             <xs:element ref="dsi:real"></xs:element>
-                                                                            <xs:element name = "relative_standard_uncertainty_type_A" type = "xs:decimal"></xs:element>
-                                                                            <xs:element name = "relative_standard_uncertainty_type_B" type = "xs:decimal"></xs:element>                                                                            
+                                                                            <xs:element name = "relative_standard_uncertainty_type_A" type = "xs:decimal" minOccurs = "0" maxOccurs = "1"></xs:element>
+                                                                            <xs:element name = "relative_standard_uncertainty_type_B" type = "xs:decimal" minOccurs = "0" maxOccurs = "1"></xs:element>                                                                            
                                                                         </xs:sequence>
                                                                     </xs:complexType>
                                                                 </xs:element>

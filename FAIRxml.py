@@ -9,8 +9,28 @@ This program carries out the FAIRification of the machine-readable files of key 
 import csv
 import numpy as np
 import pandas as pd
+import lxml 
+from tabulate import tabulate
+import textwrap
+import time
+import hashlib
 
-Radionuclide = "Ce-139" # select the radionuclide
+# selection the radionuclide
+# Radionuclide = "Ce-139" # Valid
+# Radionuclide = "Zn-65"  # Valid
+# Radionuclide = "Tb-161" # Valid
+# Radionuclide = "Na-22"  # Valid
+# Radionuclide = "Lu-177" # Valid
+# Radionuclide = "Ac-225" # Valid
+# Radionuclide = "Ag-110m" # Valid
+Radionuclide = "Ba-133" #
+
+# select the year
+yyear = "2022"
+
+# Path = "FAIRversions/" # published version
+Path = "G:/SIR_Data_Management/"+Radionuclide+"/"+yyear+"/" # draft versions
+
 
 
 def readRMO(NMI):
@@ -49,8 +69,12 @@ def readINCHI(rad, x):
         for lines in csvFile:
             if lines[0] == x: return lines[3]            
 
-fileName = Radionuclide+"_database.xml"
-FAIRfileName = "FAIRversions/"+Radionuclide+"_database_FAIR.xml"
+if Path == "FAIRversions/":
+    fileName = Radionuclide+"_database.xml"
+    FAIRfileName = Path+Radionuclide+"_database_FAIR.xml"
+else:
+    fileName = Path+Radionuclide+"_database.xml"
+    FAIRfileName = Path+Radionuclide+"_database_FAIR.xml"    
 
 file = open(fileName, 'r')
 Lines = file.readlines()
@@ -77,6 +101,7 @@ doiRelease = []
 
 
 release_year_list=[]
+NoKCRV_re = False
 for i, line in enumerate(Lines):
     if "Year_of_publication" in line:
         i1=line.find("cation")
@@ -94,7 +119,7 @@ for j in range(len(release_year_list)):
     #     Lab_acronym_K2.append(Lab_acronym_K2_i)
     #     DoE_K2.append(DoE_K2_i)
     #     U_K2.append(U_K2_i)
-    x=pd.read_excel("../"+Radionuclide+"/"+release_year_list[j]+"/DegreesOfEquivalence_Ce-139_"+release_year_list[j]+".xlsx", sheet_name="DoE")
+    x=pd.read_excel("../"+Radionuclide+"/"+release_year_list[j]+"/DegreesOfEquivalence_"+Radionuclide+"_"+release_year_list[j]+".xlsx", sheet_name="DoE")
     n=x.shape[0]-1
     unit_DoE = x.columns.values[2]
     Lab_acronym_K2_i=[]
@@ -390,10 +415,12 @@ for i, line in enumerate(Lines):
         uC_Ai = []
         for ind in range(len(uA_Ai)):
             uC_Ai.append(round(np.sqrt(float(uA_Ai[ind])**2+float(uB_Ai[ind])**2),3))
+        LabCombUonly = False
     elif "<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type=\"str" in line and AiFlag:
         i1=line.find("type=\"str\"")
         i2=line.find("</Combined")
-        uC_Ai=line[i1+6:i2].split(", ")
+        uC_Ai=line[i1+11:i2].split(", ")
+        LabCombUonly = True
 
     if "Mass of the solution" in line:
         if "null" in line: MassFlag = False
@@ -427,6 +454,8 @@ for i, line in enumerate(Lines):
             i1=line.find("type=\"str\"")
             i2=line.find("</key")
             density = line[i1+11:i2].split(", ")
+            for di in range(len(density)):
+                density[di]=density[di].replace("approx. ","")            
             i3=line.find("tion /")
             i4=line.find("type")
             unit_density = line[i3+8:i4-3]
@@ -466,6 +495,13 @@ for i, line in enumerate(Lines):
         else:
             Carrier = False
             Solvant = ChemComp           
+        if "and" in Carrier:
+            Carrier=Carrier.replace(" ","")
+            Carrier=Carrier.split("and")
+        if "&" in Carrier:
+            Carrier=Carrier.replace(" ","")
+            Carrier=Carrier.split("&")
+
         
         CarrierSMILES, CarrierInChiKey, CarrierInChi =  ChemID(Carrier)
         SolvantSMILES, SolvantInChiKey, SolvantInChi =  ChemID(Solvant)
@@ -485,12 +521,24 @@ for i, line in enumerate(Lines):
     if "Carrier concentration of the solution" in line:
         if "null" in line:
             Carrier_conc = False
+        if isinstance(Carrier, list):
+            i1=line.find("\"str\"")
+            i2=line.find("</key")
+            Carrier_conc = line[i1+6:i2].split(",")  
+            for ci, c in enumerate(Carrier_conc):
+                i5=c.find(":")
+                c = c[i5+1:]
+                Carrier_conc[ci]=c.replace(" ","")
         else:
             i1=line.find("\"str\"")
             i2=line.find("</key")
             Carrier_conc = line[i1+6:i2]
             i5=Carrier_conc.find(":")
             Carrier_conc = Carrier_conc[i5+1:]
+            if Carrier_conc == "?" or Carrier_conc == "-" or Carrier_conc == "none":
+                UnknownCarConc = True
+            else:
+                UnknownCarConc = False
             i3=line.find("/ (")
             i4=line.find(")")
             Carrier_conc_unit =line[i3+4:i4]
@@ -594,7 +642,7 @@ for i, line in enumerate(Lines):
     if "</General_information>" in line:
         FAIRfile.write("\t</General_information>\n")
 
-
+    
     # Comparison data
     
     if "Year_of_publication" in line:
@@ -619,19 +667,26 @@ for i, line in enumerate(Lines):
         line_change1=line[i1+2:i2]
         i3=line_change1.find("(")
         i4=line_change1.find(")")
-        valueKCRV=line_change1[:i3]
-        uKCRV=line_change1[i3+1:i4]
-        nDig_u=len(uKCRV)
-        if "." in valueKCRV[-2]:
-            uKCRV = uKCRV[0]+"."+uKCRV[1]
-        if "." in valueKCRV[-3]:
-            uKCRV = "0."+uKCRV
-        print(valueKCRV,uKCRV,valueKCRV[-nDig_u:])
-        unitKCRV=line_change1[i4+2:]
-        if unitKCRV == "GBq":  unit = "\\giga\\becquerel"
-        if unitKCRV == "MBq":  unit = "\\mega\\becquerel"
-        if unitKCRV == "kBq":  unit = "\\kilo\\becquerel"
-        if unitKCRV == "Bq":  unit = "\\becquerel"
+        if line_change1[:3] == "not":
+            valueKCRV = "not evaluated"
+            uKCRV = "not evaluated"
+            unitKCRV = "not applicable"
+            NoKCRV_re = True
+        else:
+            valueKCRV=line_change1[:i3]
+            uKCRV=line_change1[i3+1:i4]
+            nDig_u=len(uKCRV)
+            if "." in valueKCRV[-2]:
+                uKCRV = uKCRV[0]+"."+uKCRV[1]
+            if "." in valueKCRV[-3]:
+                uKCRV = "0."+uKCRV
+            # print(valueKCRV,uKCRV,valueKCRV[-nDig_u:])
+            unitKCRV=line_change1[i4+2:]
+            if unitKCRV == "GBq":  unit = "\\giga\\becquerel"
+            if unitKCRV == "MBq":  unit = "\\mega\\becquerel"
+            if unitKCRV == "kBq":  unit = "\\kilo\\becquerel"
+            if unitKCRV == "Bq":  unit = "\\becquerel"
+            NoKCRV_re = False
         Lab_acronym=[]
         DoE=[]
         U=[]
@@ -678,41 +733,42 @@ for i, line in enumerate(Lines):
         FAIRfile.write("\t\t\t<doi>"+doiRelease[indRel]+"</doi>\n")
         FAIRfile.write("\t\t\t<Year>"+str(release_year)+"</Year>\n")
         if hrefFlag: FAIRfile.write("\t\t\t<doi>"+URLrelease+"</doi>\n")
-        FAIRfile.write("\t\t\t<KCRV>\n")
-        FAIRfile.write("\t\t\t\t<dsi:real>\n")
-        FAIRfile.write("\t\t\t\t\t<dsi:value>"+valueKCRV+"</dsi:value>\n")
-        FAIRfile.write("\t\t\t\t\t<dsi:unit>"+unitKCRV+"</dsi:unit>\n")
-        # FAIRfile.write("\t\t\t\t\t<dsi:uncertaintyValueType>\n")
-        # FAIRfile.write("\t\t\t\t\t<dsi:uncertaintyValueType>"+u+"</dsi:uncertaintyValueType>\n")
-        FAIRfile.write("\t\t\t\t\t<dsi:expandedUnc>\n")
-        FAIRfile.write("\t\t\t\t\t\t<dsi:uncertainty>"+uKCRV+"</dsi:uncertainty>\n")
-        FAIRfile.write("\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
-        FAIRfile.write("\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
-        FAIRfile.write("\t\t\t\t\t</dsi:expandedUnc>\n")
-        FAIRfile.write("\t\t\t\t</dsi:real>\n")                  
-        FAIRfile.write("\t\t\t</KCRV>\n")
-        FAIRfile.write("\t\t\t<Degrees_of_equivalence>\n")
-        for i, labi in enumerate(Lab_acronym):
-            FAIRfile.write("\t\t\t\t<Degree_of_equivalence>\n")
-            FAIRfile.write("\t\t\t\t\t<laboratory>\n")
-            FAIRfile.write("\t\t\t\t\t\t<Acronym>"+labi+"</Acronym>\n")
-            if readPastAcro(labi)!="-":
-                FAIRfile.write("\t\t\t\t\t\t<PastAcronyms>"+readPastAcro(labi)+"</PastAcronyms>\n")
-            if readROR(labi)!="":
-                FAIRfile.write("\t\t\t\t\t\t<ROR>"+readROR(labi)+"</ROR>\n")
-            FAIRfile.write("\t\t\t\t\t</laboratory>\n")
-            #FAIRfile.write("\t\t\t\t\t<value>"+DoE+"</value>\n")
-            FAIRfile.write("\t\t\t\t\t<dsi:real>\n")
-            FAIRfile.write("\t\t\t\t\t\t<dsi:value>"+DoE[i]+"</dsi:value>\n")
-            FAIRfile.write("\t\t\t\t\t\t<dsi:unit>"+unitDoE+"</dsi:unit>\n")
-            FAIRfile.write("\t\t\t\t\t\t<dsi:expandedUnc>\n")
-            FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertainty>"+U[i]+"</dsi:uncertainty>\n")
-            FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageFactor>2</dsi:coverageFactor>\n")
-            FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageProbability>0.95</dsi:coverageProbability>\n")
-            FAIRfile.write("\t\t\t\t\t\t</dsi:expandedUnc>\n")
-            FAIRfile.write("\t\t\t\t\t</dsi:real>\n")              
-            FAIRfile.write("\t\t\t\t</Degree_of_equivalence>\n")
-        FAIRfile.write("\t\t\t</Degrees_of_equivalence>\n")
+        if not NoKCRV_re:
+            FAIRfile.write("\t\t\t<KCRV>\n")
+            FAIRfile.write("\t\t\t\t<dsi:real>\n")
+            FAIRfile.write("\t\t\t\t\t<dsi:value>"+valueKCRV+"</dsi:value>\n")
+            FAIRfile.write("\t\t\t\t\t<dsi:unit>"+unitKCRV+"</dsi:unit>\n")
+            # FAIRfile.write("\t\t\t\t\t<dsi:uncertaintyValueType>\n")
+            # FAIRfile.write("\t\t\t\t\t<dsi:uncertaintyValueType>"+u+"</dsi:uncertaintyValueType>\n")
+            FAIRfile.write("\t\t\t\t\t<dsi:expandedUnc>\n")
+            FAIRfile.write("\t\t\t\t\t\t<dsi:uncertainty>"+uKCRV+"</dsi:uncertainty>\n")
+            FAIRfile.write("\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
+            FAIRfile.write("\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
+            FAIRfile.write("\t\t\t\t\t</dsi:expandedUnc>\n")
+            FAIRfile.write("\t\t\t\t</dsi:real>\n")                  
+            FAIRfile.write("\t\t\t</KCRV>\n")
+            FAIRfile.write("\t\t\t<Degrees_of_equivalence>\n")
+            for i, labi in enumerate(Lab_acronym):
+                FAIRfile.write("\t\t\t\t<Degree_of_equivalence>\n")
+                FAIRfile.write("\t\t\t\t\t<laboratory>\n")
+                FAIRfile.write("\t\t\t\t\t\t<Acronym>"+labi+"</Acronym>\n")
+                if readPastAcro(labi)!="-":
+                    FAIRfile.write("\t\t\t\t\t\t<PastAcronyms>"+readPastAcro(labi)+"</PastAcronyms>\n")
+                if readROR(labi)!="":
+                    FAIRfile.write("\t\t\t\t\t\t<ROR>"+readROR(labi)+"</ROR>\n")
+                FAIRfile.write("\t\t\t\t\t</laboratory>\n")
+                #FAIRfile.write("\t\t\t\t\t<value>"+DoE+"</value>\n")
+                FAIRfile.write("\t\t\t\t\t<dsi:real>\n")
+                FAIRfile.write("\t\t\t\t\t\t<dsi:value>"+DoE[i]+"</dsi:value>\n")
+                FAIRfile.write("\t\t\t\t\t\t<dsi:unit>"+unitDoE+"</dsi:unit>\n")
+                FAIRfile.write("\t\t\t\t\t\t<dsi:expandedUnc>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertainty>"+U[i]+"</dsi:uncertainty>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageFactor>2</dsi:coverageFactor>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageProbability>0.95</dsi:coverageProbability>\n")
+                FAIRfile.write("\t\t\t\t\t\t</dsi:expandedUnc>\n")
+                FAIRfile.write("\t\t\t\t\t</dsi:real>\n")              
+                FAIRfile.write("\t\t\t\t</Degree_of_equivalence>\n")
+            FAIRfile.write("\t\t\t</Degrees_of_equivalence>\n")
         Index = release_year_list.index(release_year)
         if yearLink[Index]!=[]:
             for j in range(len(yearLink[Index])):
@@ -747,7 +803,7 @@ for i, line in enumerate(Lines):
                         FAIRfile.write("\t\t\t\t\t</dsi:real>\n")              
                         FAIRfile.write("\t\t\t\t</Degree_of_equivalence>\n")
                     FAIRfile.write("\t\t\t</Degrees_of_equivalence>\n")
-            FAIRfile.write("\t\t</Release>\n")
+        FAIRfile.write("\t\t</Release>\n")
     # if ("</key>" in lineP and "<Data_from" in line) or ("</key>" in lineP and "<key name=\"Key comparison" in line) :
     #     FAIRfile.write("\t\t</Release>\n")
 
@@ -800,18 +856,7 @@ for i, line in enumerate(Lines):
   
     
     
-    if "<Data_from" in line and "</key>" in lineP:
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+    if "<Data_from" in line and "</key>" in lineP and "Degrees_of_Equivalence" in lineP2:
         FAIRfile.write("\t</Comparison_data>\n")
         FAIRfile.write("\t<Comparison_metadata>\n")
 
@@ -824,8 +869,8 @@ for i, line in enumerate(Lines):
         FAIRfile.write("\t\t<Submission>\n")
         FAIRfile.write("\t\t\t<laboratory>\n")
         FAIRfile.write("\t\t\t\t<Acronym>"+Lab_acronym+"</Acronym>\n")
-        if readPastAcro(labi)!="-":
-            FAIRfile.write("\t\t\t\t\t\t<PastAcronyms>"+readPastAcro(labi)+"</PastAcronyms>\n")
+        if readPastAcro(Lab_acronym)!="-":
+            FAIRfile.write("\t\t\t\t\t\t<PastAcronyms>"+readPastAcro(Lab_acronym)+"</PastAcronyms>\n")
         if readROR(Lab_acronym)!="":
             FAIRfile.write("\t\t\t\t<ROR>"+readROR(Lab_acronym)+"</ROR>\n")
         FAIRfile.write("\t\t\t</laboratory>\n")
@@ -858,23 +903,23 @@ for i, line in enumerate(Lines):
                     # FAIRfile.write("\t\t\t\t\t\t<standard_uncertainty>"+u_mass[indexMass]+"</standard_uncertainty>\n")
                 FAIRfile.write("\t\t\t\t\t\t</dsi:real>\n")
                 FAIRfile.write("\t\t\t\t\t</mass>\n")
-    
-                FAIRfile.write("\t\t\t\t\t<density>\n")
-                FAIRfile.write("\t\t\t\t\t\t<dsi:real>\n")
-                FAIRfile.write("\t\t\t\t\t\t\t<dsi:value>"+density[0]+"</dsi:value>\n")
-                FAIRfile.write("\t\t\t\t\t\t\t<dsi:unit>"+unit_density+"</dsi:unit>\n")                
-                # FAIRfile.write("\t\t\t\t\t\t<value>"+density[0]+"</value>\n")
-                # FAIRfile.write("\t\t\t\t\t\t<unit>"+unit_density+"</unit>\n")
-                if u_density:
-                    # FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertaintyValueType>"+u_density[0]+"</dsi:uncertaintyValueType>\n")
-                    FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
-                    FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+u_density[0]+"</dsi:uncertainty>\n")
-                    FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
-                    FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
-                    FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")                    
-                    # FAIRfile.write("\t\t\t\t\t\t<standard_uncertainty>"+u_density[0]+"</standard_uncertainty>\n")
-                FAIRfile.write("\t\t\t\t\t\t</dsi:real>\n")
-                FAIRfile.write("\t\t\t\t\t</density>\n")
+                if DensityFlag:
+                    FAIRfile.write("\t\t\t\t\t<density>\n")
+                    FAIRfile.write("\t\t\t\t\t\t<dsi:real>\n")
+                    FAIRfile.write("\t\t\t\t\t\t\t<dsi:value>"+density[0]+"</dsi:value>\n")
+                    FAIRfile.write("\t\t\t\t\t\t\t<dsi:unit>"+unit_density+"</dsi:unit>\n")                
+                    # FAIRfile.write("\t\t\t\t\t\t<value>"+density[0]+"</value>\n")
+                    # FAIRfile.write("\t\t\t\t\t\t<unit>"+unit_density+"</unit>\n")
+                    if u_density:
+                        # FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertaintyValueType>"+u_density[0]+"</dsi:uncertaintyValueType>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+u_density[0]+"</dsi:uncertainty>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")                    
+                        # FAIRfile.write("\t\t\t\t\t\t<standard_uncertainty>"+u_density[0]+"</standard_uncertainty>\n")
+                    FAIRfile.write("\t\t\t\t\t\t</dsi:real>\n")
+                    FAIRfile.write("\t\t\t\t\t</density>\n")
     
                 FAIRfile.write("\t\t\t\t\t<Chemical_composition>\n")
                 FAIRfile.write("\t\t\t\t\t\t<Solvant>\n")
@@ -889,20 +934,37 @@ for i, line in enumerate(Lines):
                     FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:real>\n")
                     FAIRfile.write("\t\t\t\t\t\t\t</SolvantConcentration>\n")
                 FAIRfile.write("\t\t\t\t\t\t</Solvant>\n")
-                FAIRfile.write("\t\t\t\t\t\t<Carrier>\n")
-                if CarrierSMILES: FAIRfile.write("\t\t\t\t\t\t\t<SMILES>"+CarrierSMILES+"</SMILES>\n")
-                if CarrierInChiKey: FAIRfile.write("\t\t\t\t\t\t\t<InChIKey>"+CarrierInChiKey+"</InChIKey>\n")
-                if CarrierInChi: FAIRfile.write("\t\t\t\t\t\t\t<InChI>"+CarrierInChi+"</InChI>\n")
-                if Carrier_conc:
-                    FAIRfile.write("\t\t\t\t\t\t\t<CarrierConcentration>\n")
-                    FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:real>\n")
-                    FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:value>"+Carrier_conc+"</dsi:value>\n")
-                    FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:unit>"+Carrier_conc_unit+"</dsi:unit>\n") 
-                    FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:real>\n")                    
-                    # FAIRfile.write("\t\t\t\t\t\t\t\t<value>"+Carrier_conc+"</value>\n")
-                    # FAIRfile.write("\t\t\t\t\t\t\t\t<unit>"+Carrier_conc_unit+"</unit>\n")
-                    FAIRfile.write("\t\t\t\t\t\t\t</CarrierConcentration>\n")
-                FAIRfile.write("\t\t\t\t\t\t</Carrier>\n")
+                if isinstance(Carrier, list):
+                    for ci in range(len(Carrier)):
+                        FAIRfile.write("\t\t\t\t\t\t<Carrier>\n")
+                        if CarrierSMILES: FAIRfile.write("\t\t\t\t\t\t\t<SMILES>"+ChemID(Carrier[ci])[0]+"</SMILES>\n")
+                        if CarrierInChiKey: FAIRfile.write("\t\t\t\t\t\t\t<InChIKey>"+ChemID(Carrier[ci])[1]+"</InChIKey>\n")
+                        if CarrierInChi: FAIRfile.write("\t\t\t\t\t\t\t<InChI>"+ChemID(Carrier[ci])[2]+"</InChI>\n")
+                        if Carrier_conc and (not UnknownCarConc):
+                            FAIRfile.write("\t\t\t\t\t\t\t<CarrierConcentration>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:real>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:value>"+Carrier_conc[ci]+"</dsi:value>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:unit>"+Carrier_conc_unit+"</dsi:unit>\n") 
+                            FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:real>\n")                    
+                            # FAIRfile.write("\t\t\t\t\t\t\t\t<value>"+Carrier_conc+"</value>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t\t<unit>"+Carrier_conc_unit+"</unit>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t</CarrierConcentration>\n")
+                        FAIRfile.write("\t\t\t\t\t\t</Carrier>\n")
+                else:
+                    FAIRfile.write("\t\t\t\t\t\t<Carrier>\n")
+                    if CarrierSMILES: FAIRfile.write("\t\t\t\t\t\t\t<SMILES>"+CarrierSMILES+"</SMILES>\n")
+                    if CarrierInChiKey: FAIRfile.write("\t\t\t\t\t\t\t<InChIKey>"+CarrierInChiKey+"</InChIKey>\n")
+                    if CarrierInChi: FAIRfile.write("\t\t\t\t\t\t\t<InChI>"+CarrierInChi+"</InChI>\n")
+                    if Carrier_conc and (not UnknownCarConc):
+                        FAIRfile.write("\t\t\t\t\t\t\t<CarrierConcentration>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:real>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:value>"+Carrier_conc+"</dsi:value>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:unit>"+Carrier_conc_unit+"</dsi:unit>\n") 
+                        FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:real>\n")                    
+                        # FAIRfile.write("\t\t\t\t\t\t\t\t<value>"+Carrier_conc+"</value>\n")
+                        # FAIRfile.write("\t\t\t\t\t\t\t\t<unit>"+Carrier_conc_unit+"</unit>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t</CarrierConcentration>\n")
+                    FAIRfile.write("\t\t\t\t\t\t</Carrier>\n")
                 FAIRfile.write("\t\t\t\t\t</Chemical_composition>\n")
                 FAIRfile.write("\t\t\t\t\t<impurities>"+reportedImpurity+"</impurities>\n")
                 FAIRfile.write("\t\t\t\t</Radioactive_solution>\n")
@@ -963,8 +1025,9 @@ for i, line in enumerate(Lines):
                             FAIRfile.write("\t\t\t\t\t\t</dsi:real>\n")
                             # FAIRfile.write("\t\t\t\t\t\t<value>"+str(Ai[indexMeth])+"</value>\n")
                             # FAIRfile.write("\t\t\t\t\t\t<unit>"+str(unit_Ai)+"</unit>\n")
-                            FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_A>"+str(uA_Ai[indexMeth])+"</relative_standard_uncertainty_type_A>\n")
-                            FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_B>"+str(uB_Ai[indexMeth])+"</relative_standard_uncertainty_type_B>\n")
+                            if (not LabCombUonly):
+                                FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_A>"+str(uA_Ai[indexMeth])+"</relative_standard_uncertainty_type_A>\n")
+                                FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_B>"+str(uB_Ai[indexMeth])+"</relative_standard_uncertainty_type_B>\n")
                             # FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_combined>"+str(uC_Ai[indexMeth])+"</relative_standard_uncertainty_combined>\n")
                         elif len(Ai) > len(methods):
                             FAIRfile.write("\t\t\t\t\t\t<dsi:real>\n")
@@ -979,8 +1042,9 @@ for i, line in enumerate(Lines):
                             FAIRfile.write("\t\t\t\t\t\t</dsi:real>\n")
                             # FAIRfile.write("\t\t\t\t\t\t<value>"+str(Ai[indexMass])+"</value>\n")
                             # FAIRfile.write("\t\t\t\t\t\t<unit>"+str(unit_Ai)+"</unit>\n")
-                            FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_A>"+str(uA_Ai[0])+"</relative_standard_uncertainty_type_A>\n")
-                            FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_B>"+str(uB_Ai[0])+"</relative_standard_uncertainty_type_B>\n")
+                            if (not LabCombUonly):
+                                FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_A>"+str(uA_Ai[0])+"</relative_standard_uncertainty_type_A>\n")
+                                FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_B>"+str(uB_Ai[0])+"</relative_standard_uncertainty_type_B>\n")
                             # FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_combined>"+str(uC_Ai[0])+"</relative_standard_uncertainty_combined>\n")
                         else:
                             FAIRfile.write("\t\t\t\t\t\t<dsi:real>\n")
@@ -995,13 +1059,15 @@ for i, line in enumerate(Lines):
                             FAIRfile.write("\t\t\t\t\t\t</dsi:real>\n")
                             # FAIRfile.write("\t\t\t\t\t\t<value>"+str(Ai[0])+"</value>\n")
                             # FAIRfile.write("\t\t\t\t\t\t<unit>"+str(unit_Ai)+"</unit>\n")
-                            FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_A>"+str(uA_Ai[0])+"</relative_standard_uncertainty_type_A>\n")
-                            FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_B>"+str(uB_Ai[0])+"</relative_standard_uncertainty_type_B>\n")
+                            if (not LabCombUonly):
+                                FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_A>"+str(uA_Ai[0])+"</relative_standard_uncertainty_type_A>\n")
+                                FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_type_B>"+str(uB_Ai[0])+"</relative_standard_uncertainty_type_B>\n")
                             # FAIRfile.write("\t\t\t\t\t\t<relative_standard_uncertainty_combined>"+str(uC_Ai[0])+"</relative_standard_uncertainty_combined>\n")
                         FAIRfile.write("\t\t\t\t\t</Activity>\n")
                     if AiFlag: FAIRfile.write("\t\t\t\t</Mesurement>\n")
             FAIRfile.write("\t\t\t</Laboratory_measurements>\n")
-        massEqAe = len(mass)==len(Ae)
+
+        if MassFlag: massEqAe = len(mass)==len(Ae)
         methEqAe = len(methods)==len(Ae)
         #print(RaRef, Ai, Ae, massEqAe, methEqAe)
         FAIRfile.write("\t\t\t<BIPM_measurements>\n")
@@ -1188,6 +1254,8 @@ for i, line in enumerate(Lines):
         
     # FAIRfile.write(line)
 
+file.close()
+FAIRfile.close()
 print("END.")
 
 
@@ -1215,3 +1283,64 @@ print("END.")
 
 
 
+
+
+
+"""
+VALIDATION
+"""
+def calculate_checksum(xml_document):
+    with open(xml_document, 'rb') as file:
+        xml_content = file.read()
+    sha256_hash = hashlib.sha256(xml_content).hexdigest()
+    return sha256_hash
+checksum = calculate_checksum(FAIRfileName)
+print(f"SHA-256 Checksum: {checksum}")
+
+
+# import requests
+
+# xsd_url = "https://www.ptb.de/si/v2.1.0/SI_Format.xsd"
+
+# try:
+#     response = requests.get(xsd_url)
+#     if response.status_code == 200:
+#         xsd_content = response.text
+#         print("Access to D_SI")
+#     else:
+#         print(f"Failed to fetch XSD. Status code: {response.status_code}")
+# except Exception as e:
+#     print(f"Error: {e}")
+
+
+
+# # time.sleep(2)
+# xml_file = lxml.etree.parse(FAIRfileName)
+# xml_validator = lxml.etree.XMLSchema(file="FAIRversions/KC_model_RI_II.xsd")
+
+# is_valid = xml_validator.validate(xml_file)
+
+# if is_valid == 'True' :
+#     output = "The xml has been validated"
+# else:
+#     output = "The xml was not validated"
+    
+# print(output + "\n")
+
+# def validate_with_lxml(xsd_tree, xml_tree):
+#     table=[['Line','Error(s)']] #Output table structure
+#     raw=[]                        #row used to remove any duplicates
+#     xmlschema = xsd_tree
+#     try:
+#         xmlschema.assertValid(xml_tree)
+#     except lxml.etree.DocumentInvalid:
+#         print("Validation error(s):\n")
+#         for error in xmlschema.error_log:
+#             if error.line not in raw:
+#                 table.append([error.line,textwrap.fill(error.message, width=60)])
+#                 raw.append(error.line)
+            
+#         print(tabulate(table, headers='firstrow', tablefmt='fancy_grid'))
+
+
+# validate_with_lxml(xml_validator,xml_file)
