@@ -1,9 +1,11 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2022-10-04",
+    "Release date": "2023-09-20",
+    "Note": "This version of the machine-readable comparison report is not definitive. The format is under discussion within the CCRI and CIPM to best reflect the requirements of ionizing radiation metrology and to conform to the SI digital framework. Users can use this document to analyse key comparison data and metadata more efficiently with their software. However, users should bear in mind that the format will necessarily evolve in subsequent updates of this key comparison, which will not guarantee the long-term compatibility of their interface. ", 
     "References":{
-        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
+        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 ",
+        " [2] ": " Romain Coulon et al 2023 Meas. Sci. Technol. 34 074009 - https://doi.org/10.1088/1361-6501/accd0b "
         },
     "Contact persons":{
         " Dr Romain Coulon": " romain.coulon@bipm.org ",
@@ -18,7 +20,18 @@
         "Key Comparison Reference Value (KCRV)": "367700(1700) kBq",
         "Reference of the published comparison report": "Ratel G. and  Michotte C., BIPM comparison BIPM.RI(II)-K1.Gd-153 of activity measurements of the radionuclide $^{153}$Gd, \\href{https://doi.org/10.1088/0026-1394/40/1A/06003}{\\textit{Metrologia}, 2003, \\textbf{40}, Tech. Suppl., 06003}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "CMI" : {
+                "D_i" : -1.7,
+                "U_i" : 2.7
+            },
+            "NIST" : {
+                "D_i" : 1.7,
+                "U_i" : 2.7
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Gd-153(2021)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Gd-153",
@@ -35,10 +48,17 @@
             }
         }
     },
-    "Data from CMI-IIR-1989": {
+    "Data from CMI-1989": {
         "Eligible for the Key Comparison Reference Value (KCRV)": true,
         "Eligible for Degree of Equivalence (DoE)": false,
-        "Laboratory": "CMI-IIR",
+        "Laboratory": {
+            "Acronym": "CMI",
+            "Full name": "Czech Metrological Institute",
+            "Address": "",
+            "Country": "Czechia",
+            "Regional Metrology Organization (RMO)": "EURAMET",
+            "Old acronyms": "UVVVR, CMI-IIR"
+            },
         "Contributor(s) from the BIPM": null,
         "Contributor(s) from the laboratory": null,
         "Date of reference specified by the laboratory": "1989-10-11 12:00 UT",

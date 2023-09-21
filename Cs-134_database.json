@@ -1,9 +1,11 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2023-01-16",
+    "Release date": "2023-09-20",
+    "Note": "This version of the machine-readable comparison report is not definitive. The format is under discussion within the CCRI and CIPM to best reflect the requirements of ionizing radiation metrology and to conform to the SI digital framework. Users can use this document to analyse key comparison data and metadata more efficiently with their software. However, users should bear in mind that the format will necessarily evolve in subsequent updates of this key comparison, which will not guarantee the long-term compatibility of their interface. ", 
     "References":{
-        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
+        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 ",
+        " [2] ": " Romain Coulon et al 2023 Meas. Sci. Technol. 34 074009 - https://doi.org/10.1088/1361-6501/accd0b "
         },
     "Contact persons":{
         " Dr Romain Coulon": " romain.coulon@bipm.org ",
@@ -18,7 +20,50 @@
         "Key Comparison Reference Value (KCRV)": "10096(16) kBq",
         "Reference of the published comparison report": "Ratel G., Michotte C., BIPM comparison BIPM.RI(II)-K1.Cs-134 of activity measurements of the radionuclide $^{134}$Cs and links for the 1978 international comparison CCRI(II)-K2.Cs-134, \\href{https://doi.org/10.1088/0026-1394/40/1A/06024}{\\textit{Metrologia}, 2003, \\textbf{40}, Tech. Suppl., 06024}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "BIPM" : {
+                "D_i" : 0.00,
+                "U_i" : 0.04
+            },
+            "CNEA" : {
+                "D_i" : -0.09,
+                "U_i" : 0.31
+            },
+            "LNMRI-IRD" : {
+                "D_i" : -0.10,
+                "U_i" : 0.05
+            },
+            "BKFH" : {
+                "D_i" : 0.02,
+                "U_i" : 0.05
+            },
+            "PTB" : {
+                "D_i" : -0.03,
+                "U_i" : 0.08
+            },
+            "KRISS" : {
+                "D_i" : 0.12,
+                "U_i" : 0.05
+            },
+            "BARC" : {
+                "D_i" : 0.03,
+                "U_i" : 0.09
+            },
+            "LNE-LNHB" : {
+                "D_i" : 0.03,
+                "U_i" : 0.04
+            },
+            "CIEMAT" : {
+                "D_i" : -0.16,
+                "U_i" : 0.05
+            },
+            "NIST" : {
+                "D_i" : 0.04,
+                "U_i" : 0.07
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Cs-134(2005)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Cs-134",
@@ -26,7 +71,58 @@
         "Key Comparison Reference Value (KCRV)": "10096(16) kBq",
         "Reference of the published comparison report": "Ratel G., Michotte C., W\\\"{a}tjen U., Janssen H., Sz\\ücs L., Coursol N. and Hino Y., Activity measurements of the radionuclide $^{134}$Cs for the IRMM, Geel, PTB, Germany, OMH, Hungary, LNE-LNHB, France and the NMIJ, Japan in the ongoing comparison BIPM.RI(II)-K1.Cs-134, \\href{https://doi.org/10.1088/0026-1394/42/1A/06013}{\\textit{Metrologia}, 2005, \\textbf{42}, Tech. Suppl., 06013}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "BIPM" : {
+                "D_i" : 0.00,
+                "U_i" : 0.04
+            },
+            "CNEA" : {
+                "D_i" : -0.09,
+                "U_i" : 0.31
+            },
+            "LNMRI-IRD" : {
+                "D_i" : -0.10,
+                "U_i" : 0.05
+            },
+            "KRISS" : {
+                "D_i" : 0.12,
+                "U_i" : 0.05
+            },
+            "BARC" : {
+                "D_i" : 0.03,
+                "U_i" : 0.09
+            },
+            "CIEMAT" : {
+                "D_i" : -0.16,
+                "U_i" : 0.05
+            },
+            "NIST" : {
+                "D_i" : 0.04,
+                "U_i" : 0.07
+            },
+            "JRC" : {
+                "D_i" : -0.05,
+                "U_i" : 0.08
+            },
+            "PTB" : {
+                "D_i" : -0.02,
+                "U_i" : 0.06
+            },
+            "BKFH" : {
+                "D_i" : 0.03,
+                "U_i" : 0.07
+            },
+            "LNE-LNHB" : {
+                "D_i" : 0.03,
+                "U_i" : 0.05
+            },
+            "NMIJ" : {
+                "D_i" : 0.01,
+                "U_i" : 0.05
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Cs-134(2007)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Cs-134",
@@ -34,7 +130,62 @@
         "Key Comparison Reference Value (KCRV)": "10116(13) kBq",
         "Reference of the published comparison report": "Ratel G., Michotte C., Leena J., Iglicki A., Sahagia M., Hino Y., Update of the BIPM comparison BIPM.RI(II)-K1.Cs-134 of activity measurements of the radionuclide $^{134}$Cs to include the 2005 results of the BARC (India) and the CNEA (Argentina), the 2006 result of the IFIN-HH (Romania) and the link for the 2005 regional comparison APMP.RI(II)-K2.Cs-134 to include the VNIIM and the INER, \\href{https://doi.org/10.1088/0026-1394/44/1A/06004}{\\textit{Metrologia}, 2007, \\textbf{44}, Tech. Suppl., 06004}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "kBq",
+        "Degrees of Equivalence" : {
+            "BIPM" : {
+                "D_i" : -24,
+                "U_i" : 33
+            },
+            "LNMRI-IRD" : {
+                "D_i" : -118,
+                "U_i" : 43
+            },
+            "KRISS" : {
+                "D_i" : 98,
+                "U_i" : 45
+            },
+            "CIEMAT" : {
+                "D_i" : -180,
+                "U_i" : 45
+            },
+            "NIST" : {
+                "D_i" : 25,
+                "U_i" : 61
+            },
+            "JRC" : {
+                "D_i" : -69,
+                "U_i" : 75
+            },
+            "PTB" : {
+                "D_i" : -36,
+                "U_i" : 47
+            },
+            "BKFH" : {
+                "D_i" : 15,
+                "U_i" : 61
+            },
+            "LNE-LNHB" : {
+                "D_i" : 8,
+                "U_i" : 42
+            },
+            "NMIJ" : {
+                "D_i" : -12,
+                "U_i" : 41
+            },
+            "BARC" : {
+                "D_i" : 27,
+                "U_i" : 91
+            },
+            "CNEA" : {
+                "D_i" : 74,
+                "U_i" : 91
+            },
+            "IFIN-HH" : {
+                "D_i" : 106,
+                "U_i" : 114
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Cs-134(2013)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Cs-134",
@@ -42,7 +193,66 @@
         "Key Comparison Reference Value (KCRV)": "10116(13) kBq",
         "Reference of the published comparison report": "Michotte C., Ratel G., Courte S., Maringer F.J., Caffari Y. and van Wyngaardt W.M., Update of the BIPM comparison BIPM.RI(II)-K1.Cs-134 of activity measurements of the radionuclide $^{134}$Cs to include the 2008 results of the BEV (Austria), the 2009 result of the IRA (Switzerland) and the 2010 results of the NMISA (South Africa), \\href{https://doi.org/10.1088/0026-1394/50/1A/06009}{\\textit{Metrologia}, 2013, \\textbf{50}, Tech. Suppl., 06009}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "kBq",
+        "Degrees of Equivalence" : {
+            "KRISS" : {
+                "D_i" : 98,
+                "U_i" : 45
+            },
+            "CIEMAT" : {
+                "D_i" : -180,
+                "U_i" : 45
+            },
+            "NIST" : {
+                "D_i" : 25,
+                "U_i" : 61
+            },
+            "JRC" : {
+                "D_i" : -69,
+                "U_i" : 75
+            },
+            "PTB" : {
+                "D_i" : -36,
+                "U_i" : 47
+            },
+            "BKFH" : {
+                "D_i" : 15,
+                "U_i" : 61
+            },
+            "LNE-LNHB" : {
+                "D_i" : 8,
+                "U_i" : 42
+            },
+            "NMIJ" : {
+                "D_i" : -12,
+                "U_i" : 41
+            },
+            "BARC" : {
+                "D_i" : 27,
+                "U_i" : 91
+            },
+            "CNEA" : {
+                "D_i" : 74,
+                "U_i" : 91
+            },
+            "IFIN-HH" : {
+                "D_i" : 106,
+                "U_i" : 114
+            },
+            "BEV" : {
+                "D_i" : -26,
+                "U_i" : 142
+            },
+            "IRA" : {
+                "D_i" : -85,
+                "U_i" : 106
+            },
+            "NMISA" : {
+                "D_i" : -15,
+                "U_i" : 62
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Cs-134(2022)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Cs-134",
@@ -167,7 +377,7 @@
         "Equivalent activity measured by the SIR / kBq": "10094, 10088",
         "Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4": "7, 7",
         "Comments on the SIR measurement": "mass of active solution before dilution",
-        "Combined standard uncertainty of the equivalent activity / kBq": "33,33",
+        "Combined standard uncertainty of the equivalent activity / kBq": "33, 33",
         "Number of the equivalent activity measurement retained for the degree of equivalence": null,
         "Specified equivalent activity for the degree of equivalence": null,
         "Specified equivalent activity for the key comparison reference value": null,
@@ -437,7 +647,7 @@
         "Equivalent activity measured by the SIR / kBq": "10091, 10092",
         "Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4": "5, 5",
         "Comments on the SIR measurement": null,
-        "Combined standard uncertainty of the equivalent activity / kBq": "14,14",
+        "Combined standard uncertainty of the equivalent activity / kBq": "14, 14",
         "Number of the equivalent activity measurement retained for the degree of equivalence": null,
         "Specified equivalent activity for the degree of equivalence": null,
         "Specified equivalent activity for the key comparison reference value": null,
@@ -452,7 +662,7 @@
         "Laboratory": {
             "Acronym": "BKFH",
             "Full name": "Government Office of the Capital City Budapest",
-            "Address": "Németvölgyi Ùt 37-39 H-1124 Budapest",
+            "Address": "Nemetvölgyi Ut 37-39 H-1124 Budapest",
             "Country": "Hungary",
             "Regional Metrology Organization (RMO)": "EURAMET",
             "Old acronyms": "OMH, MKEH"
@@ -482,7 +692,7 @@
         "Equivalent activity measured by the SIR / kBq": "10125, 10122",
         "Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4": "6, 6",
         "Comments on the SIR measurement": null,
-        "Combined standard uncertainty of the equivalent activity / kBq": "31",
+        "Combined standard uncertainty of the equivalent activity / kBq": "31, 31",
         "Number of the equivalent activity measurement retained for the degree of equivalence": null,
         "Specified equivalent activity for the degree of equivalence": null,
         "Specified equivalent activity for the key comparison reference value": null,
@@ -497,7 +707,7 @@
         "Laboratory": {
             "Acronym": "BKFH",
             "Full name": "Government Office of the Capital City Budapest",
-            "Address": "Németvölgyi Ùt 37-39 H-1124 Budapest",
+            "Address": "Nemetvölgyi Ut 37-39 H-1124 Budapest",
             "Country": "Hungary",
             "Regional Metrology Organization (RMO)": "EURAMET",
             "Old acronyms": "OMH, MKEH"
@@ -542,7 +752,7 @@
         "Laboratory": {
             "Acronym": "BKFH",
             "Full name": "Government Office of the Capital City Budapest",
-            "Address": "Németvölgyi Ùt 37-39 H-1124 Budapest",
+            "Address": "Nemetvölgyi Ut 37-39 H-1124 Budapest",
             "Country": "Hungary",
             "Regional Metrology Organization (RMO)": "EURAMET",
             "Old acronyms": "OMH, MKEH"
@@ -586,7 +796,7 @@
         "Eligible for Degree of Equivalence (DoE)": false,
         "Laboratory": {
             "Acronym": "CIEMAT",
-            "Full name": "Centro de Investigaciones Energéticas, Medioambientales y Tecnologicas",
+            "Full name": "Centro de Investigaciones Energeticas, Medioambientales y Tecnologicas",
             "Address": "H-1124 Budapest",
             "Country": "Spain",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -977,7 +1187,7 @@
         "Equivalent activity measured by the SIR / kBq": "10022, 10024",
         "Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4": "9, 9",
         "Comments on the SIR measurement": null,
-        "Combined standard uncertainty of the equivalent activity / kBq": "64,64",
+        "Combined standard uncertainty of the equivalent activity / kBq": "64, 64",
         "Number of the equivalent activity measurement retained for the degree of equivalence": null,
         "Specified equivalent activity for the degree of equivalence": null,
         "Specified equivalent activity for the key comparison reference value": null,
@@ -1126,7 +1336,7 @@
         "Eligible for Degree of Equivalence (DoE)": false,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -1157,7 +1367,7 @@
         "Equivalent activity measured by the SIR / kBq": "10125, 10129",
         "Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4": "6, 6",
         "Comments on the SIR measurement": null,
-        "Combined standard uncertainty of the equivalent activity / kBq": "22",
+        "Combined standard uncertainty of the equivalent activity / kBq": "22, 22",
         "Number of the equivalent activity measurement retained for the degree of equivalence": null,
         "Specified equivalent activity for the degree of equivalence": null,
         "Specified equivalent activity for the key comparison reference value": null,
@@ -1171,7 +1381,7 @@
         "Eligible for Degree of Equivalence (DoE)": false,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -1216,7 +1426,7 @@
         "Eligible for Degree of Equivalence (DoE)": true,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -1382,7 +1592,7 @@
         "Equivalent activity measured by the SIR / kBq": "10121, 10114",
         "Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4": "5, 5",
         "Comments on the SIR measurement": null,
-        "Combined standard uncertainty of the equivalent activity / kBq": "110",
+        "Combined standard uncertainty of the equivalent activity / kBq": "110, 110",
         "Number of the equivalent activity measurement retained for the degree of equivalence": null,
         "Specified equivalent activity for the degree of equivalence": null,
         "Specified equivalent activity for the key comparison reference value": null,
@@ -1562,7 +1772,7 @@
         "Equivalent activity measured by the SIR / kBq": "10087, 10091",
         "Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4": "6, 6",
         "Comments on the SIR measurement": null,
-        "Combined standard uncertainty of the equivalent activity / kBq": "36,36",
+        "Combined standard uncertainty of the equivalent activity / kBq": "36, 36",
         "Number of the equivalent activity measurement retained for the degree of equivalence": null,
         "Specified equivalent activity for the degree of equivalence": null,
         "Specified equivalent activity for the key comparison reference value": null,
@@ -1720,7 +1930,7 @@
         "Contributor(s) from the BIPM": null,
         "Contributor(s) from the laboratory": null,
         "Date of reference specified by the laboratory": "2004-01-01 00:00 UT",
-        "Acronym(s) of the measurement method(s)": "4P-IC-GR-00-00-00, 4P-PC-BP-NA-GR-CO and 4P-LS-MX-00-00-CN",
+        "Acronym(s) of the measurement method(s)": "4P-IC-GR-00-00-00 & 4P-PC-BP-NA-GR-CO and 4P-LS-MX-00-00-CN",
         "Description of the measurement method(s)": "ionization chamber",
         "Comment(s) on the measurement method(s)": "calibrated in July 2004 by 4pi(PC)Beta-gamma coincidence and CIEMAT/NIST method",
         "Particularities of the submission to the SIR": "1 sample and 1 measurement method",
@@ -1847,7 +2057,7 @@
         "Laboratory": {
             "Acronym": "VNIIM",
             "Full name": "D.I. Mendeleyev Institute for Metrology",
-            "Address": "Saint-Pétersbourg",
+            "Address": "Saint-Petersbourg",
             "Country": "Russian Federation",
             "Regional Metrology Organization (RMO)": "COOMET",
             "Old acronyms": "-"

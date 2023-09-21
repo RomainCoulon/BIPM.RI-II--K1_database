@@ -297,7 +297,7 @@
                                                                         <xs:sequence minOccurs = "0" maxOccurs = "1">
                                                                             <xs:element name = "Solvant" minOccurs = "0" maxOccurs = "1">
                                                                                 <xs:complexType>
-                                                                                    <xs:sequence minOccurs = "0" maxOccurs = "1">
+                                                                                    <xs:sequence minOccurs = "0" maxOccurs = "unbounded">
                                                                                         <xs:annotation>
                                                                                             <xs:documentation xml:lang="en">
                                                                                                 The solvant is identified by: 

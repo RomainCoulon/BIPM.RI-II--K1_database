@@ -1,9 +1,11 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2022-10-04",
+    "Release date": "2023-09-21",
+    "Note": "This version of the machine-readable comparison report is not definitive. The format is under discussion within the CCRI and CIPM to best reflect the requirements of ionizing radiation metrology and to conform to the SI digital framework. Users can use this document to analyse key comparison data and metadata more efficiently with their software. However, users should bear in mind that the format will necessarily evolve in subsequent updates of this key comparison, which will not guarantee the long-term compatibility of their interface. ", 
     "References":{
-        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
+        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 ",
+        " [2] ": " Romain Coulon et al 2023 Meas. Sci. Technol. 34 074009 - https://doi.org/10.1088/1361-6501/accd0b "
         },
     "Contact persons":{
         " Dr Romain Coulon": " romain.coulon@bipm.org ",
@@ -18,7 +20,42 @@
         "Key Comparison Reference Value (KCRV)": "29953(42)~kBq",
         "Reference of the published comparison report": "Ratel G. and  Michotte C., BIPM comparison BIPM.RI(II)-K1.Sr-85 of activity measurements of the radionuclide $^{85}$Sr, \\href{https://doi.org/10.1088/0026-1394/41/1A/06006}{\\textit{Metrologia}, 2004, \\textbf{41}, Tech. Suppl., 06006}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "BIPM" : {
+                "D_i" : 0.02,
+                "U_i" : 0.60
+            },
+            "NPL" : {
+                "D_i" : -0.03,
+                "U_i" : 0.37
+            },
+            "CMI" : {
+                "D_i" : -0.06,
+                "U_i" : 0.27
+            },
+            "BKFH" : {
+                "D_i" : 0.20,
+                "U_i" : 0.21
+            },
+            "NMIJ" : {
+                "D_i" : -0.10,
+                "U_i" : 0.27
+            },
+            "LNE-LNHB" : {
+                "D_i" : -0.17,
+                "U_i" : 0.17
+            },
+            "PTB" : {
+                "D_i" : 0.11,
+                "U_i" : 0.15
+            },
+            "NIST" : {
+                "D_i" : 0.13,
+                "U_i" : 0.22
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Sr-85(2005)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Sr-85",
@@ -26,7 +63,42 @@
         "Key Comparison Reference Value (KCRV)": "29953(42)~kBq",
         "Reference of the published comparison report": "Ratel G., Michotte C. and Hino Y., Activity measurements of the radionuclide $^{85}$Sr for the NMIJ, Japan in the ongoing comparison BIPM.RI(II)-K1.Sr-85, \\href{https://doi.org/10.1088/0026-1394/42/1A/06010}{\\textit{Metrologia}, 2005, \\textbf{42}, Tech. Suppl., 06010}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "BIPM" : {
+                "D_i" : 0.02,
+                "U_i" : 0.60
+            },
+            "NPL" : {
+                "D_i" : -0.03,
+                "U_i" : 0.37
+            },
+            "CMI" : {
+                "D_i" : -0.06,
+                "U_i" : 0.27
+            },
+            "BKFH" : {
+                "D_i" : 0.20,
+                "U_i" : 0.21
+            },
+            "LNE-LNHB" : {
+                "D_i" : -0.17,
+                "U_i" : 0.17
+            },
+            "PTB" : {
+                "D_i" : 0.11,
+                "U_i" : 0.15
+            },
+            "NIST" : {
+                "D_i" : 0.13,
+                "U_i" : 0.22
+            },
+            "NMIJ" : {
+                "D_i" : 0.18,
+                "U_i" : 0.32
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Sr-85(2015)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Sr-85",
@@ -34,7 +106,26 @@
         "Key Comparison Reference Value (KCRV)": "29975(46)~kBq",
         "Reference of the published comparison report": "Michotte C. Ratel G., Courte S., Dziel T. and Listkowska A., Update of the BIPM comparison BIPM.RI(II)-K1.Sr-85 of activity measurements of the radionuclide $^{85}$Sr to include the 2009 result of the POLATOM (Poland), \\href{https://doi.org/10.1088/0026-1394/52/1A/06022 }{\\textit{Metrologia}, 2015, \\textbf{52}, Tech. Suppl., 06022}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "PTB" : {
+                "D_i" : 0.09,
+                "U_i" : 0.12
+            },
+            "NIST" : {
+                "D_i" : 0.11,
+                "U_i" : 0.20
+            },
+            "NMIJ" : {
+                "D_i" : 0.16,
+                "U_i" : 0.31
+            },
+            "POLATOM" : {
+                "D_i" : 0.16,
+                "U_i" : 0.33
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Sr-85(2020)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Sr-85",
@@ -90,7 +181,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "Sr in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "3",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": null,
+        "Carrier concentration of the solution / (µg.g-1)": "Sr:?",
         "Density of the solution / (g.cm-3)": "1.045",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -114,7 +205,7 @@
         "Laboratory": {
             "Acronym": "BKFH",
             "Full name": "Government Office of the Capital City Budapest",
-            "Address": "Németvölgyi Ùt 37-39 H-1124 Budapest",
+            "Address": "Nemetvölgyi Ut 37-39 H-1124 Budapest",
             "Country": "Hungary",
             "Regional Metrology Organization (RMO)": "EURAMET",
             "Old acronyms": "OMH, MKEH"
@@ -135,7 +226,7 @@
         "Reference for the decay data used by the laboratory": "BNM-CEA, Table de Radionucl\\'{e}ides, Version 1975, BNM-LNHB, Gif-sur-Yvette",
         "Chemical composition of the solution": "Sr in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "Sr:25",
+        "Carrier concentration of the solution / (µg.g-1)": "Sr:25",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": "84Rb: 1.2(3)x10-2%",
         "Comments on impurities contained into the solution": null,
@@ -159,7 +250,7 @@
         "Laboratory": {
             "Acronym": "BKFH",
             "Full name": "Government Office of the Capital City Budapest",
-            "Address": "Németvölgyi Ùt 37-39 H-1124 Budapest",
+            "Address": "Nemetvölgyi Ut 37-39 H-1124 Budapest",
             "Country": "Hungary",
             "Regional Metrology Organization (RMO)": "EURAMET",
             "Old acronyms": "OMH, MKEH"
@@ -180,7 +271,7 @@
         "Reference for the decay data used by the laboratory": "BNM-CEA, Table de Radionucl\\'{e}ides, Version 1982, BNM-LNHB, Gif-sur-Yvette",
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:28",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:28",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": "84Rb: 5.3(13)x10-2%, 86Rb: 3(1)x10-4%",
         "Comments on impurities contained into the solution": null,
@@ -204,7 +295,7 @@
         "Laboratory": {
             "Acronym": "BKFH",
             "Full name": "Government Office of the Capital City Budapest",
-            "Address": "Németvölgyi Ùt 37-39 H-1124 Budapest",
+            "Address": "Nemetvölgyi Ut 37-39 H-1124 Budapest",
             "Country": "Hungary",
             "Regional Metrology Organization (RMO)": "EURAMET",
             "Old acronyms": "OMH, MKEH"
@@ -225,7 +316,7 @@
         "Reference for the decay data used by the laboratory": "BNM-CEA, Table de Radionucl\\'{e}ides, Version 1982, BNM-LNHB, Gif-sur-Yvette",
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:30",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:30",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": "84Rb: 1.1(3)x10-2%, 86Rb: 2.0(6)x10-4%",
         "Comments on impurities contained into the solution": null,
@@ -249,7 +340,7 @@
         "Laboratory": {
             "Acronym": "BKFH",
             "Full name": "Government Office of the Capital City Budapest",
-            "Address": "Németvölgyi Ùt 37-39 H-1124 Budapest",
+            "Address": "Nemetvölgyi Ut 37-39 H-1124 Budapest",
             "Country": "Hungary",
             "Regional Metrology Organization (RMO)": "EURAMET",
             "Old acronyms": "OMH, MKEH"
@@ -270,7 +361,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:25",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:25",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": "84Rb: 1.5(3)x10-2%, 86Rb: 2.0(6)x10-4%",
         "Comments on impurities contained into the solution": null,
@@ -288,10 +379,17 @@
         "Initials of the person(s) who verified the data plus the date": "SC (17/04/2020)",
         "Status of the data": "Published with the key comparison BIPM.RI(II)-K1"
     },
-    "Data from CMI-IIR-1978": {
+    "Data from CMI-1978": {
         "Eligible for the Key Comparison Reference Value (KCRV)": false,
         "Eligible for Degree of Equivalence (DoE)": false,
-        "Laboratory": "CMI-IIR",
+        "Laboratory": {
+            "Acronym": "CMI",
+            "Full name": "Czech Metrological Institute",
+            "Address": "",
+            "Country": "Czechia",
+            "Regional Metrology Organization (RMO)": "EURAMET",
+            "Old acronyms": "UVVVR, CMI-IIR"
+            },
         "Contributor(s) from the BIPM": null,
         "Contributor(s) from the laboratory": null,
         "Date of reference specified by the laboratory": "1978-10-13 11:00 UT",
@@ -308,7 +406,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.08",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:20",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:20",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": "< 0.1%",
         "Comments on impurities contained into the solution": null,
@@ -326,10 +424,17 @@
         "Initials of the person(s) who verified the data plus the date": "SC (17/04/2020)",
         "Status of the data": "Published with the key comparison BIPM.RI(II)-K1"
     },
-    "Data from CMI-IIR-1982": {
+    "Data from CMI-1982": {
         "Eligible for the Key Comparison Reference Value (KCRV)": true,
         "Eligible for Degree of Equivalence (DoE)": false,
-        "Laboratory": "CMI-IIR",
+        "Laboratory": {
+            "Acronym": "CMI",
+            "Full name": "Czech Metrological Institute",
+            "Address": "",
+            "Country": "Czechia",
+            "Regional Metrology Organization (RMO)": "EURAMET",
+            "Old acronyms": "UVVVR, CMI-IIR"
+            },
         "Contributor(s) from the BIPM": null,
         "Contributor(s) from the laboratory": null,
         "Date of reference specified by the laboratory": "1982-11-15 00:00 UT",
@@ -346,7 +451,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:20",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:20",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": "84Rb: 4.7(5)x10-2%, 86Rb: 5(1)x10-3%,89Sr: 1.9(8)x10-1%",
         "Comments on impurities contained into the solution": null,
@@ -369,7 +474,7 @@
         "Eligible for Degree of Equivalence (DoE)": false,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -391,7 +496,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:10",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:10",
         "Density of the solution / (g.cm-3)": "0.999",
         "Relative activity of impurities contained into the solution": "89Sr: 4.6(3)x10-1%",
         "Comments on impurities contained into the solution": null,
@@ -414,7 +519,7 @@
         "Eligible for Degree of Equivalence (DoE)": false,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -436,7 +541,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:90",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:90",
         "Density of the solution / (g.cm-3)": "1.016",
         "Relative activity of impurities contained into the solution": "84Rb: 5.5(10)x10-2%",
         "Comments on impurities contained into the solution": null,
@@ -481,7 +586,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2",
         "Solvent concentration of the solution / (mol.dm-3)": null,
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": null,
+        "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -526,7 +631,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "Sr in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "Sr:29",
+        "Carrier concentration of the solution / (µg.g-1)": "Sr:29",
         "Density of the solution / (g.cm-3)": "1.016(2)",
         "Relative activity of impurities contained into the solution": "84Rb: 9.5(19)x10-2%, 86Rb: 1.7(3)x10-1%",
         "Comments on impurities contained into the solution": null,
@@ -571,7 +676,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:36",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:36",
         "Density of the solution / (g.cm-3)": "1.016",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -616,7 +721,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:46000",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:46000",
         "Density of the solution / (g.cm-3)": "1.057(1)",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -661,7 +766,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:50",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:50",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -706,7 +811,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:50",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:50",
         "Density of the solution / (g.cm-3)": "1",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -751,7 +856,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:100",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:100",
         "Density of the solution / (g.cm-3)": "1.002",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -796,7 +901,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:30",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:30",
         "Density of the solution / (g.cm-3)": "1.0015",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -841,7 +946,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:45",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:45",
         "Density of the solution / (g.cm-3)": "1",
         "Relative activity of impurities contained into the solution": "< 0.1%",
         "Comments on impurities contained into the solution": null,
@@ -886,7 +991,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:30",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:30",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": "< 6x10-2%",
         "Comments on impurities contained into the solution": null,
@@ -931,7 +1036,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:30",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:30",
         "Density of the solution / (g.cm-3)": "1",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -976,7 +1081,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2:30",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2:30",
         "Density of the solution / (g.cm-3)": "0.9985",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1021,7 +1126,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SrCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (\u00c2\u00b5g.g-1)": "SrCl2.6H2O:50",
+        "Carrier concentration of the solution / (µg.g-1)": "SrCl2.6H2O:50",
         "Density of the solution / (g.cm-3)": "1",
         "Relative activity of impurities contained into the solution": "84Rb: 1.79(7)x10-2%,22Na: 1.06(4)x10-2%,59Fe: 1.25(27)x10-3%",
         "Comments on impurities contained into the solution": null,

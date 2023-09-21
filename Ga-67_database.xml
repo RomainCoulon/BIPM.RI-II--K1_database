@@ -2,9 +2,11 @@
 <all>
 	<General_information type="dict">
 		<Content type="str">This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.</Content>
-		<Release_date type="str">2022-10-04</Release_date>
+		<Release_date type="str">2023-09-20</Release_date>
+		<Note type="str">This version of the machine-readable comparison report is not definitive. The format is under discussion within the CCRI and CIPM to best reflect the requirements of ionizing radiation metrology and to conform to the SI digital framework. Users can use this document to analyse key comparison data and metadata more efficiently with their software. However, users should bear in mind that the format will necessarily evolve in subsequent updates of this key comparison, which will not guarantee the long-term compatibility of their interface. </Note>
 		<References type="dict">
 			<key name=" [1] " type="str"> Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 </key>
+			<key name=" [2] " type="str"> Romain Coulon et al 2023 Meas. Sci. Technol. 34 074009 - https://doi.org/10.1088/1361-6501/accd0b </key>
 		</References>
 		<Contact_persons type="dict">
 			<_Dr_Romain_Coulon type="str"> romain.coulon@bipm.org </_Dr_Romain_Coulon>
@@ -20,6 +22,41 @@
 			<Reference_of_the_published_comparison_report type="str">Ratel G. and  Michotte C., Los Arcos, International Bureau of Weights and Measures (BIPM), Activity measurements of the radionuclide $^{67}$Ga for the CIEMAT in the BIPM comparison BIPM.RI(II)-K1.Ga-67, \href{https://doi.org/10.1088/0026-1394/40/1A/06018}{\textit{Metrologia}, 2003, \textbf{40}, Tech. Suppl., 06018}</Reference_of_the_published_comparison_report>
 			<key name="Editorial assistant(s)" type="null"/>
 			<Comments_on_the_publication type="null"/>
+			<Unit type="str">MBq</Unit>
+			<Degrees_of_Equivalence type="dict">
+				<CMI type="dict">
+					<D_i type="float">2.8</D_i>
+					<U_i type="float">1.9</U_i>
+				</CMI>
+				<LNE-LNHB type="dict">
+					<D_i type="float">-1.4</D_i>
+					<U_i type="float">1.0</U_i>
+				</LNE-LNHB>
+				<NPL type="dict">
+					<D_i type="float">0.0</D_i>
+					<U_i type="float">2.4</U_i>
+				</NPL>
+				<NMISA type="dict">
+					<D_i type="float">0.4</D_i>
+					<U_i type="float">0.8</U_i>
+				</NMISA>
+				<BKFH type="dict">
+					<D_i type="float">-0.8</D_i>
+					<U_i type="float">1.2</U_i>
+				</BKFH>
+				<NIST type="dict">
+					<D_i type="float">0.2</D_i>
+					<U_i type="float">0.9</U_i>
+				</NIST>
+				<NMIJ type="dict">
+					<D_i type="float">-0.9</D_i>
+					<U_i type="float">0.9</U_i>
+				</NMIJ>
+				<CIEMAT type="dict">
+					<D_i type="float">1.9</D_i>
+					<U_i type="float">2.2</U_i>
+				</CIEMAT>
+			</Degrees_of_Equivalence>
 		</key>
 		<key name="Key comparison BIPM.RI(II)-K1.Ga-67(2006)" type="dict">
 			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Ga-67</Name_of_the_comparison>
@@ -28,6 +65,41 @@
 			<Reference_of_the_published_comparison_report type="str">Ratel G., Michotte C., Bobin C., Moune M., Coursol N., Update of the ongoing comparison BIPM.RI(II)-K1.Ga-67 to include the activity measurements of the LNE/LNHB, France, \href{https://doi.org/10.1088/0026-1394/43/1A/06008}{\textit{Metrologia}, 2006, \textbf{43}, Tech. Suppl., 06008}</Reference_of_the_published_comparison_report>
 			<key name="Editorial assistant(s)" type="null"/>
 			<Comments_on_the_publication type="null"/>
+			<Unit type="str">MBq</Unit>
+			<Degrees_of_Equivalence type="dict">
+				<CMI type="dict">
+					<D_i type="float">2.6</D_i>
+					<U_i type="float">2.0</U_i>
+				</CMI>
+				<NPL type="dict">
+					<D_i type="float">-0.2</D_i>
+					<U_i type="float">2.5</U_i>
+				</NPL>
+				<NMISA type="dict">
+					<D_i type="float">0.2</D_i>
+					<U_i type="float">0.7</U_i>
+				</NMISA>
+				<BKFH type="dict">
+					<D_i type="float">-1.0</D_i>
+					<U_i type="float">1.2</U_i>
+				</BKFH>
+				<NIST type="dict">
+					<D_i type="int">0</D_i>
+					<U_i type="float">0.9</U_i>
+				</NIST>
+				<NMIJ type="dict">
+					<D_i type="float">-1.0</D_i>
+					<U_i type="float">0.9</U_i>
+				</NMIJ>
+				<CIEMAT type="dict">
+					<D_i type="float">1.8</D_i>
+					<U_i type="float">1.9</U_i>
+				</CIEMAT>
+				<LNE-LNHB type="dict">
+					<D_i type="float">-2.4</D_i>
+					<U_i type="float">0.8</U_i>
+				</LNE-LNHB>
+			</Degrees_of_Equivalence>
 		</key>
 		<key name="Key comparison BIPM.RI(II)-K1.Ga-67(2020)" type="dict">
 			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Ga-67</Name_of_the_comparison>
@@ -66,7 +138,7 @@
 			<Laboratory type="dict">
 				<Acronym type="str">BKFH</Acronym>
 				<Full_name type="str">Government Office of the Capital City Budapest</Full_name>
-				<Address type="str">Németvölgyi Ùt 37-39 H-1124 Budapest</Address>
+				<Address type="str">Nemetvölgyi Ut 37-39 H-1124 Budapest</Address>
 				<Country type="str">Hungary</Country>
 				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
 				<Old_acronyms type="str">OMH, MKEH</Old_acronyms>
@@ -85,7 +157,7 @@
 			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">30/11/1995</key>
 			<key name="Half-life used by the laboratory / d" type="str">3.26154(54) </key>
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">Sch\&quot;{o}tzig U. and Schrader H., Halbwertszeiten und Photonen-Emissionwahrscheinlichkeiten von h\&quot;{a}ufig verwendeten Radionukliden, PTB-Bericht, PTB-Ra-16/3, Braunschweig, September 1989</Reference_for_the_decay_data_used_by_the_laboratory>
-			<Chemical_composition_of_the_solution type="str">Ga citrate in NaCl solution</Chemical_composition_of_the_solution>
+			<Chemical_composition_of_the_solution type="str">Ga citrate in NaCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="null"/>
 			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">NaCl: 8000</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
@@ -110,7 +182,7 @@
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">CIEMAT</Acronym>
-				<Full_name type="str">Centro de Investigaciones Energéticas, Medioambientales y Tecnologicas</Full_name>
+				<Full_name type="str">Centro de Investigaciones Energeticas, Medioambientales y Tecnologicas</Full_name>
 				<Address type="str">H-1124 Budapest</Address>
 				<Country type="str">Spain</Country>
 				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
@@ -150,10 +222,17 @@
 			<key name="Initials of the person(s) who verified the data plus the date" type="str">SC (06/05/2020)</key>
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_CIEMAT-2003>
-		<Data_from_CMI-IIR-1981 type="dict">
+		<Data_from_CMI-1981 type="dict">
 			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
-			<Laboratory type="str">CMI-IIR</Laboratory>
+			<Laboratory type="dict">
+				<Acronym type="str">CMI</Acronym>
+				<Full_name type="str">Czech Metrological Institute</Full_name>
+				<Address type="str"/>
+				<Country type="str">Czechia</Country>
+				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
+				<Old_acronyms type="str">UVVVR, CMI-IIR</Old_acronyms>
+			</Laboratory>
 			<key name="Contributor(s) from the BIPM" type="null"/>
 			<key name="Contributor(s) from the laboratory" type="null"/>
 			<Date_of_reference_specified_by_the_laboratory type="str">1981-04-08 12:00 UT</Date_of_reference_specified_by_the_laboratory>
@@ -187,13 +266,13 @@
 			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">SJ (06/05/2020)</Initials_of_the_person_who_entered_the_data_plus_the_date>
 			<key name="Initials of the person(s) who verified the data plus the date" type="str">SC (06/05/2020)</key>
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
-		</Data_from_CMI-IIR-1981>
+		</Data_from_CMI-1981>
 		<Data_from_LNE-LNHB-1981 type="dict">
 			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">LNE-LNHB</Acronym>
-				<Full_name type="str">Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel</Full_name>
+				<Full_name type="str">Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel</Full_name>
 				<Address type="str">F-91120 Palaiseau</Address>
 				<Country type="str">France</Country>
 				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
@@ -215,7 +294,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">Ga citrate and NaCl in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">NaCl: 180</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">GaC6O7H5: ?, NaCl: 180</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.006</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">57Co: 5.1(10)x10-4 %, 60Co: 7.2(15)x10-4 %</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -238,7 +317,7 @@
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">LNE-LNHB</Acronym>
-				<Full_name type="str">Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel</Full_name>
+				<Full_name type="str">Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel</Full_name>
 				<Address type="str">F-91120 Palaiseau</Address>
 				<Country type="str">France</Country>
 				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
@@ -303,7 +382,7 @@
 			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">05/05/1983</key>
 			<key name="Half-life used by the laboratory / d" type="null"/>
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
-			<Chemical_composition_of_the_solution type="str">Ga citrate in NaCl solution</Chemical_composition_of_the_solution>
+			<Chemical_composition_of_the_solution type="str">Ga citrate in NaCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="null"/>
 			<key name="Carrier concentration of the solution / (µg.g-1)" type="null"/>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
@@ -599,7 +678,7 @@
 			<Laboratory type="dict">
 				<Acronym type="str">NMISA</Acronym>
 				<Full_name type="str">National Metrology Institute of South Africa</Full_name>
-				<Address type="str">National Metrology Institute of South Africa (NMISA), Cape Town</Address>
+				<Address type="str">15 Lower Hope Road, Rosebank, Cape Town, 7700</Address>
 				<Country type="str">South Africa</Country>
 				<key name="Regional Metrology Organization (RMO)" type="str">AFRIMETS</key>
 				<Old_acronyms type="str">NAC, CSIR-NML</Old_acronyms>
@@ -618,7 +697,7 @@
 			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">28/10/1986</key>
 			<key name="Half-life used by the laboratory / d" type="str">3.261</key>
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
-			<Chemical_composition_of_the_solution type="str">Na citrate in HCl</Chemical_composition_of_the_solution>
+			<Chemical_composition_of_the_solution type="str">Na citrate and Ga in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">1</key>
 			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Na3C6O7H5. 2H2O: 2600, Ga: 100</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.0143</key>

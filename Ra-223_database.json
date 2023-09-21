@@ -1,9 +1,11 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2023-01-03",
+    "Release date": "2023-09-20",
+    "Note": "This version of the machine-readable comparison report is not definitive. The format is under discussion within the CCRI and CIPM to best reflect the requirements of ionizing radiation metrology and to conform to the SI digital framework. Users can use this document to analyse key comparison data and metadata more efficiently with their software. However, users should bear in mind that the format will necessarily evolve in subsequent updates of this key comparison, which will not guarantee the long-term compatibility of their interface. ", 
     "References":{
-        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
+        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 ",
+        " [2] ": " Romain Coulon et al 2023 Meas. Sci. Technol. 34 074009 - https://doi.org/10.1088/1361-6501/accd0b "
         },
     "Contact persons":{
         " Dr Romain Coulon": " romain.coulon@bipm.org ",
@@ -15,16 +17,31 @@
     "Key comparison BIPM.RI(II)-K1.Ra-223(2021)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Ra-223",
         "Year of publication": "2021",
-        "Key Comparison Reference Value (KCRV)": "54530(96)",
-        "Reference of the published comparison report": "Michotte C., Courte S., Nonis M., Coulon R., Judge S., Ratel G., Fr\\'echou C., Cassette P., Keightley J., Kossert K., N\\\"{a}hle O., Final report of the new BIPM comparison BIPM.RI(II)-K1.Ra-223 of activity measurements of the radionuclide $^{223}$Ra including the 2014 result of the NPL (United Kingdom), the 2014 result of the PTB (Germany) and the 2018 result of the LNE-LNHB (France), \\href{https://doi.org/10.1088/0026-1394/58/1A/06007}, {\\textit{Metrologia}, 2021, \\textbf{58}, Tech. Suppl., 06007}",
+        "Key Comparison Reference Value (KCRV)": "54530(96) kBq",
+        "Reference of the published comparison report": "Michotte C., Courte S., Nonis M., Coulon R., Judge S., Ratel G., Fr\\'echou C., Cassette P., Keightley J., Kossert K., N\\\"{a}hle O., Final report of the new BIPM comparison BIPM.RI(II)-K1.Ra-223 of activity measurements of the radionuclide $^{223}$Ra including the 2014 result of the NPL (United Kingdom), the 2014 result of the PTB (Germany) and the 2018 result of the LNE-LNHB (France), \\href{https://doi.org/10.1088/0026-1394/58/1A/06007}{\\textit{Metrologia}, 2021, \\textbf{58}, Tech. Suppl., 06007}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "NPL" : {
+                "D_i" : 0.21,
+                "U_i" : 0.52
+            },
+            "PTB" : {
+                "D_i" : 0.06,
+                "U_i" : 0.25
+            },
+            "LNE-LNHB" : {
+                "D_i" : -0.13,
+                "U_i" : 0.21
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Ra-223(2022)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Ra-223",
         "Year of publication": "2022",
-        "Key Comparison Reference Value (KCRV)": "54670(140)",
-        "Reference of the published comparison report": "Coulon R., Michotte C., Courte S., Nonis M., Ziemek T., Marganiec-Ga\\l{}\\c{a}zka J., Lech E., Saganowski P., Tymi\\'{n}ski Z., Listkowska A., Update of the BIPM comparison BIPM.RI(II)-K1.Ra-223 of activity measurements of the radionuclide $^{223}$Ra including the 2021 result of the POLATOM (Poland), \\href{https://doi.org/10.1088/0026-1394/60/1A/06002}, {\\textit{Metrologia}, 2023, \\textbf{60}, Tech. Suppl., 06002}",
+        "Key Comparison Reference Value (KCRV)": "54670(140) kBq",
+        "Reference of the published comparison report": "Coulon R., Michotte C., Courte S., Nonis M., Ziemek T., Marganiec-Ga\\l{}\\c{a}zka J., Lech E., Saganowski P., Tymi\\'{n}ski Z., Listkowska A., Update of the BIPM comparison BIPM.RI(II)-K1.Ra-223 of activity measurements of the radionuclide $^{223}$Ra including the 2021 result of the POLATOM (Poland), \\href{https://doi.org/10.1088/0026-1394/60/1A/06002}{\\textit{Metrologia}, 2023, \\textbf{60}, Tech. Suppl., 06002}",
         "Editorial assistant(s)": null,
         "Comments on the publication": null,
         "Unit": "MBq",
@@ -52,7 +69,7 @@
         "Eligible for Degree of Equivalence (DoE)": true,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -164,7 +181,7 @@
         "Reference for the decay data used by the laboratory": "B\\' {e} M.-M., Chist\\'{e} V., Dulieu C., Mougeot X., Chechev V.P., Kuzmenko N.K., Kondev F.G., Luca A., Gal\\'{a}n M., Nichols A.L., Arinc A., Pearce A., Huang X., Wang B.,  \\href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol6.pdf}{\\textit{Table   of   radionuclides}, Monographie BIPM-5, 2011, Vol 6}.",
         "Chemical composition of the solution": "RaCl2 in HCl, NaCl and sodium citrate",
         "Solvent concentration of the solution / (mol.dm-3)": "HCl: 0.005, NaCl: 0.11, sodium citrate:0.03",
-        "Carrier concentration of the solution / (µg.g-1)": "RaCl2",
+        "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": "1",
         "Relative activity of impurities contained into the solution": "None detected",
         "Comments on impurities contained into the solution": "Radioactive solution was measured on gamma spectrometer using HPGe detector. No impurities were detected in the solution. Xofigo\\textregistered  (radium Ra-223 dichloride) injection was used. Chemical composition was taken from drug prescribing information.",

@@ -1,9 +1,11 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2023-01-03",
+    "Release date": "2023-09-21",
+    "Note": "This version of the machine-readable comparison report is not definitive. The format is under discussion within the CCRI and CIPM to best reflect the requirements of ionizing radiation metrology and to conform to the SI digital framework. Users can use this document to analyse key comparison data and metadata more efficiently with their software. However, users should bear in mind that the format will necessarily evolve in subsequent updates of this key comparison, which will not guarantee the long-term compatibility of their interface. ", 
     "References":{
-        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
+        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 ",
+        " [2] ": " Romain Coulon et al 2023 Meas. Sci. Technol. 34 074009 - https://doi.org/10.1088/1361-6501/accd0b "
         },
     "Contact persons":{
         " Dr Romain Coulon": " romain.coulon@bipm.org ",
@@ -18,7 +20,50 @@
         "Key Comparison Reference Value (KCRV)": "6893(5) kBq",
         "Reference of the published comparison report": "Ratel G., Michotte C., Hino Y., BIPM comparison BIPM.RI(II)-K1.Y-88 of activity measurements of the radionuclide $^{88}$Y and links for the 2000 regional comparison APMP.RI(II)-K2.Y-88, \\href{https://doi.org/10.1088/0026-1394/41/1A/06010}{\\textit{Metrologia}, 2004, \\textbf{41}, Tech. Suppl., 06010}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "kBq",
+        "Degrees of Equivalence" : {
+            "NPL" : {
+                "D_i" : 13,
+                "U_i" : 46
+            },
+            "VNIIM" : {
+                "D_i" : 19,
+                "U_i" : 44
+            },
+            "BKFH" : {
+                "D_i" : -28,
+                "U_i" : 35
+            },
+            "LNE-LNHB" : {
+                "D_i" : -11,
+                "U_i" : 42
+            },
+            "CMI" : {
+                "D_i" : -28,
+                "U_i" : 49
+            },
+            "PTB" : {
+                "D_i" : -16,
+                "U_i" : 19
+            },
+            "NMIJ" : {
+                "D_i" : 10,
+                "U_i" : 40
+            },
+            "IRA" : {
+                "D_i" : 0,
+                "U_i" : 32
+            },
+            "BEV" : {
+                "D_i" : 2,
+                "U_i" : 55
+            },
+            "NIST" : {
+                "D_i" : 20,
+                "U_i" : 32
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Y-88(2011)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Y-88",
@@ -26,7 +71,46 @@
         "Key Comparison Reference Value (KCRV)": "6892(5) kBq",
         "Reference of the published comparison report": "Michotte C., Courte S., Ratel G., Kossert K. and N\\\"{a}hle O., Update of the ongoing comparison BIPM.RI(II)-K1.Y-88 to include recent activity measurements of the radionuclide $^{88}$Y by the PTB, Germany, \\href{https://doi.org/10.1088/0026-1394/48/1A/06006}{\\textit{Metrologia}, 2011, \\textbf{48}, Tech. Suppl., 06006}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "kBq",
+        "Degrees of Equivalence" : {
+            "VNIIM" : {
+                "D_i" : 20,
+                "U_i" : 44
+            },
+            "BKFH" : {
+                "D_i" : -27,
+                "U_i" : 35
+            },
+            "LNE-LNHB" : {
+                "D_i" : -10,
+                "U_i" : 42
+            },
+            "CMI" : {
+                "D_i" : -27,
+                "U_i" : 49
+            },
+            "NMIJ" : {
+                "D_i" : 11,
+                "U_i" : 40
+            },
+            "IRA" : {
+                "D_i" : 1,
+                "U_i" : 32
+            },
+            "BEV" : {
+                "D_i" : 3,
+                "U_i" : 55
+            },
+            "NIST" : {
+                "D_i" : 21,
+                "U_i" : 32
+            },
+            "PTB" : {
+                "D_i" : -26,
+                "U_i" : 35
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Y-88(2022)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Y-88",
@@ -90,14 +174,14 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": null,
+        "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": "1",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
         "Mass of the solution /g": "0.28591, 0.47967",
         "Number of the radium source used by the SIR": "3, 3",
         "Equivalent activity measured by the SIR / kBq": "6873, 6878",
-        "Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4": "7,8",
+        "Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4": "7, 8",
         "Comments on the SIR measurement": "mass of solution before dilution",
         "Combined standard uncertainty of the equivalent activity / kBq": "21, 21",
         "Number of the equivalent activity measurement retained for the degree of equivalence": null,
@@ -135,7 +219,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "1",
-        "T: Carrier Conc.  (?g.g-1)": "<100",
+        "Carrier concentration of the solution / (µg.g-1)": "<100",
         "Density of the solution / (g.cm-3)": "1",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -180,7 +264,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": null,
-        "T: Carrier Conc.  (?g.g-1)": null,
+        "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -225,7 +309,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "Y(NO3)3 in HNO3",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "Y(NO3)3: 20",
+        "Carrier concentration of the solution / (µg.g-1)": "Y(NO3)3: 20",
         "Density of the solution / (g.cm-3)": "1.0015",
         "Relative activity of impurities contained into the solution": "<0.05%",
         "Comments on impurities contained into the solution": null,
@@ -270,7 +354,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": null,
-        "T: Carrier Conc.  (?g.g-1)": null,
+        "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -315,7 +399,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3: 40",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3: 40",
         "Density of the solution / (g.cm-3)": "1",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -360,7 +444,7 @@
         "Reference for the decay data used by the laboratory": "{B}\\' {e} {M.-M.}, {C}hist\\'{e} {V}., {D}ulieu {C}., {K}ellett {M. A.}, {M}ougeot {X}., {A}rinc {A}., {C}hechev {V.P.}, {K}uzmenko {N.K.}, {K}ib\\'{e}di {T}., {L}uca {A}., {N}ichols  {A.L.},  \\href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol8.pdf}{\\textit{Table   of   radionuclides}, Monographie BIPM-5, 2016, Vol 8}.",
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3: 40",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3: 40",
         "Density of the solution / (g.cm-3)": "1",
         "Relative activity of impurities contained into the solution": "Not measured",
         "Comments on impurities contained into the solution": null,
@@ -384,7 +468,7 @@
         "Laboratory": {
             "Acronym": "BKFH",
             "Full name": "Government Office of the Capital City Budapest",
-            "Address": "Németvölgyi Ùt 37-39 H-1124 Budapest",
+            "Address": "Nemetvölgyi Ut 37-39 H-1124 Budapest",
             "Country": "Hungary",
             "Regional Metrology Organization (RMO)": "EURAMET",
             "Old acronyms": "OMH, MKEH"
@@ -405,7 +489,7 @@
         "Reference for the decay data used by the laboratory": "Bunting R.L. and Kraushaar J.J., 1976, Nuclear data sheets for A=88, \\href{https://doi.org/10.1016/S0090-3752(76)80072-5}{\\textit{Nuclear Data Sheets}, \\textbf{18}:2, 87-123}",
         "Chemical composition of the solution": "Y in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "Y: 25",
+        "Carrier concentration of the solution / (µg.g-1)": "Y: 25",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": "<0.04%",
         "Comments on impurities contained into the solution": null,
@@ -429,7 +513,7 @@
         "Laboratory": {
             "Acronym": "BKFH",
             "Full name": "Government Office of the Capital City Budapest",
-            "Address": "Németvölgyi Ùt 37-39 H-1124 Budapest",
+            "Address": "Nemetvölgyi Ut 37-39 H-1124 Budapest",
             "Country": "Hungary",
             "Regional Metrology Organization (RMO)": "EURAMET",
             "Old acronyms": "OMH, MKEH"
@@ -450,7 +534,7 @@
         "Reference for the decay data used by the laboratory": "Bunting R.L. and Kraushaar J.J., 1976, Nuclear data sheets for A=88, \\href{https://doi.org/10.1016/S0090-3752(76)80072-5}{\\textit{Nuclear Data Sheets}, \\textbf{18}:2, 87-123}",
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "Y: 25",
+        "Carrier concentration of the solution / (µg.g-1)": "Y: 25",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -474,7 +558,7 @@
         "Laboratory": {
             "Acronym": "BKFH",
             "Full name": "Government Office of the Capital City Budapest",
-            "Address": "Németvölgyi Ùt 37-39 H-1124 Budapest",
+            "Address": "Nemetvölgyi Ut 37-39 H-1124 Budapest",
             "Country": "Hungary",
             "Regional Metrology Organization (RMO)": "EURAMET",
             "Old acronyms": "OMH, MKEH"
@@ -495,7 +579,7 @@
         "Reference for the decay data used by the laboratory": "Houtermans H., Milosevic O., Reichel F., Half lives of 35 radionuclides, 1980, Int. J. Appl. Radiat. Isotop. 31, 153",
         "Chemical composition of the solution": "Y in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "Y: 25",
+        "Carrier concentration of the solution / (µg.g-1)": "Y: 25",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": "57Co: 0.03(1)%",
         "Comments on impurities contained into the solution": "negligible influence on the SIR measurements",
@@ -519,7 +603,7 @@
         "Laboratory": {
             "Acronym": "BKFH",
             "Full name": "Government Office of the Capital City Budapest",
-            "Address": "Németvölgyi Ùt 37-39 H-1124 Budapest",
+            "Address": "Nemetvölgyi Ut 37-39 H-1124 Budapest",
             "Country": "Hungary",
             "Regional Metrology Organization (RMO)": "EURAMET",
             "Old acronyms": "OMH, MKEH"
@@ -540,7 +624,7 @@
         "Reference for the decay data used by the laboratory": "IAEA-TECDOC-619 X-ray and gamma-ray standards for detector calibration, 1991, Vienna, IAEA",
         "Chemical composition of the solution": "Y in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "Y: 25",
+        "Carrier concentration of the solution / (µg.g-1)": "Y: 25",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -585,7 +669,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3: 20",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3: 20",
         "Density of the solution / (g.cm-3)": "1",
         "Relative activity of impurities contained into the solution": "<0.1%",
         "Comments on impurities contained into the solution": null,
@@ -630,7 +714,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.08",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3: 20",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3: 20",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": "<0.2%",
         "Comments on impurities contained into the solution": null,
@@ -675,7 +759,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.08",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3: 20",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3: 20",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": "<0.1%",
         "Comments on impurities contained into the solution": null,
@@ -720,7 +804,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "1",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3: 20",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3: 20",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": "<0.1%",
         "Comments on impurities contained into the solution": null,
@@ -765,7 +849,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": null,
-        "T: Carrier Conc.  (?g.g-1)": null,
+        "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -810,7 +894,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.08",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3: 20",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3: 20",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": "<0.2%",
         "Comments on impurities contained into the solution": null,
@@ -855,7 +939,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": null,
-        "T: Carrier Conc.  (?g.g-1)": null,
+        "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -900,7 +984,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "Y+++ in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "Y+++: 7.4",
+        "Carrier concentration of the solution / (µg.g-1)": "Y+++: 7.4",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -945,7 +1029,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "Y+++ in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": null,
-        "T: Carrier Conc.  (?g.g-1)": "Y+++: 20",
+        "Carrier concentration of the solution / (µg.g-1)": "Y+++: 20",
         "Density of the solution / (g.cm-3)": "0.999(6)",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -990,7 +1074,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": null,
-        "T: Carrier Conc.  (?g.g-1)": null,
+        "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1013,7 +1097,7 @@
         "Eligible for Degree of Equivalence (DoE)": false,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -1035,14 +1119,14 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3: 10",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3: 10",
         "Density of the solution / (g.cm-3)": "0.999",
         "Relative activity of impurities contained into the solution": "<0.01%",
         "Comments on impurities contained into the solution": null,
         "Mass of the solution /g": "3.60099, 3.61926",
         "Number of the radium source used by the SIR": "3, 3",
         "Equivalent activity measured by the SIR / kBq": "6817, 6812",
-        "Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4": "7,6",
+        "Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4": "7, 6",
         "Comments on the SIR measurement": null,
         "Combined standard uncertainty of the equivalent activity / kBq": "8, 8",
         "Number of the equivalent activity measurement retained for the degree of equivalence": null,
@@ -1058,7 +1142,7 @@
         "Eligible for Degree of Equivalence (DoE)": false,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -1080,7 +1164,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3.H2O in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "1",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3.H2O: 100",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3.H2O: 100",
         "Density of the solution / (g.cm-3)": "1.016",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1103,7 +1187,7 @@
         "Eligible for Degree of Equivalence (DoE)": true,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -1125,7 +1209,7 @@
         "Reference for the decay data used by the laboratory": "{B}\\' {e} {M.-M.}, {C}hist\\'{e} {V}., {D}ulieu {C}., {K}ellett {M. A.}, {M}ougeot {X}., {A}rinc {A}., {C}hechev {V.P.}, {K}uzmenko {N.K.}, {K}ib\\'{e}di {T}., {L}uca {A}., {N}ichols  {A.L.},  \\href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol8.pdf}{\\textit{Table   of   radionuclides}, Monographie BIPM-5, 2016, Vol 8}.",
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "Y: 10",
+        "Carrier concentration of the solution / (µg.g-1)": "Y: 10",
         "Density of the solution / (g.cm-3)": "1.0001",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1170,7 +1254,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "La2O3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "La203: 150",
+        "Carrier concentration of the solution / (µg.g-1)": "La203: 150",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1215,7 +1299,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": null,
-        "T: Carrier Conc.  (?g.g-1)": null,
+        "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1260,7 +1344,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": null,
-        "T: Carrier Conc.  (?g.g-1)": null,
+        "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1284,7 +1368,7 @@
         "Laboratory": {
             "Acronym": "NIM",
             "Full name": "National Institute of Metrology",
-            "Address": "No. 18, Bei San Huan Dong Rd. 100029 Pékin",
+            "Address": "No. 18, Bei San Huan Dong Rd. 100029 Pekin",
             "Country": "China",
             "Regional Metrology Organization (RMO)": "APMP",
             "Old acronyms": "-"
@@ -1305,7 +1389,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": null,
-        "T: Carrier Conc.  (?g.g-1)": null,
+        "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1350,7 +1434,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "Y+++ in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.5",
-        "T: Carrier Conc.  (?g.g-1)": "Y+++: 15",
+        "Carrier concentration of the solution / (µg.g-1)": "Y+++: 15",
         "Density of the solution / (g.cm-3)": "1.01",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1395,7 +1479,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.4",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3: 70",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3: 70",
         "Density of the solution / (g.cm-3)": "1.005(1)",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1440,7 +1524,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3: 50",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3: 50",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1485,7 +1569,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3: 50",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3: 50",
         "Density of the solution / (g.cm-3)": "1.01",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1530,7 +1614,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3: 50",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3: 50",
         "Density of the solution / (g.cm-3)": "1.001",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1575,7 +1659,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": null,
-        "T: Carrier Conc.  (?g.g-1)": null,
+        "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1620,7 +1704,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3: 40",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3: 40",
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1665,7 +1749,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3: 40",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3: 40",
         "Density of the solution / (g.cm-3)": "1",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1710,7 +1794,7 @@
         "Reference for the decay data used by the laboratory": "IAEA-TECDOC-619 X-ray and gamma-ray standards for detector calibration, 1991, Vienna, IAEA",
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3: 20",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3: 20",
         "Density of the solution / (g.cm-3)": "0.999",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1755,7 +1839,7 @@
         "Reference for the decay data used by the laboratory": "IAEA-TECDOC-619 X-ray and gamma-ray standards for detector calibration, 1991, Vienna, IAEA",
         "Chemical composition of the solution": "YCl3.6H2O in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "YCl3.6H20: 62",
+        "Carrier concentration of the solution / (µg.g-1)": "YCl3.6H20: 62",
         "Density of the solution / (g.cm-3)": "1",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1800,7 +1884,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": null,
-        "T: Carrier Conc.  (?g.g-1)": null,
+        "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -1824,7 +1908,7 @@
         "Laboratory": {
             "Acronym": "VNIIM",
             "Full name": "D.I. Mendeleyev Institute for Metrology",
-            "Address": "Saint-Pétersbourg",
+            "Address": "Saint-Petersbourg",
             "Country": "Russian Federation",
             "Regional Metrology Organization (RMO)": "COOMET",
             "Old acronyms": "-"
@@ -1845,7 +1929,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "YCl3 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "T: Carrier Conc.  (?g.g-1)": "Y: 20",
+        "Carrier concentration of the solution / (µg.g-1)": "Y: 20",
         "Density of the solution / (g.cm-3)": "1.001",
         "Relative activity of impurities contained into the solution": "<0.1%",
         "Comments on impurities contained into the solution": null,

@@ -1055,6 +1055,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>BEV</Acronym>
+						<PastAcronyms>IRK</PastAcronyms>
 				<ROR>https://ror.org/038680g19</ROR>
 			</laboratory>
 			<year>2008</year>
@@ -1170,12 +1171,6 @@
 							<dsi:unit>\gram</dsi:unit>
 						</dsi:real>
 					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
@@ -1210,12 +1205,6 @@
 							<dsi:unit>\gram</dsi:unit>
 						</dsi:real>
 					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
@@ -1353,6 +1342,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>BKFH</Acronym>
+						<PastAcronyms>OMH, MKEH</PastAcronyms>
 				<ROR>https://ror.org/03c6pbw79</ROR>
 			</laboratory>
 			<year>1984</year>
@@ -1367,12 +1357,6 @@
 							<dsi:unit>\gram</dsi:unit>
 						</dsi:real>
 					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
@@ -1459,6 +1443,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>CMI</Acronym>
+						<PastAcronyms>UVVVR, CMI-IIR</PastAcronyms>
 				<ROR>https://ror.org/02m5haa59</ROR>
 			</laboratory>
 			<year>1985</year>
@@ -1473,12 +1458,6 @@
 							<dsi:unit>\gram</dsi:unit>
 						</dsi:real>
 					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
@@ -1585,6 +1564,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>IRA</Acronym>
+						<PastAcronyms>IER</PastAcronyms>
 				<ROR>https://ror.org/05a353079</ROR>
 			</laboratory>
 			<year>1983</year>
@@ -1599,12 +1579,6 @@
 							<dsi:unit>\gram</dsi:unit>
 						</dsi:real>
 					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
@@ -1680,6 +1654,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>IRA</Acronym>
+						<PastAcronyms>IER</PastAcronyms>
 				<ROR>https://ror.org/05a353079</ROR>
 			</laboratory>
 			<year>2000</year>
@@ -1810,17 +1785,6 @@
 							<dsi:unit>\gram</dsi:unit>
 						</dsi:real>
 					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1.000</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-							<dsi:expandedUnc>
-								<dsi:uncertainty>7</dsi:uncertainty>
-								<dsi:coverageFactor>1</dsi:coverageFactor>
-								<dsi:coverageProbability>0.68</dsi:coverageProbability>
-							</dsi:expandedUnc>
-						</dsi:real>
-					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
@@ -1855,17 +1819,6 @@
 							<dsi:unit>\gram</dsi:unit>
 						</dsi:real>
 					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1.000</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-							<dsi:expandedUnc>
-								<dsi:uncertainty>7</dsi:uncertainty>
-								<dsi:coverageFactor>1</dsi:coverageFactor>
-								<dsi:coverageProbability>0.68</dsi:coverageProbability>
-							</dsi:expandedUnc>
-						</dsi:real>
-					</density>
 					<Chemical_composition>
 						<Solvant>
 							<SMILES>[Cl]</SMILES>
@@ -1981,6 +1934,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>KRISS</Acronym>
+						<PastAcronyms>KSRI</PastAcronyms>
 				<ROR>https://ror.org/01az7b475</ROR>
 			</laboratory>
 			<year>2004</year>
@@ -2006,6 +1960,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>LNE-LNHB</Acronym>
+						<PastAcronyms>LMRI, LPRI, BNM-LNHB</PastAcronyms>
 				<ROR>https://ror.org/03az79194</ROR>
 			</laboratory>
 			<year>1997</year>
@@ -2209,6 +2164,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>LNE-LNHB</Acronym>
+						<PastAcronyms>LMRI, LPRI, BNM-LNHB</PastAcronyms>
 				<ROR>https://ror.org/03az79194</ROR>
 			</laboratory>
 			<year>2022</year>
@@ -2379,6 +2335,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>LNMRI-IRD</Acronym>
+						<PastAcronyms>IEA, IPEN</PastAcronyms>
 				<ROR>https://ror.org/00q0yh079</ROR>
 			</laboratory>
 			<year>1997</year>
@@ -2499,6 +2456,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>NIST</Acronym>
+						<PastAcronyms>NBS</PastAcronyms>
 				<ROR>https://ror.org/05xpvk416</ROR>
 			</laboratory>
 			<year>1988</year>
@@ -2606,6 +2564,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>NIST</Acronym>
+						<PastAcronyms>NBS</PastAcronyms>
 				<ROR>https://ror.org/05xpvk416</ROR>
 			</laboratory>
 			<year>1997</year>
@@ -2702,6 +2661,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>NMIJ</Acronym>
+						<PastAcronyms>ETL</PastAcronyms>
 			</laboratory>
 			<year>1994</year>
 			<inKCRV>false</inKCRV>
@@ -2796,6 +2756,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>NMIJ</Acronym>
+						<PastAcronyms>ETL</PastAcronyms>
 			</laboratory>
 			<year>2004</year>
 			<inKCRV>true</inKCRV>
@@ -2897,6 +2858,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>NMISA</Acronym>
+						<PastAcronyms>NAC, CSIR-NML</PastAcronyms>
 				<ROR>https://ror.org/02j01mp63</ROR>
 			</laboratory>
 			<year>2004</year>
@@ -2922,6 +2884,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>NMISA</Acronym>
+						<PastAcronyms>NAC, CSIR-NML</PastAcronyms>
 				<ROR>https://ror.org/02j01mp63</ROR>
 			</laboratory>
 			<year>1980</year>
@@ -3097,6 +3060,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>NMISA</Acronym>
+						<PastAcronyms>NAC, CSIR-NML</PastAcronyms>
 				<ROR>https://ror.org/02j01mp63</ROR>
 			</laboratory>
 			<year>1982</year>
@@ -3192,6 +3156,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>NMISA</Acronym>
+						<PastAcronyms>NAC, CSIR-NML</PastAcronyms>
 				<ROR>https://ror.org/02j01mp63</ROR>
 			</laboratory>
 			<year>1983</year>
@@ -3367,6 +3332,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>NMISA</Acronym>
+						<PastAcronyms>NAC, CSIR-NML</PastAcronyms>
 				<ROR>https://ror.org/02j01mp63</ROR>
 			</laboratory>
 			<year>1999</year>
@@ -3468,6 +3434,7 @@
 		<Submission>
 			<laboratory>
 				<Acronym>NMISA</Acronym>
+						<PastAcronyms>NAC, CSIR-NML</PastAcronyms>
 				<ROR>https://ror.org/02j01mp63</ROR>
 			</laboratory>
 			<year>2019</year>

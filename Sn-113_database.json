@@ -1,9 +1,11 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2022-10-04",
+    "Release date": "2023-09-21",
+    "Note": "This version of the machine-readable comparison report is not definitive. The format is under discussion within the CCRI and CIPM to best reflect the requirements of ionizing radiation metrology and to conform to the SI digital framework. Users can use this document to analyse key comparison data and metadata more efficiently with their software. However, users should bear in mind that the format will necessarily evolve in subsequent updates of this key comparison, which will not guarantee the long-term compatibility of their interface. ", 
     "References":{
-        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
+        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 ",
+        " [2] ": " Romain Coulon et al 2023 Meas. Sci. Technol. 34 074009 - https://doi.org/10.1088/1361-6501/accd0b "
         },
     "Contact persons":{
         " Dr Romain Coulon": " romain.coulon@bipm.org ",
@@ -16,23 +18,41 @@
         "Name of the comparison": "BIPM.RI(II)-K1.Sn-113",
         "Year of publication": "2004",
         "Key Comparison Reference Value (KCRV)": null,
-        "Reference of the published comparison report": "Ratel G., Michotte C., BIPM comparison BIPM.RI(II)-K1.Sn-113 of activity measurements of the radionuclide $^{113}$Sn, \\href{https://doi.org/10.1088/0026-1394/41/1A/06004}, {\\textit{Metrologia}, 2004, \\textbf{41}, Tech. Suppl., 06004}",
+        "Reference of the published comparison report": "Ratel G., Michotte C., BIPM comparison BIPM.RI(II)-K1.Sn-113 of activity measurements of the radionuclide $^{113}$Sn, \\href{https://doi.org/10.1088/0026-1394/41/1A/06004}{\\textit{Metrologia}, 2004, \\textbf{41}, Tech. Suppl., 06004}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Sn-113(2016)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Sn-113",
         "Year of publication": "2016",
         "Key Comparison Reference Value (KCRV)": "58810(310) kBq",
-        "Reference of the published comparison report": "Michotte C., Ratel G., Courte S., Kossert K., N\\\"{a}hle O., Bobin C., L\\'{e}py M.-C., Moune M., Garcia-Tora\\~{n}o E., Peyres V., Roteta M., Update of the BIPM comparison BIPM.RI(II)-K1.Sn-113 of activity measurements of the radionuclide $^{113}$Sn to include the 2010 results of the PTB (Germany), the LNE-LNHB (France) and the 2011 result of the CIEMAT (Spain), \\href{https://doi.org/10.1088/0026-1394/53/1A/06010}, {\\textit{Metrologia}, 2016, \\textbf{53}, Tech. Suppl., 06010}",
+        "Reference of the published comparison report": "Michotte C., Ratel G., Courte S., Kossert K., N\\\"{a}hle O., Bobin C., L\\'{e}py M.-C., Moune M., Garcia-Tora\\~{n}o E., Peyres V., Roteta M., Update of the BIPM comparison BIPM.RI(II)-K1.Sn-113 of activity measurements of the radionuclide $^{113}$Sn to include the 2010 results of the PTB (Germany), the LNE-LNHB (France) and the 2011 result of the CIEMAT (Spain), \\href{https://doi.org/10.1088/0026-1394/53/1A/06010}{\\textit{Metrologia}, 2016, \\textbf{53}, Tech. Suppl., 06010}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "PTB" : {
+                "D_i" : 0.28,
+                "U_i" : 1.25
+            },
+            "LNE-LNHB" : {
+                "D_i" : -1.70,
+                "U_i" : 0.87
+            },
+            "CIEMAT" : {
+                "D_i" : -0.40,
+                "U_i" : 0.87
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Sn-113(2022)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Sn-113",
         "Year of publication": "2022",
         "Key Comparison Reference Value (KCRV)": "58840(310) kBq",
-        "Reference of the published comparison report": "Michotte C., Courte S., Nonis M., Coulon R., Fr\\'echou C. and L\\'{e}py M.-C., Update of the BIPM comparison BIPM.RI(II)-K1.Sn-113 of activity measurements of the radionuclide $^{113}$Sn to include the 2017 result of the LNE-LNHB (France), \\href{https://doi.org/10.1088/0026-1394/59/1A/06016}, {\\textit{Metrologia}, 2022, \\textbf{59}, Tech. Suppl., 06016}",
+        "Reference of the published comparison report": "Michotte C., Courte S., Nonis M., Coulon R., Fr\\'echou C. and L\\'{e}py M.-C., Update of the BIPM comparison BIPM.RI(II)-K1.Sn-113 of activity measurements of the radionuclide $^{113}$Sn to include the 2017 result of the LNE-LNHB (France), \\href{https://doi.org/10.1088/0026-1394/59/1A/06016}{\\textit{Metrologia}, 2022, \\textbf{59}, Tech. Suppl., 06016}",
         "Editorial assistant(s)": null,
         "Comments on the publication": null,
         "Unit": "kBq",
@@ -57,7 +77,7 @@
         "Laboratory": {
             "Acronym": "BKFH",
             "Full name": "Government Office of the Capital City Budapest",
-            "Address": "Németvölgyi Ùt 37-39 H-1124 Budapest",
+            "Address": "Nemetvölgyi Ut 37-39 H-1124 Budapest",
             "Country": "Hungary",
             "Regional Metrology Organization (RMO)": "EURAMET",
             "Old acronyms": "OMH, MKEH"
@@ -76,7 +96,7 @@
         "Date of the measurement by the BIPM international reference system (SIR)": "19/09/1988",
         "Half-life used by the laboratory / d": "115.08(3)",
         "Reference for the decay data used by the laboratory": "BNM-CEA, Table de Radionucl\\'{e}ides, Version : 1984, BNM-LNHB, Gif-sur-Yvette.",
-        "Chemical composition of the solution": "Sn + In in HCl",
+        "Chemical composition of the solution": "Sn and In in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "6",
         "Carrier concentration of the solution / (µg.g-1)": "Sn: 28, In: 17",
         "Density of the solution / (g.cm-3)": null,
@@ -101,7 +121,7 @@
         "Eligible for Degree of Equivalence (DoE)": true,
         "Laboratory": {
             "Acronym": "CIEMAT",
-            "Full name": "Centro de Investigaciones Energéticas, Medioambientales y Tecnologicas",
+            "Full name": "Centro de Investigaciones Energeticas, Medioambientales y Tecnologicas",
             "Address": "H-1124 Budapest",
             "Country": "Spain",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -213,7 +233,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "SnCl2",
         "Solvent concentration of the solution / (mol.dm-3)": null,
-        "Carrier concentration of the solution / (µg.g-1)": "Sn: 32.6",
+        "Carrier concentration of the solution / (µg.g-1)": "SnCl2: 32.6",
         "Density of the solution / (g.cm-3)": "0.9969",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -236,7 +256,7 @@
         "Eligible for Degree of Equivalence (DoE)": false,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -281,7 +301,7 @@
         "Eligible for Degree of Equivalence (DoE)": false,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -303,7 +323,7 @@
         "Reference for the decay data used by the laboratory": "Helmer R.G. (INEEL), {\\textit{LNE - LNHB/CEA, Table   de   Radionucl\u00e9ides}, Decay Data Evaluation Project, 1998 - 2017}.",
         "Chemical composition of the solution": "SnCl4 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "6",
-        "Carrier concentration of the solution / (µg.g-1)": "Sn: 10",
+        "Carrier concentration of the solution / (µg.g-1)": "SnCl4: 10",
         "Density of the solution / (g.cm-3)": "1.098",
         "Relative activity of impurities contained into the solution": "114mIn: 0.051(8)%, 110mAg: 0.011(1)%",
         "Comments on impurities contained into the solution": null,
@@ -326,7 +346,7 @@
         "Eligible for Degree of Equivalence (DoE)": true,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -348,7 +368,7 @@
         "Reference for the decay data used by the laboratory": "Helmer R.G. (INEEL), {\\textit{LNE - LNHB/CEA, Table   de   Radionucl\u00e9ides}, Decay Data Evaluation Project, 1998 - 2017}.",
         "Chemical composition of the solution": "Sn(IV) in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "6",
-        "Carrier concentration of the solution / (µg.g-1)": "Sn: 10",
+        "Carrier concentration of the solution / (µg.g-1)": "Sn(IV): 10",
         "Density of the solution / (g.cm-3)": "1.098",
         "Relative activity of impurities contained into the solution": "110mAg: < 0.012%, 114mIn: < 0.021%",
         "Comments on impurities contained into the solution": null,

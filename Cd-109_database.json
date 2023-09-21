@@ -1,9 +1,11 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2022-10-04",
+    "Release date": "2023-09-18",
+    "Note": "This version of the machine-readable comparison report is not definitive. The format is under discussion within the CCRI and CIPM to best reflect the requirements of ionizing radiation metrology and to conform to the SI digital framework. Users can use this document to analyse key comparison data and metadata more efficiently with their software. However, users should bear in mind that the format will necessarily evolve in subsequent updates of this key comparison, which will not guarantee the long-term compatibility of their interface. ", 
     "References":{
-        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
+        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 ",
+        " [2] ": " Romain Coulon et al 2023 Meas. Sci. Technol. 34 074009 - https://doi.org/10.1088/1361-6501/accd0b "
         },
     "Contact persons":{
         " Dr Romain Coulon": " romain.coulon@bipm.org ",
@@ -18,7 +20,30 @@
         "Key Comparison Reference Value (KCRV)": "8136(44) MBq",
         "Reference of the published comparison report": "Ratel G., Michotte C., BIPM comparison BIPM.RI(II)-K1.Cd-109 of activity measurements of the radionuclide $^{109}$Cd and links for the 1986 international comparison CCRI(II)-K2.Cd-109, \\href{https://doi.org/10.1088/0026-1394/40/1A/06019}{\\textit{Metrologia}, 2003, \\textbf{40}, Tech. Suppl., 06019}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "BIPM" : {
+                "D_i" : -23,
+                "U_i" : 75
+            },
+            "PTB" : {
+                "D_i" : 17,
+                "U_i" : 104
+            },
+            "NMIJ" : {
+                "D_i" : 21,
+                "U_i" : 90
+            },
+            "LNE-LNHB" : {
+                "D_i" : 51,
+                "U_i" : 162
+            },
+            "IRA" : {
+                "D_i" : -71,
+                "U_i" : 104
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Cd-109(2005)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Cd-109",
@@ -26,7 +51,34 @@
         "Key Comparison Reference Value (KCRV)": "8136(44) MBq",
         "Reference of the published comparison report": "Ratel G., Michotte C., Janssen, Kossert K., Lucas L. and Karam L.,Activity measurements of the radionuclide $^{109}$Cd for the PTB, Germany and the NIST, USA in the ongoing comparison BIPM.RI(II)-K1.Cd-109, \\href{https://doi.org/10.1088/0026-1394/42/1A/06011}{\\textit{Metrologia}, 2005, \\textbf{42}, Tech. Suppl., 06011}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "BIPM" : {
+                "D_i" : -23,
+                "U_i" : 71
+            },
+            "NMIJ" : {
+                "D_i" : 21,
+                "U_i" : 90
+            },
+            "LNE-LNHB" : {
+                "D_i" : 51,
+                "U_i" : 160
+            },
+            "IRA" : {
+                "D_i" : -71,
+                "U_i" : 100
+            },
+            "PTB" : {
+                "D_i" : 34,
+                "U_i" : 87
+            },
+            "NIST" : {
+                "D_i" : 32,
+                "U_i" : 100
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Cd-109(2020)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Cd-109",
@@ -145,10 +197,17 @@
         "Initials of the person(s) who verified the data plus the date": null,
         "Status of the data": "Published with the key comparison BIPM.RI(II)-K1"
     },
-    "Data from CMI-IIR-1978": {
+    "Data from CMI-1978": {
         "Eligible for the Key Comparison Reference Value (KCRV)": false,
         "Eligible for Degree of Equivalence (DoE)": false,
-        "Laboratory": "CMI-IIR",
+        "Laboratory": {
+            "Acronym": "CMI",
+            "Full name": "Czech Metrological Institute",
+            "Address": "",
+            "Country": "Czechia",
+            "Regional Metrology Organization (RMO)": "EURAMET",
+            "Old acronyms": "UVVVR, CMI-IIR"
+            },
         "Contributor(s) from the BIPM": null,
         "Contributor(s) from the laboratory": null,
         "Date of reference specified by the laboratory": "1978-07-27 11:00 UT",
@@ -183,10 +242,17 @@
         "Initials of the person(s) who verified the data plus the date": null,
         "Status of the data": "Published with the key comparison BIPM.RI(II)-K1"
     },
-    "Data from CMI-IIR-1986": {
+    "Data from CMI-1986": {
         "Eligible for the Key Comparison Reference Value (KCRV)": false,
         "Eligible for Degree of Equivalence (DoE)": false,
-        "Laboratory": "CMI-IIR",
+        "Laboratory": {
+            "Acronym": "CMI",
+            "Full name": "Czech Metrological Institute",
+            "Address": "",
+            "Country": "Czechia",
+            "Regional Metrology Organization (RMO)": "EURAMET",
+            "Old acronyms": "UVVVR, CMI-IIR"
+            },
         "Contributor(s) from the BIPM": null,
         "Contributor(s) from the laboratory": null,
         "Date of reference specified by the laboratory": "1986-03-19 12:00 UT",
@@ -271,7 +337,7 @@
         "Eligible for Degree of Equivalence (DoE)": false,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -316,7 +382,7 @@
         "Eligible for Degree of Equivalence (DoE)": false,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -361,7 +427,7 @@
         "Eligible for Degree of Equivalence (DoE)": true,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -497,7 +563,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
+            "Address": "15 Lower Hope Road, Rosebank, Cape Town, 7700",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -542,7 +608,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
+            "Address": "15 Lower Hope Road, Rosebank, Cape Town, 7700",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -587,7 +653,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
+            "Address": "15 Lower Hope Road, Rosebank, Cape Town, 7700",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -608,7 +674,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "CdCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "1",
-        "Carrier concentration of the solution / (µg.g-1)": "Cd++: 610",
+        "Carrier concentration of the solution / (µg.g-1)": "Cd2+: 610",
         "Density of the solution / (g.cm-3)": "1.037",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,
@@ -632,7 +698,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
+            "Address": "15 Lower Hope Road, Rosebank, Cape Town, 7700",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -653,7 +719,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "CdCl2 in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "1",
-        "Carrier concentration of the solution / (µg.g-1)": "Cd++: 300",
+        "Carrier concentration of the solution / (µg.g-1)": "Cd2+: 300",
         "Density of the solution / (g.cm-3)": "1.037",
         "Relative activity of impurities contained into the solution": null,
         "Comments on impurities contained into the solution": null,

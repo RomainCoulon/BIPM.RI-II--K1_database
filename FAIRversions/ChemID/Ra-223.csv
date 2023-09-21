@@ -1,0 +1,14 @@
+﻿molecule;SMILES;InChIKey;InChI
+Barium;[Ba];DSAJWYNOEDNPEQ-UHFFFAOYSA-N;InChI=1S/Ba
+Ba;[Ba];DSAJWYNOEDNPEQ-UHFFFAOYSA-N;InChI=1S/Ba
+sodium citrate;C(C(=O)[O-])C(CC(=O)[O-])(C(=O)[O-])O.[Na+].[Na+].[Na+];HRXKRNGNAMMEHJ-UHFFFAOYSA-K;"InChI=1S/C6H8O7.3Na/c7-3(8)1-6(13,5(11)12)2-4(9)10;;;/h13H,1-2H2,(H,7,8)(H,9,10)(H,11,12);;;/q;3*+1/p-3"
+sodiumcitrate;C(C(=O)[O-])C(CC(=O)[O-])(C(=O)[O-])O.[Na+].[Na+].[Na+];HRXKRNGNAMMEHJ-UHFFFAOYSA-K;"InChI=1S/C6H8O7.3Na/c7-3(8)1-6(13,5(11)12)2-4(9)10;;;/h13H,1-2H2,(H,7,8)(H,9,10)(H,11,12);;;/q;3*+1/p-3"
+223Ra;[223Ra];HCWPIIXVSYCSAN-OIOBTWANSA-N;InChI=1S/Ra/i1-3
+Ra;[Ra];HCWPIIXVSYCSAN-UHFFFAOYSA-N;InChI=1S/Ra
+223RaCl2;;;
+sodium citrate dihydrate;C(C(=O)[O-])C(CC(=O)[O-])(C(=O)[O-])O.O.O.[Na+].[Na+].[Na+];NLJMYIDDQXHKNR-UHFFFAOYSA-K;"InChI=1S/C6H8O7.3Na.2H2O/c7-3(8)1-6(13,5(11)12)2-4(9)10;;;;;/h13H,1-2H2,(H,7,8)(H,9,10)(H,11,12);;;;2*1H2/q;3*+1;;/p-3"
+sodiumcitratedihydrate;C(C(=O)[O-])C(CC(=O)[O-])(C(=O)[O-])O.O.O.[Na+].[Na+].[Na+];NLJMYIDDQXHKNR-UHFFFAOYSA-K;"InChI=1S/C6H8O7.3Na.2H2O/c7-3(8)1-6(13,5(11)12)2-4(9)10;;;;;/h13H,1-2H2,(H,7,8)(H,9,10)(H,11,12);;;;2*1H2/q;3*+1;;/p-3"
+calcium chloride dihydrate;O.O.[Cl-].[Cl-].[Ca+2];LLSDKQJKOVVTOJ-UHFFFAOYSA-L;"InChI=1S/Ca.2ClH.2H2O/h;2*1H;2*1H2/q+2;;;;/p-2"
+calciumchloridedihydrate;O.O.[Cl-].[Cl-].[Ca+2];LLSDKQJKOVVTOJ-UHFFFAOYSA-L;"InChI=1S/Ca.2ClH.2H2O/h;2*1H;2*1H2/q+2;;;;/p-2"
+NaCl;[Na+].[Cl-];FAPWRFPIFSIZLT-UHFFFAOYSA-M;"InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+HCl;Cl;VEXZGXHMUGYJMC-UHFFFAOYSA-N;InChI=1S/ClH/h1H

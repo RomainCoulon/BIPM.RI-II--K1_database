@@ -2,9 +2,11 @@
 <all>
 	<General_information type="dict">
 		<Content type="str">This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.</Content>
-		<Release_date type="str">2022-10-04</Release_date>
+		<Release_date type="str">2023-09-20</Release_date>
+		<Note type="str">This version of the machine-readable comparison report is not definitive. The format is under discussion within the CCRI and CIPM to best reflect the requirements of ionizing radiation metrology and to conform to the SI digital framework. Users can use this document to analyse key comparison data and metadata more efficiently with their software. However, users should bear in mind that the format will necessarily evolve in subsequent updates of this key comparison, which will not guarantee the long-term compatibility of their interface. </Note>
 		<References type="dict">
 			<key name=" [1] " type="str"> Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 </key>
+			<key name=" [2] " type="str"> Romain Coulon et al 2023 Meas. Sci. Technol. 34 074009 - https://doi.org/10.1088/1361-6501/accd0b </key>
 		</References>
 		<Contact_persons type="dict">
 			<_Dr_Romain_Coulon type="str"> romain.coulon@bipm.org </_Dr_Romain_Coulon>
@@ -20,6 +22,17 @@
 			<Reference_of_the_published_comparison_report type="str">Ratel G. and  Michotte C., BIPM comparison BIPM.RI(II)-K1.Gd-153 of activity measurements of the radionuclide $^{153}$Gd, \href{https://doi.org/10.1088/0026-1394/40/1A/06003}{\textit{Metrologia}, 2003, \textbf{40}, Tech. Suppl., 06003}</Reference_of_the_published_comparison_report>
 			<key name="Editorial assistant(s)" type="null"/>
 			<Comments_on_the_publication type="null"/>
+			<Unit type="str">MBq</Unit>
+			<Degrees_of_Equivalence type="dict">
+				<CMI type="dict">
+					<D_i type="float">-1.7</D_i>
+					<U_i type="float">2.7</U_i>
+				</CMI>
+				<NIST type="dict">
+					<D_i type="float">1.7</D_i>
+					<U_i type="float">2.7</U_i>
+				</NIST>
+			</Degrees_of_Equivalence>
 		</key>
 		<key name="Key comparison BIPM.RI(II)-K1.Gd-153(2021)" type="dict">
 			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Gd-153</Name_of_the_comparison>
@@ -36,10 +49,17 @@
 				</NIST>
 			</Degrees_of_Equivalence>
 		</key>
-		<Data_from_CMI-IIR-1989 type="dict">
+		<Data_from_CMI-1989 type="dict">
 			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
-			<Laboratory type="str">CMI-IIR</Laboratory>
+			<Laboratory type="dict">
+				<Acronym type="str">CMI</Acronym>
+				<Full_name type="str">Czech Metrological Institute</Full_name>
+				<Address type="str"/>
+				<Country type="str">Czechia</Country>
+				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
+				<Old_acronyms type="str">UVVVR, CMI-IIR</Old_acronyms>
+			</Laboratory>
 			<key name="Contributor(s) from the BIPM" type="null"/>
 			<key name="Contributor(s) from the laboratory" type="null"/>
 			<Date_of_reference_specified_by_the_laboratory type="str">1989-10-11 12:00 UT</Date_of_reference_specified_by_the_laboratory>
@@ -73,7 +93,7 @@
 			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">SC (29/06/2020)</Initials_of_the_person_who_entered_the_data_plus_the_date>
 			<key name="Initials of the person(s) who verified the data plus the date" type="str">CM (10/05/2021)</key>
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
-		</Data_from_CMI-IIR-1989>
+		</Data_from_CMI-1989>
 		<Data_from_NIRH-1988 type="dict">
 			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>

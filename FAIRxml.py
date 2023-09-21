@@ -16,14 +16,24 @@ import time
 import hashlib
 
 # selection the radionuclide
-# Radionuclide = "Ce-139" # Valid
-# Radionuclide = "Zn-65"  # Valid
-# Radionuclide = "Tb-161" # Valid
-# Radionuclide = "Na-22"  # Valid
-# Radionuclide = "Lu-177" # Valid
-# Radionuclide = "Ac-225" # Valid
-# Radionuclide = "Ag-110m" # Valid
-Radionuclide = "Ba-133" #
+# Radionuclide = "Ce-139" # Valid 2022 - published
+# Radionuclide = "Zn-65"  # Valid 2023 - Draft B
+# Radionuclide = "Tb-161" # Valid 2023 - Draft A
+# Radionuclide = "Na-22"  # Valid 2022 - Final
+# Radionuclide = "Lu-177" # Valid 2022 - Final
+# Radionuclide = "Ac-225" # Valid 2022 - published
+# Radionuclide = "Ag-110m" # Valid 2020 - published
+# Radionuclide = "Ba-133" # Valid 2022 - published
+# Radionuclide = "Cd-109"   # Valid 2020 - published
+# Radionuclide = "Co-60" # Valide 2022 - published
+# Radionuclide = "Cs-134" # Valid 2022 - published
+# Radionuclide = "Ga-67" # Valid 2020 - published
+# Radionuclide = "Gd-153" # Valid 2021 - published
+# Radionuclide = "Ra-223" # Valid 2022 - published
+# Radionuclide = "Sn-113"  # Valid 2022 - published
+# Radionuclide = "Sr-85"  # Valid 2020 - published
+# Radionuclide = "Tl-201"  # Valid 2020 - published
+Radionuclide = "Y-88"  # Valid 2022 - published
 
 # select the year
 yyear = "2022"
@@ -106,7 +116,8 @@ for i, line in enumerate(Lines):
     if "Year_of_publication" in line:
         i1=line.find("cation")
         i2=line.find("</Year")
-        release_year_list.append(line[i1+18:i2])
+        yyy = line[i1+18:i2]
+        release_year_list.append(yyy)
         
     if "Reference_of_the_published_comparison_report" in line:
         if "href" in line:
@@ -281,7 +292,10 @@ for i, line in enumerate(Lines):
     if "Date_of_reference_specified_by_the_laboratory" in line:
         i1=line.find("str\">")
         i2=line.find("</Date")
-        dateRef=line[i1+5:i2-3].replace(" ","T")+":00Z"
+        datejjj = line[i1+5:i2-3]
+        if datejjj[-1] == " ":
+            datejjj = datejjj[:-1]
+        dateRef=datejjj.replace(" ","T")+":00Z"
         #FAIRfile.write("\t\t\t<Laboratory_measurements>\n")
         #FAIRfile.write("\t\t\t\t<Reference_date>"+dateRef+"</Reference_date>\n")
         
@@ -494,56 +508,97 @@ for i, line in enumerate(Lines):
             Solvant = ChemComp.split(" in ")[1]
         else:
             Carrier = False
-            Solvant = ChemComp           
-        if "and" in Carrier:
-            Carrier=Carrier.replace(" ","")
-            Carrier=Carrier.split("and")
-        if "&" in Carrier:
-            Carrier=Carrier.replace(" ","")
-            Carrier=Carrier.split("&")
+            Solvant = ChemComp
+        if Carrier:
+            if "and" in Carrier:
+                Carrier=Carrier.replace(" ","")
+                Carrier=Carrier.split("and")
+            if "&" in Carrier:
+                Carrier=Carrier.replace(" ","")
+                Carrier=Carrier.split("&")
 
         
         CarrierSMILES, CarrierInChiKey, CarrierInChi =  ChemID(Carrier)
         SolvantSMILES, SolvantInChiKey, SolvantInChi =  ChemID(Solvant)
 
     if "Solvent concentration of the solution / (mol.dm-3)" in line:
-        if "null" in line:
+        if "null" in line or "unknown" in line:
             Solvant_conc = False
         else:
             i1=line.find("\"str\"")
             i2=line.find("</key")
             Solvant_conc = line[i1+6:i2]
+            if "," in line:
+                Solvant_conc = Solvant_conc.split(",")
+            if "and" in line:
+                Solvant_conc = Solvant_conc.split("and")
+            if "with" in line:
+                Solvant_conc = Solvant_conc.split("with")
+            if isinstance(Solvant_conc,list):
+                Solvant=[]
+                for isc in range(len(Solvant_conc)):
+                    Solvant_conc[isc] = Solvant_conc[isc].replace("\si{\micro g.g^{-1}}","")
+                    Solvant_conc[isc] = Solvant_conc[isc].replace("\si{\microg.g^{-1}}","")
+                    i6=Solvant_conc[isc].find(":")
+                    Solvant.append(Solvant_conc[isc][:i6].replace(" ",""))
+                    Solvant_conc[isc]=Solvant_conc[isc][i6+1:]
+                    Solvant_conc[isc]=Solvant_conc[isc].replace(" ","")
             i3=line.find("/ (")
             i4=line.find(")")
             Solvant_conc_unit =line[i3+3:i4]
             if  Solvant_conc_unit == 'mol.dm-3': Solvant_conc_unit="\\mole\\deci\\metre\\tothe{-3}"
+            if "\si{\micro g.g^{-1}}" in line and (not isinstance(Solvant_conc,list)):
+                Solvant_conc = Solvant_conc.replace("\si{\micro g.g^{-1}}","")
+                Solvant_conc = Solvant_conc.replace(" ","")
+                Solvant_conc_unit="\\micro\\gram\\gram\\tothe{-1}"
 
     if "Carrier concentration of the solution" in line:
-        if "null" in line:
-            Carrier_conc = False
+        
         if isinstance(Carrier, list):
             i1=line.find("\"str\"")
             i2=line.find("</key")
+            i3=line.find("/ (")
+            i4=line.find(")")
+            Carrier_conc_unit =line[i3+4:i4]
+            if Carrier_conc_unit == 'µg.g-1': Carrier_conc_unit = "\\micro\\gram\\gram\\tothe{-1}"
             Carrier_conc = line[i1+6:i2].split(",")  
+            UnknownCarConc = False
             for ci, c in enumerate(Carrier_conc):
-                i5=c.find(":")
-                c = c[i5+1:]
-                Carrier_conc[ci]=c.replace(" ","")
+                if "null" in line or "unknown" in line:
+                    Carrier_conc = False
+                else:
+                    i5=c.find(":")
+                    c = c[i5+1:]
+                    Carrier_conc[ci]=c.replace(" ","")
+        elif "null" in line or "unknown" in line:
+            Carrier_conc = False
         else:
             i1=line.find("\"str\"")
             i2=line.find("</key")
             Carrier_conc = line[i1+6:i2]
             i5=Carrier_conc.find(":")
             Carrier_conc = Carrier_conc[i5+1:]
-            if Carrier_conc == "?" or Carrier_conc == "-" or Carrier_conc == "none":
+            if Carrier_conc == "?" or Carrier_conc == "-" or Carrier_conc == "none" or Carrier_conc == "N/A" or Carrier_conc == "NA":
                 UnknownCarConc = True
             else:
                 UnknownCarConc = False
             i3=line.find("/ (")
             i4=line.find(")")
             Carrier_conc_unit =line[i3+4:i4]
+            if "(" in Carrier_conc:
+                i5=Carrier_conc.find("(")
+                i6=Carrier_conc.find(")")
+                uCarrier_conc=Carrier_conc[i5+1:i6]
+                Carrier_conc=Carrier_conc[:i5]
+            else:
+                uCarrier_conc=False
             if Carrier_conc_unit == 'µg.g-1': Carrier_conc_unit = "\\micro\\gram\\gram\\tothe{-1}"
-
+        if Carrier_conc and ("or" in Carrier_conc):
+            Carrier_conc = Carrier_conc.split("or")[0]
+        if Carrier_conc and not isinstance(Carrier, list): Carrier_conc = Carrier_conc.replace(" ","")
+        if Carrier_conc:
+            if "&lt" in Carrier_conc:
+                Carrier_conc = Carrier_conc.replace("&lt;","")
     if "Relative_activity_of_impurities_contained_into_the_solution" in line:
         if "null" in line:
             impurityFlag = False
@@ -731,7 +786,12 @@ for i, line in enumerate(Lines):
         FAIRfile.write("\t\t<Release>\n")
         indRel = release_year_list.index(release_year)
         FAIRfile.write("\t\t\t<doi>"+doiRelease[indRel]+"</doi>\n")
-        FAIRfile.write("\t\t\t<Year>"+str(release_year)+"</Year>\n")
+        if "_" in release_year:
+            i3=yyy.find("_")
+            release_year2=release_year[:i3-1]
+        else:
+            release_year2=release_year
+        FAIRfile.write("\t\t\t<Year>"+str(release_year2)+"</Year>\n")
         if hrefFlag: FAIRfile.write("\t\t\t<doi>"+URLrelease+"</doi>\n")
         if not NoKCRV_re:
             FAIRfile.write("\t\t\t<KCRV>\n")
@@ -866,6 +926,7 @@ for i, line in enumerate(Lines):
         FAIRfile.write("\t</Comparison_metadata>\n")
         
     if "</Data_from" in line:
+        if Lab_acronym == "NUCLEAR_MALAYSIA": Lab_acronym = Lab_acronym.replace("NUCLEAR_MALAYSIA","NUCLEAR MALAYSIA")
         FAIRfile.write("\t\t<Submission>\n")
         FAIRfile.write("\t\t\t<laboratory>\n")
         FAIRfile.write("\t\t\t\t<Acronym>"+Lab_acronym+"</Acronym>\n")
@@ -923,24 +984,37 @@ for i, line in enumerate(Lines):
     
                 FAIRfile.write("\t\t\t\t\t<Chemical_composition>\n")
                 FAIRfile.write("\t\t\t\t\t\t<Solvant>\n")
-                if SolvantSMILES: FAIRfile.write("\t\t\t\t\t\t\t<SMILES>"+SolvantSMILES+"</SMILES>\n")
-                if SolvantInChiKey: FAIRfile.write("\t\t\t\t\t\t\t<InChIKey>"+SolvantInChiKey+"</InChIKey>\n")
-                if SolvantInChi: FAIRfile.write("\t\t\t\t\t\t\t<InChI>"+SolvantInChi+"</InChI>\n")
                 if Solvant_conc:
-                    FAIRfile.write("\t\t\t\t\t\t\t<SolvantConcentration>\n")
-                    FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:real>\n")
-                    FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:value>"+Solvant_conc+"</dsi:value>\n")
-                    FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:unit>"+Solvant_conc_unit+"</dsi:unit>\n") 
-                    FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:real>\n")
-                    FAIRfile.write("\t\t\t\t\t\t\t</SolvantConcentration>\n")
+                    if isinstance(Solvant_conc, list):
+                        for si in range(len(Solvant_conc)):
+                            if ChemID(Solvant[si])[0]: FAIRfile.write("\t\t\t\t\t\t\t<SMILES>"+ChemID(Solvant[si])[0]+"</SMILES>\n")
+                            if ChemID(Solvant[si])[1]: FAIRfile.write("\t\t\t\t\t\t\t<InChIKey>"+ChemID(Solvant[si])[1]+"</InChIKey>\n")
+                            if ChemID(Solvant[si])[2]: FAIRfile.write("\t\t\t\t\t\t\t<InChI>"+ChemID(Solvant[si])[2]+"</InChI>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t<SolvantConcentration>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:real>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:value>"+Solvant_conc[si]+"</dsi:value>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:unit>"+Solvant_conc_unit+"</dsi:unit>\n") 
+                            FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:real>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t</SolvantConcentration>\n")
+                    else:
+                        if SolvantSMILES: FAIRfile.write("\t\t\t\t\t\t\t<SMILES>"+SolvantSMILES+"</SMILES>\n")
+                        if SolvantInChiKey: FAIRfile.write("\t\t\t\t\t\t\t<InChIKey>"+SolvantInChiKey+"</InChIKey>\n")
+                        if SolvantInChi: FAIRfile.write("\t\t\t\t\t\t\t<InChI>"+SolvantInChi+"</InChI>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t<SolvantConcentration>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:real>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:value>"+Solvant_conc+"</dsi:value>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:unit>"+Solvant_conc_unit+"</dsi:unit>\n") 
+                        FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:real>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t</SolvantConcentration>\n")
                 FAIRfile.write("\t\t\t\t\t\t</Solvant>\n")
+
                 if isinstance(Carrier, list):
                     for ci in range(len(Carrier)):
                         FAIRfile.write("\t\t\t\t\t\t<Carrier>\n")
                         if CarrierSMILES: FAIRfile.write("\t\t\t\t\t\t\t<SMILES>"+ChemID(Carrier[ci])[0]+"</SMILES>\n")
                         if CarrierInChiKey: FAIRfile.write("\t\t\t\t\t\t\t<InChIKey>"+ChemID(Carrier[ci])[1]+"</InChIKey>\n")
                         if CarrierInChi: FAIRfile.write("\t\t\t\t\t\t\t<InChI>"+ChemID(Carrier[ci])[2]+"</InChI>\n")
-                        if Carrier_conc and (not UnknownCarConc):
+                        if Carrier_conc and (not UnknownCarConc) and (Carrier_conc[ci]!="?"):
                             FAIRfile.write("\t\t\t\t\t\t\t<CarrierConcentration>\n")
                             FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:real>\n")
                             FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:value>"+Carrier_conc[ci]+"</dsi:value>\n")
@@ -959,11 +1033,18 @@ for i, line in enumerate(Lines):
                         FAIRfile.write("\t\t\t\t\t\t\t<CarrierConcentration>\n")
                         FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:real>\n")
                         FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:value>"+Carrier_conc+"</dsi:value>\n")
-                        FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:unit>"+Carrier_conc_unit+"</dsi:unit>\n") 
+                        FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:unit>"+Carrier_conc_unit+"</dsi:unit>\n")
+                        if uCarrier_conc:
+                            FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t\t\t<dsi:uncertainty>"+uCarrier_conc+"</dsi:uncertainty>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t\t</dsi:expandedUnc>\n")   
                         FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:real>\n")                    
                         # FAIRfile.write("\t\t\t\t\t\t\t\t<value>"+Carrier_conc+"</value>\n")
                         # FAIRfile.write("\t\t\t\t\t\t\t\t<unit>"+Carrier_conc_unit+"</unit>\n")
                         FAIRfile.write("\t\t\t\t\t\t\t</CarrierConcentration>\n")
+                    # print(Carrier_conc, UnknownCarConc)
                     FAIRfile.write("\t\t\t\t\t\t</Carrier>\n")
                 FAIRfile.write("\t\t\t\t\t</Chemical_composition>\n")
                 FAIRfile.write("\t\t\t\t\t<impurities>"+reportedImpurity+"</impurities>\n")
@@ -1071,7 +1152,7 @@ for i, line in enumerate(Lines):
         methEqAe = len(methods)==len(Ae)
         #print(RaRef, Ai, Ae, massEqAe, methEqAe)
         FAIRfile.write("\t\t\t<BIPM_measurements>\n")
-
+        
         if len(Ae)==1:
             FAIRfile.write("\t\t\t\t<BIPM_measurement>\n")
             if MassFlag:

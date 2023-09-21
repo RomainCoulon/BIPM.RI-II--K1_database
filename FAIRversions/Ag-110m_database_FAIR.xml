@@ -157,7 +157,7 @@
 							<InChI>InChI=1S/Ag.NO3/c;2-1(3)4/q+1;-1</InChI>
 							<CarrierConcentration>
 								<dsi:real>
-									<dsi:value> 640</dsi:value>
+									<dsi:value>640</dsi:value>
 									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
 								</dsi:real>
 							</CarrierConcentration>
@@ -263,7 +263,7 @@
 							<InChI>InChI=1S/Ag.NO3/c;2-1(3)4/q+1;-1</InChI>
 							<CarrierConcentration>
 								<dsi:real>
-									<dsi:value> 25</dsi:value>
+									<dsi:value>25</dsi:value>
 									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
 								</dsi:real>
 							</CarrierConcentration>
@@ -303,7 +303,7 @@
 							<InChI>InChI=1S/Ag.NO3/c;2-1(3)4/q+1;-1</InChI>
 							<CarrierConcentration>
 								<dsi:real>
-									<dsi:value> 25</dsi:value>
+									<dsi:value>25</dsi:value>
 									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
 								</dsi:real>
 							</CarrierConcentration>
@@ -441,7 +441,7 @@
 							<InChI>InChI=1S/CN.Ag/c1-2;/q-1;+1</InChI>
 							<CarrierConcentration>
 								<dsi:real>
-									<dsi:value> 10</dsi:value>
+									<dsi:value>10</dsi:value>
 									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
 								</dsi:real>
 							</CarrierConcentration>
@@ -548,7 +548,7 @@
 							<InChI>InChI=1S/Ag.NO3/c;2-1(3)4/q+1;-1</InChI>
 							<CarrierConcentration>
 								<dsi:real>
-									<dsi:value> 180</dsi:value>
+									<dsi:value>180</dsi:value>
 									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
 								</dsi:real>
 							</CarrierConcentration>
@@ -655,7 +655,7 @@
 							<InChI>InChI=1S/Ag</InChI>
 							<CarrierConcentration>
 								<dsi:real>
-									<dsi:value> 120</dsi:value>
+									<dsi:value>120</dsi:value>
 									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
 								</dsi:real>
 							</CarrierConcentration>

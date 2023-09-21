@@ -2,9 +2,11 @@
 <all>
 	<General_information type="dict">
 		<Content type="str">This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.</Content>
-		<Release_date type="str">2023-03-21</Release_date>
+		<Release_date type="str">2023-09-19</Release_date>
+		<Note type="str">This version of the machine-readable comparison report is not definitive. The format is under discussion within the CCRI and CIPM to best reflect the requirements of ionizing radiation metrology and to conform to the SI digital framework. Users can use this document to analyse key comparison data and metadata more efficiently with their software. However, users should bear in mind that the format will necessarily evolve in subsequent updates of this key comparison, which will not guarantee the long-term compatibility of their interface. </Note>
 		<References type="dict">
 			<key name=" [1] " type="str"> Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 </key>
+			<key name=" [2] " type="str"> Romain Coulon et al 2023 Meas. Sci. Technol. 34 074009 - https://doi.org/10.1088/1361-6501/accd0b </key>
 		</References>
 		<Contact_persons type="dict">
 			<_Dr_Romain_Coulon type="str"> romain.coulon@bipm.org </_Dr_Romain_Coulon>
@@ -13,13 +15,282 @@
 		</Contact_persons>
 	</General_information>
 	<Co-60 type="dict">
-		<key name="Key comparison BIPM.RI(II)-K1.Co-60(2003)" type="dict">
+		<key name="Key comparison BIPM.RI(II)-K1.Co-60(2003_1)" type="dict">
 			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Co-60</Name_of_the_comparison>
-			<Year_of_publication type="str">2003</Year_of_publication>
+			<Year_of_publication type="str">2003_1</Year_of_publication>
+			<key name="Key Comparison Reference Value (KCRV)" type="str">7064.6(38) kBq</key>
+			<Reference_of_the_published_comparison_report type="str">Ratel G. and  Michotte C., BIPM comparison BIPM.RI(II)-K1.Co-60 of the activity measurements of the radionuclide $^{60}$Co, \href{https://doi.org/10.1088/0026-1394/40/1A/06007}{\textit{Metrologia}, 2003, \textbf{40}, Tech. Suppl., 06007}</Reference_of_the_published_comparison_report>
+			<key name="Editorial assistant(s)" type="null"/>
+			<Comments_on_the_publication type="null"/>
+			<Unit type="str">kBq</Unit>
+			<Degrees_of_Equivalence type="dict">
+				<BIPM type="dict">
+					<D_i type="int">1</D_i>
+					<U_i type="int">11</U_i>
+				</BIPM>
+				<NMIJ type="dict">
+					<D_i type="int">-21</D_i>
+					<U_i type="int">31</U_i>
+				</NMIJ>
+				<CMI type="dict">
+					<D_i type="int">-11</D_i>
+					<U_i type="int">39</U_i>
+				</CMI>
+				<NIM type="dict">
+					<D_i type="int">-21</D_i>
+					<U_i type="int">30</U_i>
+				</NIM>
+				<IFIN-HH type="dict">
+					<D_i type="int">2</D_i>
+					<U_i type="int">17</U_i>
+				</IFIN-HH>
+				<LNMRI-IRD type="dict">
+					<D_i type="int">12</D_i>
+					<U_i type="int">17</U_i>
+				</LNMRI-IRD>
+				<ENEA-INMRI type="dict">
+					<D_i type="int">0</D_i>
+					<U_i type="int">50</U_i>
+				</ENEA-INMRI>
+				<CNEA type="dict">
+					<D_i type="int">61</D_i>
+					<U_i type="int">21</U_i>
+				</CNEA>
+				<ANSTO type="dict">
+					<D_i type="int">-9</D_i>
+					<U_i type="int">21</U_i>
+				</ANSTO>
+				<NMISA type="dict">
+					<D_i type="int">1</D_i>
+					<U_i type="int">21</U_i>
+				</NMISA>
+				<KRISS type="dict">
+					<D_i type="int">-18</D_i>
+					<U_i type="int">43</U_i>
+				</KRISS>
+				<NIST type="dict">
+					<D_i type="int">20</D_i>
+					<U_i type="int">33</U_i>
+				</NIST>
+				<BEV type="dict">
+					<D_i type="int">-16</D_i>
+					<U_i type="int">84</U_i>
+				</BEV>
+				<BKFH type="dict">
+					<D_i type="int">-14</D_i>
+					<U_i type="int">35</U_i>
+				</BKFH>
+				<LNE-LNHB type="dict">
+					<D_i type="int">-5</D_i>
+					<U_i type="int">11</U_i>
+				</LNE-LNHB>
+				<CIEMAT type="dict">
+					<D_i type="int">25</D_i>
+					<U_i type="int">22</U_i>
+				</CIEMAT>
+				<NPL type="dict">
+					<D_i type="int">-12</D_i>
+					<U_i type="int">41</U_i>
+				</NPL>
+				<IRA type="dict">
+					<D_i type="int">-28</D_i>
+					<U_i type="int">18</U_i>
+				</IRA>
+				<BARC type="dict">
+					<D_i type="int">34</D_i>
+					<U_i type="int">88</U_i>
+				</BARC>
+				<PTB type="dict">
+					<D_i type="int">-8</D_i>
+					<U_i type="int">33</U_i>
+				</PTB>
+			</Degrees_of_Equivalence>
+		</key>
+		<key name="Key comparison BIPM.RI(II)-K1.Co-60(2003_2)" type="dict">
+			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Co-60</Name_of_the_comparison>
+			<Year_of_publication type="str">2003_2</Year_of_publication>
+			<key name="Key Comparison Reference Value (KCRV)" type="str">7064.6(38) kBq</key>
+			<Reference_of_the_published_comparison_report type="str">Ratel G., Michotte C., Simpson B.R.S., Iglicki A., Activity measurements of the radionuclide $^{60}$Co for the CSIR-NML and the CNEA in the BIPM comparison BIPM.RI(II)-K1.Co-60, \href{https://doi.org/10.1088/0026-1394/40/1A/06010}{\textit{Metrologia}, 2003, \textbf{40}, Tech. Suppl., 06010}</Reference_of_the_published_comparison_report>
+			<key name="Editorial assistant(s)" type="null"/>
+			<Comments_on_the_publication type="null"/>
+			<Unit type="str">kBq</Unit>
+			<Degrees_of_Equivalence type="dict">
+				<BIPM type="dict">
+					<D_i type="int">1</D_i>
+					<U_i type="int">11</U_i>
+				</BIPM>
+				<NMIJ type="dict">
+					<D_i type="int">-21</D_i>
+					<U_i type="int">31</U_i>
+				</NMIJ>
+				<CMI type="dict">
+					<D_i type="int">-11</D_i>
+					<U_i type="int">39</U_i>
+				</CMI>
+				<NIM type="dict">
+					<D_i type="int">-21</D_i>
+					<U_i type="int">30</U_i>
+				</NIM>
+				<IFIN-HH type="dict">
+					<D_i type="int">2</D_i>
+					<U_i type="int">17</U_i>
+				</IFIN-HH>
+				<LNMRI-IRD type="dict">
+					<D_i type="int">12</D_i>
+					<U_i type="int">17</U_i>
+				</LNMRI-IRD>
+				<ENEA-INMRI type="dict">
+					<D_i type="int">0</D_i>
+					<U_i type="int">50</U_i>
+				</ENEA-INMRI>
+				<ANSTO type="dict">
+					<D_i type="int">-9</D_i>
+					<U_i type="int">21</U_i>
+				</ANSTO>
+				<KRISS type="dict">
+					<D_i type="int">-18</D_i>
+					<U_i type="int">43</U_i>
+				</KRISS>
+				<NIST type="dict">
+					<D_i type="int">20</D_i>
+					<U_i type="int">33</U_i>
+				</NIST>
+				<BEV type="dict">
+					<D_i type="int">-16</D_i>
+					<U_i type="int">84</U_i>
+				</BEV>
+				<BKFH type="dict">
+					<D_i type="int">-14</D_i>
+					<U_i type="int">35</U_i>
+				</BKFH>
+				<LNE-LNHB type="dict">
+					<D_i type="int">-5</D_i>
+					<U_i type="int">11</U_i>
+				</LNE-LNHB>
+				<CIEMAT type="dict">
+					<D_i type="int">25</D_i>
+					<U_i type="int">22</U_i>
+				</CIEMAT>
+				<NPL type="dict">
+					<D_i type="int">-12</D_i>
+					<U_i type="int">41</U_i>
+				</NPL>
+				<IRA type="dict">
+					<D_i type="int">-28</D_i>
+					<U_i type="int">18</U_i>
+				</IRA>
+				<BARC type="dict">
+					<D_i type="int">34</D_i>
+					<U_i type="int">88</U_i>
+				</BARC>
+				<PTB type="dict">
+					<D_i type="int">-8</D_i>
+					<U_i type="int">33</U_i>
+				</PTB>
+				<CNEA type="dict">
+					<D_i type="int">33</D_i>
+					<U_i type="int">33</U_i>
+				</CNEA>
+				<NMISA type="dict">
+					<D_i type="int">-15</D_i>
+					<U_i type="int">31</U_i>
+				</NMISA>
+			</Degrees_of_Equivalence>
+		</key>
+		<key name="Key comparison BIPM.RI(II)-K1.Co-60(2003_3)" type="dict">
+			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Co-60</Name_of_the_comparison>
+			<Year_of_publication type="str">2003_3</Year_of_publication>
 			<key name="Key Comparison Reference Value (KCRV)" type="str">7064.6(38) kBq</key>
 			<Reference_of_the_published_comparison_report type="str">Ratel G., Michotte C., Broda R., Listkowska A., Activity measurements of the radionuclide $^{60}$Co for the RC, Poland in the ongoing comparison BIPM.RI(II)-K1.Co-60, \href{https://doi.org/10.1088/0026-1394/40/1A/06033}{\textit{Metrologia}, 2003, \textbf{40}, Tech. Suppl., 06033}</Reference_of_the_published_comparison_report>
 			<key name="Editorial assistant(s)" type="null"/>
 			<Comments_on_the_publication type="null"/>
+			<Unit type="str">kBq</Unit>
+			<Degrees_of_Equivalence type="dict">
+				<BIPM type="dict">
+					<D_i type="int">1</D_i>
+					<U_i type="int">11</U_i>
+				</BIPM>
+				<NMIJ type="dict">
+					<D_i type="int">-21</D_i>
+					<U_i type="int">31</U_i>
+				</NMIJ>
+				<CMI type="dict">
+					<D_i type="int">-11</D_i>
+					<U_i type="int">39</U_i>
+				</CMI>
+				<NIM type="dict">
+					<D_i type="int">-21</D_i>
+					<U_i type="int">30</U_i>
+				</NIM>
+				<IFIN-HH type="dict">
+					<D_i type="int">2</D_i>
+					<U_i type="int">17</U_i>
+				</IFIN-HH>
+				<LNMRI-IRD type="dict">
+					<D_i type="int">12</D_i>
+					<U_i type="int">17</U_i>
+				</LNMRI-IRD>
+				<ENEA-INMRI type="dict">
+					<D_i type="int">0</D_i>
+					<U_i type="int">50</U_i>
+				</ENEA-INMRI>
+				<ANSTO type="dict">
+					<D_i type="int">-9</D_i>
+					<U_i type="int">21</U_i>
+				</ANSTO>
+				<KRISS type="dict">
+					<D_i type="int">-18</D_i>
+					<U_i type="int">43</U_i>
+				</KRISS>
+				<NIST type="dict">
+					<D_i type="int">20</D_i>
+					<U_i type="int">33</U_i>
+				</NIST>
+				<BEV type="dict">
+					<D_i type="int">-16</D_i>
+					<U_i type="int">84</U_i>
+				</BEV>
+				<BKFH type="dict">
+					<D_i type="int">-14</D_i>
+					<U_i type="int">35</U_i>
+				</BKFH>
+				<LNE-LNHB type="dict">
+					<D_i type="int">-5</D_i>
+					<U_i type="int">11</U_i>
+				</LNE-LNHB>
+				<CIEMAT type="dict">
+					<D_i type="int">25</D_i>
+					<U_i type="int">22</U_i>
+				</CIEMAT>
+				<NPL type="dict">
+					<D_i type="int">-12</D_i>
+					<U_i type="int">41</U_i>
+				</NPL>
+				<IRA type="dict">
+					<D_i type="int">-28</D_i>
+					<U_i type="int">18</U_i>
+				</IRA>
+				<BARC type="dict">
+					<D_i type="int">34</D_i>
+					<U_i type="int">88</U_i>
+				</BARC>
+				<PTB type="dict">
+					<D_i type="int">-8</D_i>
+					<U_i type="int">33</U_i>
+				</PTB>
+				<CNEA type="dict">
+					<D_i type="int">33</D_i>
+					<U_i type="int">33</U_i>
+				</CNEA>
+				<NMISA type="dict">
+					<D_i type="int">-15</D_i>
+					<U_i type="int">31</U_i>
+				</NMISA>
+				<POLATOM type="dict">
+					<D_i type="int">-25</D_i>
+					<U_i type="int">80</U_i>
+				</POLATOM>
+			</Degrees_of_Equivalence>
 		</key>
 		<key name="Key comparison BIPM.RI(II)-K1.Co-60(2006)" type="dict">
 			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Co-60</Name_of_the_comparison>
@@ -28,6 +299,97 @@
 			<Reference_of_the_published_comparison_report type="str">Ratel G., Michotte C., Hino Y., Keightley J. and W\&quot;{a}tjen, Update of the ongoing comparison BIPM.RI(II)-K1.Co-60 including activity measurements of the radionuclide $^{60}$Co for the NMIJ, Japan and the IRMM (Geel), \href{https://doi.org/10.1088/0026-1394/43/1A/06003}{\textit{Metrologia}, 2006, \textbf{43}, Tech. Suppl., 06003}</Reference_of_the_published_comparison_report>
 			<key name="Editorial assistant(s)" type="null"/>
 			<Comments_on_the_publication type="str">PTB 2017 not included in the 2017 report</Comments_on_the_publication>
+			<Unit type="str">kBq</Unit>
+			<Degrees_of_Equivalence type="dict">
+				<BIPM type="dict">
+					<D_i type="int">5</D_i>
+					<U_i type="int">8</U_i>
+				</BIPM>
+				<CMI type="dict">
+					<D_i type="int">-7</D_i>
+					<U_i type="int">38</U_i>
+				</CMI>
+				<NIM type="dict">
+					<D_i type="int">-17</D_i>
+					<U_i type="int">29</U_i>
+				</NIM>
+				<IFIN-HH type="dict">
+					<D_i type="int">6</D_i>
+					<U_i type="int">15</U_i>
+				</IFIN-HH>
+				<LNMRI-IRD type="dict">
+					<D_i type="int">16</D_i>
+					<U_i type="int">15</U_i>
+				</LNMRI-IRD>
+				<ENEA-INMRI type="dict">
+					<D_i type="int">4</D_i>
+					<U_i type="int">50</U_i>
+				</ENEA-INMRI>
+				<ANSTO type="dict">
+					<D_i type="int">-5</D_i>
+					<U_i type="int">19</U_i>
+				</ANSTO>
+				<KRISS type="dict">
+					<D_i type="int">-14</D_i>
+					<U_i type="int">42</U_i>
+				</KRISS>
+				<NIST type="dict">
+					<D_i type="int">24</D_i>
+					<U_i type="int">35</U_i>
+				</NIST>
+				<BEV type="dict">
+					<D_i type="int">-12</D_i>
+					<U_i type="int">84</U_i>
+				</BEV>
+				<BKFH type="dict">
+					<D_i type="int">-10</D_i>
+					<U_i type="int">34</U_i>
+				</BKFH>
+				<LNE-LNHB type="dict">
+					<D_i type="int">-1</D_i>
+					<U_i type="int">8</U_i>
+				</LNE-LNHB>
+				<CIEMAT type="dict">
+					<D_i type="int">29</D_i>
+					<U_i type="int">21</U_i>
+				</CIEMAT>
+				<NPL type="dict">
+					<D_i type="int">-8</D_i>
+					<U_i type="int">40</U_i>
+				</NPL>
+				<IRA type="dict">
+					<D_i type="int">-24</D_i>
+					<U_i type="int">18</U_i>
+				</IRA>
+				<BARC type="dict">
+					<D_i type="int">38</D_i>
+					<U_i type="int">88</U_i>
+				</BARC>
+				<PTB type="dict">
+					<D_i type="int">-4</D_i>
+					<U_i type="int">31</U_i>
+				</PTB>
+				<NMISA type="dict">
+					<D_i type="int">37</D_i>
+					<U_i type="int">33</U_i>
+				</NMISA>
+				<CNEA type="dict">
+					<D_i type="int">-11</D_i>
+					<U_i type="int">29</U_i>
+				</CNEA>
+				<POLATOM type="dict">
+					<D_i type="int">-21</D_i>
+					<U_i type="int">77</U_i>
+				</POLATOM>
+				<NMIJ type="dict">
+					<D_i type="int">-11</D_i>
+					<U_i type="int">15</U_i>
+				</NMIJ>
+				<JRC type="dict">
+					<D_i type="int">-22</D_i>
+					<U_i type="int">33</U_i>
+				</JRC>
+			</Degrees_of_Equivalence>
 		</key>
 		<key name="Key comparison BIPM.RI(II)-K1.Co-60(2010)" type="dict">
 			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Co-60</Name_of_the_comparison>
@@ -36,6 +398,85 @@
 			<Reference_of_the_published_comparison_report type="str">Michotte C., Courte S., Ratel G., Sahagia M., W\&quot;{a}tjen A.C. , Fitzgerald R. and Maringer F-L., Update of the ongoing comparison BIPM.RI(II)-K1.Co-60 including activity measurements of the radionuclide $^{60}$Co for the IFIN-HH (Romania), NIST (USA) and the BEV (Austria), \href{https://doi.org/10.1088/0026-1394/47/1A/06010}{\textit{Metrologia}, 2010, \textbf{47}, Tech. Suppl., 06010}</Reference_of_the_published_comparison_report>
 			<key name="Editorial assistant(s)" type="null"/>
 			<Comments_on_the_publication type="null"/>
+			<Unit type="str">kBq</Unit>
+			<Degrees_of_Equivalence type="dict">
+				<LNMRI-IRD type="dict">
+					<D_i type="int">14</D_i>
+					<U_i type="int">15</U_i>
+				</LNMRI-IRD>
+				<ENEA-INMRI type="dict">
+					<D_i type="int">2</D_i>
+					<U_i type="int">50</U_i>
+				</ENEA-INMRI>
+				<ANSTO type="dict">
+					<D_i type="int">-7</D_i>
+					<U_i type="int">19</U_i>
+				</ANSTO>
+				<KRISS type="dict">
+					<D_i type="int">-16</D_i>
+					<U_i type="int">42</U_i>
+				</KRISS>
+				<BKFH type="dict">
+					<D_i type="int">-12</D_i>
+					<U_i type="int">34</U_i>
+				</BKFH>
+				<LNE-LNHB type="dict">
+					<D_i type="int">-3</D_i>
+					<U_i type="int">8</U_i>
+				</LNE-LNHB>
+				<CIEMAT type="dict">
+					<D_i type="int">27</D_i>
+					<U_i type="int">21</U_i>
+				</CIEMAT>
+				<NPL type="dict">
+					<D_i type="int">-10</D_i>
+					<U_i type="int">40</U_i>
+				</NPL>
+				<IRA type="dict">
+					<D_i type="int">-26</D_i>
+					<U_i type="int">18</U_i>
+				</IRA>
+				<BARC type="dict">
+					<D_i type="int">36</D_i>
+					<U_i type="int">88</U_i>
+				</BARC>
+				<PTB type="dict">
+					<D_i type="int">-6</D_i>
+					<U_i type="int">31</U_i>
+				</PTB>
+				<NMISA type="dict">
+					<D_i type="int">35</D_i>
+					<U_i type="int">33</U_i>
+				</NMISA>
+				<CNEA type="dict">
+					<D_i type="int">-13</D_i>
+					<U_i type="int">29</U_i>
+				</CNEA>
+				<POLATOM type="dict">
+					<D_i type="int">-23</D_i>
+					<U_i type="int">77</U_i>
+				</POLATOM>
+				<NMIJ type="dict">
+					<D_i type="int">-13</D_i>
+					<U_i type="int">15</U_i>
+				</NMIJ>
+				<JRC type="dict">
+					<D_i type="int">-24</D_i>
+					<U_i type="int">33</U_i>
+				</JRC>
+				<IFIN-HH type="dict">
+					<D_i type="int">38</D_i>
+					<U_i type="int">46</U_i>
+				</IFIN-HH>
+				<NIST type="dict">
+					<D_i type="int">20</D_i>
+					<U_i type="int">27</U_i>
+				</NIST>
+				<BEV type="dict">
+					<D_i type="int">-6</D_i>
+					<U_i type="int">35</U_i>
+				</BEV>
+			</Degrees_of_Equivalence>
 		</key>
 		<key name="Key comparison BIPM.RI(II)-K1.Co-60(2017)" type="dict">
 			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Co-60</Name_of_the_comparison>
@@ -46,41 +487,61 @@
 			<Comments_on_the_publication type="null"/>
 			<Unit type="str">kBq</Unit>
 			<Degrees_of_Equivalence type="dict">
-				<IRA-METAS type="dict">
+				<BKFH type="dict">
+					<D_i type="int">-12</D_i>
+					<U_i type="int">36</U_i>
+				</BKFH>
+				<LNE-LNHB type="dict">
+					<D_i type="int">-3</D_i>
+					<U_i type="int">9</U_i>
+				</LNE-LNHB>
+				<CIEMAT type="dict">
+					<D_i type="int">27</D_i>
+					<U_i type="int">22</U_i>
+				</CIEMAT>
+				<NPL type="dict">
+					<D_i type="int">-10</D_i>
+					<U_i type="int">42</U_i>
+				</NPL>
+				<IRA type="dict">
 					<D_i type="int">-26</D_i>
 					<U_i type="int">17</U_i>
-				</IRA-METAS>
+				</IRA>
+				<PTB type="dict">
+					<D_i type="int">-6</D_i>
+					<U_i type="int">32</U_i>
+				</PTB>
 				<NMISA type="dict">
 					<D_i type="int">35</D_i>
-					<U_i type="int">33</U_i>
+					<U_i type="int">32</U_i>
 				</NMISA>
 				<POLATOM type="dict">
 					<D_i type="int">-23</D_i>
 					<U_i type="int">80</U_i>
 				</POLATOM>
-				<JRC type="dict">
-					<D_i type="int">-24</D_i>
-					<U_i type="int">34</U_i>
-				</JRC>
 				<NMIJ type="dict">
 					<D_i type="int">-13</D_i>
 					<U_i type="int">16</U_i>
 				</NMIJ>
+				<JRC type="dict">
+					<D_i type="int">-24</D_i>
+					<U_i type="int">34</U_i>
+				</JRC>
 				<IFIN-HH type="dict">
 					<D_i type="int">38</D_i>
 					<U_i type="int">48</U_i>
 				</IFIN-HH>
-				<BEV type="dict">
-					<D_i type="int">-6</D_i>
-					<U_i type="int">34</U_i>
-				</BEV>
 				<NIST type="dict">
 					<D_i type="int">20</D_i>
 					<U_i type="int">28</U_i>
 				</NIST>
+				<BEV type="dict">
+					<D_i type="int">-6</D_i>
+					<U_i type="int">34</U_i>
+				</BEV>
 				<CNEA type="dict">
 					<D_i type="int">7</D_i>
-					<U_i type="int">71</U_i>
+					<U_i type="int">52</U_i>
 				</CNEA>
 				<BARC type="dict">
 					<D_i type="int">121</D_i>
@@ -100,15 +561,15 @@
 			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Co-60</Name_of_the_comparison>
 			<Year_of_publication type="str">2020</Year_of_publication>
 			<key name="Key Comparison Reference Value (KCRV)" type="str">7062.7(27) kBq</key>
-			<Reference_of_the_published_comparison_report type="str">Michotte C., Courte S., Nonis M., Coulon R., Judge S., Kossert K., Marganiec-Ga\l{}\k{a}zka J., N\&quot;{a}hle O., Yeltepe E. and Dirican A., Update of the BIPM comparison BIPM.RI(II)-K1.Co-60 of activity measurements of the radionuclide $^{60}$Co to include the 2017 result of the PTB (Germany) and the 2018 result of the TAEK (Turkey), \href{https://doi.org/10.1088/0026-1394/58/1A/06001}, {\textit{Metrologia}, 2020, \textbf{58}, Tech. Suppl., 06001}</Reference_of_the_published_comparison_report>
+			<Reference_of_the_published_comparison_report type="str">Michotte C., Courte S., Nonis M., Coulon R., Judge S., Kossert K., Marganiec-Ga\l{}\k{a}zka J., N\&quot;{a}hle O., Yeltepe E. and Dirican A., Update of the BIPM comparison BIPM.RI(II)-K1.Co-60 of activity measurements of the radionuclide $^{60}$Co to include the 2017 result of the PTB (Germany) and the 2018 result of the TAEK (Turkey), \href{https://doi.org/10.1088/0026-1394/58/1A/06001}{\textit{Metrologia}, 2020, \textbf{58}, Tech. Suppl., 06001}</Reference_of_the_published_comparison_report>
 			<key name="Editorial assistant(s)" type="null"/>
 			<Comments_on_the_publication type="null"/>
 			<Unit type="str">kBq</Unit>
 			<Degrees_of_Equivalence type="dict">
-				<IRA-METAS type="dict">
+				<IRA type="dict">
 					<D_i type="int">-26</D_i>
 					<U_i type="int">17</U_i>
-				</IRA-METAS>
+				</IRA>
 				<NMISA type="dict">
 					<D_i type="int">35</D_i>
 					<U_i type="int">32</U_i>
@@ -157,25 +618,88 @@
 					<D_i type="int">-6</D_i>
 					<U_i type="int">30</U_i>
 				</PTB>
-				<TAEK type="dict">
+				<TENMAK-NUKEN type="dict">
 					<D_i type="int">-15</D_i>
 					<U_i type="int">178</U_i>
-				</TAEK>
+				</TENMAK-NUKEN>
 			</Degrees_of_Equivalence>
 		</key>
 		<key name="Key comparison BIPM.RI(II)-K1.Co-60(2021)" type="dict">
 			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Co-60</Name_of_the_comparison>
 			<Year_of_publication type="str">2021</Year_of_publication>
 			<key name="Key Comparison Reference Value (KCRV)" type="str">7062.6(25) kBq</key>
-			<Reference_of_the_published_comparison_report type="str">Michotte C., Courte S., Nonis M., Coulon R., Judge S., Alekseev I.V., Zanevsky A.V., Zhukov G.V., Update of the BIPM comparison BIPM.RI(II)-K1.Co-60 of activity measurements of the radionuclide $^{60}$Co to include the 2019 result of the VNIIM (Russian Federation), \href{https://doi.org/10.1088/0026-1394/58/1A/06019}, {\textit{Metrologia}, 2021, \textbf{58}, Tech. Suppl., 06019}</Reference_of_the_published_comparison_report>
+			<Reference_of_the_published_comparison_report type="str">Michotte C., Courte S., Nonis M., Coulon R., Judge S., Alekseev I.V., Zanevsky A.V., Zhukov G.V., Update of the BIPM comparison BIPM.RI(II)-K1.Co-60 of activity measurements of the radionuclide $^{60}$Co to include the 2019 result of the VNIIM (Russian Federation), \href{https://doi.org/10.1088/0026-1394/58/1A/06019}{\textit{Metrologia}, 2021, \textbf{58}, Tech. Suppl., 06019}</Reference_of_the_published_comparison_report>
 			<key name="Editorial assistant(s)" type="null"/>
 			<Comments_on_the_publication type="null"/>
+			<Unit type="str">kBq</Unit>
+			<Degrees_of_Equivalence type="dict">
+				<IRA type="dict">
+					<D_i type="int">-26</D_i>
+					<U_i type="int">17</U_i>
+				</IRA>
+				<NMISA type="dict">
+					<D_i type="int">35</D_i>
+					<U_i type="int">32</U_i>
+				</NMISA>
+				<POLATOM type="dict">
+					<D_i type="int">-23</D_i>
+					<U_i type="int">80</U_i>
+				</POLATOM>
+				<NMIJ type="dict">
+					<D_i type="int">-13</D_i>
+					<U_i type="int">16</U_i>
+				</NMIJ>
+				<JRC type="dict">
+					<D_i type="int">-24</D_i>
+					<U_i type="int">34</U_i>
+				</JRC>
+				<IFIN-HH type="dict">
+					<D_i type="int">38</D_i>
+					<U_i type="int">48</U_i>
+				</IFIN-HH>
+				<NIST type="dict">
+					<D_i type="int">20</D_i>
+					<U_i type="int">28</U_i>
+				</NIST>
+				<BEV type="dict">
+					<D_i type="int">-6</D_i>
+					<U_i type="int">34</U_i>
+				</BEV>
+				<CNEA type="dict">
+					<D_i type="int">7</D_i>
+					<U_i type="int">52</U_i>
+				</CNEA>
+				<BARC type="dict">
+					<D_i type="int">121</D_i>
+					<U_i type="int">66</U_i>
+				</BARC>
+				<NRC type="dict">
+					<D_i type="int">2</D_i>
+					<U_i type="int">18</U_i>
+				</NRC>
+				<NIM type="dict">
+					<D_i type="int">-11</D_i>
+					<U_i type="int">38</U_i>
+				</NIM>
+				<PTB type="dict">
+					<D_i type="int">-6</D_i>
+					<U_i type="int">30</U_i>
+				</PTB>
+				<TENMAK-NUKEN type="dict">
+					<D_i type="int">-20</D_i>
+					<U_i type="int">180</U_i>
+				</TENMAK-NUKEN>
+				<VNIIM type="dict">
+					<D_i type="int">-1</D_i>
+					<U_i type="int">14</U_i>
+				</VNIIM>
+			</Degrees_of_Equivalence>
 		</key>
 		<key name="Key comparison BIPM.RI(II)-K1.Co-60(2022)" type="dict">
 			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Co-60</Name_of_the_comparison>
 			<Year_of_publication type="str">2022</Year_of_publication>
-			<key name="Key Comparison Reference Value (KCRV)" type="str">7062.0(23)</key>
-			<Reference_of_the_published_comparison_report type="str">Coulon R., Michotte C., Courte S., Nonis M. \textit{et al.}, Update of the BIPM comparison BIPM.RI(II)-K1.Co-60 of activity measurements of the radionuclide $^{60}$Co to include the 2020 result of the PTB (Germany), the 2020 result of the NIST (United States), the 2020 result of the SMU (Slovakia), the 2021 result of the BARC (India), the 2021 result of the LNE-LNHB (France), the 2021 result of the POLATOM (Poland), the 2021 result of the ENEA-INMRI (Italy), the 2021 result of the NPL (United Kingdom), the 2021 result of the LNMRI-IRD (Brazil), the 2022 result of the NMISA (South Africa) and the 2022 result of the ANSTO (Australia), \href{https://doi.org/10.1088/0026-1394/60/1A/06010}, {\textit{Metrologia}, 2023, \textbf{60}, Tech. Suppl., 06010}</Reference_of_the_published_comparison_report>
+			<key name="Key Comparison Reference Value (KCRV)" type="str">7062.0(23) kBq</key>
+			<Reference_of_the_published_comparison_report type="str">Coulon R., Michotte C., Courte S., Nonis M. \textit{et al.}, Update of the BIPM comparison BIPM.RI(II)-K1.Co-60 of activity measurements of the radionuclide $^{60}$Co to include the 2020 result of the PTB (Germany), the 2020 result of the NIST (United States), the 2020 result of the SMU (Slovakia), the 2021 result of the BARC (India), the 2021 result of the LNE-LNHB (France), the 2021 result of the POLATOM (Poland), the 2021 result of the ENEA-INMRI (Italy), the 2021 result of the NPL (United Kingdom), the 2021 result of the LNMRI-IRD (Brazil), the 2022 result of the NMISA (South Africa) and the 2022 result of the ANSTO (Australia), \href{https://doi.org/10.1088/0026-1394/60/1A/06010}{\textit{Metrologia}, 2023, \textbf{60}, Tech. Suppl., 06010}</Reference_of_the_published_comparison_report>
 			<key name="Editorial assistant(s)" type="null"/>
 			<Comments_on_the_publication type="null"/>
 			<Unit type="str">kBq</Unit>
@@ -263,7 +787,7 @@
 			</Degrees_of_Equivalence>
 		</key>
 		<Data_from_AECL-1980 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">AECL</Acronym>
@@ -289,7 +813,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.3</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co++: 10</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co++: 10</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -308,7 +832,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_AECL-1980>
 		<Data_from_AECL-1993 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">AECL</Acronym>
@@ -334,7 +858,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2.6H2O in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2.6H2O: 100</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2.6H2O: 100</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -353,7 +877,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_AECL-1993>
 		<Data_from_ANSTO-1992 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">ANSTO</Acronym>
@@ -379,7 +903,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co: 47</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co: 47</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -398,7 +922,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_ANSTO-1992>
 		<Data_from_ANSTO-2022 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">ANSTO</Acronym>
@@ -424,7 +948,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">B\'{e} M.-M., Chist\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R., Nichols A., Sch\&quot;{o}feld E., Dersch R., \href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol3.pdf}{\textit{Table of radionuclides}, Monographie BIPM-5, 2006, Vol. 3}</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 324(3)</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 324(3)</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.002(2)</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">none detected</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -443,7 +967,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_ANSTO-2022>
 		<Data_from_ASMW-1976 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">ASMW</Acronym>
@@ -469,7 +993,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 20</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 20</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -488,7 +1012,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_ASMW-1976>
 		<Data_from_BARC-1981 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">BARC</Acronym>
@@ -514,7 +1038,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 55</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 55</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -533,7 +1057,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_BARC-1981>
 		<Data_from_BARC-1994 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">BARC</Acronym>
@@ -559,7 +1083,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">Co(NO3)2 in HNO3</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co(NO3)2: 50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co(NO3)2: 50</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -578,7 +1102,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_BARC-1994>
 		<Data_from_BARC-2001 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">BARC</Acronym>
@@ -604,7 +1128,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 25</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 25</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -623,7 +1147,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_BARC-2001>
 		<Data_from_BARC-2012 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">BARC</Acronym>
@@ -649,7 +1173,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 20</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 20</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -668,7 +1192,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_BARC-2012>
 		<Data_from_BARC-2021 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">BARC</Acronym>
@@ -694,7 +1218,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">B\'{e} M.-M., Chist\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R., Nichols A., Sch\&quot;{o}feld E., Dersch R., \href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol3.pdf}{\textit{Table of radionuclides}, Monographie BIPM-5, 2006, Vol. 3}</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 50</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -713,7 +1237,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_BARC-2021>
 		<Data_from_BEV-1998 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">BEV</Acronym>
@@ -739,7 +1263,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 50</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -758,7 +1282,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_BEV-1998>
 		<Data_from_BEV-2007 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">BEV</Acronym>
@@ -784,7 +1308,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">B\'{e} M.-M., Chist\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R., Nichols A., Sch\&quot;{o}feld E., Dersch R., \href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol3.pdf}{\textit{Table of radionuclides}, Monographie BIPM-5, 2006, Vol. 3}</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 50</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -803,7 +1327,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_BEV-2007>
 		<Data_from_BIPM-1976 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">BIPM</Acronym>
@@ -829,7 +1353,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 5</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 5</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -848,7 +1372,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_BIPM-1976>
 		<Data_from_BKFH-1977 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">BKFH</Acronym>
@@ -874,7 +1398,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">Co in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co: 25</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co: 25</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -893,7 +1417,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_BKFH-1977>
 		<Data_from_BKFH-1979 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">BKFH</Acronym>
@@ -919,7 +1443,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">Co in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co: 25</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co: 25</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -938,7 +1462,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_BKFH-1979>
 		<Data_from_BKFH-1999 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">BKFH</Acronym>
@@ -964,7 +1488,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">IAEA-TecDoc-619 X-ray and gamma-ray standards for detector calibration (1991) Vienna IAEA </Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 25</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 25</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -983,7 +1507,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_BKFH-1999>
 		<Data_from_CIEMAT-1999 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">CIEMAT</Acronym>
@@ -1009,7 +1533,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 413</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 413</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.019</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">63Ni: 0.012%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1028,7 +1552,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_CIEMAT-1999>
 		<Data_from_CMI-1977 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">CMI</Acronym>
@@ -1054,7 +1578,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 20</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 20</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">&lt;0.1%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1073,7 +1597,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_CMI-1977>
 		<Data_from_CMI-1978 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">CMI</Acronym>
@@ -1099,7 +1623,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.08</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 20</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 20</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">&lt;0.1%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1118,7 +1642,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_CMI-1978>
 		<Data_from_CNEA-1992 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">CNEA</Acronym>
@@ -1144,7 +1668,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2.6H2O in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 10</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 10</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">0.999</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">&lt;0.1%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1163,7 +1687,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_CNEA-1992>
 		<Data_from_CNEA-2003 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">CNEA</Acronym>
@@ -1189,7 +1713,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2.6H2O in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2.6H2O: 150</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2.6H2O: 150</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.015</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">&lt;0.01%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1208,7 +1732,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_CNEA-2003>
 		<Data_from_CNEA-2011 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">CNEA</Acronym>
@@ -1220,7 +1744,7 @@
 			</Laboratory>
 			<key name="Contributor(s) from the BIPM" type="null"/>
 			<key name="Contributor(s) from the laboratory" type="null"/>
-			<Date_of_reference_specified_by_the_laboratory type="str">2010-06-27, 2010-07-12</Date_of_reference_specified_by_the_laboratory>
+			<Date_of_reference_specified_by_the_laboratory type="str">2010-06-27 00:00 UTC</Date_of_reference_specified_by_the_laboratory>
 			<key name="Acronym(s) of the measurement method(s)" type="str">4P-PC-BP-NA-GR-CO, 4P-LS-BP-00-00-TD</key>
 			<key name="Description of the measurement method(s)" type="str">4pi beta(PC)-gamma coincidence, TDCR</key>
 			<key name="Comment(s) on the measurement method(s)" type="null"/>
@@ -1234,7 +1758,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">B\'{e} M.-M., Chist\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R., Nichols A., Sch\&quot;{o}feld E., Dersch R., \href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol3.pdf}{\textit{Table of radionuclides}, Monographie BIPM-5, 2006, Vol. 3}</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2.6H2O in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2.6H2O: 90</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2.6H2O: 90</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1253,7 +1777,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_CNEA-2011>
 		<Data_from_ENEA-INMRI-1991 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">ENEA-INMRI</Acronym>
@@ -1279,7 +1803,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2.6H2O in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co++: 100</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co++: 100</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">0.999</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">137Cs: 0.003(1)%, 63Ni: 0.026(5)%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1298,7 +1822,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_ENEA-INMRI-1991>
 		<Data_from_ENEA-INMRI-2021 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">ENEA-INMRI</Acronym>
@@ -1324,7 +1848,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">B\'{e} M.-M., Chist\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R., Nichols A., Sch\&quot;{o}feld E., Dersch R., \href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol3.pdf}{\textit{Table of radionuclides}, Monographie BIPM-5, 2006, Vol. 3}</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">N/A</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">N/A</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.02</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">none detected</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="str">No relevant impurities were detected in the solution after measuring it by the ENEA high-energy resolution HPGe detector. The continuum Compton spectrum due to the 1173 keV emission of Co-60 does not allow to see gamma emissions of very weak intensity with energy lower than 1173 keV.</Comments_on_impurities_contained_into_the_solution>
@@ -1343,7 +1867,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_ENEA-INMRI-2021>
 		<Data_from_IAEA-1978 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">IAEA</Acronym>
@@ -1369,7 +1893,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.08</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 10</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 10</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">&lt;0.1%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1388,7 +1912,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_IAEA-1978>
 		<Data_from_IFIN-HH-1983 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">IFIN-HH</Acronym>
@@ -1414,7 +1938,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co: 50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co: 50</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1433,7 +1957,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_IFIN-HH-1983>
 		<Data_from_IFIN-HH-2007 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">IFIN-HH</Acronym>
@@ -1459,7 +1983,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 100</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 100</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">&lt;0.01%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1478,7 +2002,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_IFIN-HH-2007>
 		<Data_from_IRA-1979 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">IRA</Acronym>
@@ -1504,7 +2028,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">Co++ in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co++: 30</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co++: 30</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1523,7 +2047,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_IRA-1979>
 		<Data_from_IRA-2000 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">IRA</Acronym>
@@ -1549,7 +2073,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">Co++ in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co++: 25</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co++: 25</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.000(7)</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1568,7 +2092,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_IRA-2000>
 		<Data_from_JRC-2005 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">JRC</Acronym>
@@ -1594,7 +2118,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">BNM-CEA/DTA/DAMRI/LPRI, Nucl\'{e}ide 2000, Nuclear and Atomic Decay Data Version: 1-98 19/12/98 CD ROM, BNM-LNHB, Gif sur Yvette</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co: 50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co: 50</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">none detected</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="str">Confirmed by measurements carried out at the BIPM</Comments_on_impurities_contained_into_the_solution>
@@ -1613,7 +2137,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_JRC-2005>
 		<Data_from_KRISS-1995 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">KRISS</Acronym>
@@ -1632,14 +2156,14 @@
 			<Particularities_of_the_submission_to_the_SIR type="str">1 sample and 1 measurement method</Particularities_of_the_submission_to_the_SIR>
 			<key name="Activity measured by the laboratory / kBq" type="str">511.6</key>
 			<Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.3</Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
-			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="null"/>
+			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0</Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
 			<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="null"/>
 			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">18/01/1995</key>
 			<key name="Half-life used by the laboratory / d" type="null"/>
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2.6H2O in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.5</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2.6H2O: 46</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2.6H2O: 46</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.0061</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1658,7 +2182,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_KRISS-1995>
 		<Data_from_LNE-LNHB-1978 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">LNE-LNHB</Acronym>
@@ -1684,7 +2208,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 10</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 10</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">0.999</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">&lt;0.02%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1703,7 +2227,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_LNE-LNHB-1978>
 		<Data_from_LNE-LNHB-1986 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">LNE-LNHB</Acronym>
@@ -1729,7 +2253,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 10</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 10</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">0.999</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">&lt;0.01%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1748,7 +2272,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_LNE-LNHB-1986>
 		<Data_from_LNE-LNHB-1999 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">LNE-LNHB</Acronym>
@@ -1767,14 +2291,14 @@
 			<Particularities_of_the_submission_to_the_SIR type="str">1 sample and 1 measurement method</Particularities_of_the_submission_to_the_SIR>
 			<key name="Activity measured by the laboratory / kBq" type="str">2838.9</key>
 			<Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.05</Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
-			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="null"/>
+			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0</Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
 			<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="null"/>
 			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">20/10/1999</key>
 			<key name="Half-life used by the laboratory / d" type="str">1925.2(4)</key>
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">Co in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co++: 10</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co++: 10</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.001</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1793,7 +2317,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_LNE-LNHB-1999>
 		<Data_from_LNE-LNHB-2021 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">LNE-LNHB</Acronym>
@@ -1819,7 +2343,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">B\'{e} M.-M., Chist\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R., Nichols A., Sch\&quot;{o}feld E., Dersch R., \href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol3.pdf}{\textit{Table of radionuclides}, Monographie BIPM-5, 2006, Vol. 3}</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2.6H2O in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co: 45</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co: 45</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">none detected</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1838,7 +2362,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_LNE-LNHB-2021>
 		<Data_from_LNMRI-IRD-1976 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">LNMRI-IRD</Acronym>
@@ -1864,7 +2388,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 17.1</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 17.1</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1883,7 +2407,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_LNMRI-IRD-1976>
 		<Data_from_LNMRI-IRD-1984 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">LNMRI-IRD</Acronym>
@@ -1909,7 +2433,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">Co in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.2</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co: 0.02</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co: 0.02</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.003</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1928,7 +2452,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_LNMRI-IRD-1984>
 		<Data_from_LNMRI-IRD-2021 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">LNMRI-IRD</Acronym>
@@ -1954,7 +2478,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">B\'{e} M.-M., Chist\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R., Nichols A., Sch\&quot;{o}feld E., Dersch R., \href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol3.pdf}{\textit{Table of radionuclides}, Monographie BIPM-5, 2006, Vol. 3}</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 1000</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 1000</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">none detected</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1973,7 +2497,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_LNMRI-IRD-2021>
 		<Data_from_NIM-1978 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NIM</Acronym>
@@ -1999,7 +2523,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 100</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 100</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.0004</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2018,7 +2542,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NIM-1978>
 		<Data_from_NIM-2014 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NIM</Acronym>
@@ -2044,7 +2568,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">B\'{e} M.-M., Chist\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R., Nichols A., Sch\&quot;{o}feld E., Dersch R., \href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol3.pdf}{\textit{Table of radionuclides}, Monographie BIPM-5, 2006, Vol. 3}</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">Co++ in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co++: 10</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co++: 10</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.006</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2063,7 +2587,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NIM-2014>
 		<Data_from_NIST-1980 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NIST</Acronym>
@@ -2076,7 +2600,7 @@
 			<key name="Contributor(s) from the BIPM" type="null"/>
 			<key name="Contributor(s) from the laboratory" type="null"/>
 			<Date_of_reference_specified_by_the_laboratory type="str">1980-05-30 17:00 UTC</Date_of_reference_specified_by_the_laboratory>
-			<key name="Acronym(s) of the measurement method(s)" type="str">4P-PC-BP-NA-GR-CO, 4P-PC-BP-NA-GR-AC</key>
+			<key name="Acronym(s) of the measurement method(s)" type="str">4P-PC-BP-NA-GR-CO &amp; 4P-PC-BP-NA-GR-AC</key>
 			<key name="Description of the measurement method(s)" type="str">4pi beta-gamma coincidence and anticoincidence</key>
 			<key name="Comment(s) on the measurement method(s)" type="null"/>
 			<Particularities_of_the_submission_to_the_SIR type="str">1 sample and 1 measurement method</Particularities_of_the_submission_to_the_SIR>
@@ -2089,7 +2613,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">Co in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co: 50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co: 50</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.015(2)</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2108,7 +2632,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NIST-1980>
 		<Data_from_NIST-1997 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NIST</Acronym>
@@ -2134,7 +2658,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 100</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 100</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2153,7 +2677,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NIST-1997>
 		<Data_from_NIST-2007 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NIST</Acronym>
@@ -2179,7 +2703,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">B\'{e} M.-M., Chist\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R., Nichols A., Sch\&quot;{o}feld E., Dersch R., \href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol3.pdf}{\textit{Table of radionuclides}, Monographie BIPM-5, 2006, Vol. 3}</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">1.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 130</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 130</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.017</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">57Co: 1.5(2)x10-5</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2198,7 +2722,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NIST-2007>
 		<Data_from_NIST-2020 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NIST</Acronym>
@@ -2224,7 +2748,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">B\'{e} M.-M., Chist\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R., Nichols A., Sch\&quot;{o}feld E., Dersch R., \href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol3.pdf}{\textit{Table of radionuclides}, Monographie BIPM-5, 2006, Vol. 3}</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 103</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 103</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">0.999</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2243,7 +2767,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NIST-2020>
 		<Data_from_NMIJ-1976 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NMIJ</Acronym>
@@ -2269,7 +2793,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2:50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2:50</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2288,7 +2812,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NMIJ-1976>
 		<Data_from_NMIJ-2004 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NMIJ</Acronym>
@@ -2314,7 +2838,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 100</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 100</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.002</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2333,7 +2857,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NMIJ-2004>
 		<Data_from_NMISA-1981 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NMISA</Acronym>
@@ -2359,7 +2883,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 540</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 540</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.037</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2378,7 +2902,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NMISA-1981>
 		<Data_from_NMISA-1992 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NMISA</Acronym>
@@ -2404,7 +2928,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">BNM-CEA/DTA/DAMRI/LPRI, Nucl\'{e}ide 2000, Nuclear and Atomic Decay Data Version: 1-98 19/12/98 CD ROM, BNM-LNHB, Gif sur Yvette</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2.6H2O in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co++: 110</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co++: 110</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.0183</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2423,7 +2947,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NMISA-1992>
 		<Data_from_NMISA-2002 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NMISA</Acronym>
@@ -2449,7 +2973,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2.6H2O in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="null"/>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co++: 110</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co++: 110</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.0183</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2468,7 +2992,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NMISA-2002>
 		<Data_from_NMISA-2022 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NMISA</Acronym>
@@ -2494,7 +3018,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">B\'{e} M.-M., Chist\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R., Nichols A., Sch\&quot;{o}feld E., Dersch R., \href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol3.pdf}{\textit{Table of radionuclides}, Monographie BIPM-5, 2006, Vol. 3}</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2.6H2O in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.89</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co++: 99.291</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co++: 99.291</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.018</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">none detected</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2513,7 +3037,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NMISA-2022>
 		<Data_from_NPL-1977 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NPL</Acronym>
@@ -2539,7 +3063,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 50</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2558,7 +3082,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NPL-1977>
 		<Data_from_NPL-2000 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NPL</Acronym>
@@ -2584,7 +3108,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 25</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 25</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2603,7 +3127,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NPL-2000>
 		<Data_from_NPL-2021 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NPL</Acronym>
@@ -2629,7 +3153,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">B\'{e} M.-M., Chist\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R., Nichols A., Sch\&quot;{o}feld E., Dersch R., \href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol3.pdf}{\textit{Table of radionuclides}, Monographie BIPM-5, 2006, Vol. 3}</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co: 100</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co: 100</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">none detected</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2648,7 +3172,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NPL-2021>
 		<Data_from_NRC-2012 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NRC</Acronym>
@@ -2674,7 +3198,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">B\'{e} M.-M., Chist\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R., Nichols A., Sch\&quot;{o}feld E., Dersch R., \href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol3.pdf}{\textit{Table of radionuclides}, Monographie BIPM-5, 2006, Vol. 3}</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 230</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 230</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.000(3)</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">none detected</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2693,7 +3217,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NRC-2012>
 		<Data_from_NRC-2021 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">NRC</Acronym>
@@ -2719,7 +3243,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">B\'{e} M.-M., Chist\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R., Nichols A., Sch\&quot;{o}feld E., Dersch R., \href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol3.pdf}{\textit{Table of radionuclides}, Monographie BIPM-5, 2006, Vol. 3}</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 30</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 30</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.001(3)</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2738,7 +3262,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_NRC-2021>
 		<Data_from_POLATOM-2003 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">POLATOM</Acronym>
@@ -2751,7 +3275,7 @@
 			<key name="Contributor(s) from the BIPM" type="null"/>
 			<key name="Contributor(s) from the laboratory" type="null"/>
 			<Date_of_reference_specified_by_the_laboratory type="str">2003-04-03 12:00 UTC</Date_of_reference_specified_by_the_laboratory>
-			<key name="Acronym(s) of the measurement method(s)" type="str">4P-LS-BP-NA-GR-CO, 4P-LS-BP-NA-GR-AC</key>
+			<key name="Acronym(s) of the measurement method(s)" type="str">4P-LS-BP-NA-GR-CO &amp; 4P-LS-BP-NA-GR-AC</key>
 			<key name="Description of the measurement method(s)" type="str">4pi beta(LS)-gamma coincidence and anticoincidence</key>
 			<key name="Comment(s) on the measurement method(s)" type="str">see details in \cite{Chylinski_2000}</key>
 			<Particularities_of_the_submission_to_the_SIR type="str">1 sample and 1 measurement method</Particularities_of_the_submission_to_the_SIR>
@@ -2764,7 +3288,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">Sch\&quot;{o}tzig U. and Schrader H., Halbwertszeiten und Photonen-Emissionwahrscheinlichkeiten von h\&quot;{a}ufig verwendeten Radionukliden, PTB-Bericht, PTB-Ra-16/5, Braunschweig, September 1998</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">Co: 25</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Co: 25</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">&lt;0.1%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2783,7 +3307,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_POLATOM-2003>
 		<Data_from_POLATOM-2021 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">POLATOM</Acronym>
@@ -2809,7 +3333,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">B\'{e} M.-M., Chist\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R., Nichols A., Sch\&quot;{o}feld E., Dersch R., \href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol3.pdf}{\textit{Table of radionuclides}, Monographie BIPM-5, 2006, Vol. 3}</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 25</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 25</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">56Co &lt; 5.08x10-4, 57Co &lt; 9.22x10-5, 58Co &lt; 6.38x10-4, 59Fe &lt; 6.05x10-4</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="str">Minimum detectable activity values</Comments_on_impurities_contained_into_the_solution>
@@ -2828,7 +3352,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_POLATOM-2021>
 		<Data_from_PTB-1977 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">PTB</Acronym>
@@ -2854,16 +3378,16 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 50</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
 			<key name="Mass of the solution /g" type="str">3.6700, 3.6169</key>
-			<Number_of_the_radium_source_used_by_the_SIR type="str">4,4</Number_of_the_radium_source_used_by_the_SIR>
+			<Number_of_the_radium_source_used_by_the_SIR type="str">4, 4</Number_of_the_radium_source_used_by_the_SIR>
 			<key name="Equivalent activity measured by the SIR / kBq" type="str">7062, 7060</key>
-			<key name="Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4" type="str">5,5</key>
+			<key name="Relative standard uncertainty (SIR contribution) of the equivalent activity / 1e-4" type="str">5, 5</key>
 			<Comments_on_the_SIR_measurement type="null"/>
-			<key name="Combined standard uncertainty of the equivalent activity / kBq" type="str">6,6</key>
+			<key name="Combined standard uncertainty of the equivalent activity / kBq" type="str">6, 6</key>
 			<Number_of_the_equivalent_activity_measurement_retained_for_the_degree_of_equivalence type="null"/>
 			<Specified_equivalent_activity_for_the_degree_of_equivalence type="null"/>
 			<Specified_equivalent_activity_for_the_key_comparison_reference_value type="null"/>
@@ -2873,7 +3397,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_PTB-1977>
 		<Data_from_PTB-1988 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">PTB</Acronym>
@@ -2899,7 +3423,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 50</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2918,7 +3442,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_PTB-1988>
 		<Data_from_PTB-2001 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">PTB</Acronym>
@@ -2944,7 +3468,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 50</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -2963,7 +3487,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_PTB-2001>
 		<Data_from_PTB-2017 type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">PTB</Acronym>
@@ -2989,7 +3513,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 50</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -3008,7 +3532,7 @@
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_PTB-2017>
 		<Data_from_PTB-2020 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">PTB</Acronym>
@@ -3035,7 +3559,7 @@ that cannot be identified by gamma spectrometry</key>
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">Sch\&quot;{o}tzig U. and Schrader H., Halbwertszeiten und Photonen-Emissionwahrscheinlichkeiten von h\&quot;{a}ufig verwendeten Radionukliden, PTB-Bericht, PTB-Ra-16/5, Braunschweig, September 1998</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 50</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">none detected</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -3054,7 +3578,7 @@ that cannot be identified by gamma spectrometry</key>
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_PTB-2020>
 		<Data_from_PTKMR-1984 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">PTKMR</Acronym>
@@ -3073,14 +3597,14 @@ that cannot be identified by gamma spectrometry</key>
 			<Particularities_of_the_submission_to_the_SIR type="str">Several samples and 1 measurement method</Particularities_of_the_submission_to_the_SIR>
 			<key name="Activity measured by the laboratory / kBq" type="str">1014, 1019</key>
 			<Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0.4, 0.4</Type_A_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
-			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="null"/>
+			<Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="str">0, 0</Type_B_evaluation_of_the_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory>
 			<Combined_relative_standard_uncertainty_of_the_activity_measured_by_the_laboratory type="null"/>
 			<key name="Date of the measurement by the BIPM international reference system (SIR)" type="str">22/06/1984</key>
 			<key name="Half-life used by the laboratory / d" type="null"/>
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2.6H2O in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2.6H2O: 50.5</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2.6H2O: 50.5</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">0.990(1)</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -3099,7 +3623,7 @@ that cannot be identified by gamma spectrometry</key>
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_PTKMR-1984>
 		<Data_from_SMU-2020 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">SMU</Acronym>
@@ -3125,7 +3649,7 @@ that cannot be identified by gamma spectrometry</key>
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">B\'{e} M.-M., Chist\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R., Nichols A., Sch\&quot;{o}feld E., Dersch R., \href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol3.pdf}{\textit{Table of radionuclides}, Monographie BIPM-5, 2006, Vol. 3}</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 160</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 160</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -3144,7 +3668,7 @@ that cannot be identified by gamma spectrometry</key>
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_SMU-2020>
 		<key name="Data from TENMAK-N&quot;UKEN-2018" type="dict">
-			<key name="A: KCRV" type="str">0</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="str">TENMAK-N\&quot;UKEN</Laboratory>
 			<key name="Contributor(s) from the BIPM" type="str">C.Michotte, S.Courte, N.Nonis, R. Coulon, S. Judge</key>
@@ -3163,7 +3687,7 @@ that cannot be identified by gamma spectrometry</key>
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">CoCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="str">CoCl2: 50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">CoCl2: 50</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -3182,7 +3706,7 @@ that cannot be identified by gamma spectrometry</key>
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</key>
 		<Data_from_VNIIM-2019 type="dict">
-			<key name="A: KCRV" type="str">1</key>
+			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">True</key>
 			<Laboratory type="dict">
 				<Acronym type="str">VNIIM</Acronym>
@@ -3208,7 +3732,7 @@ that cannot be identified by gamma spectrometry</key>
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">HNO3</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">2</key>
-			<key name="T: Carrier Conc.  (‘g.g-1)" type="null"/>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="null"/>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.065</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">&lt; 0.01 %</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>

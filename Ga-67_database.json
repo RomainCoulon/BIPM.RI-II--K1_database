@@ -1,9 +1,11 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2022-10-04",
+    "Release date": "2023-09-20",
+    "Note": "This version of the machine-readable comparison report is not definitive. The format is under discussion within the CCRI and CIPM to best reflect the requirements of ionizing radiation metrology and to conform to the SI digital framework. Users can use this document to analyse key comparison data and metadata more efficiently with their software. However, users should bear in mind that the format will necessarily evolve in subsequent updates of this key comparison, which will not guarantee the long-term compatibility of their interface. ", 
     "References":{
-        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
+        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 ",
+        " [2] ": " Romain Coulon et al 2023 Meas. Sci. Technol. 34 074009 - https://doi.org/10.1088/1361-6501/accd0b "
         },
     "Contact persons":{
         " Dr Romain Coulon": " romain.coulon@bipm.org ",
@@ -18,7 +20,42 @@
         "Key Comparison Reference Value (KCRV)": "116040(520) kBq",
         "Reference of the published comparison report": "Ratel G. and  Michotte C., BIPM comparison BIPM.RI(II)-K1.Ga-67 of the activity measurements of the radionuclide $^{67}$Ga, \\href{https://doi.org/10.1088/0026-1394/40/1A/06014}{\\textit{Metrologia}, 2003, \\textbf{40}, Tech. Suppl., 06014}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "CMI" : {
+                "D_i" : 2.8,
+                "U_i" : 1.9
+            },
+            "LNE-LNHB" : {
+                "D_i" : -1.4,
+                "U_i" : 1.0
+            },
+            "NPL" : {
+                "D_i" : 0.0,
+                "U_i" : 2.4
+            },
+            "NMISA" : {
+                "D_i" : 0.4,
+                "U_i" : 0.8
+            },
+            "BKFH" : {
+                "D_i" : -0.8,
+                "U_i" : 1.2
+            },
+            "NIST" : {
+                "D_i" : 0.2,
+                "U_i" : 0.9
+            },
+            "NMIJ" : {
+                "D_i" : -0.9,
+                "U_i" : 0.9
+            },
+            "CIEMAT" : {
+                "D_i" : 1.9,
+                "U_i" : 2.2
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Ga-67(2003)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Ga-67",
@@ -26,7 +63,42 @@
         "Key Comparison Reference Value (KCRV)": "116040(520) kBq",
         "Reference of the published comparison report": "Ratel G. and  Michotte C., Los Arcos, International Bureau of Weights and Measures (BIPM), Activity measurements of the radionuclide $^{67}$Ga for the CIEMAT in the BIPM comparison BIPM.RI(II)-K1.Ga-67, \\href{https://doi.org/10.1088/0026-1394/40/1A/06018}{\\textit{Metrologia}, 2003, \\textbf{40}, Tech. Suppl., 06018}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "CMI" : {
+                "D_i" : 2.8,
+                "U_i" : 1.9
+            },
+            "LNE-LNHB" : {
+                "D_i" : -1.4,
+                "U_i" : 1.0
+            },
+            "NPL" : {
+                "D_i" : 0.0,
+                "U_i" : 2.4
+            },
+            "NMISA" : {
+                "D_i" : 0.4,
+                "U_i" : 0.8
+            },
+            "BKFH" : {
+                "D_i" : -0.8,
+                "U_i" : 1.2
+            },
+            "NIST" : {
+                "D_i" : 0.2,
+                "U_i" : 0.9
+            },
+            "NMIJ" : {
+                "D_i" : -0.9,
+                "U_i" : 0.9
+            },
+            "CIEMAT" : {
+                "D_i" : 1.9,
+                "U_i" : 2.2
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Ga-67(2006)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Ga-67",
@@ -34,7 +106,42 @@
         "Key Comparison Reference Value (KCRV)": "116190(560) kBq",
         "Reference of the published comparison report": "Ratel G., Michotte C., Bobin C., Moune M., Coursol N., Update of the ongoing comparison BIPM.RI(II)-K1.Ga-67 to include the activity measurements of the LNE/LNHB, France, \\href{https://doi.org/10.1088/0026-1394/43/1A/06008}{\\textit{Metrologia}, 2006, \\textbf{43}, Tech. Suppl., 06008}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "CMI" : {
+                "D_i" : 2.6,
+                "U_i" : 2.0
+            },
+            "NPL" : {
+                "D_i" : -0.2,
+                "U_i" : 2.5
+            },
+            "NMISA" : {
+                "D_i" : 0.2,
+                "U_i" : 0.7
+            },
+            "BKFH" : {
+                "D_i" : -1.0,
+                "U_i" : 1.2
+            },
+            "NIST" : {
+                "D_i" : 0,
+                "U_i" : 0.9
+            },
+            "NMIJ" : {
+                "D_i" : -1.0,
+                "U_i" : 0.9
+            },
+            "CIEMAT" : {
+                "D_i" : 1.8,
+                "U_i" : 1.9
+            },
+            "LNE-LNHB" : {
+                "D_i" : -2.4,
+                "U_i" : 0.8
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Ga-67(2020)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Ga-67",
@@ -73,7 +180,7 @@
         "Laboratory": {
             "Acronym": "BKFH",
             "Full name": "Government Office of the Capital City Budapest",
-            "Address": "Németvölgyi Ùt 37-39 H-1124 Budapest",
+            "Address": "Nemetvölgyi Ut 37-39 H-1124 Budapest",
             "Country": "Hungary",
             "Regional Metrology Organization (RMO)": "EURAMET",
             "Old acronyms": "OMH, MKEH"
@@ -92,7 +199,7 @@
         "Date of the measurement by the BIPM international reference system (SIR)": "30/11/1995",
         "Half-life used by the laboratory / d": "3.26154(54) ",
         "Reference for the decay data used by the laboratory": "Sch\\\"{o}tzig U. and Schrader H., Halbwertszeiten und Photonen-Emissionwahrscheinlichkeiten von h\\\"{a}ufig verwendeten Radionukliden, PTB-Bericht, PTB-Ra-16/3, Braunschweig, September 1989",
-        "Chemical composition of the solution": "Ga citrate in NaCl solution",
+        "Chemical composition of the solution": "Ga citrate in NaCl",
         "Solvent concentration of the solution / (mol.dm-3)": null,
         "Carrier concentration of the solution / (µg.g-1)": "NaCl: 8000",
         "Density of the solution / (g.cm-3)": null,
@@ -117,7 +224,7 @@
         "Eligible for Degree of Equivalence (DoE)": true,
         "Laboratory": {
             "Acronym": "CIEMAT",
-            "Full name": "Centro de Investigaciones Energéticas, Medioambientales y Tecnologicas",
+            "Full name": "Centro de Investigaciones Energeticas, Medioambientales y Tecnologicas",
             "Address": "H-1124 Budapest",
             "Country": "Spain",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -157,10 +264,17 @@
         "Initials of the person(s) who verified the data plus the date": "SC (06/05/2020)",
         "Status of the data": "Published with the key comparison BIPM.RI(II)-K1"
     },
-    "Data from CMI-IIR-1981": {
+    "Data from CMI-1981": {
         "Eligible for the Key Comparison Reference Value (KCRV)": true,
         "Eligible for Degree of Equivalence (DoE)": false,
-        "Laboratory": "CMI-IIR",
+        "Laboratory": {
+            "Acronym": "CMI",
+            "Full name": "Czech Metrological Institute",
+            "Address": "",
+            "Country": "Czechia",
+            "Regional Metrology Organization (RMO)": "EURAMET",
+            "Old acronyms": "UVVVR, CMI-IIR"
+            },
         "Contributor(s) from the BIPM": null,
         "Contributor(s) from the laboratory": null,
         "Date of reference specified by the laboratory": "1981-04-08 12:00 UT",
@@ -200,7 +314,7 @@
         "Eligible for Degree of Equivalence (DoE)": false,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -222,7 +336,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "Ga citrate and NaCl in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "0.1",
-        "Carrier concentration of the solution / (µg.g-1)": "NaCl: 180",
+        "Carrier concentration of the solution / (µg.g-1)": "GaC6O7H5: ?, NaCl: 180",
         "Density of the solution / (g.cm-3)": "1.006",
         "Relative activity of impurities contained into the solution": "57Co: 5.1(10)x10-4 %, 60Co: 7.2(15)x10-4 %",
         "Comments on impurities contained into the solution": null,
@@ -245,7 +359,7 @@
         "Eligible for Degree of Equivalence (DoE)": true,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -310,7 +424,7 @@
         "Date of the measurement by the BIPM international reference system (SIR)": "05/05/1983",
         "Half-life used by the laboratory / d": null,
         "Reference for the decay data used by the laboratory": null,
-        "Chemical composition of the solution": "Ga citrate in NaCl solution",
+        "Chemical composition of the solution": "Ga citrate in NaCl",
         "Solvent concentration of the solution / (mol.dm-3)": null,
         "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": null,
@@ -606,7 +720,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
+            "Address": "15 Lower Hope Road, Rosebank, Cape Town, 7700",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -625,7 +739,7 @@
         "Date of the measurement by the BIPM international reference system (SIR)": "28/10/1986",
         "Half-life used by the laboratory / d": "3.261",
         "Reference for the decay data used by the laboratory": null,
-        "Chemical composition of the solution": "Na citrate in HCl",
+        "Chemical composition of the solution": "Na citrate and Ga in HCl",
         "Solvent concentration of the solution / (mol.dm-3)": "1",
         "Carrier concentration of the solution / (µg.g-1)": "Na3C6O7H5. 2H2O: 2600, Ga: 100",
         "Density of the solution / (g.cm-3)": "1.0143",

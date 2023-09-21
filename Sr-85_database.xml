@@ -2,9 +2,11 @@
 <all>
 	<General_information type="dict">
 		<Content type="str">This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.</Content>
-		<Release_date type="str">2022-10-04</Release_date>
+		<Release_date type="str">2023-09-21</Release_date>
+		<Note type="str">This version of the machine-readable comparison report is not definitive. The format is under discussion within the CCRI and CIPM to best reflect the requirements of ionizing radiation metrology and to conform to the SI digital framework. Users can use this document to analyse key comparison data and metadata more efficiently with their software. However, users should bear in mind that the format will necessarily evolve in subsequent updates of this key comparison, which will not guarantee the long-term compatibility of their interface. </Note>
 		<References type="dict">
 			<key name=" [1] " type="str"> Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 </key>
+			<key name=" [2] " type="str"> Romain Coulon et al 2023 Meas. Sci. Technol. 34 074009 - https://doi.org/10.1088/1361-6501/accd0b </key>
 		</References>
 		<Contact_persons type="dict">
 			<_Dr_Romain_Coulon type="str"> romain.coulon@bipm.org </_Dr_Romain_Coulon>
@@ -20,6 +22,41 @@
 			<Reference_of_the_published_comparison_report type="str">Ratel G. and  Michotte C., BIPM comparison BIPM.RI(II)-K1.Sr-85 of activity measurements of the radionuclide $^{85}$Sr, \href{https://doi.org/10.1088/0026-1394/41/1A/06006}{\textit{Metrologia}, 2004, \textbf{41}, Tech. Suppl., 06006}</Reference_of_the_published_comparison_report>
 			<key name="Editorial assistant(s)" type="null"/>
 			<Comments_on_the_publication type="null"/>
+			<Unit type="str">MBq</Unit>
+			<Degrees_of_Equivalence type="dict">
+				<BIPM type="dict">
+					<D_i type="float">0.02</D_i>
+					<U_i type="float">0.6</U_i>
+				</BIPM>
+				<NPL type="dict">
+					<D_i type="float">-0.03</D_i>
+					<U_i type="float">0.37</U_i>
+				</NPL>
+				<CMI type="dict">
+					<D_i type="float">-0.06</D_i>
+					<U_i type="float">0.27</U_i>
+				</CMI>
+				<BKFH type="dict">
+					<D_i type="float">0.2</D_i>
+					<U_i type="float">0.21</U_i>
+				</BKFH>
+				<NMIJ type="dict">
+					<D_i type="float">-0.1</D_i>
+					<U_i type="float">0.27</U_i>
+				</NMIJ>
+				<LNE-LNHB type="dict">
+					<D_i type="float">-0.17</D_i>
+					<U_i type="float">0.17</U_i>
+				</LNE-LNHB>
+				<PTB type="dict">
+					<D_i type="float">0.11</D_i>
+					<U_i type="float">0.15</U_i>
+				</PTB>
+				<NIST type="dict">
+					<D_i type="float">0.13</D_i>
+					<U_i type="float">0.22</U_i>
+				</NIST>
+			</Degrees_of_Equivalence>
 		</key>
 		<key name="Key comparison BIPM.RI(II)-K1.Sr-85(2005)" type="dict">
 			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Sr-85</Name_of_the_comparison>
@@ -28,6 +65,41 @@
 			<Reference_of_the_published_comparison_report type="str">Ratel G., Michotte C. and Hino Y., Activity measurements of the radionuclide $^{85}$Sr for the NMIJ, Japan in the ongoing comparison BIPM.RI(II)-K1.Sr-85, \href{https://doi.org/10.1088/0026-1394/42/1A/06010}{\textit{Metrologia}, 2005, \textbf{42}, Tech. Suppl., 06010}</Reference_of_the_published_comparison_report>
 			<key name="Editorial assistant(s)" type="null"/>
 			<Comments_on_the_publication type="null"/>
+			<Unit type="str">MBq</Unit>
+			<Degrees_of_Equivalence type="dict">
+				<BIPM type="dict">
+					<D_i type="float">0.02</D_i>
+					<U_i type="float">0.6</U_i>
+				</BIPM>
+				<NPL type="dict">
+					<D_i type="float">-0.03</D_i>
+					<U_i type="float">0.37</U_i>
+				</NPL>
+				<CMI type="dict">
+					<D_i type="float">-0.06</D_i>
+					<U_i type="float">0.27</U_i>
+				</CMI>
+				<BKFH type="dict">
+					<D_i type="float">0.2</D_i>
+					<U_i type="float">0.21</U_i>
+				</BKFH>
+				<LNE-LNHB type="dict">
+					<D_i type="float">-0.17</D_i>
+					<U_i type="float">0.17</U_i>
+				</LNE-LNHB>
+				<PTB type="dict">
+					<D_i type="float">0.11</D_i>
+					<U_i type="float">0.15</U_i>
+				</PTB>
+				<NIST type="dict">
+					<D_i type="float">0.13</D_i>
+					<U_i type="float">0.22</U_i>
+				</NIST>
+				<NMIJ type="dict">
+					<D_i type="float">0.18</D_i>
+					<U_i type="float">0.32</U_i>
+				</NMIJ>
+			</Degrees_of_Equivalence>
 		</key>
 		<key name="Key comparison BIPM.RI(II)-K1.Sr-85(2015)" type="dict">
 			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Sr-85</Name_of_the_comparison>
@@ -36,6 +108,25 @@
 			<Reference_of_the_published_comparison_report type="str">Michotte C. Ratel G., Courte S., Dziel T. and Listkowska A., Update of the BIPM comparison BIPM.RI(II)-K1.Sr-85 of activity measurements of the radionuclide $^{85}$Sr to include the 2009 result of the POLATOM (Poland), \href{https://doi.org/10.1088/0026-1394/52/1A/06022 }{\textit{Metrologia}, 2015, \textbf{52}, Tech. Suppl., 06022}</Reference_of_the_published_comparison_report>
 			<key name="Editorial assistant(s)" type="null"/>
 			<Comments_on_the_publication type="null"/>
+			<Unit type="str">MBq</Unit>
+			<Degrees_of_Equivalence type="dict">
+				<PTB type="dict">
+					<D_i type="float">0.09</D_i>
+					<U_i type="float">0.12</U_i>
+				</PTB>
+				<NIST type="dict">
+					<D_i type="float">0.11</D_i>
+					<U_i type="float">0.2</U_i>
+				</NIST>
+				<NMIJ type="dict">
+					<D_i type="float">0.16</D_i>
+					<U_i type="float">0.31</U_i>
+				</NMIJ>
+				<POLATOM type="dict">
+					<D_i type="float">0.16</D_i>
+					<U_i type="float">0.33</U_i>
+				</POLATOM>
+			</Degrees_of_Equivalence>
 		</key>
 		<key name="Key comparison BIPM.RI(II)-K1.Sr-85(2020)" type="dict">
 			<Name_of_the_comparison type="str">BIPM.RI(II)-K1.Sr-85</Name_of_the_comparison>
@@ -91,7 +182,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">Sr in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">3</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="null"/>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Sr:?</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.045</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -115,7 +206,7 @@
 			<Laboratory type="dict">
 				<Acronym type="str">BKFH</Acronym>
 				<Full_name type="str">Government Office of the Capital City Budapest</Full_name>
-				<Address type="str">Németvölgyi Ùt 37-39 H-1124 Budapest</Address>
+				<Address type="str">Nemetvölgyi Ut 37-39 H-1124 Budapest</Address>
 				<Country type="str">Hungary</Country>
 				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
 				<Old_acronyms type="str">OMH, MKEH</Old_acronyms>
@@ -136,7 +227,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">BNM-CEA, Table de Radionucl\'{e}ides, Version 1975, BNM-LNHB, Gif-sur-Yvette</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">Sr in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">Sr:25</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Sr:25</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">84Rb: 1.2(3)x10-2%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -160,7 +251,7 @@
 			<Laboratory type="dict">
 				<Acronym type="str">BKFH</Acronym>
 				<Full_name type="str">Government Office of the Capital City Budapest</Full_name>
-				<Address type="str">Németvölgyi Ùt 37-39 H-1124 Budapest</Address>
+				<Address type="str">Nemetvölgyi Ut 37-39 H-1124 Budapest</Address>
 				<Country type="str">Hungary</Country>
 				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
 				<Old_acronyms type="str">OMH, MKEH</Old_acronyms>
@@ -181,7 +272,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">BNM-CEA, Table de Radionucl\'{e}ides, Version 1982, BNM-LNHB, Gif-sur-Yvette</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:28</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:28</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">84Rb: 5.3(13)x10-2%, 86Rb: 3(1)x10-4%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -205,7 +296,7 @@
 			<Laboratory type="dict">
 				<Acronym type="str">BKFH</Acronym>
 				<Full_name type="str">Government Office of the Capital City Budapest</Full_name>
-				<Address type="str">Németvölgyi Ùt 37-39 H-1124 Budapest</Address>
+				<Address type="str">Nemetvölgyi Ut 37-39 H-1124 Budapest</Address>
 				<Country type="str">Hungary</Country>
 				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
 				<Old_acronyms type="str">OMH, MKEH</Old_acronyms>
@@ -226,7 +317,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="str">BNM-CEA, Table de Radionucl\'{e}ides, Version 1982, BNM-LNHB, Gif-sur-Yvette</Reference_for_the_decay_data_used_by_the_laboratory>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:30</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:30</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">84Rb: 1.1(3)x10-2%, 86Rb: 2.0(6)x10-4%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -250,7 +341,7 @@
 			<Laboratory type="dict">
 				<Acronym type="str">BKFH</Acronym>
 				<Full_name type="str">Government Office of the Capital City Budapest</Full_name>
-				<Address type="str">Németvölgyi Ùt 37-39 H-1124 Budapest</Address>
+				<Address type="str">Nemetvölgyi Ut 37-39 H-1124 Budapest</Address>
 				<Country type="str">Hungary</Country>
 				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
 				<Old_acronyms type="str">OMH, MKEH</Old_acronyms>
@@ -271,7 +362,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:25</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:25</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">84Rb: 1.5(3)x10-2%, 86Rb: 2.0(6)x10-4%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -289,10 +380,17 @@
 			<key name="Initials of the person(s) who verified the data plus the date" type="str">SC (17/04/2020)</key>
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
 		</Data_from_BKFH-1994>
-		<Data_from_CMI-IIR-1978 type="dict">
+		<Data_from_CMI-1978 type="dict">
 			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
-			<Laboratory type="str">CMI-IIR</Laboratory>
+			<Laboratory type="dict">
+				<Acronym type="str">CMI</Acronym>
+				<Full_name type="str">Czech Metrological Institute</Full_name>
+				<Address type="str"/>
+				<Country type="str">Czechia</Country>
+				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
+				<Old_acronyms type="str">UVVVR, CMI-IIR</Old_acronyms>
+			</Laboratory>
 			<key name="Contributor(s) from the BIPM" type="null"/>
 			<key name="Contributor(s) from the laboratory" type="null"/>
 			<Date_of_reference_specified_by_the_laboratory type="str">1978-10-13 11:00 UT</Date_of_reference_specified_by_the_laboratory>
@@ -309,7 +407,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.08</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:20</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:20</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">&lt; 0.1%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -326,11 +424,18 @@
 			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">SJ (16/04/2020)</Initials_of_the_person_who_entered_the_data_plus_the_date>
 			<key name="Initials of the person(s) who verified the data plus the date" type="str">SC (17/04/2020)</key>
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
-		</Data_from_CMI-IIR-1978>
-		<Data_from_CMI-IIR-1982 type="dict">
+		</Data_from_CMI-1978>
+		<Data_from_CMI-1982 type="dict">
 			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">True</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
-			<Laboratory type="str">CMI-IIR</Laboratory>
+			<Laboratory type="dict">
+				<Acronym type="str">CMI</Acronym>
+				<Full_name type="str">Czech Metrological Institute</Full_name>
+				<Address type="str"/>
+				<Country type="str">Czechia</Country>
+				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
+				<Old_acronyms type="str">UVVVR, CMI-IIR</Old_acronyms>
+			</Laboratory>
 			<key name="Contributor(s) from the BIPM" type="null"/>
 			<key name="Contributor(s) from the laboratory" type="null"/>
 			<Date_of_reference_specified_by_the_laboratory type="str">1982-11-15 00:00 UT</Date_of_reference_specified_by_the_laboratory>
@@ -347,7 +452,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:20</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:20</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">84Rb: 4.7(5)x10-2%, 86Rb: 5(1)x10-3%,89Sr: 1.9(8)x10-1%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -364,13 +469,13 @@
 			<Initials_of_the_person_who_entered_the_data_plus_the_date type="str">SJ (16/04/2020)</Initials_of_the_person_who_entered_the_data_plus_the_date>
 			<key name="Initials of the person(s) who verified the data plus the date" type="str">SC (17/04/2020)</key>
 			<Status_of_the_data type="str">Published with the key comparison BIPM.RI(II)-K1</Status_of_the_data>
-		</Data_from_CMI-IIR-1982>
+		</Data_from_CMI-1982>
 		<Data_from_LNE-LNHB-1984 type="dict">
 			<key name="Eligible for the Key Comparison Reference Value (KCRV)" type="bool">False</key>
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">LNE-LNHB</Acronym>
-				<Full_name type="str">Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel</Full_name>
+				<Full_name type="str">Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel</Full_name>
 				<Address type="str">F-91120 Palaiseau</Address>
 				<Country type="str">France</Country>
 				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
@@ -392,7 +497,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:10</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:10</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">0.999</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">89Sr: 4.6(3)x10-1%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -415,7 +520,7 @@
 			<key name="Eligible for Degree of Equivalence (DoE)" type="bool">False</key>
 			<Laboratory type="dict">
 				<Acronym type="str">LNE-LNHB</Acronym>
-				<Full_name type="str">Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel</Full_name>
+				<Full_name type="str">Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel</Full_name>
 				<Address type="str">F-91120 Palaiseau</Address>
 				<Country type="str">France</Country>
 				<key name="Regional Metrology Organization (RMO)" type="str">EURAMET</key>
@@ -437,7 +542,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:90</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:90</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.016</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">84Rb: 5.5(10)x10-2%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -482,7 +587,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="null"/>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="null"/>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="null"/>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -527,7 +632,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">Sr in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">Sr:29</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">Sr:29</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.016(2)</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">84Rb: 9.5(19)x10-2%, 86Rb: 1.7(3)x10-1%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -572,7 +677,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:36</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:36</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.016</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -617,7 +722,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:46000</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:46000</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.057(1)</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -662,7 +767,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:50</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -707,7 +812,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:50</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -752,7 +857,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:100</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:100</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.002</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -797,7 +902,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:30</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:30</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1.0015</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -842,7 +947,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:45</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:45</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">&lt; 0.1%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -887,7 +992,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:30</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:30</key>
 			<key name="Density of the solution / (g.cm-3)" type="null"/>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">&lt; 6x10-2%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -932,7 +1037,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:30</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:30</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -977,7 +1082,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2:30</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2:30</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">0.9985</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="null"/>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>
@@ -1022,7 +1127,7 @@
 			<Reference_for_the_decay_data_used_by_the_laboratory type="null"/>
 			<Chemical_composition_of_the_solution type="str">SrCl2 in HCl</Chemical_composition_of_the_solution>
 			<key name="Solvent concentration of the solution / (mol.dm-3)" type="str">0.1</key>
-			<key name="T: Carrier Conc.  (Âµg.g-1)" type="str">SrCl2.6H2O:50</key>
+			<key name="Carrier concentration of the solution / (µg.g-1)" type="str">SrCl2.6H2O:50</key>
 			<key name="Density of the solution / (g.cm-3)" type="str">1</key>
 			<Relative_activity_of_impurities_contained_into_the_solution type="str">84Rb: 1.79(7)x10-2%,22Na: 1.06(4)x10-2%,59Fe: 1.25(27)x10-3%</Relative_activity_of_impurities_contained_into_the_solution>
 			<Comments_on_impurities_contained_into_the_solution type="null"/>

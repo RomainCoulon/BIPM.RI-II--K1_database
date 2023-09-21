@@ -1,9 +1,11 @@
 {
 "General information":{
     "Content": "This database contains data from international key comparisons for radionuclide metrology since the inception of the international system of reference (SIR) for radionuclide metrology at the BIPM in 1976.",
-    "Release date": "2022-10-04",
+    "Release date": "2023-09-21",
+    "Note": "This version of the machine-readable comparison report is not definitive. The format is under discussion within the CCRI and CIPM to best reflect the requirements of ionizing radiation metrology and to conform to the SI digital framework. Users can use this document to analyse key comparison data and metadata more efficiently with their software. However, users should bear in mind that the format will necessarily evolve in subsequent updates of this key comparison, which will not guarantee the long-term compatibility of their interface. ", 
     "References":{
-        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 "
+        " [1] ": " Romain Coulon et al 2022 Meas. Sci. Technol. 33 024003 - https://doi.org/10.1088/1361-6501/ac3fc4 ",
+        " [2] ": " Romain Coulon et al 2023 Meas. Sci. Technol. 34 074009 - https://doi.org/10.1088/1361-6501/accd0b "
         },
     "Contact persons":{
         " Dr Romain Coulon": " romain.coulon@bipm.org ",
@@ -18,7 +20,34 @@
         "Key Comparison Reference Value (KCRV)": "314.0(18) MBq",
         "Reference of the published comparison report": "Ratel G., Michotte C., BIPM comparison BIPM.RI(II)-K1.Tl-201 of activity measurements of the radionuclide $^{201}$Tl, \\href{https://doi.org/10.1088/0026-1394/41/1A/06015}{\\textit{Metrologia}, 2004, \\textbf{41}, Tech. Suppl., 06015}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "PTB" : {
+                "D_i" : -6.0,
+                "U_i" : 3.7
+            },
+            "LNE-LNHB" : {
+                "D_i" : -14.3,
+                "U_i" : 5.5
+            },
+            "NMISA" : {
+                "D_i" : -1.8,
+                "U_i" : 3.4
+            },
+            "ANSTO" : {
+                "D_i" : -8.5,
+                "U_i" : 21.1
+            },
+            "BKFH" : {
+                "D_i" : 0.3,
+                "U_i" : 6.9
+            },
+            "NIST" : {
+                "D_i" : 3.7,
+                "U_i" : 3.0
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Tl-201(2008)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Tl-201",
@@ -26,7 +55,38 @@
         "Key Comparison Reference Value (KCRV)": "312.8(13) MBq",
         "Reference of the published comparison report": "Ratel G., Michotte C., Moune M., Bobin C., Kossert K., Johansson L., Activity measurements of the radionuclide $^{201}$Tl for the LNE-LNHB, France, PTB, Germany and the NPL, UK in the ongoing comparison BIPM.RI(II)-K1.Tl-201, \\href{http://www.iopscience.iop.org/0026-1394/45/1A/06008/}{\\textit{Metrologia}, 2008, \\textbf{45}, Tech. Suppl., 06008}",
         "Editorial assistant(s)": null,
-        "Comments on the publication": null
+        "Comments on the publication": null,
+        "Unit": "MBq",
+        "Degrees of Equivalence" : {
+            "NMISA" : {
+                "D_i" : -0.3,
+                "U_i" : 3.3
+            },
+            "ANSTO" : {
+                "D_i" : -7.8,
+                "U_i" : 22.1
+            },
+            "BKFH" : {
+                "D_i" : 1.6,
+                "U_i" : 7.1
+            },
+            "NIST" : {
+                "D_i" : 5.1,
+                "U_i" : 2.8
+            },
+            "LNE-LNHB" : {
+                "D_i" : -4.8,
+                "U_i" : 2.8
+            },
+            "PTB" : {
+                "D_i" : -0.3,
+                "U_i" : 4.3
+            },
+            "NPL" : {
+                "D_i" : -1.5,
+                "U_i" : 3.0
+            }
+        }
     },
     "Key comparison BIPM.RI(II)-K1.Tl-201(2020)": {
         "Name of the comparison": "BIPM.RI(II)-K1.Tl-201",
@@ -61,7 +121,7 @@
         "Laboratory": {
             "Acronym": "ANSTO",
             "Full name": "Australian Nuclear Science and Technology Organisation",
-            "Address": "",
+            "Address": "New Illawarra Road, Lucas Heights 2234 NSW",
             "Country": "Australia",
             "Regional Metrology Organization (RMO)": "APMP",
             "Old acronyms": "AAEC"
@@ -82,7 +142,7 @@
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "TlCl",
         "Solvent concentration of the solution / (mol.dm-3)": null,
-        "Carrier concentration of the solution / (µg.g-1)": "Tl",
+        "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": "200Tl: 0.22(2)%, 202Tl: 0.17(2)%",
         "Comments on impurities contained into the solution": null,
@@ -106,7 +166,7 @@
         "Laboratory": {
             "Acronym": "BKFH",
             "Full name": "Government Office of the Capital City Budapest",
-            "Address": "Németvölgyi Ùt 37-39 H-1124 Budapest",
+            "Address": "Nemetvölgyi Ut 37-39 H-1124 Budapest",
             "Country": "Hungary",
             "Regional Metrology Organization (RMO)": "EURAMET",
             "Old acronyms": "OMH, MKEH"
@@ -126,7 +186,7 @@
         "Half-life used by the laboratory / d": "3.043(3)",
         "Reference for the decay data used by the laboratory": "Schrader H., 1989 Measurement of the half lives of $^{18}$F, $^{56}$Co, $^{125}$I, $^{195}$Au and $^{201}$Tl International Journal of Applied Radiation and Isotopes 40 381-383",
         "Chemical composition of the solution": "TlCl in isotonic NaCl",
-        "Solvent concentration of the solution / (mol.dm-3)": "NaCl 9000  \\si{\\micro g.g^{-1}}",
+        "Solvent concentration of the solution / (mol.dm-3)": "9000  \\si{\\micro g.g^{-1}}",
         "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": "200Tl: 0.009(2)%, 202Tl: 0.76(6)%",
@@ -150,7 +210,7 @@
         "Eligible for Degree of Equivalence (DoE)": false,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -171,7 +231,7 @@
         "Half-life used by the laboratory / d": null,
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "TlCl in HCl",
-        "Solvent concentration of the solution / (mol.dm-3)": "HCl: 0.1",
+        "Solvent concentration of the solution / (mol.dm-3)": "0.1",
         "Carrier concentration of the solution / (µg.g-1)": "TlCl: 10",
         "Density of the solution / (g.cm-3)": "0.999",
         "Relative activity of impurities contained into the solution": "200Tl: 0.152(15)%, 202Tl: 0.29(3)%",
@@ -195,7 +255,7 @@
         "Eligible for Degree of Equivalence (DoE)": false,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -216,7 +276,7 @@
         "Half-life used by the laboratory / d": "3.0409(29)",
         "Reference for the decay data used by the laboratory": "BNM-CEA/DTA/DAMRI/LPRI 1998 Nucl\\'{e}ide Nuclear and Atomic Decay Data version: 1-98 19/12/98 CD-ROM BNM-LNHB Gif-sur-Yvette",
         "Chemical composition of the solution": "Tl in HCl",
-        "Solvent concentration of the solution / (mol.dm-3)": "HCl: 0.1",
+        "Solvent concentration of the solution / (mol.dm-3)": "0.1",
         "Carrier concentration of the solution / (µg.g-1)": "Tl: 30",
         "Density of the solution / (g.cm-3)": "1",
         "Relative activity of impurities contained into the solution": "200Tl: 0.19(2)%, 202Tl: 0.26(3)%, 200Pb: 0.035(4)%, 203Pb: 0.033(4)%",
@@ -240,7 +300,7 @@
         "Eligible for Degree of Equivalence (DoE)": true,
         "Laboratory": {
             "Acronym": "LNE-LNHB",
-            "Full name": "Université Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
+            "Full name": "Universite Paris-Saclay, CEA, List, Laboratoire National Henri Becquerel",
             "Address": "F-91120 Palaiseau",
             "Country": "France",
             "Regional Metrology Organization (RMO)": "EURAMET",
@@ -261,7 +321,7 @@
         "Half-life used by the laboratory / d": "3.0421(17)",
         "Reference for the decay data used by the laboratory": "B\\' {e} M.-M., Chist\\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R.,   Nichols  A.,  Sch\\\"{o}nfeld   E.,   Dersch   R., \\href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol2.pdf}{\\textit{Table   of   radionuclides}, Monographie BIPM-5, 2004, Vol 2}.",
         "Chemical composition of the solution": "TlCl3.4H2O in HCl",
-        "Solvent concentration of the solution / (mol.dm-3)": "HCl: 0.1",
+        "Solvent concentration of the solution / (mol.dm-3)": "0.1",
         "Carrier concentration of the solution / (µg.g-1)": "TlCl3.4H2O: 24",
         "Density of the solution / (g.cm-3)": "1",
         "Relative activity of impurities contained into the solution": "200Tl: 0.095(10)%, 202Tl: 0.251(8)%",
@@ -305,8 +365,8 @@
         "Date of the measurement by the BIPM international reference system (SIR)": "14/12/1982",
         "Half-life used by the laboratory / d": null,
         "Reference for the decay data used by the laboratory": null,
-        "Chemical composition of the solution": "TlCl and NaCl in benzyl alcohol C7H8O",
-        "Solvent concentration of the solution / (mol.dm-3)": "C$_{7}$H$_{8}$O: 0.08, NaCl:9000  \\si{\\micro g.g^{-1}}",
+        "Chemical composition of the solution": "TlCl in benzyl alcohol C7H8O and NaCl",
+        "Solvent concentration of the solution / (mol.dm-3)": "0.08, 9000  \\si{\\micro g.g^{-1}}",
         "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": null,
         "Relative activity of impurities contained into the solution": "200Tl: 0.050(5)%, 202Tl: 0.16(1)%",
@@ -351,7 +411,7 @@
         "Half-life used by the laboratory / d": "3.047",
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "TlNO3 in HNO3",
-        "Solvent concentration of the solution / (mol.dm-3)": "HNO$_{3}$: 1",
+        "Solvent concentration of the solution / (mol.dm-3)": "1",
         "Carrier concentration of the solution / (µg.g-1)": "TINO3: 48",
         "Density of the solution / (g.cm-3)": "1.029(2)",
         "Relative activity of impurities contained into the solution": "200Tl: 0.08(1) %, 202Tl: 0.21(2)%",
@@ -396,7 +456,7 @@
         "Half-life used by the laboratory / d": "3.0465(10)",
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "TlCl in HCl",
-        "Solvent concentration of the solution / (mol.dm-3)": "HCl: 0.1",
+        "Solvent concentration of the solution / (mol.dm-3)": "0.1",
         "Carrier concentration of the solution / (µg.g-1)": "TlCl: 117",
         "Density of the solution / (g.cm-3)": "1.002",
         "Relative activity of impurities contained into the solution": "202Tl: 2.1(2)%",
@@ -441,7 +501,7 @@
         "Half-life used by the laboratory / d": null,
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "TlNO3 in HNO3",
-        "Solvent concentration of the solution / (mol.dm-3)": "HNO$_{3}$: 1 ",
+        "Solvent concentration of the solution / (mol.dm-3)": "1",
         "Carrier concentration of the solution / (µg.g-1)": "TlNO3: 10",
         "Density of the solution / (g.cm-3)": "1.031",
         "Relative activity of impurities contained into the solution": "200Tl: 0.012(2)%, 202Tl: 0.291(44)%",
@@ -486,7 +546,7 @@
         "Half-life used by the laboratory / d": "3.045(1)",
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "TlNO3 in HNO3",
-        "Solvent concentration of the solution / (mol.dm-3)": "HNO$_{3}$: 1.15 ",
+        "Solvent concentration of the solution / (mol.dm-3)": "1.15",
         "Carrier concentration of the solution / (µg.g-1)": "TlNO3:150",
         "Density of the solution / (g.cm-3)": "1.035",
         "Relative activity of impurities contained into the solution": "200Tl: 0.008(1)%, 202Tl: 0.60(1)%",
@@ -531,7 +591,7 @@
         "Half-life used by the laboratory / d": "3.0421(17)",
         "Reference for the decay data used by the laboratory": "B\\' {e} M.-M., Chist\\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R.,   Nichols  A.,  Sch\\\"{o}nfeld   E.,   Dersch   R., \\href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol2.pdf}{\\textit{Table   of   radionuclides}, Monographie BIPM-5, 2004, Vol 2}.",
         "Chemical composition of the solution": "TlNO3 in HNO3",
-        "Solvent concentration of the solution / (mol.dm-3)": "HNO$_{3}$: 0.97 ",
+        "Solvent concentration of the solution / (mol.dm-3)": "0.97",
         "Carrier concentration of the solution / (µg.g-1)": "TlNO3: 57",
         "Density of the solution / (g.cm-3)": "1.03",
         "Relative activity of impurities contained into the solution": "200Tl: 0.0540(31)%, 202Tl: 0.319(13)%",
@@ -556,7 +616,7 @@
         "Laboratory": {
             "Acronym": "NMISA",
             "Full name": "National Metrology Institute of South Africa",
-            "Address": "National Metrology Institute of South Africa (NMISA), Cape Town",
+            "Address": "15 Lower Hope Road, Rosebank, Cape Town, 7700",
             "Country": "South Africa",
             "Regional Metrology Organization (RMO)": "AFRIMETS",
             "Old acronyms": "NAC, CSIR-NML"
@@ -576,7 +636,7 @@
         "Half-life used by the laboratory / d": "3.038",
         "Reference for the decay data used by the laboratory": "NCRP report No. 58, 1985, A Handbook of Radioactivity Measurement Procedures, Second Edition",
         "Chemical composition of the solution": "TlNO3 in HNO3",
-        "Solvent concentration of the solution / (mol.dm-3)": "HNO$_{3}$: 0.1 ",
+        "Solvent concentration of the solution / (mol.dm-3)": "0.1",
         "Carrier concentration of the solution / (µg.g-1)": "Tl+: 500",
         "Density of the solution / (g.cm-3)": "1.002",
         "Relative activity of impurities contained into the solution": "200Tl: 0.0437(13)%, 202Tl: 0.0230(12)%",
@@ -620,8 +680,8 @@
         "Date of the measurement by the BIPM international reference system (SIR)": "09/11/2006",
         "Half-life used by the laboratory / d": "3.0421(17)",
         "Reference for the decay data used by the laboratory": "B\\' {e} M.-M., Chist\\'{e} V., Dulieu C., Browne E., Chechev V., Kuzmenko N., Helmer R.,   Nichols  A.,  Sch\\\"{o}nfeld   E.,   Dersch   R., \\href{http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol2.pdf}{\\textit{Table   of   radionuclides}, Monographie BIPM-5, 2004, Vol 2}.",
-        "Chemical composition of the solution": "NaCl in water",
-        "Solvent concentration of the solution / (mol.dm-3)": "NaCl: 700  \\si{\\micro g.g^{-1}}",
+        "Chemical composition of the solution": "TlCl in NaCl",
+        "Solvent concentration of the solution / (mol.dm-3)": "700  \\si{\\micro g.g^{-1}}",
         "Carrier concentration of the solution / (µg.g-1)": null,
         "Density of the solution / (g.cm-3)": "1.001",
         "Relative activity of impurities contained into the solution": "200Tl: 0.133(3)%, 202Tl: 0.206(3)%",
@@ -666,7 +726,7 @@
         "Half-life used by the laboratory / d": null,
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "Tl2SO4 in HNO3",
-        "Solvent concentration of the solution / (mol.dm-3)": "HNO$_{3}$: 0.1",
+        "Solvent concentration of the solution / (mol.dm-3)": "0.1",
         "Carrier concentration of the solution / (µg.g-1)": "Tl2SO4: 40",
         "Density of the solution / (g.cm-3)": "1",
         "Relative activity of impurities contained into the solution": "202Tl: 0.41(2)%, 203Pb: 0.056(2)%",
@@ -711,7 +771,7 @@
         "Half-life used by the laboratory / d": "3.0424(26)",
         "Reference for the decay data used by the laboratory": null,
         "Chemical composition of the solution": "Tl2SO4 in HNO3",
-        "Solvent concentration of the solution / (mol.dm-3)": "HNO$_{3}$: 0.1",
+        "Solvent concentration of the solution / (mol.dm-3)": "0.1",
         "Carrier concentration of the solution / (µg.g-1)": "Tl2SO4: 40",
         "Density of the solution / (g.cm-3)": "1.002",
         "Relative activity of impurities contained into the solution": "200Tl: 0.359(10)%, 202Tl: 0.166(5)%",
