@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Comparison xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xmlns:dsi="https://ptb.de/si">
-	<General_information>
-		<Comparison_code>BIPM.RI(II)-K1.Tl-201</Comparison_code>
-		<ServiceCategoryID></ServiceCategoryID>
-		<Pilot>
-			<Acronym>BIPM</Acronym>
-			<ROR_indentifier>https://ror.org/055vkyj43</ROR_indentifier>
-		</Pilot>
-	</General_information>
-	<Comparison_data>
-		<Release>
-			<doi>https://doi.org/10.1088/0026-1394/41/1A/06015</doi>
-			<Year>2004</Year>
-			<KCRV>
-				<dsi:real>
-					<dsi:value>314.0</dsi:value>
-					<dsi:unit>MBq</dsi:unit>
-					<dsi:expandedUnc>
-						<dsi:uncertainty>1.8</dsi:uncertainty>
-						<dsi:coverageFactor>1</dsi:coverageFactor>
-						<dsi:coverageProbability>0.68</dsi:coverageProbability>
-					</dsi:expandedUnc>
-				</dsi:real>
-			</KCRV>
-			<Degrees_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>PTB</Acronym>
-						<ROR>https://ror.org/05r3f7h03</ROR>
-					</laboratory>
-					<dsi:real>
+<kc:comparison 
+    xmlns:kc="KC_Schema" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dsi="https://ptb.de/si">
+	<kc:generalInformation>
+		<kc:comparisonCode>BIPM.RI(II)-K1.Tl-201</kc:comparisonCode>
+		<kc:serviceCategoryID></kc:serviceCategoryID>
+		<kc:pilot>
+			<kc:acronym>BIPM</kc:acronym>
+			<kc:ror>https://ror.org/055vkyj43</kc:ror>
+		</kc:pilot>
+	</kc:generalInformation>
+	<kc:comparisonData>
+		<kc:release>
+			<kc:doi>https://doi.org/10.1088/0026-1394/41/1A/06015</kc:doi>
+			<kc:year>2004</kc:year>
+			<kc:kcrv>
+				<dsi:value>314.0</dsi:value>
+				<dsi:unit>MBq</dsi:unit>
+				<dsi:expandedUnc>
+					<dsi:uncertainty>1.8</dsi:uncertainty>
+					<dsi:coverageFactor>1</dsi:coverageFactor>
+					<dsi:coverageProbability>0.68</dsi:coverageProbability>
+				</dsi:expandedUnc>
+			</kc:kcrv>
+			<kc:degreesOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>PTB</kc:acronym>
+						<kc:ror>https://ror.org/05r3f7h03</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>-6.0</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -38,15 +38,15 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>LNE-LNHB</Acronym>
-						<PastAcronyms>LMRI, LPRI, BNM-LNHB</PastAcronyms>
-						<ROR>https://ror.org/03az79194</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>LNE-LNHB</kc:acronym>
+						<kc:pastAcronyms>LMRI, LPRI, BNM-LNHB</kc:pastAcronyms>
+						<kc:ror>https://ror.org/03az79194</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>-14.3</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -54,15 +54,15 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>NMISA</Acronym>
-						<PastAcronyms>NAC, CSIR-NML</PastAcronyms>
-						<ROR>https://ror.org/02j01mp63</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>NMISA</kc:acronym>
+						<kc:pastAcronyms>NAC, CSIR-NML</kc:pastAcronyms>
+						<kc:ror>https://ror.org/02j01mp63</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>-1.8</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -70,15 +70,15 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>ANSTO</Acronym>
-						<PastAcronyms>AAEC</PastAcronyms>
-						<ROR>https://ror.org/05j7fep28</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>ANSTO</kc:acronym>
+						<kc:pastAcronyms>AAEC</kc:pastAcronyms>
+						<kc:ror>https://ror.org/05j7fep28</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>-8.5</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -86,15 +86,15 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>BKFH</Acronym>
-						<PastAcronyms>OMH, MKEH</PastAcronyms>
-						<ROR>https://ror.org/03c6pbw79</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>BKFH</kc:acronym>
+						<kc:pastAcronyms>OMH, MKEH</kc:pastAcronyms>
+						<kc:ror>https://ror.org/03c6pbw79</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>0.3</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -102,15 +102,15 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>NIST</Acronym>
-						<PastAcronyms>NBS</PastAcronyms>
-						<ROR>https://ror.org/05xpvk416</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>NIST</kc:acronym>
+						<kc:pastAcronyms>NBS</kc:pastAcronyms>
+						<kc:ror>https://ror.org/05xpvk416</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>3.7</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -118,32 +118,30 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-			</Degrees_of_equivalence>
-		</Release>
-		<Release>
-			<doi></doi>
-			<Year>2008</Year>
-			<KCRV>
-				<dsi:real>
-					<dsi:value>312.8</dsi:value>
-					<dsi:unit>MBq</dsi:unit>
-					<dsi:expandedUnc>
-						<dsi:uncertainty>1.3</dsi:uncertainty>
-						<dsi:coverageFactor>1</dsi:coverageFactor>
-						<dsi:coverageProbability>0.68</dsi:coverageProbability>
-					</dsi:expandedUnc>
-				</dsi:real>
-			</KCRV>
-			<Degrees_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>NMISA</Acronym>
-						<PastAcronyms>NAC, CSIR-NML</PastAcronyms>
-						<ROR>https://ror.org/02j01mp63</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+			</kc:degreesOfEquivalence>
+		</kc:release>
+		<kc:release>
+			<kc:doi></kc:doi>
+			<kc:year>2008</kc:year>
+			<kc:kcrv>
+				<dsi:value>312.8</dsi:value>
+				<dsi:unit>MBq</dsi:unit>
+				<dsi:expandedUnc>
+					<dsi:uncertainty>1.3</dsi:uncertainty>
+					<dsi:coverageFactor>1</dsi:coverageFactor>
+					<dsi:coverageProbability>0.68</dsi:coverageProbability>
+				</dsi:expandedUnc>
+			</kc:kcrv>
+			<kc:degreesOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>NMISA</kc:acronym>
+						<kc:pastAcronyms>NAC, CSIR-NML</kc:pastAcronyms>
+						<kc:ror>https://ror.org/02j01mp63</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>-0.3</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -151,15 +149,15 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>ANSTO</Acronym>
-						<PastAcronyms>AAEC</PastAcronyms>
-						<ROR>https://ror.org/05j7fep28</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>ANSTO</kc:acronym>
+						<kc:pastAcronyms>AAEC</kc:pastAcronyms>
+						<kc:ror>https://ror.org/05j7fep28</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>-7.8</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -167,15 +165,15 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>BKFH</Acronym>
-						<PastAcronyms>OMH, MKEH</PastAcronyms>
-						<ROR>https://ror.org/03c6pbw79</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>BKFH</kc:acronym>
+						<kc:pastAcronyms>OMH, MKEH</kc:pastAcronyms>
+						<kc:ror>https://ror.org/03c6pbw79</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>1.6</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -183,15 +181,15 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>NIST</Acronym>
-						<PastAcronyms>NBS</PastAcronyms>
-						<ROR>https://ror.org/05xpvk416</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>NIST</kc:acronym>
+						<kc:pastAcronyms>NBS</kc:pastAcronyms>
+						<kc:ror>https://ror.org/05xpvk416</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>5.1</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -199,15 +197,15 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>LNE-LNHB</Acronym>
-						<PastAcronyms>LMRI, LPRI, BNM-LNHB</PastAcronyms>
-						<ROR>https://ror.org/03az79194</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>LNE-LNHB</kc:acronym>
+						<kc:pastAcronyms>LMRI, LPRI, BNM-LNHB</kc:pastAcronyms>
+						<kc:ror>https://ror.org/03az79194</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>-4.8</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -215,14 +213,14 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>PTB</Acronym>
-						<ROR>https://ror.org/05r3f7h03</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>PTB</kc:acronym>
+						<kc:ror>https://ror.org/05r3f7h03</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>-0.3</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -230,14 +228,14 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>NPL</Acronym>
-						<ROR>https://ror.org/015w2mp89</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>NPL</kc:acronym>
+						<kc:ror>https://ror.org/015w2mp89</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>-1.5</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -245,32 +243,30 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-			</Degrees_of_equivalence>
-		</Release>
-		<Release>
-			<doi>https://doi.org/10.1088/0026-1394/59/1A/06008</doi>
-			<Year>2020</Year>
-			<KCRV>
-				<dsi:real>
-					<dsi:value>311.16</dsi:value>
-					<dsi:unit>MBq</dsi:unit>
-					<dsi:expandedUnc>
-						<dsi:uncertainty>0.94</dsi:uncertainty>
-						<dsi:coverageFactor>1</dsi:coverageFactor>
-						<dsi:coverageProbability>0.68</dsi:coverageProbability>
-					</dsi:expandedUnc>
-				</dsi:real>
-			</KCRV>
-			<Degrees_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>LNE-LNHB</Acronym>
-						<PastAcronyms>LMRI, LPRI, BNM-LNHB</PastAcronyms>
-						<ROR>https://ror.org/03az79194</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+			</kc:degreesOfEquivalence>
+		</kc:release>
+		<kc:release>
+			<kc:doi>https://doi.org/10.1088/0026-1394/59/1A/06008</kc:doi>
+			<kc:year>2020</kc:year>
+			<kc:kcrv>
+				<dsi:value>311.16</dsi:value>
+				<dsi:unit>MBq</dsi:unit>
+				<dsi:expandedUnc>
+					<dsi:uncertainty>0.94</dsi:uncertainty>
+					<dsi:coverageFactor>1</dsi:coverageFactor>
+					<dsi:coverageProbability>0.68</dsi:coverageProbability>
+				</dsi:expandedUnc>
+			</kc:kcrv>
+			<kc:degreesOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>LNE-LNHB</kc:acronym>
+						<kc:pastAcronyms>LMRI, LPRI, BNM-LNHB</kc:pastAcronyms>
+						<kc:ror>https://ror.org/03az79194</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>-3.2</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -278,14 +274,14 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>PTB</Acronym>
-						<ROR>https://ror.org/05r3f7h03</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>PTB</kc:acronym>
+						<kc:ror>https://ror.org/05r3f7h03</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>1.3</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -293,14 +289,14 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>NPL</Acronym>
-						<ROR>https://ror.org/015w2mp89</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>NPL</kc:acronym>
+						<kc:ror>https://ror.org/015w2mp89</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>0.1</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -308,15 +304,15 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>NIST</Acronym>
-						<PastAcronyms>NBS</PastAcronyms>
-						<ROR>https://ror.org/05xpvk416</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>NIST</kc:acronym>
+						<kc:pastAcronyms>NBS</kc:pastAcronyms>
+						<kc:ror>https://ror.org/05xpvk416</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>1.9</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -324,48 +320,46 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-			</Degrees_of_equivalence>
-		</Release>
-	</Comparison_data>
-	<Comparison_metadata>
-		<Submission>
-			<laboratory>
-				<Acronym>ANSTO</Acronym>
-						<PastAcronyms>AAEC</PastAcronyms>
-				<ROR>https://ror.org/05j7fep28</ROR>
-			</laboratory>
-			<year>1994</year>
-			<inKCRV>false</inKCRV>
-			<DoE_valid>false</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201ANSTO1994-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.569</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<Chemical_composition>
-						<Solvant>
-						</Solvant>
-						<Carrier>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.22(2)%, 202Tl: 0.17(2)%</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>1994-05-19T23:01:00Z</Reference_date>
-					<Solution_ID>Tl-201ANSTO1994-1</Solution_ID>
-					<Method_ID>4P-IC-GR-00-00-00</Method_ID>
-					<Description>Ionization chamber </Description>
-					<Comments>Calibrated by interpolation from the standardization of other radionuclides at ANSTO</Comments>
-					<Activity>
-						<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+			</kc:degreesOfEquivalence>
+		</kc:release>
+	</kc:comparisonData>
+	<kc:comparisonMetadata>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>ANSTO</kc:acronym>
+				<kc:pastAcronyms>AAEC</kc:pastAcronyms>
+				<kc:ror>https://ror.org/05j7fep28</kc:ror>
+			</kc:laboratory>
+			<kc:year>1994</kc:year>
+			<kc:inKCRV>false</kc:inKCRV>
+			<kc:doeValid>false</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201ANSTO1994-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.569</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:chemicalComposition>
+						<kc:solvant>
+						</kc:solvant>
+						<kc:carrier>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.22(2)%, 202Tl: 0.17(2)%</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>1994-05-19T23:01:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201ANSTO1994-1</kc:solutionID>
+					<kc:methodID>4P-IC-GR-00-00-00</kc:methodID>
+					<kc:description>Ionization chamber </kc:description>
+					<kc:comments>Calibrated by interpolation from the standardization of other radionuclides at ANSTO</kc:comments>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>11460</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -373,23 +367,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.04</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>3.02</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201ANSTO1994-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-IC-GR-00-00-00</Method>
-					</Methods>
-					<Reference_source>1</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.04</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>3.02</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201ANSTO1994-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-IC-GR-00-00-00</kc:method>
+					</kc:methods>
+					<kc:referenceSource>1</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>305000</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -397,54 +391,50 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.016</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>BKFH</Acronym>
-						<PastAcronyms>OMH, MKEH</PastAcronyms>
-				<ROR>https://ror.org/03c6pbw79</ROR>
-			</laboratory>
-			<year>1997</year>
-			<inKCRV>true</inKCRV>
-			<DoE_valid>false</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201BKFH1997-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.6058</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>[Na+].[Cl-]</SMILES>
-							<InChIKey>FAPWRFPIFSIZLT-UHFFFAOYSA-M</InChIKey>
-							<InChI>InChI=1S/ClH.Na/h1H;/q;+1/p-1</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>9000</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.009(2)%, 202Tl: 0.76(6)%</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>1997-11-07T00:00:00Z</Reference_date>
-					<Solution_ID>Tl-201BKFH1997-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.016</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>BKFH</kc:acronym>
+				<kc:pastAcronyms>OMH, MKEH</kc:pastAcronyms>
+				<kc:ror>https://ror.org/03c6pbw79</kc:ror>
+			</kc:laboratory>
+			<kc:year>1997</kc:year>
+			<kc:inKCRV>true</kc:inKCRV>
+			<kc:doeValid>false</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201BKFH1997-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.6058</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>[Na+].[Cl-]</kc:smiles>
+							<kc:InChIKey>FAPWRFPIFSIZLT-UHFFFAOYSA-M</kc:InChIKey>
+							<kc:InChI>InChI=1S/ClH.Na/h1H;/q;+1/p-1</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>9000</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.009(2)%, 202Tl: 0.76(6)%</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>1997-11-07T00:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201BKFH1997-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>3.043</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -452,15 +442,15 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<reference>
-							<detail>Schrader H., 1989 Measurement of the half lives of $^{18}$F, $^{56}$Co, $^{125}$I, $^{195}$Au and $^{201}$Tl International Journal of Applied Radiation and Isotopes 40 381-383</detail>
-						</reference>
-					</Half-life>
-					<Method_ID>4P-PP-MX-NA-GR-CO &amp; 4P-PP-MX-NA-GR-AC</Method_ID>
-					<Description>4piPPC-gamma coinc. and anti-coinc.</Description>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+						<kc:reference>
+							<kc:detail>Schrader H., 1989 Measurement of the half lives of $^{18}$F, $^{56}$Co, $^{125}$I, $^{195}$Au and $^{201}$Tl International Journal of Applied Radiation and Isotopes 40 381-383</kc:detail>
+						</kc:reference>
+					</kc:halfLife>
+					<kc:methodID>4P-PP-MX-NA-GR-CO &amp; 4P-PP-MX-NA-GR-AC</kc:methodID>
+					<kc:description>4piPPC-gamma coinc. and anti-coinc.</kc:description>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>32060</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -468,23 +458,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>1.2</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201BKFH1997-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-PP-MX-NA-GR-CO &amp; 4P-PP-MX-NA-GR-AC</Method>
-					</Methods>
-					<Reference_source>3</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.06</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>1.2</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201BKFH1997-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-PP-MX-NA-GR-CO &amp; 4P-PP-MX-NA-GR-AC</kc:method>
+					</kc:methods>
+					<kc:referenceSource>3</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>314400</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -492,105 +482,89 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0056</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>LNE-LNHB</Acronym>
-						<PastAcronyms>LMRI, LPRI, BNM-LNHB</PastAcronyms>
-				<ROR>https://ror.org/03az79194</ROR>
-			</laboratory>
-			<year>1983</year>
-			<inKCRV>false</inKCRV>
-			<DoE_valid>false</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201LNE-LNHB1983-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.69960</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>0.999</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>Cl</SMILES>
-							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/ClH/h1H</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.1</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<CarrierConcentration>
-								<dsi:real>
-									<dsi:value>10</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</CarrierConcentration>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.152(15)%, 202Tl: 0.29(3)%</impurities>
-				</Radioactive_solution>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201LNE-LNHB1983-2</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.63280</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>0.999</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>Cl</SMILES>
-							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/ClH/h1H</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.1</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<CarrierConcentration>
-								<dsi:real>
-									<dsi:value>10</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</CarrierConcentration>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.152(15)%, 202Tl: 0.29(3)%</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>1983-06-10T12:00:00Z</Reference_date>
-					<Solution_ID>Tl-201LNE-LNHB1983-1</Solution_ID>
-					<Method_ID>4P-NA-GR-00-00-00</Method_ID>
-					<Description>4pi gamma counting</Description>
-					<Activity>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0056</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>LNE-LNHB</kc:acronym>
+				<kc:pastAcronyms>LMRI, LPRI, BNM-LNHB</kc:pastAcronyms>
+				<kc:ror>https://ror.org/03az79194</kc:ror>
+			</kc:laboratory>
+			<kc:year>1983</kc:year>
+			<kc:inKCRV>false</kc:inKCRV>
+			<kc:doeValid>false</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201LNE-LNHB1983-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.69960</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>0.999</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>Cl</kc:smiles>
+							<kc:InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/ClH/h1H</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>0.1</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:carrierConcentration>
+								<dsi:value>10</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:carrierConcentration>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.152(15)%, 202Tl: 0.29(3)%</kc:impurities>
+				</kc:radioactiveSolution>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201LNE-LNHB1983-2</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.63280</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>0.999</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>Cl</kc:smiles>
+							<kc:InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/ClH/h1H</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>0.1</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:carrierConcentration>
+								<dsi:value>10</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:carrierConcentration>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.152(15)%, 202Tl: 0.29(3)%</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>1983-06-10T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201LNE-LNHB1983-1</kc:solutionID>
+					<kc:methodID>4P-NA-GR-00-00-00</kc:methodID>
+					<kc:description>4pi gamma counting</kc:description>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>3512</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -598,18 +572,18 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.04</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.54</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-				<Mesurement>
-					<Reference_date>1983-06-10T12:00:00Z</Reference_date>
-					<Solution_ID>Tl-201LNE-LNHB1983-2</Solution_ID>
-					<Method_ID>4P-NA-GR-00-00-00</Method_ID>
-					<Description>4pi gamma counting</Description>
-					<Activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.04</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.54</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+				<kc:measurement>
+					<kc:referenceDate>1983-06-10T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201LNE-LNHB1983-2</kc:solutionID>
+					<kc:methodID>4P-NA-GR-00-00-00</kc:methodID>
+					<kc:description>4pi gamma counting</kc:description>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>3449</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -617,23 +591,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.04</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.54</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201LNE-LNHB1983-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-NA-GR-00-00-00</Method>
-					</Methods>
-					<Reference_source>2</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.04</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.54</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201LNE-LNHB1983-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-NA-GR-00-00-00</kc:method>
+					</kc:methods>
+					<kc:referenceSource>2</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>299990</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -641,20 +615,20 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0061</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201LNE-LNHB1983-2</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-NA-GR-00-00-00</Method>
-					</Methods>
-					<Reference_source>2</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0061</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201LNE-LNHB1983-2</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-NA-GR-00-00-00</kc:method>
+					</kc:methods>
+					<kc:referenceSource>2</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>299710</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -662,164 +636,140 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0058</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>LNE-LNHB</Acronym>
-						<PastAcronyms>LMRI, LPRI, BNM-LNHB</PastAcronyms>
-				<ROR>https://ror.org/03az79194</ROR>
-			</laboratory>
-			<year>2003</year>
-			<inKCRV>false</inKCRV>
-			<DoE_valid>false</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201LNE-LNHB2003-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.5619</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-							<dsi:expandedUnc>
-								<dsi:uncertainty>1</dsi:uncertainty>
-								<dsi:coverageFactor>1</dsi:coverageFactor>
-								<dsi:coverageProbability>0.68</dsi:coverageProbability>
-							</dsi:expandedUnc>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>Cl</SMILES>
-							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/ClH/h1H</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.1</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<SMILES>[Tl]</SMILES>
-							<InChIKey>BKVIYDNLLOSFOA-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/Tl</InChI>
-							<CarrierConcentration>
-								<dsi:real>
-									<dsi:value>30</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</CarrierConcentration>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.19(2)%, 202Tl: 0.26(3)%, 200Pb: 0.035(4)%, 203Pb: 0.033(4)%</impurities>
-				</Radioactive_solution>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201LNE-LNHB2003-2</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.8099</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-							<dsi:expandedUnc>
-								<dsi:uncertainty>1</dsi:uncertainty>
-								<dsi:coverageFactor>1</dsi:coverageFactor>
-								<dsi:coverageProbability>0.68</dsi:coverageProbability>
-							</dsi:expandedUnc>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>Cl</SMILES>
-							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/ClH/h1H</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.1</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<SMILES>[Tl]</SMILES>
-							<InChIKey>BKVIYDNLLOSFOA-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/Tl</InChI>
-							<CarrierConcentration>
-								<dsi:real>
-									<dsi:value>30</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</CarrierConcentration>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.19(2)%, 202Tl: 0.26(3)%, 200Pb: 0.035(4)%, 203Pb: 0.033(4)%</impurities>
-				</Radioactive_solution>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201LNE-LNHB2003-3</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.6133</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-							<dsi:expandedUnc>
-								<dsi:uncertainty>1</dsi:uncertainty>
-								<dsi:coverageFactor>1</dsi:coverageFactor>
-								<dsi:coverageProbability>0.68</dsi:coverageProbability>
-							</dsi:expandedUnc>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>Cl</SMILES>
-							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/ClH/h1H</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.1</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<SMILES>[Tl]</SMILES>
-							<InChIKey>BKVIYDNLLOSFOA-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/Tl</InChI>
-							<CarrierConcentration>
-								<dsi:real>
-									<dsi:value>30</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</CarrierConcentration>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.19(2)%, 202Tl: 0.26(3)%, 200Pb: 0.035(4)%, 203Pb: 0.033(4)%</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>2003-09-16T12:00:00Z</Reference_date>
-					<Solution_ID>Tl-201LNE-LNHB2003-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0058</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>LNE-LNHB</kc:acronym>
+				<kc:pastAcronyms>LMRI, LPRI, BNM-LNHB</kc:pastAcronyms>
+				<kc:ror>https://ror.org/03az79194</kc:ror>
+			</kc:laboratory>
+			<kc:year>2003</kc:year>
+			<kc:inKCRV>false</kc:inKCRV>
+			<kc:doeValid>false</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201LNE-LNHB2003-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.5619</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1</dsi:uncertainty>
+							<dsi:coverageFactor>1</dsi:coverageFactor>
+							<dsi:coverageProbability>0.68</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>Cl</kc:smiles>
+							<kc:InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/ClH/h1H</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>0.1</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:smiles>[Tl]</kc:smiles>
+							<kc:InChIKey>BKVIYDNLLOSFOA-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/Tl</kc:InChI>
+							<kc:carrierConcentration>
+								<dsi:value>30</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:carrierConcentration>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.19(2)%, 202Tl: 0.26(3)%, 200Pb: 0.035(4)%, 203Pb: 0.033(4)%</kc:impurities>
+				</kc:radioactiveSolution>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201LNE-LNHB2003-2</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.8099</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1</dsi:uncertainty>
+							<dsi:coverageFactor>1</dsi:coverageFactor>
+							<dsi:coverageProbability>0.68</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>Cl</kc:smiles>
+							<kc:InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/ClH/h1H</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>0.1</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:smiles>[Tl]</kc:smiles>
+							<kc:InChIKey>BKVIYDNLLOSFOA-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/Tl</kc:InChI>
+							<kc:carrierConcentration>
+								<dsi:value>30</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:carrierConcentration>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.19(2)%, 202Tl: 0.26(3)%, 200Pb: 0.035(4)%, 203Pb: 0.033(4)%</kc:impurities>
+				</kc:radioactiveSolution>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201LNE-LNHB2003-3</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.6133</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1</dsi:uncertainty>
+							<dsi:coverageFactor>1</dsi:coverageFactor>
+							<dsi:coverageProbability>0.68</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>Cl</kc:smiles>
+							<kc:InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/ClH/h1H</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>0.1</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:smiles>[Tl]</kc:smiles>
+							<kc:InChIKey>BKVIYDNLLOSFOA-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/Tl</kc:InChI>
+							<kc:carrierConcentration>
+								<dsi:value>30</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:carrierConcentration>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.19(2)%, 202Tl: 0.26(3)%, 200Pb: 0.035(4)%, 203Pb: 0.033(4)%</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>2003-09-16T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201LNE-LNHB2003-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>3.0409</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -827,15 +777,15 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<reference>
-							<detail>BNM-CEA/DTA/DAMRI/LPRI 1998 Nucl\'{e}ide Nuclear and Atomic Decay Data version: 1-98 19/12/98 CD-ROM BNM-LNHB Gif-sur-Yvette</detail>
-						</reference>
-					</Half-life>
-					<Method_ID>4P-LS-CE-GH-GR-AC</Method_ID>
-					<Description>4piLSec-gamma anti-coincidence</Description>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+						<kc:reference>
+							<kc:detail>BNM-CEA/DTA/DAMRI/LPRI 1998 Nucl\'{e}ide Nuclear and Atomic Decay Data version: 1-98 19/12/98 CD-ROM BNM-LNHB Gif-sur-Yvette</kc:detail>
+						</kc:reference>
+					</kc:halfLife>
+					<kc:methodID>4P-LS-CE-GH-GR-AC</kc:methodID>
+					<kc:description>4piLSec-gamma anti-coincidence</kc:description>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>7605</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -843,16 +793,16 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.37</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.20</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-				<Mesurement>
-					<Reference_date>2003-09-16T12:00:00Z</Reference_date>
-					<Solution_ID>Tl-201LNE-LNHB2003-2</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.37</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.20</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+				<kc:measurement>
+					<kc:referenceDate>2003-09-16T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201LNE-LNHB2003-2</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>3.0409</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -860,15 +810,15 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<reference>
-							<detail>BNM-CEA/DTA/DAMRI/LPRI 1998 Nucl\'{e}ide Nuclear and Atomic Decay Data version: 1-98 19/12/98 CD-ROM BNM-LNHB Gif-sur-Yvette</detail>
-						</reference>
-					</Half-life>
-					<Method_ID>4P-LS-CE-GH-GR-AC</Method_ID>
-					<Description>4piLSec-gamma anti-coincidence</Description>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+						<kc:reference>
+							<kc:detail>BNM-CEA/DTA/DAMRI/LPRI 1998 Nucl\'{e}ide Nuclear and Atomic Decay Data version: 1-98 19/12/98 CD-ROM BNM-LNHB Gif-sur-Yvette</kc:detail>
+						</kc:reference>
+					</kc:halfLife>
+					<kc:methodID>4P-LS-CE-GH-GR-AC</kc:methodID>
+					<kc:description>4piLSec-gamma anti-coincidence</kc:description>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>8134</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -876,16 +826,16 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.37</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.20</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-				<Mesurement>
-					<Reference_date>2003-09-16T12:00:00Z</Reference_date>
-					<Solution_ID>Tl-201LNE-LNHB2003-3</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.37</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.20</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+				<kc:measurement>
+					<kc:referenceDate>2003-09-16T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201LNE-LNHB2003-3</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>3.0409</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -893,15 +843,15 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<reference>
-							<detail>BNM-CEA/DTA/DAMRI/LPRI 1998 Nucl\'{e}ide Nuclear and Atomic Decay Data version: 1-98 19/12/98 CD-ROM BNM-LNHB Gif-sur-Yvette</detail>
-						</reference>
-					</Half-life>
-					<Method_ID>4P-LS-CE-GH-GR-AC</Method_ID>
-					<Description>4piLSec-gamma anti-coincidence</Description>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+						<kc:reference>
+							<kc:detail>BNM-CEA/DTA/DAMRI/LPRI 1998 Nucl\'{e}ide Nuclear and Atomic Decay Data version: 1-98 19/12/98 CD-ROM BNM-LNHB Gif-sur-Yvette</kc:detail>
+						</kc:reference>
+					</kc:halfLife>
+					<kc:methodID>4P-LS-CE-GH-GR-AC</kc:methodID>
+					<kc:description>4piLSec-gamma anti-coincidence</kc:description>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>7714</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -909,23 +859,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.37</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.20</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201LNE-LNHB2003-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-LS-CE-GH-GR-AC</Method>
-					</Methods>
-					<Reference_source>1</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.37</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.20</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201LNE-LNHB2003-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-LS-CE-GH-GR-AC</kc:method>
+					</kc:methods>
+					<kc:referenceSource>1</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>318660</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -933,20 +883,20 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0047</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201LNE-LNHB2003-2</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-LS-CE-GH-GR-AC</Method>
-					</Methods>
-					<Reference_source>1</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0047</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201LNE-LNHB2003-2</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-LS-CE-GH-GR-AC</kc:method>
+					</kc:methods>
+					<kc:referenceSource>1</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>317930</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -954,20 +904,20 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0047</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201LNE-LNHB2003-3</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-LS-CE-GH-GR-AC</Method>
-					</Methods>
-					<Reference_source>1</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0047</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201LNE-LNHB2003-3</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-LS-CE-GH-GR-AC</kc:method>
+					</kc:methods>
+					<kc:referenceSource>1</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>317020</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -975,74 +925,66 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0047</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>LNE-LNHB</Acronym>
-						<PastAcronyms>LMRI, LPRI, BNM-LNHB</PastAcronyms>
-				<ROR>https://ror.org/03az79194</ROR>
-			</laboratory>
-			<year>2005</year>
-			<inKCRV>true</inKCRV>
-			<DoE_valid>true</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201LNE-LNHB2005-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.5121</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-							<dsi:expandedUnc>
-								<dsi:uncertainty>9</dsi:uncertainty>
-								<dsi:coverageFactor>1</dsi:coverageFactor>
-								<dsi:coverageProbability>0.68</dsi:coverageProbability>
-							</dsi:expandedUnc>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>Cl</SMILES>
-							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/ClH/h1H</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.1</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<SMILES>Cl[Tl](Cl)Cl</SMILES>
-							<InChIKey>KTZHUTMWYRHVJB-UHFFFAOYSA-K</InChIKey>
-							<InChI>InChI=1S/3ClH.Tl/h3*1H;/q;;;+3/p-3</InChI>
-							<CarrierConcentration>
-								<dsi:real>
-									<dsi:value>24</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</CarrierConcentration>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.095(10)%, 202Tl: 0.251(8)%</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>2005-09-13T12:00:00Z</Reference_date>
-					<Solution_ID>Tl-201LNE-LNHB2005-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0047</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>LNE-LNHB</kc:acronym>
+				<kc:pastAcronyms>LMRI, LPRI, BNM-LNHB</kc:pastAcronyms>
+				<kc:ror>https://ror.org/03az79194</kc:ror>
+			</kc:laboratory>
+			<kc:year>2005</kc:year>
+			<kc:inKCRV>true</kc:inKCRV>
+			<kc:doeValid>true</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201LNE-LNHB2005-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.5121</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>9</dsi:uncertainty>
+							<dsi:coverageFactor>1</dsi:coverageFactor>
+							<dsi:coverageProbability>0.68</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>Cl</kc:smiles>
+							<kc:InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/ClH/h1H</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>0.1</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:smiles>Cl[Tl](Cl)Cl</kc:smiles>
+							<kc:InChIKey>KTZHUTMWYRHVJB-UHFFFAOYSA-K</kc:InChIKey>
+							<kc:InChI>InChI=1S/3ClH.Tl/h3*1H;/q;;;+3/p-3</kc:InChI>
+							<kc:carrierConcentration>
+								<dsi:value>24</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:carrierConcentration>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.095(10)%, 202Tl: 0.251(8)%</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>2005-09-13T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201LNE-LNHB2005-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>3.0421</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -1050,15 +992,15 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<reference>
-							<doi>http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol2.pdf</doi>
-						</reference>
-					</Half-life>
-					<Method_ID>4P-LS-MX-NA-GR-AC</Method_ID>
-					<Description>4pi(LS)beta-gamma anti-coincidence</Description>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+						<kc:reference>
+							<kc:doi>http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol2.pdf</kc:doi>
+						</kc:reference>
+					</kc:halfLife>
+					<kc:methodID>4P-LS-MX-NA-GR-AC</kc:methodID>
+					<kc:description>4pi(LS)beta-gamma anti-coincidence</kc:description>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>2193</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1066,23 +1008,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.3</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.12</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201LNE-LNHB2005-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-LS-MX-NA-GR-AC</Method>
-					</Methods>
-					<Reference_source>1</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.3</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.12</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201LNE-LNHB2005-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-LS-MX-NA-GR-AC</kc:method>
+					</kc:methods>
+					<kc:referenceSource>1</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>308000</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1090,86 +1032,66 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0025</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>NIRH</Acronym>
-			</laboratory>
-			<year>1982</year>
-			<inKCRV>false</inKCRV>
-			<DoE_valid>false</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201NIRH1982-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.6845</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<Chemical_composition>
-						<Solvant>
-							<SolvantConcentration>
-								<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0025</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>NIRH</kc:acronym>
+			</kc:laboratory>
+			<kc:year>1982</kc:year>
+			<kc:inKCRV>false</kc:inKCRV>
+			<kc:doeValid>false</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201NIRH1982-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.6845</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:solvantConcentration>
 									<dsi:value>0.08</dsi:value>
 									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-							<SolvantConcentration>
-								<dsi:real>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.050(5)%, 202Tl: 0.16(1)%</kc:impurities>
+				</kc:radioactiveSolution>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201NIRH1982-2</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.5244</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:solvantConcentration>
 									<dsi:value>9000</dsi:value>
 									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.050(5)%, 202Tl: 0.16(1)%</impurities>
-				</Radioactive_solution>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201NIRH1982-2</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.5244</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<Chemical_composition>
-						<Solvant>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.08</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>9000</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.050(5)%, 202Tl: 0.16(1)%</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>1982-12-13T12:00:00Z</Reference_date>
-					<Solution_ID>Tl-201NIRH1982-1</Solution_ID>
-					<Method_ID>4P-IC-GR-00-00-00</Method_ID>
-					<Description>Ionization chamber </Description>
-					<Comments>Result determined from the efficiency curve for the NIRH IG11 IC</Comments>
-					<Activity>
-						<dsi:real>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.050(5)%, 202Tl: 0.16(1)%</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>1982-12-13T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201NIRH1982-1</kc:solutionID>
+					<kc:methodID>4P-IC-GR-00-00-00</kc:methodID>
+					<kc:description>Ionization chamber </kc:description>
+					<kc:comments>Result determined from the efficiency curve for the NIRH IG11 IC</kc:comments>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>207400</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1177,19 +1099,19 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>1.4</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>1.4</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-				<Mesurement>
-					<Reference_date>1982-12-13T12:00:00Z</Reference_date>
-					<Solution_ID>Tl-201NIRH1982-2</Solution_ID>
-					<Method_ID>4P-IC-GR-00-00-00</Method_ID>
-					<Description>Ionization chamber </Description>
-					<Comments>Result determined from the efficiency curve for the NIRH IG11 IC</Comments>
-					<Activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>1.4</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>1.4</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+				<kc:measurement>
+					<kc:referenceDate>1982-12-13T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201NIRH1982-2</kc:solutionID>
+					<kc:methodID>4P-IC-GR-00-00-00</kc:methodID>
+					<kc:description>Ionization chamber </kc:description>
+					<kc:comments>Result determined from the efficiency curve for the NIRH IG11 IC</kc:comments>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>198400</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1197,23 +1119,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>1.4</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>1.4</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201NIRH1982-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-IC-GR-00-00-00</Method>
-					</Methods>
-					<Reference_source>5</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>1.4</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>1.4</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201NIRH1982-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-IC-GR-00-00-00</kc:method>
+					</kc:methods>
+					<kc:referenceSource>5</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>321380</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1221,20 +1143,20 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0016</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201NIRH1982-2</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-IC-GR-00-00-00</Method>
-					</Methods>
-					<Reference_source>5</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0016</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201NIRH1982-2</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-IC-GR-00-00-00</kc:method>
+					</kc:methods>
+					<kc:referenceSource>5</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>314470</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1242,83 +1164,75 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0016</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>NIST</Acronym>
-						<PastAcronyms>NBS</PastAcronyms>
-				<ROR>https://ror.org/05xpvk416</ROR>
-			</laboratory>
-			<year>1979</year>
-			<inKCRV>false</inKCRV>
-			<DoE_valid>false</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201NIST1979-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.7142</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1.029</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-							<dsi:expandedUnc>
-								<dsi:uncertainty>2</dsi:uncertainty>
-								<dsi:coverageFactor>1</dsi:coverageFactor>
-								<dsi:coverageProbability>0.68</dsi:coverageProbability>
-							</dsi:expandedUnc>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>[N+](=O)(O)[O-]</SMILES>
-							<InChIKey>GRYLNZFGIOXLOG-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>1</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<SMILES>N(=O)[O-].[O-2].[Ti+3]</SMILES>
-							<InChIKey>HDIJPZVKTMIXSR-UHFFFAOYSA-</InChIKey>
-							<InChI>InChI=1S/HNO2.O.Ti/c2-1-3;;/h(H,2,3);;/q;-2;+3/p-1</InChI>
-							<CarrierConcentration>
-								<dsi:real>
-									<dsi:value>48</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</CarrierConcentration>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.08(1) %, 202Tl: 0.21(2)%</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>1979-06-21T20:00:00Z</Reference_date>
-					<Solution_ID>Tl-201NIST1979-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0016</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>NIST</kc:acronym>
+				<kc:pastAcronyms>NBS</kc:pastAcronyms>
+				<kc:ror>https://ror.org/05xpvk416</kc:ror>
+			</kc:laboratory>
+			<kc:year>1979</kc:year>
+			<kc:inKCRV>false</kc:inKCRV>
+			<kc:doeValid>false</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201NIST1979-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.7142</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1.029</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>2</dsi:uncertainty>
+							<dsi:coverageFactor>1</dsi:coverageFactor>
+							<dsi:coverageProbability>0.68</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>[N+](=O)(O)[O-]</kc:smiles>
+							<kc:InChIKey>GRYLNZFGIOXLOG-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>1</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:smiles>N(=O)[O-].[O-2].[Ti+3]</kc:smiles>
+							<kc:InChIKey>HDIJPZVKTMIXSR-UHFFFAOYSA-</kc:InChIKey>
+							<kc:InChI>InChI=1S/HNO2.O.Ti/c2-1-3;;/h(H,2,3);;/q;-2;+3/p-1</kc:InChI>
+							<kc:carrierConcentration>
+								<dsi:value>48</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:carrierConcentration>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.08(1) %, 202Tl: 0.21(2)%</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>1979-06-21T20:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201NIST1979-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>3.047</dsi:value>
 							<dsi:unit>\day</dsi:unit>
-						</dsi:real>
-					</Half-life>
-					<Method_ID>4P-IC-GR-00-00-00 calibrated in 1976 by 4P-PC-MX-NA-GR-CO</Method_ID>
-					<Description>Ionization chamber</Description>
-					<Comments>calibrated in 1976 by 4pi(e,x)-gamma coincidence</Comments>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+					</kc:halfLife>
+					<kc:methodID>4P-IC-GR-00-00-00 calibrated in 1976 by 4P-PC-MX-NA-GR-CO</kc:methodID>
+					<kc:description>Ionization chamber</kc:description>
+					<kc:comments>calibrated in 1976 by 4pi(e,x)-gamma coincidence</kc:comments>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>48360</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1326,23 +1240,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.02</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.49</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201NIST1979-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-IC-GR-00-00-00 calibrated in 1976 by 4P-PC-MX-NA-GR-CO</Method>
-					</Methods>
-					<Reference_source>1</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.02</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.49</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201NIST1979-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-IC-GR-00-00-00 calibrated in 1976 by 4P-PC-MX-NA-GR-CO</kc:method>
+					</kc:methods>
+					<kc:referenceSource>1</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>327000</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1350,66 +1264,58 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.086</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>NIST</Acronym>
-						<PastAcronyms>NBS</PastAcronyms>
-				<ROR>https://ror.org/05xpvk416</ROR>
-			</laboratory>
-			<year>1982</year>
-			<inKCRV>false</inKCRV>
-			<DoE_valid>false</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201NIST1982-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.74046</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1.002</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>Cl</SMILES>
-							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/ClH/h1H</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.1</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<CarrierConcentration>
-								<dsi:real>
-									<dsi:value>117</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</CarrierConcentration>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>202Tl: 2.1(2)%</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>1982-12-15T12:00:00Z</Reference_date>
-					<Solution_ID>Tl-201NIST1982-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.086</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>NIST</kc:acronym>
+				<kc:pastAcronyms>NBS</kc:pastAcronyms>
+				<kc:ror>https://ror.org/05xpvk416</kc:ror>
+			</kc:laboratory>
+			<kc:year>1982</kc:year>
+			<kc:inKCRV>false</kc:inKCRV>
+			<kc:doeValid>false</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201NIST1982-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.74046</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1.002</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>Cl</kc:smiles>
+							<kc:InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/ClH/h1H</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>0.1</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:carrierConcentration>
+								<dsi:value>117</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:carrierConcentration>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>202Tl: 2.1(2)%</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>1982-12-15T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201NIST1982-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>3.0465</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -1417,13 +1323,13 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-					</Half-life>
-					<Method_ID>4P-IC-GR-00-00-00 calibrated in 1976 by 4P-PC-MX-NA-GR-CO</Method_ID>
-					<Description>Ionization chamber</Description>
-					<Comments>calibrated in 1976 by 4pi(e,x)-gamma coincidence</Comments>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+					</kc:halfLife>
+					<kc:methodID>4P-IC-GR-00-00-00 calibrated in 1976 by 4P-PC-MX-NA-GR-CO</kc:methodID>
+					<kc:description>Ionization chamber</kc:description>
+					<kc:comments>calibrated in 1976 by 4pi(e,x)-gamma coincidence</kc:comments>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>13118</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1431,23 +1337,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.01</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.48</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201NIST1982-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-IC-GR-00-00-00 calibrated in 1976 by 4P-PC-MX-NA-GR-CO</Method>
-					</Methods>
-					<Reference_source>3</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.01</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.48</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201NIST1982-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-IC-GR-00-00-00 calibrated in 1976 by 4P-PC-MX-NA-GR-CO</kc:method>
+					</kc:methods>
+					<kc:referenceSource>3</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>311400</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1455,72 +1361,64 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.022</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>NIST</Acronym>
-						<PastAcronyms>NBS</PastAcronyms>
-				<ROR>https://ror.org/05xpvk416</ROR>
-			</laboratory>
-			<year>1983</year>
-			<inKCRV>false</inKCRV>
-			<DoE_valid>false</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201NIST1983-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.6916</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1.031</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>[N+](=O)(O)[O-]</SMILES>
-							<InChIKey>GRYLNZFGIOXLOG-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>1</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<SMILES>N(=O)[O-].[O-2].[Ti+3]</SMILES>
-							<InChIKey>HDIJPZVKTMIXSR-UHFFFAOYSA-</InChIKey>
-							<InChI>InChI=1S/HNO2.O.Ti/c2-1-3;;/h(H,2,3);;/q;-2;+3/p-1</InChI>
-							<CarrierConcentration>
-								<dsi:real>
-									<dsi:value>10</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</CarrierConcentration>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.012(2)%, 202Tl: 0.291(44)%</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>1983-06-22T19:00:00Z</Reference_date>
-					<Solution_ID>Tl-201NIST1983-1</Solution_ID>
-					<Method_ID>4P-IC-GR-00-00-00 calibrated in 1976 by 4P-PC-MX-NA-GR-CO</Method_ID>
-					<Description>Ionization chamber</Description>
-					<Comments>calibrated in 1976 by 4pi(e,x)-gamma coincidence</Comments>
-					<Activity>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.022</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>NIST</kc:acronym>
+				<kc:pastAcronyms>NBS</kc:pastAcronyms>
+				<kc:ror>https://ror.org/05xpvk416</kc:ror>
+			</kc:laboratory>
+			<kc:year>1983</kc:year>
+			<kc:inKCRV>false</kc:inKCRV>
+			<kc:doeValid>false</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201NIST1983-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.6916</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1.031</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>[N+](=O)(O)[O-]</kc:smiles>
+							<kc:InChIKey>GRYLNZFGIOXLOG-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>1</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:smiles>N(=O)[O-].[O-2].[Ti+3]</kc:smiles>
+							<kc:InChIKey>HDIJPZVKTMIXSR-UHFFFAOYSA-</kc:InChIKey>
+							<kc:InChI>InChI=1S/HNO2.O.Ti/c2-1-3;;/h(H,2,3);;/q;-2;+3/p-1</kc:InChI>
+							<kc:carrierConcentration>
+								<dsi:value>10</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:carrierConcentration>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.012(2)%, 202Tl: 0.291(44)%</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>1983-06-22T19:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201NIST1983-1</kc:solutionID>
+					<kc:methodID>4P-IC-GR-00-00-00 calibrated in 1976 by 4P-PC-MX-NA-GR-CO</kc:methodID>
+					<kc:description>Ionization chamber</kc:description>
+					<kc:comments>calibrated in 1976 by 4pi(e,x)-gamma coincidence</kc:comments>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>11226</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1528,23 +1426,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.01</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.48</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201NIST1983-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-IC-GR-00-00-00 calibrated in 1976 by 4P-PC-MX-NA-GR-CO</Method>
-					</Methods>
-					<Reference_source>1</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.01</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.48</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201NIST1983-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-IC-GR-00-00-00 calibrated in 1976 by 4P-PC-MX-NA-GR-CO</kc:method>
+					</kc:methods>
+					<kc:referenceSource>1</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>313400</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1552,69 +1450,61 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.013</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>NIST</Acronym>
-						<PastAcronyms>NBS</PastAcronyms>
-				<ROR>https://ror.org/05xpvk416</ROR>
-			</laboratory>
-			<year>1998</year>
-			<inKCRV>false</inKCRV>
-			<DoE_valid>false</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201NIST1998-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.74577</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1.035</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>[N+](=O)(O)[O-]</SMILES>
-							<InChIKey>GRYLNZFGIOXLOG-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>1.15</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<SMILES>N(=O)[O-].[O-2].[Ti+3]</SMILES>
-							<InChIKey>HDIJPZVKTMIXSR-UHFFFAOYSA-</InChIKey>
-							<InChI>InChI=1S/HNO2.O.Ti/c2-1-3;;/h(H,2,3);;/q;-2;+3/p-1</InChI>
-							<CarrierConcentration>
-								<dsi:real>
-									<dsi:value>150</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</CarrierConcentration>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.008(1)%, 202Tl: 0.60(1)%</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>1998-06-29T12:00:00Z</Reference_date>
-					<Solution_ID>Tl-201NIST1998-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.013</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>NIST</kc:acronym>
+				<kc:pastAcronyms>NBS</kc:pastAcronyms>
+				<kc:ror>https://ror.org/05xpvk416</kc:ror>
+			</kc:laboratory>
+			<kc:year>1998</kc:year>
+			<kc:inKCRV>false</kc:inKCRV>
+			<kc:doeValid>false</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201NIST1998-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.74577</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1.035</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>[N+](=O)(O)[O-]</kc:smiles>
+							<kc:InChIKey>GRYLNZFGIOXLOG-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>1.15</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:smiles>N(=O)[O-].[O-2].[Ti+3]</kc:smiles>
+							<kc:InChIKey>HDIJPZVKTMIXSR-UHFFFAOYSA-</kc:InChIKey>
+							<kc:InChI>InChI=1S/HNO2.O.Ti/c2-1-3;;/h(H,2,3);;/q;-2;+3/p-1</kc:InChI>
+							<kc:carrierConcentration>
+								<dsi:value>150</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:carrierConcentration>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.008(1)%, 202Tl: 0.60(1)%</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>1998-06-29T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201NIST1998-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>3.045</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -1622,13 +1512,13 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-					</Half-life>
-					<Method_ID>4P-IC-GR-00-00-00 calibrated in 1976 by 4P-PC-MX-NA-GR-CO</Method_ID>
-					<Description>Ionization chamber </Description>
-					<Comments>calibrated in 1976 by 4pi(e,x)-gamma coincidence</Comments>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+					</kc:halfLife>
+					<kc:methodID>4P-IC-GR-00-00-00 calibrated in 1976 by 4P-PC-MX-NA-GR-CO</kc:methodID>
+					<kc:description>Ionization chamber </kc:description>
+					<kc:comments>calibrated in 1976 by 4pi(e,x)-gamma coincidence</kc:comments>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>68500</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1636,23 +1526,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.03</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.38</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201NIST1998-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-IC-GR-00-00-00 calibrated in 1976 by 4P-PC-MX-NA-GR-CO</Method>
-					</Methods>
-					<Reference_source>4</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.03</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.38</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201NIST1998-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-IC-GR-00-00-00 calibrated in 1976 by 4P-PC-MX-NA-GR-CO</kc:method>
+					</kc:methods>
+					<kc:referenceSource>4</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>317900</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1660,69 +1550,61 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0016</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>NIST</Acronym>
-						<PastAcronyms>NBS</PastAcronyms>
-				<ROR>https://ror.org/05xpvk416</ROR>
-			</laboratory>
-			<year>2011</year>
-			<inKCRV>true</inKCRV>
-			<DoE_valid>true</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201NIST2011-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.60746</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1.03</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>[N+](=O)(O)[O-]</SMILES>
-							<InChIKey>GRYLNZFGIOXLOG-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.97</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<SMILES>N(=O)[O-].[O-2].[Ti+3]</SMILES>
-							<InChIKey>HDIJPZVKTMIXSR-UHFFFAOYSA-</InChIKey>
-							<InChI>InChI=1S/HNO2.O.Ti/c2-1-3;;/h(H,2,3);;/q;-2;+3/p-1</InChI>
-							<CarrierConcentration>
-								<dsi:real>
-									<dsi:value>57</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</CarrierConcentration>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.0540(31)%, 202Tl: 0.319(13)%</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>2011-06-16T17:00:00Z</Reference_date>
-					<Solution_ID>Tl-201NIST2011-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0016</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>NIST</kc:acronym>
+				<kc:pastAcronyms>NBS</kc:pastAcronyms>
+				<kc:ror>https://ror.org/05xpvk416</kc:ror>
+			</kc:laboratory>
+			<kc:year>2011</kc:year>
+			<kc:inKCRV>true</kc:inKCRV>
+			<kc:doeValid>true</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201NIST2011-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.60746</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1.03</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>[N+](=O)(O)[O-]</kc:smiles>
+							<kc:InChIKey>GRYLNZFGIOXLOG-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>0.97</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:smiles>N(=O)[O-].[O-2].[Ti+3]</kc:smiles>
+							<kc:InChIKey>HDIJPZVKTMIXSR-UHFFFAOYSA-</kc:InChIKey>
+							<kc:InChI>InChI=1S/HNO2.O.Ti/c2-1-3;;/h(H,2,3);;/q;-2;+3/p-1</kc:InChI>
+							<kc:carrierConcentration>
+								<dsi:value>57</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:carrierConcentration>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.0540(31)%, 202Tl: 0.319(13)%</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>2011-06-16T17:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201NIST2011-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>3.0421</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -1730,15 +1612,15 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<reference>
-							<doi>http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol2.pdf</doi>
-						</reference>
-					</Half-life>
-					<Method_ID>4P-LS-PE-NA-GR-AC</Method_ID>
-					<Description>Lived-time 4piLS-gamma anti-coincidence</Description>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+						<kc:reference>
+							<kc:doi>http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol2.pdf</kc:doi>
+						</kc:reference>
+					</kc:halfLife>
+					<kc:methodID>4P-LS-PE-NA-GR-AC</kc:methodID>
+					<kc:description>Lived-time 4piLS-gamma anti-coincidence</kc:description>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>21237</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1746,23 +1628,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.51</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.28</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201NIST2011-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-LS-PE-NA-GR-AC</Method>
-					</Methods>
-					<Reference_source>1</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.51</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.28</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201NIST2011-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-LS-PE-NA-GR-AC</kc:method>
+					</kc:methods>
+					<kc:referenceSource>1</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>313100</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1770,81 +1652,73 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.011</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>NMISA</Acronym>
-						<PastAcronyms>NAC, CSIR-NML</PastAcronyms>
-				<ROR>https://ror.org/02j01mp63</ROR>
-			</laboratory>
-			<year>1991</year>
-			<inKCRV>true</inKCRV>
-			<DoE_valid>false</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201NMISA1991-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.599</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1.002</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>[N+](=O)(O)[O-]</SMILES>
-							<InChIKey>GRYLNZFGIOXLOG-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.1</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<SMILES>N(=O)[O-].[O-2].[Ti+3]</SMILES>
-							<InChIKey>HDIJPZVKTMIXSR-UHFFFAOYSA-</InChIKey>
-							<InChI>InChI=1S/HNO2.O.Ti/c2-1-3;;/h(H,2,3);;/q;-2;+3/p-1</InChI>
-							<CarrierConcentration>
-								<dsi:real>
-									<dsi:value>500</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</CarrierConcentration>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.0437(13)%, 202Tl: 0.0230(12)%</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>1991-10-24T12:00:00Z</Reference_date>
-					<Solution_ID>Tl-201NMISA1991-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.011</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>NMISA</kc:acronym>
+				<kc:pastAcronyms>NAC, CSIR-NML</kc:pastAcronyms>
+				<kc:ror>https://ror.org/02j01mp63</kc:ror>
+			</kc:laboratory>
+			<kc:year>1991</kc:year>
+			<kc:inKCRV>true</kc:inKCRV>
+			<kc:doeValid>false</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201NMISA1991-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.599</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1.002</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>[N+](=O)(O)[O-]</kc:smiles>
+							<kc:InChIKey>GRYLNZFGIOXLOG-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>0.1</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:smiles>N(=O)[O-].[O-2].[Ti+3]</kc:smiles>
+							<kc:InChIKey>HDIJPZVKTMIXSR-UHFFFAOYSA-</kc:InChIKey>
+							<kc:InChI>InChI=1S/HNO2.O.Ti/c2-1-3;;/h(H,2,3);;/q;-2;+3/p-1</kc:InChI>
+							<kc:carrierConcentration>
+								<dsi:value>500</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:carrierConcentration>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.0437(13)%, 202Tl: 0.0230(12)%</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>1991-10-24T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201NMISA1991-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>3.038</dsi:value>
 							<dsi:unit>\day</dsi:unit>
-						</dsi:real>
-						<reference>
-							<detail>NCRP report No. 58, 1985, A Handbook of Radioactivity Measurement Procedures, Second Edition</detail>
-						</reference>
-					</Half-life>
-					<Method_ID>4P-LS-MX-NA-GR-CO</Method_ID>
-					<Description>4piLS(e,x)-gamma coincidence</Description>
-					<Comments>see details in \cite{Simpson_1992_Tl201}</Comments>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+						<kc:reference>
+							<kc:detail>NCRP report No. 58, 1985, A Handbook of Radioactivity Measurement Procedures, Second Edition</kc:detail>
+						</kc:reference>
+					</kc:halfLife>
+					<kc:methodID>4P-LS-MX-NA-GR-CO</kc:methodID>
+					<kc:description>4piLS(e,x)-gamma coincidence</kc:description>
+					<kc:comments>see details in \cite{Simpson_1992_Tl201}</kc:comments>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>56800</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1852,23 +1726,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.06</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.52</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201NMISA1991-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-LS-MX-NA-GR-CO</Method>
-					</Methods>
-					<Reference_source>3</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.06</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.52</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201NMISA1991-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-LS-MX-NA-GR-CO</kc:method>
+					</kc:methods>
+					<kc:referenceSource>3</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>312500</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1876,59 +1750,53 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0012</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>NPL</Acronym>
-				<ROR>https://ror.org/015w2mp89</ROR>
-			</laboratory>
-			<year>2006</year>
-			<inKCRV>true</inKCRV>
-			<DoE_valid>true</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201NPL2006-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.61806</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1.001</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>[Na+].[Cl-]</SMILES>
-							<InChIKey>FAPWRFPIFSIZLT-UHFFFAOYSA-M</InChIKey>
-							<InChI>InChI=1S/ClH.Na/h1H;/q;+1/p-1</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>700</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.133(3)%, 202Tl: 0.206(3)%</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>2006-11-07T12:00:00Z</Reference_date>
-					<Solution_ID>Tl-201NPL2006-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0012</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>NPL</kc:acronym>
+				<kc:ror>https://ror.org/015w2mp89</kc:ror>
+			</kc:laboratory>
+			<kc:year>2006</kc:year>
+			<kc:inKCRV>true</kc:inKCRV>
+			<kc:doeValid>true</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201NPL2006-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.61806</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1.001</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>[Na+].[Cl-]</kc:smiles>
+							<kc:InChIKey>FAPWRFPIFSIZLT-UHFFFAOYSA-M</kc:InChIKey>
+							<kc:InChI>InChI=1S/ClH.Na/h1H;/q;+1/p-1</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>700</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.133(3)%, 202Tl: 0.206(3)%</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>2006-11-07T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201NPL2006-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>3.0421</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -1936,15 +1804,15 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<reference>
-							<doi>http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol2.pdf</doi>
-						</reference>
-					</Half-life>
-					<Method_ID>4P-PC-CE-NA-GR-CO</Method_ID>
-					<Description>4pi beta-gamma coincidence</Description>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+						<kc:reference>
+							<kc:doi>http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol2.pdf</kc:doi>
+						</kc:reference>
+					</kc:halfLife>
+					<kc:methodID>4P-PC-CE-NA-GR-CO</kc:methodID>
+					<kc:description>4pi beta-gamma coincidence</kc:description>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>39070</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1952,23 +1820,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.2</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.38</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201NPL2006-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-PC-CE-NA-GR-CO</Method>
-					</Methods>
-					<Reference_source>3</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.2</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.38</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201NPL2006-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-PC-CE-NA-GR-CO</kc:method>
+					</kc:methods>
+					<kc:referenceSource>3</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>311300</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -1976,120 +1844,104 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0011</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>PTB</Acronym>
-				<ROR>https://ror.org/05r3f7h03</ROR>
-			</laboratory>
-			<year>1981</year>
-			<inKCRV>false</inKCRV>
-			<DoE_valid>false</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201PTB1981-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.7064</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-							<dsi:expandedUnc>
-								<dsi:uncertainty>1</dsi:uncertainty>
-								<dsi:coverageFactor>1</dsi:coverageFactor>
-								<dsi:coverageProbability>0.68</dsi:coverageProbability>
-							</dsi:expandedUnc>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>[N+](=O)(O)[O-]</SMILES>
-							<InChIKey>GRYLNZFGIOXLOG-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.1</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<SMILES>[O-]S(=O)(=O)[O-].[Tl+].[Tl+]</SMILES>
-							<InChIKey>YTQVHRVITVLIRD-UHFFFAOYSA-L</InChIKey>
-							<InChI>InChI=1S/H2O4S.2Tl/c1-5(2,3)4;;/h(H2,1,2,3,4);;/q;2*+1/p-2</InChI>
-							<CarrierConcentration>
-								<dsi:real>
-									<dsi:value>40</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</CarrierConcentration>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>202Tl: 0.41(2)%, 203Pb: 0.056(2)%</impurities>
-				</Radioactive_solution>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201PTB1981-2</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.7011</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-							<dsi:expandedUnc>
-								<dsi:uncertainty>1</dsi:uncertainty>
-								<dsi:coverageFactor>1</dsi:coverageFactor>
-								<dsi:coverageProbability>0.68</dsi:coverageProbability>
-							</dsi:expandedUnc>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>[N+](=O)(O)[O-]</SMILES>
-							<InChIKey>GRYLNZFGIOXLOG-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.1</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<SMILES>[O-]S(=O)(=O)[O-].[Tl+].[Tl+]</SMILES>
-							<InChIKey>YTQVHRVITVLIRD-UHFFFAOYSA-L</InChIKey>
-							<InChI>InChI=1S/H2O4S.2Tl/c1-5(2,3)4;;/h(H2,1,2,3,4);;/q;2*+1/p-2</InChI>
-							<CarrierConcentration>
-								<dsi:real>
-									<dsi:value>40</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</CarrierConcentration>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>202Tl: 0.41(2)%, 203Pb: 0.056(2)%</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>1981-05-28T00:00:00Z</Reference_date>
-					<Solution_ID>Tl-201PTB1981-1</Solution_ID>
-					<Method_ID>4P-PP-MX-GL-GR-CO</Method_ID>
-					<Description>4piPPC-gamma(Ge(Li)) coincidence</Description>
-					<Activity>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0011</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>PTB</kc:acronym>
+				<kc:ror>https://ror.org/05r3f7h03</kc:ror>
+			</kc:laboratory>
+			<kc:year>1981</kc:year>
+			<kc:inKCRV>false</kc:inKCRV>
+			<kc:doeValid>false</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201PTB1981-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.7064</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1</dsi:uncertainty>
+							<dsi:coverageFactor>1</dsi:coverageFactor>
+							<dsi:coverageProbability>0.68</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>[N+](=O)(O)[O-]</kc:smiles>
+							<kc:InChIKey>GRYLNZFGIOXLOG-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>0.1</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:smiles>[O-]S(=O)(=O)[O-].[Tl+].[Tl+]</kc:smiles>
+							<kc:InChIKey>YTQVHRVITVLIRD-UHFFFAOYSA-L</kc:InChIKey>
+							<kc:InChI>InChI=1S/H2O4S.2Tl/c1-5(2,3)4;;/h(H2,1,2,3,4);;/q;2*+1/p-2</kc:InChI>
+							<kc:carrierConcentration>
+								<dsi:value>40</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:carrierConcentration>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>202Tl: 0.41(2)%, 203Pb: 0.056(2)%</kc:impurities>
+				</kc:radioactiveSolution>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201PTB1981-2</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.7011</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>1</dsi:uncertainty>
+							<dsi:coverageFactor>1</dsi:coverageFactor>
+							<dsi:coverageProbability>0.68</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>[N+](=O)(O)[O-]</kc:smiles>
+							<kc:InChIKey>GRYLNZFGIOXLOG-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>0.1</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:smiles>[O-]S(=O)(=O)[O-].[Tl+].[Tl+]</kc:smiles>
+							<kc:InChIKey>YTQVHRVITVLIRD-UHFFFAOYSA-L</kc:InChIKey>
+							<kc:InChI>InChI=1S/H2O4S.2Tl/c1-5(2,3)4;;/h(H2,1,2,3,4);;/q;2*+1/p-2</kc:InChI>
+							<kc:carrierConcentration>
+								<dsi:value>40</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:carrierConcentration>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>202Tl: 0.41(2)%, 203Pb: 0.056(2)%</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>1981-05-28T00:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201PTB1981-1</kc:solutionID>
+					<kc:methodID>4P-PP-MX-GL-GR-CO</kc:methodID>
+					<kc:description>4piPPC-gamma(Ge(Li)) coincidence</kc:description>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>16442</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -2097,18 +1949,18 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.11</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.56</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-				<Mesurement>
-					<Reference_date>1981-05-28T00:00:00Z</Reference_date>
-					<Solution_ID>Tl-201PTB1981-2</Solution_ID>
-					<Method_ID>4P-PP-MX-GL-GR-CO</Method_ID>
-					<Description>4piPPC-gamma(Ge(Li)) coincidence</Description>
-					<Activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.11</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.56</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+				<kc:measurement>
+					<kc:referenceDate>1981-05-28T00:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201PTB1981-2</kc:solutionID>
+					<kc:methodID>4P-PP-MX-GL-GR-CO</kc:methodID>
+					<kc:description>4piPPC-gamma(Ge(Li)) coincidence</kc:description>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>16418</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -2116,23 +1968,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.11</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.56</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201PTB1981-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-PP-MX-GL-GR-CO</Method>
-					</Methods>
-					<Reference_source>3</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.11</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.56</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201PTB1981-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-PP-MX-GL-GR-CO</kc:method>
+					</kc:methods>
+					<kc:referenceSource>3</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>308080</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -2140,20 +1992,20 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0019</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201PTB1981-2</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-PP-MX-GL-GR-CO</Method>
-					</Methods>
-					<Reference_source>3</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0019</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201PTB1981-2</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-PP-MX-GL-GR-CO</kc:method>
+					</kc:methods>
+					<kc:referenceSource>3</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>308280</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -2161,73 +2013,65 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0019</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>PTB</Acronym>
-				<ROR>https://ror.org/05r3f7h03</ROR>
-			</laboratory>
-			<year>2005</year>
-			<inKCRV>true</inKCRV>
-			<DoE_valid>true</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Tl-201PTB2005-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.6239</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-							<dsi:expandedUnc>
-								<dsi:uncertainty>9</dsi:uncertainty>
-								<dsi:coverageFactor>1</dsi:coverageFactor>
-								<dsi:coverageProbability>0.68</dsi:coverageProbability>
-							</dsi:expandedUnc>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1.002</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>[N+](=O)(O)[O-]</SMILES>
-							<InChIKey>GRYLNZFGIOXLOG-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.1</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<SMILES>[O-]S(=O)(=O)[O-].[Tl+].[Tl+]</SMILES>
-							<InChIKey>YTQVHRVITVLIRD-UHFFFAOYSA-L</InChIKey>
-							<InChI>InChI=1S/H2O4S.2Tl/c1-5(2,3)4;;/h(H2,1,2,3,4);;/q;2*+1/p-2</InChI>
-							<CarrierConcentration>
-								<dsi:real>
-									<dsi:value>40</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</CarrierConcentration>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>200Tl: 0.359(10)%, 202Tl: 0.166(5)%</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>2005-09-22T00:00:00Z</Reference_date>
-					<Solution_ID>Tl-201PTB2005-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0019</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>PTB</kc:acronym>
+				<kc:ror>https://ror.org/05r3f7h03</kc:ror>
+			</kc:laboratory>
+			<kc:year>2005</kc:year>
+			<kc:inKCRV>true</kc:inKCRV>
+			<kc:doeValid>true</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Tl-201PTB2005-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.6239</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>9</dsi:uncertainty>
+							<dsi:coverageFactor>1</dsi:coverageFactor>
+							<dsi:coverageProbability>0.68</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1.002</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>[N+](=O)(O)[O-]</kc:smiles>
+							<kc:InChIKey>GRYLNZFGIOXLOG-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>0.1</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:smiles>[O-]S(=O)(=O)[O-].[Tl+].[Tl+]</kc:smiles>
+							<kc:InChIKey>YTQVHRVITVLIRD-UHFFFAOYSA-L</kc:InChIKey>
+							<kc:InChI>InChI=1S/H2O4S.2Tl/c1-5(2,3)4;;/h(H2,1,2,3,4);;/q;2*+1/p-2</kc:InChI>
+							<kc:carrierConcentration>
+								<dsi:value>40</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:carrierConcentration>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>200Tl: 0.359(10)%, 202Tl: 0.166(5)%</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>2005-09-22T00:00:00Z</kc:referenceDate>
+					<kc:solutionID>Tl-201PTB2005-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>3.0424</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -2235,12 +2079,12 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-					</Half-life>
-					<Method_ID>4P-PP-MX-NA-GR-CO</Method_ID>
-					<Description>4piPPC(e,x)-gamma coincidence</Description>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+					</kc:halfLife>
+					<kc:methodID>4P-PP-MX-NA-GR-CO</kc:methodID>
+					<kc:description>4piPPC(e,x)-gamma coincidence</kc:description>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>62830</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -2248,23 +2092,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.07</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.74</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Tl-201PTB2005-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-PP-MX-NA-GR-CO</Method>
-					</Methods>
-					<Reference_source>2</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.07</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.74</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Tl-201PTB2005-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-PP-MX-NA-GR-CO</kc:method>
+					</kc:methods>
+					<kc:referenceSource>2</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>312500</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -2272,11 +2116,11 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.002</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-	</Comparison_metadata>
-</Comparison>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.002</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+	</kc:comparisonMetadata>
+</kc:comparison>

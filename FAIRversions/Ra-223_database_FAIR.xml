@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Comparison xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xmlns:dsi="https://ptb.de/si">
-	<General_information>
-		<Comparison_code>BIPM.RI(II)-K1.Ra-223</Comparison_code>
-		<ServiceCategoryID></ServiceCategoryID>
-		<Pilot>
-			<Acronym>BIPM</Acronym>
-			<ROR_indentifier>https://ror.org/055vkyj43</ROR_indentifier>
-		</Pilot>
-	</General_information>
-	<Comparison_data>
-		<Release>
-			<doi>https://doi.org/10.1088/0026-1394/58/1A/06007</doi>
-			<Year>2021</Year>
-			<KCRV>
-				<dsi:real>
-					<dsi:value>54530</dsi:value>
-					<dsi:unit>kBq</dsi:unit>
-					<dsi:expandedUnc>
-						<dsi:uncertainty>96</dsi:uncertainty>
-						<dsi:coverageFactor>1</dsi:coverageFactor>
-						<dsi:coverageProbability>0.68</dsi:coverageProbability>
-					</dsi:expandedUnc>
-				</dsi:real>
-			</KCRV>
-			<Degrees_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>NPL</Acronym>
-						<ROR>https://ror.org/015w2mp89</ROR>
-					</laboratory>
-					<dsi:real>
+<kc:comparison 
+    xmlns:kc="KC_Schema" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dsi="https://ptb.de/si">
+	<kc:generalInformation>
+		<kc:comparisonCode>BIPM.RI(II)-K1.Ra-223</kc:comparisonCode>
+		<kc:serviceCategoryID></kc:serviceCategoryID>
+		<kc:pilot>
+			<kc:acronym>BIPM</kc:acronym>
+			<kc:ror>https://ror.org/055vkyj43</kc:ror>
+		</kc:pilot>
+	</kc:generalInformation>
+	<kc:comparisonData>
+		<kc:release>
+			<kc:doi>https://doi.org/10.1088/0026-1394/58/1A/06007</kc:doi>
+			<kc:year>2021</kc:year>
+			<kc:kcrv>
+				<dsi:value>54530</dsi:value>
+				<dsi:unit>kBq</dsi:unit>
+				<dsi:expandedUnc>
+					<dsi:uncertainty>96</dsi:uncertainty>
+					<dsi:coverageFactor>1</dsi:coverageFactor>
+					<dsi:coverageProbability>0.68</dsi:coverageProbability>
+				</dsi:expandedUnc>
+			</kc:kcrv>
+			<kc:degreesOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>NPL</kc:acronym>
+						<kc:ror>https://ror.org/015w2mp89</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>0.21</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -38,14 +38,14 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>PTB</Acronym>
-						<ROR>https://ror.org/05r3f7h03</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>PTB</kc:acronym>
+						<kc:ror>https://ror.org/05r3f7h03</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>0.06</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -53,15 +53,15 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>LNE-LNHB</Acronym>
-						<PastAcronyms>LMRI, LPRI, BNM-LNHB</PastAcronyms>
-						<ROR>https://ror.org/03az79194</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>LNE-LNHB</kc:acronym>
+						<kc:pastAcronyms>LMRI, LPRI, BNM-LNHB</kc:pastAcronyms>
+						<kc:ror>https://ror.org/03az79194</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>-0.13</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -69,31 +69,29 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-			</Degrees_of_equivalence>
-		</Release>
-		<Release>
-			<doi>https://doi.org/10.1088/0026-1394/60/1A/06002</doi>
-			<Year>2022</Year>
-			<KCRV>
-				<dsi:real>
-					<dsi:value>54670</dsi:value>
-					<dsi:unit>kBq</dsi:unit>
-					<dsi:expandedUnc>
-						<dsi:uncertainty>140</dsi:uncertainty>
-						<dsi:coverageFactor>1</dsi:coverageFactor>
-						<dsi:coverageProbability>0.68</dsi:coverageProbability>
-					</dsi:expandedUnc>
-				</dsi:real>
-			</KCRV>
-			<Degrees_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>NPL</Acronym>
-						<ROR>https://ror.org/015w2mp89</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+			</kc:degreesOfEquivalence>
+		</kc:release>
+		<kc:release>
+			<kc:doi>https://doi.org/10.1088/0026-1394/60/1A/06002</kc:doi>
+			<kc:year>2022</kc:year>
+			<kc:kcrv>
+				<dsi:value>54670</dsi:value>
+				<dsi:unit>kBq</dsi:unit>
+				<dsi:expandedUnc>
+					<dsi:uncertainty>140</dsi:uncertainty>
+					<dsi:coverageFactor>1</dsi:coverageFactor>
+					<dsi:coverageProbability>0.68</dsi:coverageProbability>
+				</dsi:expandedUnc>
+			</kc:kcrv>
+			<kc:degreesOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>NPL</kc:acronym>
+						<kc:ror>https://ror.org/015w2mp89</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>0.07</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -101,14 +99,14 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>PTB</Acronym>
-						<ROR>https://ror.org/05r3f7h03</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>PTB</kc:acronym>
+						<kc:ror>https://ror.org/05r3f7h03</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>-0.08</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -116,15 +114,15 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>LNE-LNHB</Acronym>
-						<PastAcronyms>LMRI, LPRI, BNM-LNHB</PastAcronyms>
-						<ROR>https://ror.org/03az79194</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>LNE-LNHB</kc:acronym>
+						<kc:pastAcronyms>LMRI, LPRI, BNM-LNHB</kc:pastAcronyms>
+						<kc:ror>https://ror.org/03az79194</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>-0.27</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -132,15 +130,15 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-				<Degree_of_equivalence>
-					<laboratory>
-						<Acronym>POLATOM</Acronym>
-						<PastAcronyms>IBJ, RC</PastAcronyms>
-						<ROR>https://ror.org/00nzsxq20</ROR>
-					</laboratory>
-					<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+				<kc:degreeOfEquivalence>
+					<kc:laboratory>
+						<kc:acronym>POLATOM</kc:acronym>
+						<kc:pastAcronyms>IBJ, RC</kc:pastAcronyms>
+						<kc:ror>https://ror.org/00nzsxq20</kc:ror>
+					</kc:laboratory>
+					<kc:result>
 						<dsi:value>0.39</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:expandedUnc>
@@ -148,78 +146,61 @@
 							<dsi:coverageFactor>2</dsi:coverageFactor>
 							<dsi:coverageProbability>0.95</dsi:coverageProbability>
 						</dsi:expandedUnc>
-					</dsi:real>
-				</Degree_of_equivalence>
-			</Degrees_of_equivalence>
-		</Release>
-	</Comparison_data>
-	<Comparison_metadata>
-		<Submission>
-			<laboratory>
-				<Acronym>LNE-LNHB</Acronym>
-						<PastAcronyms>LMRI, LPRI, BNM-LNHB</PastAcronyms>
-				<ROR>https://ror.org/03az79194</ROR>
-			</laboratory>
-			<year>2018</year>
-			<inKCRV>true</inKCRV>
-			<DoE_valid>true</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Ra-223LNE-LNHB2018-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.6747</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1.016</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>Cl</SMILES>
-							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/ClH/h1H</InChI>
-							<SolvantConcentration>
-								<dsi:real>
+					</kc:result>
+				</kc:degreeOfEquivalence>
+			</kc:degreesOfEquivalence>
+		</kc:release>
+	</kc:comparisonData>
+	<kc:comparisonMetadata>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>LNE-LNHB</kc:acronym>
+				<kc:pastAcronyms>LMRI, LPRI, BNM-LNHB</kc:pastAcronyms>
+				<kc:ror>https://ror.org/03az79194</kc:ror>
+			</kc:laboratory>
+			<kc:year>2018</kc:year>
+			<kc:inKCRV>true</kc:inKCRV>
+			<kc:doeValid>true</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Ra-223LNE-LNHB2018-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.6747</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1.016</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>Cl</kc:smiles>
+							<kc:InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/ClH/h1H</kc:InChI>
+							<kc:solvantConcentration>
 									<dsi:value>1</dsi:value>
 									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-							<SMILES>[Na+].[Cl-]</SMILES>
-							<InChIKey>FAPWRFPIFSIZLT-UHFFFAOYSA-M</InChIKey>
-							<InChI>InChI=1S/ClH.Na/h1H;/q;+1/p-1</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.054</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<SMILES>[Ba]</SMILES>
-							<InChIKey>DSAJWYNOEDNPEQ-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/Ba</InChI>
-							<CarrierConcentration>
-								<dsi:real>
-									<dsi:value>22</dsi:value>
-									<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
-								</dsi:real>
-							</CarrierConcentration>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>None detected</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>2018-03-15T12:00:00Z</Reference_date>
-					<Solution_ID>Ra-223LNE-LNHB2018-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:smiles>[Ba]</kc:smiles>
+							<kc:InChIKey>DSAJWYNOEDNPEQ-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/Ba</kc:InChI>
+							<kc:carrierConcentration>
+								<dsi:value>22</dsi:value>
+								<dsi:unit>\micro\gram\gram\tothe{-1}</dsi:unit>
+							</kc:carrierConcentration>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>None detected</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>2018-03-15T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Ra-223LNE-LNHB2018-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>11.43</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -227,12 +208,12 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-					</Half-life>
-					<Method_ID>4P-LS-BP-00-00-TD</Method_ID>
-					<Description>TDCR</Description>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+					</kc:halfLife>
+					<kc:methodID>4P-LS-BP-00-00-TD</kc:methodID>
+					<kc:description>TDCR</kc:description>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>1239.1</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -240,23 +221,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.01</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.19</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Ra-223LNE-LNHB2018-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-LS-BP-00-00-TD</Method>
-					</Methods>
-					<Reference_source>2</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.01</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.19</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Ra-223LNE-LNHB2018-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-LS-BP-00-00-TD</kc:method>
+					</kc:methods>
+					<kc:referenceSource>2</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>54400</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -264,62 +245,56 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0011</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>NPL</Acronym>
-				<ROR>https://ror.org/015w2mp89</ROR>
-			</laboratory>
-			<year>2014</year>
-			<inKCRV>true</inKCRV>
-			<DoE_valid>true</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Ra-223NPL2014-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.62395</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1.02</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>Cl</SMILES>
-							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/ClH/h1H</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>1</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-							<SMILES>[223Ra]</SMILES>
-							<InChIKey>HCWPIIXVSYCSAN-OIOBTWANSA-N</InChIKey>
-							<InChI>InChI=1S/Ra/i1-3</InChI>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>None detected</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>2014-05-08T12:00:00Z</Reference_date>
-					<Solution_ID>Ra-223NPL2014-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0011</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>NPL</kc:acronym>
+				<kc:ror>https://ror.org/015w2mp89</kc:ror>
+			</kc:laboratory>
+			<kc:year>2014</kc:year>
+			<kc:inKCRV>true</kc:inKCRV>
+			<kc:doeValid>true</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Ra-223NPL2014-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.62395</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1.02</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>Cl</kc:smiles>
+							<kc:InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/ClH/h1H</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>1</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+							<kc:smiles>[223Ra]</kc:smiles>
+							<kc:InChIKey>HCWPIIXVSYCSAN-OIOBTWANSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/Ra/i1-3</kc:InChI>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>None detected</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>2014-05-08T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Ra-223NPL2014-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>11.43</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -327,12 +302,12 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-					</Half-life>
-					<Method_ID>4P-LS-MX-GH-GR-CO</Method_ID>
-					<Description>4piLS-gamma coincidence</Description>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+					</kc:halfLife>
+					<kc:methodID>4P-LS-MX-GH-GR-CO</kc:methodID>
+					<kc:description>4piLS-gamma coincidence</kc:description>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>1193.2</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -340,23 +315,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.1</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.26</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Ra-223NPL2014-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-LS-MX-GH-GR-CO</Method>
-					</Methods>
-					<Reference_source>1</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.1</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.26</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Ra-223NPL2014-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-LS-MX-GH-GR-CO</kc:method>
+					</kc:methods>
+					<kc:referenceSource>1</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>54740</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -364,83 +339,59 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0046</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>POLATOM</Acronym>
-						<PastAcronyms>IBJ, RC</PastAcronyms>
-				<ROR>https://ror.org/00nzsxq20</ROR>
-			</laboratory>
-			<year>2021</year>
-			<inKCRV>true</inKCRV>
-			<DoE_valid>true</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Ra-223POLATOM2021-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.63740</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-							<dsi:expandedUnc>
-								<dsi:uncertainty>30</dsi:uncertainty>
-								<dsi:coverageFactor>1</dsi:coverageFactor>
-								<dsi:coverageProbability>0.68</dsi:coverageProbability>
-							</dsi:expandedUnc>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>Cl</SMILES>
-							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/ClH/h1H</InChI>
-							<SolvantConcentration>
-								<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0046</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>POLATOM</kc:acronym>
+				<kc:pastAcronyms>IBJ, RC</kc:pastAcronyms>
+				<kc:ror>https://ror.org/00nzsxq20</kc:ror>
+			</kc:laboratory>
+			<kc:year>2021</kc:year>
+			<kc:inKCRV>true</kc:inKCRV>
+			<kc:doeValid>true</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Ra-223POLATOM2021-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.63740</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+						<dsi:expandedUnc>
+							<dsi:uncertainty>30</dsi:uncertainty>
+							<dsi:coverageFactor>1</dsi:coverageFactor>
+							<dsi:coverageProbability>0.68</dsi:coverageProbability>
+						</dsi:expandedUnc>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>Cl</kc:smiles>
+							<kc:InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/ClH/h1H</kc:InChI>
+							<kc:solvantConcentration>
 									<dsi:value>0.005</dsi:value>
 									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-							<SMILES>[Na+].[Cl-]</SMILES>
-							<InChIKey>FAPWRFPIFSIZLT-UHFFFAOYSA-M</InChIKey>
-							<InChI>InChI=1S/ClH.Na/h1H;/q;+1/p-1</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.11</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-							<SMILES>C(C(=O)[O-])C(CC(=O)[O-])(C(=O)[O-])O.[Na+].[Na+].[Na+]</SMILES>
-							<InChIKey>HRXKRNGNAMMEHJ-UHFFFAOYSA-K</InChIKey>
-							<InChI>InChI=1S/C6H8O7.3Na/c7-3(8)1-6(13,5(11)12)2-4(9)10;;;/h13H,1-2H2,(H,7,8)(H,9,10)(H,11,12);;;/q;3*+1/p-3</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.03</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>None detected</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>2021-09-10T12:00:00Z</Reference_date>
-					<Solution_ID>Ra-223POLATOM2021-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>None detected</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>2021-09-10T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Ra-223POLATOM2021-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>11.43</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -448,15 +399,15 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<reference>
-							<doi>http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol6.pdf</doi>
-						</reference>
-					</Half-life>
-					<Method_ID>4P-LS-MX-00-00-TD</Method_ID>
-					<Description>TDCR</Description>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+						<kc:reference>
+							<kc:doi>http://www.bipm.org/utils/common/pdf/monographieRI/Monographie_BIPM-5_Tables_Vol6.pdf</kc:doi>
+						</kc:reference>
+					</kc:halfLife>
+					<kc:methodID>4P-LS-MX-00-00-TD</kc:methodID>
+					<kc:description>TDCR</kc:description>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>919.9</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -464,21 +415,21 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Ra-223POLATOM2021-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-LS-MX-00-00-TD</Method>
-					</Methods>
-					<Reference_source>2</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Ra-223POLATOM2021-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-LS-MX-00-00-TD</kc:method>
+					</kc:methods>
+					<kc:referenceSource>2</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>55055</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -486,50 +437,46 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.001</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>PTB</Acronym>
-				<ROR>https://ror.org/05r3f7h03</ROR>
-			</laboratory>
-			<year>2014</year>
-			<inKCRV>true</inKCRV>
-			<DoE_valid>true</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Ra-223PTB2014-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.6299</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1.000</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-						</Solvant>
-						<Carrier>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>227Ac: &lt; 0.03 %</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>2014-07-01T00:00:00Z</Reference_date>
-					<Solution_ID>Ra-223PTB2014-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.001</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>PTB</kc:acronym>
+				<kc:ror>https://ror.org/05r3f7h03</kc:ror>
+			</kc:laboratory>
+			<kc:year>2014</kc:year>
+			<kc:inKCRV>true</kc:inKCRV>
+			<kc:doeValid>true</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Ra-223PTB2014-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.6299</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1.000</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+						</kc:solvant>
+						<kc:carrier>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>227Ac: &lt; 0.03 %</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>2014-07-01T00:00:00Z</kc:referenceDate>
+					<kc:solutionID>Ra-223PTB2014-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>11.43</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -537,13 +484,13 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-					</Half-life>
-					<Method_ID>4P-LS-MX-00-00-CN</Method_ID>
-					<Description>CIEMAT/NIST</Description>
-					<Comments>The final result is the weighted mean of the results of the two methods. The relative combined uncertainty (0.23~\%) of the TDCR result is adopted for the final result. This is larger than the internal and external relative uncertainties of the weigthed mean</Comments>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+					</kc:halfLife>
+					<kc:methodID>4P-LS-MX-00-00-CN</kc:methodID>
+					<kc:description>CIEMAT/NIST</kc:description>
+					<kc:comments>The final result is the weighted mean of the results of the two methods. The relative combined uncertainty (0.23~\%) of the TDCR result is adopted for the final result. This is larger than the internal and external relative uncertainties of the weigthed mean</kc:comments>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>4149</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -551,16 +498,16 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.04</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.22</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-				<Mesurement>
-					<Reference_date>2014-07-01T00:00:00Z</Reference_date>
-					<Solution_ID>Ra-223PTB2014-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.04</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.22</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+				<kc:measurement>
+					<kc:referenceDate>2014-07-01T00:00:00Z</kc:referenceDate>
+					<kc:solutionID>Ra-223PTB2014-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>11.43</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -568,13 +515,13 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-					</Half-life>
-					<Method_ID>4P-LS-MX-00-00-TD \cite{Kossert_2015_Ra223}</Method_ID>
-					<Description>TDCR</Description>
-					<Comments>The final result is the weighted mean of the results of the two methods. The relative combined uncertainty (0.23~\%) of the TDCR result is adopted for the final result. This is larger than the internal and external relative uncertainties of the weigthed mean</Comments>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+					</kc:halfLife>
+					<kc:methodID>4P-LS-MX-00-00-TD \cite{Kossert_2015_Ra223}</kc:methodID>
+					<kc:description>TDCR</kc:description>
+					<kc:comments>The final result is the weighted mean of the results of the two methods. The relative combined uncertainty (0.23~\%) of the TDCR result is adopted for the final result. This is larger than the internal and external relative uncertainties of the weigthed mean</kc:comments>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>4149</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -582,24 +529,24 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.04</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.22</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Ra-223PTB2014-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-LS-MX-00-00-CN</Method>
-						<Method>4P-LS-MX-00-00-TD \cite{Kossert_2015_Ra223}</Method>
-					</Methods>
-					<Reference_source>2</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.04</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.22</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Ra-223PTB2014-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-LS-MX-00-00-CN</kc:method>
+						<kc:method>4P-LS-MX-00-00-TD \cite{Kossert_2015_Ra223}</kc:method>
+					</kc:methods>
+					<kc:referenceSource>2</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>54590</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -607,11 +554,11 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0016</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-	</Comparison_metadata>
-</Comparison>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0016</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+	</kc:comparisonMetadata>
+</kc:comparison>

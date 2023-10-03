@@ -1,86 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Comparison xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xmlns:dsi="https://ptb.de/si">
-	<General_information>
-		<Comparison_code>BIPM.RI(II)-K1.Ac-225</Comparison_code>
-		<ServiceCategoryID></ServiceCategoryID>
-		<Pilot>
-			<Acronym>BIPM</Acronym>
-			<ROR_indentifier>https://ror.org/055vkyj43</ROR_indentifier>
-		</Pilot>
-	</General_information>
-	<Comparison_data>
-		<Release>
-			<doi>https://doi.org/10.1088/0026-1394/58/1A/06018</doi>
-			<Year>2021</Year>
-		</Release>
-		<Release>
-			<doi>https://doi.org/10.1088/0026-1394/60/1A/06001</doi>
-			<Year>2022</Year>
-			<KCRV>
-				<dsi:real>
-					<dsi:value>74800</dsi:value>
-					<dsi:unit>kBq</dsi:unit>
-					<dsi:expandedUnc>
-						<dsi:uncertainty>280</dsi:uncertainty>
-						<dsi:coverageFactor>1</dsi:coverageFactor>
-						<dsi:coverageProbability>0.68</dsi:coverageProbability>
-					</dsi:expandedUnc>
-				</dsi:real>
-			</KCRV>
-			<Degrees_of_equivalence>
-			</Degrees_of_equivalence>
-		</Release>
-	</Comparison_data>
-	<Comparison_metadata>
-		<Submission>
-			<laboratory>
-				<Acronym>POLATOM</Acronym>
-						<PastAcronyms>IBJ, RC</PastAcronyms>
-				<ROR>https://ror.org/00nzsxq20</ROR>
-			</laboratory>
-			<year>2021</year>
-			<inKCRV>true</inKCRV>
-			<DoE_valid>true</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Ac-225POLATOM2021-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.57991</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>Cl</SMILES>
-							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/ClH/h1H</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.1</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>none</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>2021-07-05T12:00:00Z</Reference_date>
-					<Solution_ID>Ac-225POLATOM2021-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+<kc:comparison 
+    xmlns:kc="KC_Schema" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dsi="https://ptb.de/si">
+	<kc:generalInformation>
+		<kc:comparisonCode>BIPM.RI(II)-K1.Ac-225</kc:comparisonCode>
+		<kc:serviceCategoryID></kc:serviceCategoryID>
+		<kc:pilot>
+			<kc:acronym>BIPM</kc:acronym>
+			<kc:ror>https://ror.org/055vkyj43</kc:ror>
+		</kc:pilot>
+	</kc:generalInformation>
+	<kc:comparisonData>
+		<kc:release>
+			<kc:doi>https://doi.org/10.1088/0026-1394/58/1A/06018</kc:doi>
+			<kc:year>2021</kc:year>
+		</kc:release>
+		<kc:release>
+			<kc:doi>https://doi.org/10.1088/0026-1394/60/1A/06001</kc:doi>
+			<kc:year>2022</kc:year>
+			<kc:kcrv>
+				<dsi:value>74800</dsi:value>
+				<dsi:unit>kBq</dsi:unit>
+				<dsi:expandedUnc>
+					<dsi:uncertainty>280</dsi:uncertainty>
+					<dsi:coverageFactor>1</dsi:coverageFactor>
+					<dsi:coverageProbability>0.68</dsi:coverageProbability>
+				</dsi:expandedUnc>
+			</kc:kcrv>
+			<kc:degreesOfEquivalence>
+			</kc:degreesOfEquivalence>
+		</kc:release>
+	</kc:comparisonData>
+	<kc:comparisonMetadata>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>POLATOM</kc:acronym>
+				<kc:pastAcronyms>IBJ, RC</kc:pastAcronyms>
+				<kc:ror>https://ror.org/00nzsxq20</kc:ror>
+			</kc:laboratory>
+			<kc:year>2021</kc:year>
+			<kc:inKCRV>true</kc:inKCRV>
+			<kc:doeValid>true</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Ac-225POLATOM2021-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.57991</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>Cl</kc:smiles>
+							<kc:InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/ClH/h1H</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>0.1</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>none</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>2021-07-05T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Ac-225POLATOM2021-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>9.920</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -88,16 +82,16 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<reference>
-							<doi>https://doi.org/10.1016/j.apradiso.2012.07.014</doi>
-						</reference>
-					</Half-life>
-					<Method_ID>4P-LS-MX-00-00-TD</Method_ID>
-					<Description>TDCR</Description>
-					<Comments>The TDCR method was used in the 4pi(LS)-gamma coincidence system (TDCRG) with TDCR detector in the beta channel~\cite{Ziemek2016}. The result is the weighted mean of these two measurement systems evaluated by POLATOM and is equal to 2023(5) kBq.</Comments>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+						<kc:reference>
+							<kc:doi>https://doi.org/10.1016/j.apradiso.2012.07.014</kc:doi>
+						</kc:reference>
+					</kc:halfLife>
+					<kc:methodID>4P-LS-MX-00-00-TD</kc:methodID>
+					<kc:description>TDCR</kc:description>
+					<kc:comments>The TDCR method was used in the 4pi(LS)-gamma coincidence system (TDCRG) with TDCR detector in the beta channel~\cite{Ziemek2016}. The result is the weighted mean of these two measurement systems evaluated by POLATOM and is equal to 2023(5) kBq.</kc:comments>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>2023</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -105,14 +99,14 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-					</Activity>
-				</Mesurement>
-				<Mesurement>
-					<Reference_date>2021-07-05T12:00:00Z</Reference_date>
-					<Solution_ID>Ac-225POLATOM2021-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:measurementResult>
+					</kc:activity>
+				</kc:measurement>
+				<kc:measurement>
+					<kc:referenceDate>2021-07-05T12:00:00Z</kc:referenceDate>
+					<kc:solutionID>Ac-225POLATOM2021-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>9.920</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -120,16 +114,16 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<reference>
-							<doi>https://doi.org/10.1016/j.apradiso.2012.07.014</doi>
-						</reference>
-					</Half-life>
-					<Method_ID>4P-LS-MX-00-00-TD</Method_ID>
-					<Description>TDCR</Description>
-					<Comments>The TDCR method was used in the 4pi(LS)-gamma coincidence system (TDCRG) with TDCR detector in the beta channel~\cite{Ziemek2016}. The result is the weighted mean of these two measurement systems evaluated by POLATOM and is equal to 2023(5) kBq.</Comments>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+						<kc:reference>
+							<kc:doi>https://doi.org/10.1016/j.apradiso.2012.07.014</kc:doi>
+						</kc:reference>
+					</kc:halfLife>
+					<kc:methodID>4P-LS-MX-00-00-TD</kc:methodID>
+					<kc:description>TDCR</kc:description>
+					<kc:comments>The TDCR method was used in the 4pi(LS)-gamma coincidence system (TDCRG) with TDCR detector in the beta channel~\cite{Ziemek2016}. The result is the weighted mean of these two measurement systems evaluated by POLATOM and is equal to 2023(5) kBq.</kc:comments>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>2023</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -137,22 +131,22 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Ac-225POLATOM2021-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-LS-MX-00-00-TD</Method>
-						<Method>4P-LS-MX-00-00-TD</Method>
-					</Methods>
-					<Reference_source>2</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Ac-225POLATOM2021-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-LS-MX-00-00-TD</kc:method>
+						<kc:method>4P-LS-MX-00-00-TD</kc:method>
+					</kc:methods>
+					<kc:referenceSource>2</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>75081</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -160,59 +154,53 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0011</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-		<Submission>
-			<laboratory>
-				<Acronym>PTB</Acronym>
-				<ROR>https://ror.org/05r3f7h03</ROR>
-			</laboratory>
-			<year>2019</year>
-			<inKCRV>true</inKCRV>
-			<DoE_valid>true</DoE_valid>
-			<Radioactive_solutions>
-				<Radioactive_solution>
-					<Solution_ID>Ac-225PTB2019-1</Solution_ID>
-					<mass>
-						<dsi:real>
-							<dsi:value>3.60885</dsi:value>
-							<dsi:unit>\gram</dsi:unit>
-						</dsi:real>
-					</mass>
-					<density>
-						<dsi:real>
-							<dsi:value>1.0</dsi:value>
-							<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
-						</dsi:real>
-					</density>
-					<Chemical_composition>
-						<Solvant>
-							<SMILES>Cl</SMILES>
-							<InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</InChIKey>
-							<InChI>InChI=1S/ClH/h1H</InChI>
-							<SolvantConcentration>
-								<dsi:real>
-									<dsi:value>0.1</dsi:value>
-									<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
-								</dsi:real>
-							</SolvantConcentration>
-						</Solvant>
-						<Carrier>
-						</Carrier>
-					</Chemical_composition>
-					<impurities>225Ra: 9.8(25)x10-3 %</impurities>
-				</Radioactive_solution>
-			</Radioactive_solutions>
-			<Laboratory_measurements>
-				<Mesurement>
-					<Reference_date>2019-06-14T00:00:00Z</Reference_date>
-					<Solution_ID>Ac-225PTB2019-1</Solution_ID>
-					<Half-life>
-						<dsi:real>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0011</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+		<kc:submission>
+			<kc:laboratory>
+				<kc:acronym>PTB</kc:acronym>
+				<kc:ror>https://ror.org/05r3f7h03</kc:ror>
+			</kc:laboratory>
+			<kc:year>2019</kc:year>
+			<kc:inKCRV>true</kc:inKCRV>
+			<kc:doeValid>true</kc:doeValid>
+			<kc:radioactiveSolutions>
+				<kc:radioactiveSolution>
+					<kc:solutionID>Ac-225PTB2019-1</kc:solutionID>
+					<kc:mass>
+						<dsi:value>3.60885</dsi:value>
+						<dsi:unit>\gram</dsi:unit>
+					</kc:mass>
+					<kc:density>
+						<dsi:value>1.0</dsi:value>
+						<dsi:unit>\gram\centi\metre\tothe{-3}</dsi:unit>
+					</kc:density>
+					<kc:chemicalComposition>
+						<kc:solvant>
+							<kc:smiles>Cl</kc:smiles>
+							<kc:InChIKey>VEXZGXHMUGYJMC-UHFFFAOYSA-N</kc:InChIKey>
+							<kc:InChI>InChI=1S/ClH/h1H</kc:InChI>
+							<kc:solvantConcentration>
+								<dsi:value>0.1</dsi:value>
+								<dsi:unit>\mole\deci\metre\tothe{-3}</dsi:unit>
+							</kc:solvantConcentration>
+						</kc:solvant>
+						<kc:carrier>
+						</kc:carrier>
+					</kc:chemicalComposition>
+					<kc:impurities>225Ra: 9.8(25)x10-3 %</kc:impurities>
+				</kc:radioactiveSolution>
+			</kc:radioactiveSolutions>
+			<kc:laboratoryMeasurements>
+				<kc:measurement>
+					<kc:referenceDate>2019-06-14T00:00:00Z</kc:referenceDate>
+					<kc:solutionID>Ac-225PTB2019-1</kc:solutionID>
+					<kc:halfLife>
+						<kc:evaluation>
 							<dsi:value>9.920</dsi:value>
 							<dsi:unit>\day</dsi:unit>
 							<dsi:expandedUnc>
@@ -220,13 +208,13 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-					</Half-life>
-					<Method_ID>4P-LS-MX-00-00-TD</Method_ID>
-					<Description>TDCR</Description>
-					<Comments>See details in \cite{Kossert-Ac225}</Comments>
-					<Activity>
-						<dsi:real>
+						</kc:evaluation>
+					</kc:halfLife>
+					<kc:methodID>4P-LS-MX-00-00-TD</kc:methodID>
+					<kc:description>TDCR</kc:description>
+					<kc:comments>See details in \cite{Kossert-Ac225}</kc:comments>
+					<kc:activity>
+						<kc:measurementResult>
 							<dsi:value>10066</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -234,23 +222,23 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_type_A>0.05</relative_standard_uncertainty_type_A>
-						<relative_standard_uncertainty_type_B>0.25</relative_standard_uncertainty_type_B>
-					</Activity>
-				</Mesurement>
-			</Laboratory_measurements>
-			<BIPM_measurements>
-				<BIPM_measurement>
-					<Solutions>
-						<Solution_ID>Ac-225PTB2019-1</Solution_ID>
-					</Solutions>
-					<Methods>
-						<Method>4P-LS-MX-00-00-TD</Method>
-					</Methods>
-					<Reference_source>3</Reference_source>
-					<Equivalent_activity>
-						<dsi:real>
+						</kc:measurementResult>
+						<kc:relStdUncertTypeA>0.05</kc:relStdUncertTypeA>
+						<kc:relStdUncertTypeB>0.25</kc:relStdUncertTypeB>
+					</kc:activity>
+				</kc:measurement>
+			</kc:laboratoryMeasurements>
+			<kc:bipmMeasurements>
+				<kc:bipmMeasurement>
+					<kc:solutions>
+						<kc:solutionID>Ac-225PTB2019-1</kc:solutionID>
+					</kc:solutions>
+					<kc:methods>
+						<kc:method>4P-LS-MX-00-00-TD</kc:method>
+					</kc:methods>
+					<kc:referenceSource>3</kc:referenceSource>
+					<kc:equivalentActivity>
+						<kc:sirResult>
 							<dsi:value>74519</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:expandedUnc>
@@ -258,11 +246,11 @@
 								<dsi:coverageFactor>1</dsi:coverageFactor>
 								<dsi:coverageProbability>0.68</dsi:coverageProbability>
 							</dsi:expandedUnc>
-						</dsi:real>
-						<relative_standard_uncertainty_from_SIR>0.0008</relative_standard_uncertainty_from_SIR>
-					</Equivalent_activity>
-				</BIPM_measurement>
-			</BIPM_measurements>
-		</Submission>
-	</Comparison_metadata>
-</Comparison>
+						</kc:sirResult>
+						<kc:relStdUncertFromSIR>0.0008</kc:relStdUncertFromSIR>
+					</kc:equivalentActivity>
+				</kc:bipmMeasurement>
+			</kc:bipmMeasurements>
+		</kc:submission>
+	</kc:comparisonMetadata>
+</kc:comparison>
