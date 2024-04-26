@@ -16,11 +16,14 @@ import time
 import hashlib
 
 # selection the radionuclide
-Radionuclide = "Ce-139" # Valid 2022 - published
-# Radionuclide = "Zn-65"  # Valid 2023 - Draft B
+
+Radionuclide = "Co-57" # 2024 - Draft B 
+# Radionuclide = "Ge-68" # Valid 2023 - Draft A
 # Radionuclide = "Tb-161" # Valid 2023 - Draft A
+# Radionuclide = "Zn-65"  # Valid 2023 - Draft B
 # Radionuclide = "Na-22"  # Valid 2022 - Final
-# Radionuclide = "Lu-177" # Valid 2022 - Final
+# Radionuclide = "Lu-177" # Valid 2022 - published
+# Radionuclide = "Ce-139" # Valid 2022 - published
 # Radionuclide = "Ac-225" # Valid 2022 - published
 # Radionuclide = "Ag-110m" # Valid 2020 - published
 # Radionuclide = "Ba-133" # Valid 2022 - published
@@ -36,7 +39,7 @@ Radionuclide = "Ce-139" # Valid 2022 - published
 # Radionuclide = "Y-88"  # Valid 2022 - published
 
 # select the year
-yyear = "2022"
+yyear = "2024"
 
 # Path = "FAIRversions/" # published version
 Path = "G:/SIR_Data_Management/"+Radionuclide+"/"+yyear+"/" # draft versions
@@ -149,9 +152,8 @@ for j in range(len(release_year_list)):
         
         if str(x.iat[i,0])=="nan":
             countNAN+=1
-            
         if countNAN==2 and str(x.iat[i,0])=="nan":
-            codeLink_i.append(str(x.iat[i,1]))
+            codeLink_i.append(str(x.iat[i,1]))  
             hrefK2_i.append(str(x.iat[i,5]))
             i3=codeLink_i[-1].find("(II)")
             rmoOrCC_i.append(codeLink_i[-1][:i3])
@@ -365,18 +367,18 @@ for i, line in enumerate(Lines):
     #     FAIRfile.write("\t\t</submission>\n")
 
     if "Eligible for the Key Comparison Reference Value (KCRV)" in line:
-        if "False" in line:
+        if "false" in line:
             OK_KCRV = False
             # FAIRfile.write("\t\t\t<inKCRV>false</inKCRV>\n")
-        elif "True" in line:
+        elif "true" in line:
             OK_KCRV = True
             # FAIRfile.write("\t\t\t<inKCRV>true</inKCRV>\n")
 
     if "Eligible for Degree of Equivalence (DoE)" in line:
-        if "False" in line:
+        if "false" in line:
             OK_DoE = False
             # FAIRfile.write("\t\t\t<doeValid>false</doeValid>\n")
-        elif "True" in line:
+        elif "true" in line:
             OK_DoE = True
             # FAIRfile.write("\t\t\t<doeValid>true</doeValid>\n")
 
@@ -437,6 +439,7 @@ for i, line in enumerate(Lines):
         LabCombUonly = True
 
     if "Mass of the solution" in line:
+        
         if "null" in line: MassFlag = False
         else:
             u_mass = []
@@ -648,8 +651,12 @@ for i, line in enumerate(Lines):
             i2 = line.find("</key")
             u_Ae = line[i1+6:i2].split(", ")        
 
-
-
+    if ("Status_of_the_data" in line) and ("linked" in line):
+        FlagK1=False
+        # print(FlagK1)
+    if "Status_of_the_data" in line and "BIPM.RI(II)-K1" in line:
+        FlagK1=True
+        # print(FlagK1)
         
 
     #############
@@ -691,7 +698,8 @@ for i, line in enumerate(Lines):
         # FAIRfile.write("\t\t\t<InChIKey>"+readINCHIKEY(Radionuclide, Radionuclide)+"</InChIKey>\n")
         # FAIRfile.write("\t\t\t<InChI>"+readINCHI(Radionuclide, Radionuclide)+"</InChI>\n")
         # FAIRfile.write("\t\t</Radionuclide>\n")
-        FAIRfile.write("\t\t<kc:serviceCategoryID></kc:serviceCategoryID>\n")
+        FAIRfile.write("\t\t<kc:serviceCategoryID>https://si-digital-framework.org/kcdb-sc/RI/RAD-1.3.1</kc:serviceCategoryID>\n")
+        FAIRfile.write("\t\t<kc:siDigitalFrameworkRadionuclide>https://si-digital-framework.org/kcdb-sc/nucl/"+Radionuclide+"</kc:siDigitalFrameworkRadionuclide>\n")
         FAIRfile.write("\t\t<kc:pilot>\n")
         FAIRfile.write("\t\t\t<kc:acronym>BIPM</kc:acronym>\n")
         FAIRfile.write("\t\t\t<kc:ror>https://ror.org/055vkyj43</kc:ror>\n")
@@ -761,9 +769,10 @@ for i, line in enumerate(Lines):
         if unitDoE == "kBq":  unitDoE = "\\kilo\\becquerel"
         if unitDoE == "Bq":   unitDoE = "\\becquerel"
         
-    if "type=\"dict\">" in lineP and "<D_i type=\"float\">" in line:
+    if "type=\"dict\">" in lineP and ("<D_i type=\"float\">" in line or "<D_i type=\"int\">" in line):
         i1=lineP.find("<")
         i2=lineP.find("type")
+        # print(lineP)
         if not(K2Flag): Lab_acronym.append(lineP[i1+1:i2].replace(" ",""))
         i1=line.find("\">")
         i2=line.find("</D")
@@ -797,19 +806,18 @@ for i, line in enumerate(Lines):
         if hrefFlag: FAIRfile.write("\t\t\t<kc:doi>"+URLrelease+"</kc:doi>\n")
         if not NoKCRV_re:
             FAIRfile.write("\t\t\t<kc:kcrv>\n")
-            # FAIRfile.write("\t\t\t\t<dsi:real>\n")
-            # FAIRfile.write("\t\t\t\t<real>\n")
             FAIRfile.write("\t\t\t\t<dsi:value>"+valueKCRV+"</dsi:value>\n")
             FAIRfile.write("\t\t\t\t<dsi:unit>"+unitKCRV+"</dsi:unit>\n")
-            # FAIRfile.write("\t\t\t\t\t<dsi:uncertaintyValueType>\n")
-            # FAIRfile.write("\t\t\t\t\t<dsi:uncertaintyValueType>"+u+"</dsi:uncertaintyValueType>\n")
-            FAIRfile.write("\t\t\t\t<dsi:expandedUnc>\n")
-            FAIRfile.write("\t\t\t\t\t<dsi:uncertainty>"+uKCRV+"</dsi:uncertainty>\n")
-            FAIRfile.write("\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
-            FAIRfile.write("\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
-            FAIRfile.write("\t\t\t\t</dsi:expandedUnc>\n")
-            # FAIRfile.write("\t\t\t\t</dsi:real>\n")       
-            # FAIRfile.write("\t\t\t\t</real>\n")
+            FAIRfile.write("\t\t\t\t<dsi:measurementUncertaintyUnivariate>\n")
+            FAIRfile.write("\t\t\t\t\t<dsi:standardMU>\n")
+            FAIRfile.write("\t\t\t\t\t\t<dsi:valueStandardMU>"+uKCRV+"</dsi:valueStandardMU>\n")
+            FAIRfile.write("\t\t\t\t\t</dsi:standardMU>\n")
+            FAIRfile.write("\t\t\t\t</dsi:measurementUncertaintyUnivariate>\n")
+            # FAIRfile.write("\t\t\t\t<dsi:expandedUnc>\n")
+            # FAIRfile.write("\t\t\t\t\t<dsi:uncertainty>"+uKCRV+"</dsi:uncertainty>\n")
+            # FAIRfile.write("\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
+            # FAIRfile.write("\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
+            # FAIRfile.write("\t\t\t\t</dsi:expandedUnc>\n")
             FAIRfile.write("\t\t\t</kc:kcrv>\n")
             FAIRfile.write("\t\t\t<kc:degreesOfEquivalence>\n")
             for i, labi in enumerate(Lab_acronym):
@@ -825,11 +833,18 @@ for i, line in enumerate(Lines):
                 FAIRfile.write("\t\t\t\t\t<kc:result>\n")
                 FAIRfile.write("\t\t\t\t\t\t<dsi:value>"+DoE[i]+"</dsi:value>\n")
                 FAIRfile.write("\t\t\t\t\t\t<dsi:unit>"+unitDoE+"</dsi:unit>\n")
-                FAIRfile.write("\t\t\t\t\t\t<dsi:expandedUnc>\n")
-                FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertainty>"+U[i]+"</dsi:uncertainty>\n")
-                FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageFactor>2</dsi:coverageFactor>\n")
-                FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageProbability>0.95</dsi:coverageProbability>\n")
-                FAIRfile.write("\t\t\t\t\t\t</dsi:expandedUnc>\n")
+                FAIRfile.write("\t\t\t\t\t\t<dsi:measurementUncertaintyUnivariate>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedMU>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:valueExpandedMU>"+U[i]+"</dsi:valueExpandedMU>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>2</dsi:coverageFactor>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.95</dsi:coverageProbability>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedMU>\n")
+                FAIRfile.write("\t\t\t\t\t\t</dsi:measurementUncertaintyUnivariate>\n")
+                # FAIRfile.write("\t\t\t\t\t\t<dsi:expandedUnc>\n")
+                # FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertainty>"+U[i]+"</dsi:uncertainty>\n")
+                # FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageFactor>2</dsi:coverageFactor>\n")
+                # FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageProbability>0.95</dsi:coverageProbability>\n")
+                # FAIRfile.write("\t\t\t\t\t\t</dsi:expandedUnc>\n")
                 FAIRfile.write("\t\t\t\t\t</kc:result>\n")              
                 FAIRfile.write("\t\t\t\t</kc:degreeOfEquivalence>\n")
             FAIRfile.write("\t\t\t</kc:degreesOfEquivalence>\n")
@@ -859,11 +874,21 @@ for i, line in enumerate(Lines):
                         FAIRfile.write("\t\t\t\t\t<kc:result>\n")
                         FAIRfile.write("\t\t\t\t\t\t<dsi:value>"+DoE_K2[Index][j][i]+"</dsi:value>\n")
                         FAIRfile.write("\t\t\t\t\t\t<dsi:unit>"+unitDoE+"</dsi:unit>\n")
-                        FAIRfile.write("\t\t\t\t\t\t<dsi:expandedUnc>\n")
-                        FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertainty>"+U_K2[Index][j][i]+"</dsi:uncertainty>\n")
-                        FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageFactor>2</dsi:coverageFactor>\n")
-                        FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageProbability>0.95</dsi:coverageProbability>\n")
-                        FAIRfile.write("\t\t\t\t\t\t</dsi:expandedUnc>\n")
+                        
+                        FAIRfile.write("\t\t\t\t\t\t<dsi:measurementUncertaintyUnivariate>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedMU>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:valueExpandedMU>"+U_K2[Index][j][i]+"</dsi:valueExpandedMU>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>2</dsi:coverageFactor>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.95</dsi:coverageProbability>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedMU>\n")
+                        FAIRfile.write("\t\t\t\t\t\t</dsi:measurementUncertaintyUnivariate>\n")
+                        
+                        # FAIRfile.write("\t\t\t\t\t\t<dsi:expandedUnc>\n")
+                        # FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertainty>"+U_K2[Index][j][i]+"</dsi:uncertainty>\n")
+                        # FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageFactor>2</dsi:coverageFactor>\n")
+                        # FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageProbability>0.95</dsi:coverageProbability>\n")
+                        # FAIRfile.write("\t\t\t\t\t\t</dsi:expandedUnc>\n")
+                        
                         FAIRfile.write("\t\t\t\t\t</kc:result>\n")              
                         FAIRfile.write("\t\t\t\t</kc:degreeOfEquivalence>\n")
                     FAIRfile.write("\t\t\t</kc:degreesOfEquivalence>\n")
@@ -959,14 +984,20 @@ for i, line in enumerate(Lines):
                 # FAIRfile.write("\t\t\t\t\t\t<value>"+mass_i+"</value>\n")
                 # FAIRfile.write("\t\t\t\t\t\t<unit>"+unit_mass+"</unit>\n")
                 if u_mass:
-                    # FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertaintyValueType>"+u_mass[indexMass]+"</dsi:uncertaintyValueType>\n")
-                    FAIRfile.write("\t\t\t\t\t\t<dsi:expandedUnc>\n")
-                    FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertainty>"+u_mass[indexMass]+"</dsi:uncertainty>\n")
-                    FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
-                    FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
-                    FAIRfile.write("\t\t\t\t\t\t</dsi:expandedUnc>\n")
-                    # FAIRfile.write("\t\t\t\t\t\t<standard_uncertainty>"+u_mass[indexMass]+"</standard_uncertainty>\n")
-                # FAIRfile.write("\t\t\t\t\t\t</dsi:real>\n")
+                    
+                    FAIRfile.write("\t\t\t\t\t\t<dsi:measurementUncertaintyUnivariate>\n")
+                    FAIRfile.write("\t\t\t\t\t\t\t<dsi:standardMU>\n")
+                    FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:valueStandardMU>"+u_mass[indexMass]+"</dsi:valueStandardMU>\n")
+                    FAIRfile.write("\t\t\t\t\t\t\t</dsi:standardMU>\n")
+                    FAIRfile.write("\t\t\t\t\t\t</dsi:measurementUncertaintyUnivariate>\n")
+                    
+                    
+                    # FAIRfile.write("\t\t\t\t\t\t<dsi:expandedUnc>\n")
+                    # FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertainty>"+u_mass[indexMass]+"</dsi:uncertainty>\n")
+                    # FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
+                    # FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
+                    # FAIRfile.write("\t\t\t\t\t\t</dsi:expandedUnc>\n")
+
                 FAIRfile.write("\t\t\t\t\t</kc:mass>\n")
                 if DensityFlag:
                     FAIRfile.write("\t\t\t\t\t<kc:density>\n")
@@ -976,14 +1007,11 @@ for i, line in enumerate(Lines):
                     # FAIRfile.write("\t\t\t\t\t\t<value>"+density[0]+"</value>\n")
                     # FAIRfile.write("\t\t\t\t\t\t<unit>"+unit_density+"</unit>\n")
                     if u_density:
-                        # FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertaintyValueType>"+u_density[0]+"</dsi:uncertaintyValueType>\n")
-                        FAIRfile.write("\t\t\t\t\t\t<dsi:expandedUnc>\n")
-                        FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertainty>"+u_density[0]+"</dsi:uncertainty>\n")
-                        FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
-                        FAIRfile.write("\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
-                        FAIRfile.write("\t\t\t\t\t\t</dsi:expandedUnc>\n")                    
-                        # FAIRfile.write("\t\t\t\t\t\t<standard_uncertainty>"+u_density[0]+"</standard_uncertainty>\n")
-                    # FAIRfile.write("\t\t\t\t\t\t</dsi:real>\n")
+                        FAIRfile.write("\t\t\t\t\t\t<dsi:measurementUncertaintyUnivariate>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t<dsi:standardMU>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:valueStandardMU>"+u_density[0]+"</dsi:valueStandardMU>\n")
+                        FAIRfile.write("\t\t\t\t\t\t\t</dsi:standardMU>\n")
+                        FAIRfile.write("\t\t\t\t\t\t</dsi:measurementUncertaintyUnivariate>\n")
                     FAIRfile.write("\t\t\t\t\t</kc:density>\n")
     
                 FAIRfile.write("\t\t\t\t\t<kc:chemicalComposition>\n")
@@ -1048,14 +1076,18 @@ for i, line in enumerate(Lines):
                         FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:value>"+Carrier_conc+"</dsi:value>\n")
                         FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:unit>"+Carrier_conc_unit+"</dsi:unit>\n")
                         if uCarrier_conc:
-                            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:uncertainty>"+uCarrier_conc+"</dsi:uncertainty>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:expandedUnc>\n")   
-                        # FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:real>\n")                    
-                        # FAIRfile.write("\t\t\t\t\t\t\t\t<value>"+Carrier_conc+"</value>\n")
-                        # FAIRfile.write("\t\t\t\t\t\t\t\t<unit>"+Carrier_conc_unit+"</unit>\n")
+                            
+                            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:measurementUncertaintyUnivariate>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:standardMU>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t\t\t<dsi:valueStandardMU>"+uCarrier_conc+"</dsi:valueStandardMU>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t\t</dsi:standardMU>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:measurementUncertaintyUnivariate>\n")
+                            
+                            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:uncertainty>"+uCarrier_conc+"</dsi:uncertainty>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:expandedUnc>\n")   
                         FAIRfile.write("\t\t\t\t\t\t\t</kc:carrierConcentration>\n")
                     # print(Carrier_conc, UnknownCarConc)
                     FAIRfile.write("\t\t\t\t\t\t</kc:carrier>\n")
@@ -1063,7 +1095,7 @@ for i, line in enumerate(Lines):
                 FAIRfile.write("\t\t\t\t\t<kc:impurities>"+reportedImpurity+"</kc:impurities>\n")
                 FAIRfile.write("\t\t\t\t</kc:radioactiveSolution>\n")
             FAIRfile.write("\t\t\t</kc:radioactiveSolutions>\n")
-        if AiFlag:
+        if AiFlag and FlagK1:
             FAIRfile.write("\t\t\t<kc:laboratoryMeasurements>\n")
             for indexMeth, meth_i in enumerate(methods):
                 for indexMass, mass_i in enumerate(mass):
@@ -1080,13 +1112,18 @@ for i, line in enumerate(Lines):
                             # FAIRfile.write("\t\t\t\t\t\t<value>"+halfLifeValue+"</value>\n")
                             # FAIRfile.write("\t\t\t\t\t\t<unit>"+halfLifeUnit+"</unit>\n")
                             if halfLifeStd:
-                                # FAIRfile.write("\t\t\t\t\t\t<standard_deviation>"+halfLifeStd+"</standard_deviation>\n")
-                                # FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertaintyValueType>"+halfLifeStd+"</dsi:uncertaintyValueType>\n")
-                                FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
-                                FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+halfLifeStd+"</dsi:uncertainty>\n")
-                                FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
-                                FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
-                                FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")
+                               
+                                FAIRfile.write("\t\t\t\t\t\t\t<dsi:measurementUncertaintyUnivariate>\n")
+                                FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:standardMU>\n")
+                                FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:valueStandardMU>"+halfLifeStd+"</dsi:valueStandardMU>\n")
+                                FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:standardMU>\n")
+                                FAIRfile.write("\t\t\t\t\t\t\t</dsi:measurementUncertaintyUnivariate>\n")
+                               
+                                # FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
+                                # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+halfLifeStd+"</dsi:uncertainty>\n")
+                                # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
+                                # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
+                                # FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")
                             FAIRfile.write("\t\t\t\t\t\t</kc:evaluation>\n")
                             if ReferenceDecayData:
                                 if DOIdecayData:
@@ -1100,8 +1137,11 @@ for i, line in enumerate(Lines):
                                     
                             FAIRfile.write("\t\t\t\t\t</kc:halfLife>\n")
     
-                    FAIRfile.write("\t\t\t\t\t<kc:methodID>"+meth_i+"</kc:methodID>\n")
-                    FAIRfile.write("\t\t\t\t\t<kc:description>"+DescriptMethod[indexMeth]+"</kc:description>\n")
+                    if "null" in meth_i: FAIRfile.write("\t\t\t\t\t<kc:methodID></kc:methodID>\n")
+                    else: FAIRfile.write("\t\t\t\t\t<kc:methodID>"+meth_i+"</kc:methodID>\n")
+                    if "null" in DescriptMethod[indexMeth]: FAIRfile.write("\t\t\t\t\t<kc:description></kc:description>\n")
+                    else: FAIRfile.write("\t\t\t\t\t<kc:description>"+DescriptMethod[indexMeth]+"</kc:description>\n")
+                    
                     if CommentMethod:
                         FAIRfile.write("\t\t\t\t\t<kc:comments>"+CommentMethod[0]+"</kc:comments>\n")
                     if AiFlag:
@@ -1111,14 +1151,21 @@ for i, line in enumerate(Lines):
                             FAIRfile.write("\t\t\t\t\t\t\t<dsi:value>"+str(Ai[indexMeth])+"</dsi:value>\n")
                             FAIRfile.write("\t\t\t\t\t\t\t<dsi:unit>"+str(unit_Ai)+"</dsi:unit>\n")                         
                             # FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertaintyValueType>"+str(uC_Ai[indexMeth])+"</dsi:uncertaintyValueType>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+str(uC_Ai[indexMeth])+"</dsi:uncertainty>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")
+                            
+                            FAIRfile.write("\t\t\t\t\t\t\t<dsi:measurementUncertaintyUnivariate>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:standardMU>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:valueStandardMU>"+str(uC_Ai[indexMeth])+"</dsi:valueStandardMU>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:standardMU>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t</dsi:measurementUncertaintyUnivariate>\n")
+                           
+                            # FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+str(uC_Ai[indexMeth])+"</dsi:uncertainty>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")
+                            
                             FAIRfile.write("\t\t\t\t\t\t</kc:measurementResult>\n")
-                            # FAIRfile.write("\t\t\t\t\t\t<value>"+str(Ai[indexMeth])+"</value>\n")
-                            # FAIRfile.write("\t\t\t\t\t\t<unit>"+str(unit_Ai)+"</unit>\n")
+
                             if (not LabCombUonly):
                                 FAIRfile.write("\t\t\t\t\t\t<kc:relStdUncertTypeA>"+str(uA_Ai[indexMeth])+"</kc:relStdUncertTypeA>\n")
                                 FAIRfile.write("\t\t\t\t\t\t<kc:relStdUncertTypeB>"+str(uB_Ai[indexMeth])+"</kc:relStdUncertTypeB>\n")
@@ -1127,15 +1174,22 @@ for i, line in enumerate(Lines):
                             FAIRfile.write("\t\t\t\t\t\t<kc:measurementResult>\n")
                             FAIRfile.write("\t\t\t\t\t\t\t<dsi:value>"+str(Ai[indexMass])+"</dsi:value>\n")
                             FAIRfile.write("\t\t\t\t\t\t\t<dsi:unit>"+str(unit_Ai)+"</dsi:unit>\n") 
-                            # FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertaintyValueType>"+str(uC_Ai[0])+"</dsi:uncertaintyValueType>\n")                        
-                            FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+str(uC_Ai[0])+"</dsi:uncertainty>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")
+                           
+                            FAIRfile.write("\t\t\t\t\t\t\t<dsi:measurementUncertaintyUnivariate>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:standardMU>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:valueStandardMU>"+str(uC_Ai[0])+"</dsi:valueStandardMU>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:standardMU>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t</dsi:measurementUncertaintyUnivariate>\n")
+                           
+                            
+                            # FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+str(uC_Ai[0])+"</dsi:uncertainty>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")
+                            
                             FAIRfile.write("\t\t\t\t\t\t</kc:measurementResult>\n")
-                            # FAIRfile.write("\t\t\t\t\t\t<value>"+str(Ai[indexMass])+"</value>\n")
-                            # FAIRfile.write("\t\t\t\t\t\t<unit>"+str(unit_Ai)+"</unit>\n")
+
                             if (not LabCombUonly):
                                 FAIRfile.write("\t\t\t\t\t\t<kc:relStdUncertTypeA>"+str(uA_Ai[0])+"</kc:relStdUncertTypeA>\n")
                                 FAIRfile.write("\t\t\t\t\t\t<kc:relStdUncertTypeB>"+str(uB_Ai[0])+"</kc:relStdUncertTypeB>\n")
@@ -1144,15 +1198,22 @@ for i, line in enumerate(Lines):
                             FAIRfile.write("\t\t\t\t\t\t<kc:measurementResult>\n")
                             FAIRfile.write("\t\t\t\t\t\t\t<dsi:value>"+str(Ai[0])+"</dsi:value>\n")
                             FAIRfile.write("\t\t\t\t\t\t\t<dsi:unit>"+str(unit_Ai)+"</dsi:unit>\n")
-                            # FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertaintyValueType>"+str(uC_Ai[0])+"</dsi:uncertaintyValueType>\n")                         
-                            FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+str(uC_Ai[0])+"</dsi:uncertainty>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
-                            FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")
+                            
+                            FAIRfile.write("\t\t\t\t\t\t\t<dsi:measurementUncertaintyUnivariate>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:standardMU>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:valueStandardMU>"+str(uC_Ai[0])+"</dsi:valueStandardMU>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:standardMU>\n")
+                            FAIRfile.write("\t\t\t\t\t\t\t</dsi:measurementUncertaintyUnivariate>\n")
+                            
+                            # FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+str(uC_Ai[0])+"</dsi:uncertainty>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
+                            # FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")
+                            
+                            
                             FAIRfile.write("\t\t\t\t\t\t</kc:measurementResult>\n")
-                            # FAIRfile.write("\t\t\t\t\t\t<value>"+str(Ai[0])+"</value>\n")
-                            # FAIRfile.write("\t\t\t\t\t\t<unit>"+str(unit_Ai)+"</unit>\n")
+
                             if (not LabCombUonly):
                                 FAIRfile.write("\t\t\t\t\t\t<kc:relStdUncertTypeA>"+str(uA_Ai[0])+"</kc:relStdUncertTypeA>\n")
                                 FAIRfile.write("\t\t\t\t\t\t<kc:relStdUncertTypeB>"+str(uB_Ai[0])+"</kc:relStdUncertTypeB>\n")
@@ -1179,7 +1240,7 @@ for i, line in enumerate(Lines):
                 FAIRfile.write("\t\t\t\t\t<kc:methods>\n")
                 for meth in methods:
                     FAIRfile.write("\t\t\t\t\t\t<kc:method>")
-                    FAIRfile.write(meth)
+                    if "null" not in meth: FAIRfile.write(meth)
                     FAIRfile.write("</kc:method>\n")
                 FAIRfile.write("\t\t\t\t\t</kc:methods>\n")
             if RaRef:
@@ -1190,22 +1251,21 @@ for i, line in enumerate(Lines):
             FAIRfile.write("\t\t\t\t\t\t<kc:sirResult>\n")
             FAIRfile.write("\t\t\t\t\t\t\t<dsi:value>"+str(Ae[0])+"</dsi:value>\n")
             FAIRfile.write("\t\t\t\t\t\t\t<dsi:unit>"+str(AeUnit)+"</dsi:unit>\n")  
-            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertaintyValueType>"+str(u_Ae[0])+"</dsi:uncertaintyValueType>\n")                       
-            FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
-            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+str(u_Ae[0])+"</dsi:uncertainty>\n")
-            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
-            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
-            FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")
+            
+            FAIRfile.write("\t\t\t\t\t\t\t<dsi:measurementUncertaintyUnivariate>\n")
+            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:standardMU>\n")
+            FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:valueStandardMU>"+str(u_Ae[0])+"</dsi:valueStandardMU>\n")
+            FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:standardMU>\n")
+            FAIRfile.write("\t\t\t\t\t\t\t</dsi:measurementUncertaintyUnivariate>\n")
+            
+            # FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
+            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+str(u_Ae[0])+"</dsi:uncertainty>\n")
+            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
+            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
+            # FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")
+            
             FAIRfile.write("\t\t\t\t\t\t</kc:sirResult>\n")
-            # FAIRfile.write("\t\t\t\t\t\t<value>")
-            # FAIRfile.write(Ae[0])
-            # FAIRfile.write("</value>\n")
-            # FAIRfile.write("\t\t\t\t\t\t<unit>")
-            # FAIRfile.write(AeUnit)
-            # FAIRfile.write("</unit>\n")
-            # FAIRfile.write("\t\t\t\t\t\t<standard_uncertainty_combined>")
-            # FAIRfile.write(u_Ae[0])
-            # FAIRfile.write("</standard_uncertainty_combined>\n")
+
             if u_SIR_Ae:
                 FAIRfile.write("\t\t\t\t\t\t<kc:relStdUncertFromSIR>")
                 FAIRfile.write(str(round(float(u_SIR_Ae[0])*1e-4,4)))
@@ -1228,7 +1288,7 @@ for i, line in enumerate(Lines):
                 FAIRfile.write("\t\t\t\t\t</kc:solutions>\n")
                 FAIRfile.write("\t\t\t\t\t<kc:methods>\n")
                 FAIRfile.write("\t\t\t\t\t\t<kc:method>")
-                FAIRfile.write(methods[0])
+                if "null" not in methods[0]: FAIRfile.write(methods[0])
                 FAIRfile.write("</kc:method>\n")
                 FAIRfile.write("\t\t\t\t\t</kc:methods>\n")
                 if RaRef:
@@ -1239,22 +1299,21 @@ for i, line in enumerate(Lines):
                 FAIRfile.write("\t\t\t\t\t\t<kc:sirResult>\n")
                 FAIRfile.write("\t\t\t\t\t\t\t<dsi:value>"+str(Ae[i_sol])+"</dsi:value>\n")
                 FAIRfile.write("\t\t\t\t\t\t\t<dsi:unit>"+str(AeUnit)+"</dsi:unit>\n")     
-                # FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertaintyValueType>"+str(u_Ae[i_sol])+"</dsi:uncertaintyValueType>\n")                    
-                FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
-                FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+str(u_Ae[i_sol])+"</dsi:uncertainty>\n")
-                FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
-                FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
-                FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")      
+                
+                FAIRfile.write("\t\t\t\t\t\t\t<dsi:measurementUncertaintyUnivariate>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:standardMU>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:valueStandardMU>"+str(u_Ae[i_sol])+"</dsi:valueStandardMU>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:standardMU>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t</dsi:measurementUncertaintyUnivariate>\n")
+                
+                # FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
+                # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+str(u_Ae[i_sol])+"</dsi:uncertainty>\n")
+                # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
+                # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
+                # FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")      
+                
                 FAIRfile.write("\t\t\t\t\t\t</kc:sirResult>\n")
-                # FAIRfile.write("\t\t\t\t\t\t<value>")
-                # FAIRfile.write(Ae[i_sol])
-                # FAIRfile.write("</value>\n")
-                # FAIRfile.write("\t\t\t\t\t\t<unit>")
-                # FAIRfile.write(AeUnit)
-                # FAIRfile.write("</unit>\n")
-                # FAIRfile.write("\t\t\t\t\t\t<standard_uncertainty_combined>")
-                # FAIRfile.write(u_Ae[i_sol])
-                # FAIRfile.write("</standard_uncertainty_combined>\n")
+
                 if u_SIR_Ae:
                    FAIRfile.write("\t\t\t\t\t\t<kc:relStdUncertFromSIR>")
                    FAIRfile.write(str(round(float(u_SIR_Ae[i_sol])*1e-4,4)))
@@ -1272,7 +1331,7 @@ for i, line in enumerate(Lines):
                 FAIRfile.write("\t\t\t\t\t</kc:solutions>\n")
                 FAIRfile.write("\t\t\t\t\t<kc:methods>\n")
                 FAIRfile.write("\t\t\t\t\t\t<kc:method>")
-                FAIRfile.write(meth)
+                if "null" not in meth: FAIRfile.write(meth)
                 FAIRfile.write("</kc:method>\n")
                 FAIRfile.write("\t\t\t\t\t</kc:methods>\n")
                 if RaRef:
@@ -1283,22 +1342,13 @@ for i, line in enumerate(Lines):
                 FAIRfile.write("\t\t\t\t\t\t<kc:sirResult>\n")
                 FAIRfile.write("\t\t\t\t\t\t\t<dsi:value>"+str(Ae[i_meth])+"</dsi:value>\n")
                 FAIRfile.write("\t\t\t\t\t\t\t<dsi:unit>"+str(AeUnit)+"</dsi:unit>\n")   
-                # FAIRfile.write("\t\t\t\t\t\t\t<dsi:uncertaintyValueType>"+str(u_Ae[i_meth])+"</dsi:uncertaintyValueType>\n")                      
-                FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
-                FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+str(u_Ae[i_meth])+"</dsi:uncertainty>\n")
-                FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
-                FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
-                FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")      
-                FAIRfile.write("\t\t\t\t\t\t</kc:sirResult>\n")
-                # FAIRfile.write("\t\t\t\t\t\t<value>")
-                # FAIRfile.write(Ae[i_meth])
-                # FAIRfile.write("</value>\n")
-                # FAIRfile.write("\t\t\t\t\t\t<unit>")
-                # FAIRfile.write(AeUnit)
-                # FAIRfile.write("</unit>\n")
-                # FAIRfile.write("\t\t\t\t\t\t<standard_uncertainty_combined>")
-                # FAIRfile.write(u_Ae[i_meth])
-                # FAIRfile.write("</standard_uncertainty_combined>\n")
+                
+                FAIRfile.write("\t\t\t\t\t\t\t<dsi:measurementUncertaintyUnivariate>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:standardMU>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:valueStandardMU>"+str(u_Ae[i_meth])+"</dsi:valueStandardMU>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:standardMU>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t</dsi:measurementUncertaintyUnivariate>\n")
+                
                 if u_SIR_Ae:
                    FAIRfile.write("\t\t\t\t\t\t<kc:relStdUncertFromSIR>")
                    FAIRfile.write(str(round(float(u_SIR_Ae[0])*1e-4,4)))
