@@ -223,7 +223,7 @@
 			</kc:degreesOfEquivalence>
 		</kc:release>
 		<kc:release>
-			<kc:doi></kc:doi>
+			<kc:doi>https://doi.org/10.1088/0026-1394/60/1A/06021</kc:doi>
 			<kc:year>2022</kc:year>
 			<kc:kcrv>
 				<dsi:value>559.9</dsi:value>
@@ -288,7 +288,7 @@
 					<kc:comparisonCode>CCRI(II)-K2.Lu-177(2009)</kc:comparisonCode>
 					<kc:consultativeCommittee>CCRI(II)</kc:consultativeCommittee>
 					<kc:year>2009</kc:year>
-					<kc:doi>nan</kc:doi>
+					<kc:doi>https://doi.org/10.1088/0026-1394/50/1A/06020</kc:doi>
 				</kc:linkedComparison>
 				<kc:degreeOfEquivalence>
 					<kc:laboratory>
@@ -530,42 +530,6 @@
 					<kc:impurities>none detected</kc:impurities>
 				</kc:radioactiveSolution>
 			</kc:radioactiveSolutions>
-			<kc:laboratoryMeasurements>
-				<kc:measurement>
-					<kc:referenceDate>2022-06-15T12:00:00Z</kc:referenceDate>
-					<kc:solutionID>Lu-177IRA2022-1</kc:solutionID>
-					<kc:halfLife>
-						<kc:evaluation>
-							<dsi:value>6.6463</dsi:value>
-							<dsi:unit>\day</dsi:unit>
-							<dsi:expandedUnc>
-								<dsi:uncertainty>15</dsi:uncertainty>
-								<dsi:coverageFactor>1</dsi:coverageFactor>
-								<dsi:coverageProbability>0.68</dsi:coverageProbability>
-							</dsi:expandedUnc>
-						</kc:evaluation>
-						<kc:reference>
-							<kc:doi>https://doi.org/10.1016/j.apradiso.2015.11.057</kc:doi>
-						</kc:reference>
-					</kc:halfLife>
-					<kc:methodID>4P-PS-BP-4P-NA-GR-CO</kc:methodID>
-					<kc:description>4pi beta(PS)-4pi gamma coincidence</kc:description>
-					<kc:comments>The activity is the arithmetic mean of 12 efficiency extrapolated activities obtained with 4 </kc:comments>
-					<kc:activity>
-						<kc:measurementResult>
-							<dsi:value>20924.5</dsi:value>
-							<dsi:unit>\kilo\becquerel</dsi:unit>
-							<dsi:expandedUnc>
-								<dsi:uncertainty>0.444</dsi:uncertainty>
-								<dsi:coverageFactor>1</dsi:coverageFactor>
-								<dsi:coverageProbability>0.68</dsi:coverageProbability>
-							</dsi:expandedUnc>
-						</kc:measurementResult>
-						<kc:relStdUncertTypeA>0.41</kc:relStdUncertTypeA>
-						<kc:relStdUncertTypeB>0.17</kc:relStdUncertTypeB>
-					</kc:activity>
-				</kc:measurement>
-			</kc:laboratoryMeasurements>
 			<kc:bipmMeasurements>
 				<kc:bipmMeasurement>
 					<kc:solutions>
