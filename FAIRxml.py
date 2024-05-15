@@ -17,7 +17,7 @@ import hashlib
 
 # selection the radionuclide
 
-Radionuclide = "Co-57" # 2024 - Draft B 
+# Radionuclide = "Co-57" # 2024 - Draft B 
 # Radionuclide = "Ge-68" # Valid 2023 - Draft A
 # Radionuclide = "Tb-161" # Valid 2023 - Draft A
 # Radionuclide = "Zn-65"  # Valid 2023 - Draft B
@@ -30,7 +30,7 @@ Radionuclide = "Co-57" # 2024 - Draft B
 # Radionuclide = "Cd-109"   # Valid 2020 - published
 # Radionuclide = "Co-60" # Valide 2022 - published
 # Radionuclide = "Cs-134" # Valid 2022 - published
-# Radionuclide = "Ga-67" # Valid 2020 - published
+Radionuclide = "Ga-67" # Valid 2024 - Draft A
 # Radionuclide = "Gd-153" # Valid 2021 - published
 # Radionuclide = "Ra-223" # Valid 2022 - published
 # Radionuclide = "Sn-113"  # Valid 2022 - published
