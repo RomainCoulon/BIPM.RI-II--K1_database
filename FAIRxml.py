@@ -17,7 +17,8 @@ import hashlib
 
 # selection the radionuclide
 
-Radionuclide = "Co-57" # Valid 2024 - Draft B 
+Radionuclide = "Cs-137" #  Valid 2024 - Draft B 
+# Radionuclide = "Co-57" # Valid 2024 - Draft B 
 # Radionuclide = "Ga-67" # Valid 2024 - Draft A
 # Radionuclide = "Ge-68" # Valid 2023 - Draft A
 # Radionuclide = "Tb-161" # Valid 2023 - Draft A
@@ -154,6 +155,7 @@ for j in range(len(release_year_list)):
             countNAN+=1
         if countNAN==2 and str(x.iat[i,0])=="nan":
             codeLink_i.append(str(x.iat[i,1]))  
+            # print(x.iat[i,0],countNAN,release_year_list[j])
             hrefK2_i.append(str(x.iat[i,5]))
             i3=codeLink_i[-1].find("(II)")
             rmoOrCC_i.append(codeLink_i[-1][:i3])
@@ -1055,6 +1057,7 @@ for i, line in enumerate(Lines):
                         if CarrierSMILES: FAIRfile.write("\t\t\t\t\t\t\t<kc:smiles>"+ChemID(Carrier[ci])[0]+"</kc:smiles>\n")
                         if CarrierInChiKey: FAIRfile.write("\t\t\t\t\t\t\t<kc:InChIKey>"+ChemID(Carrier[ci])[1]+"</kc:InChIKey>\n")
                         if CarrierInChi: FAIRfile.write("\t\t\t\t\t\t\t<kc:InChI>"+ChemID(Carrier[ci])[2]+"</kc:InChI>\n")
+                        # print(Carrier_conc, ci)
                         if Carrier_conc and (not UnknownCarConc) and (Carrier_conc[ci]!="?"):
                             FAIRfile.write("\t\t\t\t\t\t\t<kc:carrierConcentration>\n")
                             # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:real>\n")
@@ -1348,6 +1351,8 @@ for i, line in enumerate(Lines):
                 FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:valueStandardMU>"+str(u_Ae[i_meth])+"</dsi:valueStandardMU>\n")
                 FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:standardMU>\n")
                 FAIRfile.write("\t\t\t\t\t\t\t</dsi:measurementUncertaintyUnivariate>\n")
+                
+                FAIRfile.write("\t\t\t\t\t\t</kc:sirResult>\n")
                 
                 if u_SIR_Ae:
                    FAIRfile.write("\t\t\t\t\t\t<kc:relStdUncertFromSIR>")
