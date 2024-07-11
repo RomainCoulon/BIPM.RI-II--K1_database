@@ -17,14 +17,15 @@ import hashlib
 
 # selection the radionuclide
 
-Radionuclide = "Cs-137" #  Valid 2024 - Draft B 
+Radionuclide = "Sm-153" # Valid 2024 - Draft A
+# Radionuclide = "Lu-177" # Valid 2024 - Draft B
+# Radionuclide = "Cs-137" #  Valid 2024 - Draft B 
 # Radionuclide = "Co-57" # Valid 2024 - Draft B 
 # Radionuclide = "Ga-67" # Valid 2024 - Draft A
 # Radionuclide = "Ge-68" # Valid 2023 - Draft A
 # Radionuclide = "Tb-161" # Valid 2023 - Draft A
 # Radionuclide = "Zn-65"  # Valid 2023 - Draft B
 # Radionuclide = "Na-22"  # Valid 2022 - Final
-# Radionuclide = "Lu-177" # Valid 2022 - published
 # Radionuclide = "Ce-139" # Valid 2022 - published
 # Radionuclide = "Ac-225" # Valid 2022 - published
 # Radionuclide = "Ag-110m" # Valid 2020 - published
@@ -798,6 +799,7 @@ for i, line in enumerate(Lines):
     if "/Degrees_of_Equivalence" in line and flagK2end:
         FAIRfile.write("\t\t<kc:release>\n")
         indRel = release_year_list.index(release_year)
+        print(doiRelease,indRel)
         FAIRfile.write("\t\t\t<kc:doi>"+doiRelease[indRel]+"</kc:doi>\n")
         if "_" in release_year:
             i3=yyy.find("_")
