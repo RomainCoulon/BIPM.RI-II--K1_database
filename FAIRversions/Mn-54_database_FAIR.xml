@@ -893,7 +893,7 @@
 						<kc:ror>https://ror.org/05r3f7h03</kc:ror>
 					</kc:laboratory>
 					<kc:result>
-						<dsi:value>0.0</dsi:value>
+						<dsi:value>0.01</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:measurementUncertaintyUnivariate>
 							<dsi:expandedMU>
@@ -911,7 +911,7 @@
 						<kc:ror>https://ror.org/00nzsxq20</kc:ror>
 					</kc:laboratory>
 					<kc:result>
-						<dsi:value>0.27</dsi:value>
+						<dsi:value>0.26</dsi:value>
 						<dsi:unit>\mega\becquerel</dsi:unit>
 						<dsi:measurementUncertaintyUnivariate>
 							<dsi:expandedMU>
@@ -4355,7 +4355,7 @@
 					<kc:referenceSource>2</kc:referenceSource>
 					<kc:equivalentActivity>
 						<kc:sirResult>
-							<dsi:value>19611</dsi:value>
+							<dsi:value>19609</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:measurementUncertaintyUnivariate>
 								<dsi:standardMU>
@@ -4376,7 +4376,7 @@
 					<kc:referenceSource>2</kc:referenceSource>
 					<kc:equivalentActivity>
 						<kc:sirResult>
-							<dsi:value>19677</dsi:value>
+							<dsi:value>19676</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:measurementUncertaintyUnivariate>
 								<dsi:standardMU>
@@ -4397,7 +4397,7 @@
 					<kc:referenceSource>2</kc:referenceSource>
 					<kc:equivalentActivity>
 						<kc:sirResult>
-							<dsi:value>19689</dsi:value>
+							<dsi:value>19687</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:measurementUncertaintyUnivariate>
 								<dsi:standardMU>
@@ -4573,7 +4573,7 @@
 					<kc:referenceSource>3</kc:referenceSource>
 					<kc:equivalentActivity>
 						<kc:sirResult>
-							<dsi:value>19490</dsi:value>
+							<dsi:value>19473</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:measurementUncertaintyUnivariate>
 								<dsi:standardMU>
@@ -4594,7 +4594,7 @@
 					<kc:referenceSource>3</kc:referenceSource>
 					<kc:equivalentActivity>
 						<kc:sirResult>
-							<dsi:value>19566</dsi:value>
+							<dsi:value>19549</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:measurementUncertaintyUnivariate>
 								<dsi:standardMU>
@@ -4615,7 +4615,7 @@
 					<kc:referenceSource>3</kc:referenceSource>
 					<kc:equivalentActivity>
 						<kc:sirResult>
-							<dsi:value>19522</dsi:value>
+							<dsi:value>19505</dsi:value>
 							<dsi:unit>\kilo\becquerel</dsi:unit>
 							<dsi:measurementUncertaintyUnivariate>
 								<dsi:standardMU>
