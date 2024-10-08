@@ -17,11 +17,12 @@ import hashlib
 
 # selection the radionuclide
 
-Radionuclide = "Sm-153" # Valid 2024 - Draft A
-# Radionuclide = "Lu-177" # Valid 2024 - Draft B
-# Radionuclide = "Cs-137" #  Valid 2024 - Draft B 
-# Radionuclide = "Co-57" # Valid 2024 - Draft B 
-# Radionuclide = "Ga-67" # Valid 2024 - Draft A
+Radionuclide = "Mn-54" # Valid 2024 - Draft B
+# Radionuclide = "Sm-153" # Valid 2024 - Draft A
+# Radionuclide = "Lu-177" # Valid 2024 - Final
+# Radionuclide = "Cs-137" #  Valid 2024 - Final
+# Radionuclide = "Co-57" # Valid 2024 - Final 
+# Radionuclide = "Ga-67" # Valid 2024 - Final
 # Radionuclide = "Ge-68" # Valid 2023 - Draft A
 # Radionuclide = "Tb-161" # Valid 2023 - Draft A
 # Radionuclide = "Zn-65"  # Valid 2023 - Draft B
@@ -1253,28 +1254,30 @@ for i, line in enumerate(Lines):
                 FAIRfile.write(RaRef[0])
                 FAIRfile.write("</kc:referenceSource>\n")
             FAIRfile.write("\t\t\t\t\t<kc:equivalentActivity>\n")
-            FAIRfile.write("\t\t\t\t\t\t<kc:sirResult>\n")
-            FAIRfile.write("\t\t\t\t\t\t\t<dsi:value>"+str(Ae[0])+"</dsi:value>\n")
-            FAIRfile.write("\t\t\t\t\t\t\t<dsi:unit>"+str(AeUnit)+"</dsi:unit>\n")  
-            
-            FAIRfile.write("\t\t\t\t\t\t\t<dsi:measurementUncertaintyUnivariate>\n")
-            FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:standardMU>\n")
-            FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:valueStandardMU>"+str(u_Ae[0])+"</dsi:valueStandardMU>\n")
-            FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:standardMU>\n")
-            FAIRfile.write("\t\t\t\t\t\t\t</dsi:measurementUncertaintyUnivariate>\n")
-            
-            # FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
-            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+str(u_Ae[0])+"</dsi:uncertainty>\n")
-            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
-            # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
-            # FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")
-            
-            FAIRfile.write("\t\t\t\t\t\t</kc:sirResult>\n")
-
-            if u_SIR_Ae:
-                FAIRfile.write("\t\t\t\t\t\t<kc:relStdUncertFromSIR>")
-                FAIRfile.write(str(round(float(u_SIR_Ae[0])*1e-4,4)))
-                FAIRfile.write("</kc:relStdUncertFromSIR>\n")
+            if u_Ae:
+                FAIRfile.write("\t\t\t\t\t\t<kc:sirResult>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t<dsi:value>"+str(Ae[0])+"</dsi:value>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t<dsi:unit>"+str(AeUnit)+"</dsi:unit>\n")  
+                
+    
+                FAIRfile.write("\t\t\t\t\t\t\t<dsi:measurementUncertaintyUnivariate>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:standardMU>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t\t\t<dsi:valueStandardMU>"+str(u_Ae[0])+"</dsi:valueStandardMU>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t\t</dsi:standardMU>\n")
+                FAIRfile.write("\t\t\t\t\t\t\t</dsi:measurementUncertaintyUnivariate>\n")
+                
+                # FAIRfile.write("\t\t\t\t\t\t\t<dsi:expandedUnc>\n")
+                # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:uncertainty>"+str(u_Ae[0])+"</dsi:uncertainty>\n")
+                # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageFactor>1</dsi:coverageFactor>\n")
+                # FAIRfile.write("\t\t\t\t\t\t\t\t<dsi:coverageProbability>0.68</dsi:coverageProbability>\n")
+                # FAIRfile.write("\t\t\t\t\t\t\t</dsi:expandedUnc>\n")
+                
+                FAIRfile.write("\t\t\t\t\t\t</kc:sirResult>\n")
+    
+                if u_SIR_Ae:
+                    FAIRfile.write("\t\t\t\t\t\t<kc:relStdUncertFromSIR>")
+                    FAIRfile.write(str(round(float(u_SIR_Ae[0])*1e-4,4)))
+                    FAIRfile.write("</kc:relStdUncertFromSIR>\n")
             FAIRfile.write("\t\t\t\t\t</kc:equivalentActivity>\n")
             if linkSub:
                 FAIRfile.write("\t\t\t\t\t<kc:fromLinkedComparison>")

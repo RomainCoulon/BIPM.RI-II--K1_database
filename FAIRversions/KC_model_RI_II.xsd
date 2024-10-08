@@ -472,7 +472,7 @@
                     _ the relative standard uncertainty from the SIR system is given as a dimensionless decimal (xml element: "relStdUncertFromSIR")
                 </xs:documentation>
             </xs:annotation>
-            <xs:element name = "sirResult" type= "dsi:realQuantityType"></xs:element>
+            <xs:element name = "sirResult" type= "dsi:realQuantityType" minOccurs = "0"></xs:element>
             <xs:element name = "relStdUncertFromSIR" type = "kc:relativeStandardUncertainty" minOccurs = "0"  maxOccurs = "1"></xs:element>
         </xs:sequence>
     </xs:complexType>
