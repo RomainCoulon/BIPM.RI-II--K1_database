@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>XML Parsed Result</title>
+    </head>
+    <body>
+        <h1>Parsed XML Data</h1>
+        <ul>
+            {% for item in parsed_data %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/">Upload another file</a>
+    </body>
+</html>

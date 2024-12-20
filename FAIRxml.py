@@ -17,7 +17,7 @@ import hashlib
 
 # selection the radionuclide
 
-Radionuclide = "Mn-54" # Valid 2024 - Draft B
+Radionuclide = "Mn-54" # Valid 2024 - Final
 # Radionuclide = "Sm-153" # Valid 2024 - Draft A
 # Radionuclide = "Lu-177" # Valid 2024 - Final
 # Radionuclide = "Cs-137" #  Valid 2024 - Final
